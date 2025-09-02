@@ -68,4 +68,7 @@ AutoMoveTo: not used
 
 SoulFilchersForagingTime: not used, buggy
 
+90sBalancePackBritaArmor: doesn't fit vision
+
+
 FactionMap: buggy
