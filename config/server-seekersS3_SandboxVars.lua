@@ -6876,7 +6876,7 @@ SandboxVars = {
         -- Database may become inconsistent due to catastrophic failures
         RebuildDB = false,
     },
-    A26 = {
+A26 = {
         -- Displays
         --  - Debugging Messages from Mod
         --  - Based on option level chosen
@@ -6885,7 +6885,7 @@ SandboxVars = {
         -- 1 = OFF
         -- 2 = Normal Info
         -- 3 = Debug Info
-        EnumDebugLevels = 2,
+        EnumDebugLevels = 1,
         -- Displays
         --  - Weapon Info when Equipped
         --  - For Debugging
@@ -6916,13 +6916,13 @@ SandboxVars = {
         --  - Ammunition Count
         --  - Upper Left of Screen
         --  - Hash marks represent 1 round where (+) represents 10
-        BoolDisplayAmmoCounter = true,
+        BoolDisplayAmmoCounter = false,
         -- Displays
         --  - Movement Gauge
         --  - Widens & Narrows indicating
         --  - Movement penalty when Shooting
         --  - Recommend use with Dynamic Recoil / Reset Sight Picture
-        BoolDisplayMovementGauge = true,
+        BoolDisplayMovementGauge = false,
         -- Action
         --  - Reduce, Prevent, or Divert
         --  - Ejection of Empty Shell Casings on the Ground
@@ -6938,7 +6938,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumEjectSpentCasings = 11,
+        EnumEjectSpentCasings = 4,
         -- Emergency Reload
         --  - Select the Condition(s) to Drop magazine to the Ground
         --  - Instead of placing one magazine back to inventory before inserting the next
@@ -7015,7 +7015,7 @@ SandboxVars = {
         --  - When Enabled, and using Thrown Weapons, the next Thrown weapon will automatically be equipped
         --  - By order of : Secondary Hand, R-Belt, L-Belt, Back, Inventory
         --  - When In-Game, [Auto-Equip Thrown Hot-Key] will toggle this option
-        BoolAutoThrown = false,
+        BoolAutoThrown = true,
         -- LightSabers are REAL (REMOVED)
         BoolLightSaberReal = false,
         -- Function
@@ -7046,7 +7046,7 @@ SandboxVars = {
         --  - Calculated based on Firearm Recoil Characteristics per shot
         --  - To Simulate degrees of Recoil Force upon the shooter
         --  - Increasing difficulty in instances of Rapid Successive Shots or Automatic Fire
-        BoolDynamicRecoilSystem = true,
+        BoolDynamicRecoilSystem = false,
         -- Penalty
         --  - Applies Secondary Hit-Chance roll
         --  - Calculating distance to target
@@ -7062,7 +7062,7 @@ SandboxVars = {
         --  - Calculated based on Firearm Aim-Time Characteristics
         --  - Applied when Aiming is stopped, reloading, etc
         --  - To Simulate having to Re-Aquire when Sight-Picture is lost
-        BoolResetSightPicture = true,
+        BoolResetSightPicture = false,
         -- Penalty
         --  - Applies Aim-Time Penalty for using Firearms in Vehicles
         --  - Calculated based on the Overall Length and Weight of the Firearm
@@ -7078,7 +7078,7 @@ SandboxVars = {
         -- 2 = 75% - Less Often
         -- 3 = 50% - Rare
         -- 4 = 25% - Hardly Ever
-        EnumFirearmJam = 4,
+        EnumFirearmJam = 5,
         -- Function
         --  - Reduce or Prevent Firearm Attachments from Breaking
         --  - When weapon is used in Melee Mode
@@ -7237,7 +7237,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeBOW = 6,
+        EnumTypeBOW = 1,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7253,7 +7253,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeFLAME = 2,
+        EnumTypeFLAME = 1,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7269,7 +7269,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeGREN = 3,
+        EnumTypeGREN = 1,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7285,7 +7285,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeMINI = 2,
+        EnumTypeMINI = 1,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7301,7 +7301,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeLMG = 4,
+        EnumTypeLMG = 1,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7317,7 +7317,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeSEMI = 6,
+        EnumTypeSEMI = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7333,7 +7333,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeAUTO = 6,
+        EnumTypeAUTO = 1,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7349,7 +7349,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeSMG = 6,
+        EnumTypeSMG = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7413,7 +7413,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeBOLT = 4,
+        EnumTypeBOLT = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7459,7 +7459,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginSOV = 11,
+        EnumOriginSOV = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7474,7 +7474,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginKOR = 11,
+        EnumOriginKOR = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7489,7 +7489,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginPAC = 11,
+        EnumOriginPAC = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7504,7 +7504,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginCZE = 11,
+        EnumOriginCZE = 7,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7519,7 +7519,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginEUR = 11,
+        EnumOriginEUR = 9,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7534,7 +7534,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginISR = 11,
+        EnumOriginISR = 7,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7549,7 +7549,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginREST = 11,
+        EnumOriginREST = 7,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7564,7 +7564,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber50BMG = 6,
+        EnumCaliber50BMG = 1,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7579,7 +7579,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber4gShot = 2,
+        EnumCaliber4gShot = 3,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7594,7 +7594,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber10gShot = 2,
+        EnumCaliber10gShot = 3,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7609,7 +7609,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber12gShot = 6,
+        EnumCaliber12gShot = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7624,7 +7624,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber20gShot = 2,
+        EnumCaliber20gShot = 3,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7654,7 +7654,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber308WIN = 5,
+        EnumCaliber308WIN = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7684,7 +7684,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber545x39mm = 5,
+        EnumCaliber545x39mm = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7699,7 +7699,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber762x39mm = 6,
+        EnumCaliber762x39mm = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7714,7 +7714,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber556x45mm = 6,
+        EnumCaliber556x45mm = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7849,7 +7849,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber380ACP = 5,
+        EnumCaliber380ACP = 3,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7864,7 +7864,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber22LR = 6,
+        EnumCaliber22LR = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7880,7 +7880,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber177BB = 6,
+        EnumCaliber177BB = 1,
         -- Parts
         --  - Reduce or Remove Suppressor Attachments
         --  - This only affects Container Spawn (Not Pre-Attached parts on Zombie Weapons)
@@ -7992,7 +7992,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumStdMag = 4,
+        EnumStdMag = 7,
         -- Magazines
         --  - Reduce or Remove Extended Magazines Default=20%
         -- 1 = REMOVE
@@ -8005,7 +8005,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumExtMag = 3,
+        EnumExtMag = 5,
         -- Magazines
         --  - Reduce or Remove Drum / Box Magazines Default=10%
         -- 1 = REMOVE
@@ -8018,7 +8018,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumDrumMag = 2,
+        EnumDrumMag = 1,
         -- Melee
         --  - Reduce or Remove Large Knife Weapons
         --  - From Mod Only... No effect on Vanilla Items Default=20%
@@ -8088,7 +8088,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumMeleeBlunt = 4,
+        EnumMeleeBlunt = 1,
         -- Melee
         --  - Reduce or Remove Spear Weapons
         --  - From Mod Only... No effect on Vanilla Items Default=10%
@@ -8116,7 +8116,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumPowerTool = 11,
+        EnumPowerTool = 1,
         -- Loot
         --  - Reduce or Remove Ammunition Reloading related items
         --  - Reading the Lyman 49th Edition Reloading Manual is required to make Ammunition Default=30%
@@ -8130,7 +8130,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumReloadingItems = 4,
+        EnumReloadingItems = 7,
         -- Default=10%
         -- 1 = REMOVE
         -- 2 = 10%
@@ -8221,7 +8221,7 @@ SandboxVars = {
         -- 18 = 170%
         -- 19 = 180%
         -- 20 = 190%
-        EnumArmor = 6,
+        EnumArmor = 1,
         -- Loot
         --  - Reduce or Remove Weapons / Items produced after 1992
         --  - Be Advised... This option Removes A-L-O-T of weapons Default=ALLOW
@@ -8554,7 +8554,7 @@ SandboxVars = {
         -- 18 = + 170%
         -- 19 = + 180%
         -- 20 = + 190%
-        EnumCIVx = 1,
+        EnumCIVx = 3,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Police Distribution areas
         --  - Generally Required to bring overall spawn result back up
@@ -8614,7 +8614,7 @@ SandboxVars = {
         -- 28 = + 270%
         -- 29 = + 280%
         -- 30 = + 290%
-        EnumMILx = 1,
+        EnumMILx = 3,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Security Distribution areas
         --  - Generally Required to bring overall spawn result back up
@@ -8639,7 +8639,7 @@ SandboxVars = {
         -- 18 = + 170%
         -- 19 = + 180%
         -- 20 = + 190%
-        EnumSECx = 1,
+        EnumSECx = 3,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Hunting Distribution areas
         --  - Generally Required to bring overall spawn result back up
