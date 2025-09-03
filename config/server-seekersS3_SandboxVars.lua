@@ -50,7 +50,7 @@ SandboxVars = {
     -- 9 = September
     -- 10 = October
     -- 11 = November
-    StartMonth = 7,
+    StartMonth = 9,
     StartDay = 9,
     -- Default=9 AM
     -- 1 = 7 AM
@@ -70,7 +70,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    WaterShut = 2,
+    WaterShut = 1,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -79,11 +79,11 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    ElecShut = 2,
+    ElecShut = 1,
     -- Minimum=-1 Maximum=2147483647 Default=14
-    WaterShutModifier = 14,
+    WaterShutModifier = 1,
     -- Minimum=-1 Maximum=2147483647 Default=14
-    ElecShutModifier = 14,
+    ElecShutModifier = 1,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -91,7 +91,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    FoodLoot = 4,
+    FoodLoot = 1,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -99,7 +99,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    CannedFoodLoot = 4,
+    CannedFoodLoot = 3,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -107,7 +107,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    LiteratureLoot = 4,
+    LiteratureLoot = 2,
     -- Seeds, Nails, Saws, Fishing Rods, various tools, etc... Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -115,7 +115,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    SurvivalGearsLoot = 4,
+    SurvivalGearsLoot = 2,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -123,7 +123,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    MedicalLoot = 4,
+    MedicalLoot = 2,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -131,7 +131,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    WeaponLoot = 4,
+    WeaponLoot = 3,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -139,7 +139,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    RangedWeaponLoot = 4,
+    RangedWeaponLoot = 2,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -147,7 +147,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    AmmoLoot = 4,
+    AmmoLoot = 3,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -155,7 +155,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    MechanicsLoot = 4,
+    MechanicsLoot = 3,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -163,7 +163,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    OtherLoot = 4,
+    OtherLoot = 3,
     -- Controls the global temperature. Default=Normal
     -- 1 = Very Cold
     -- 2 = Cold
@@ -181,7 +181,7 @@ SandboxVars = {
     -- 2 = Fast (50 Days)
     -- 3 = Normal (100 Days)
     -- 4 = Slow (200 Days)
-    ErosionSpeed = 3,
+    ErosionSpeed = 1,
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
@@ -225,7 +225,7 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    Alarm = 4,
+    Alarm = 1,
     -- How frequently homes and buildings will be discovered locked Default=Very Often
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -248,17 +248,17 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    FridgeFactor = 3,
+    FridgeFactor = 4,
     -- Items will respawn in already-looted containers in towns and trailer parks. Items will not respawn in player-made containers. Default=None
     -- 1 = None
     -- 2 = Every Day
     -- 3 = Every Week
     -- 4 = Every Month
-    LootRespawn = 1,
+    LootRespawn = 0,
     -- When > 0, loot will not respawn in zones that have been visited within this number of in-game hours. Minimum=0 Maximum=2147483647 Default=0
     SeenHoursPreventLootRespawn = 0,
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
-    WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots",
+    WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots,Base.RippedSheets,Base.RippedSheetsDirty,Base.Battery,Base.WaterBottleEmpty,Base.PopBottleEmpty,Base.UnusableWood,Base.UnusableMetal,Base.LightBulb,Base.Twigs,Base.BandageDirty,Base.LeatherStripsDirty,Base.DenimStripsDirty,Base.BeerCanEmpty,Base.PopEmpty,Base.Pop2Empty,Base.Pop3Empty,Base.TinCanEmpty",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.  Zero means items are not removed. Minimum=0.00 Maximum=2147483647.00 Default=24.00
     HoursForWorldItemRemoval = 24.0,
     -- If true, any items *not* in WorldItemRemovalList will be removed.
@@ -276,7 +276,7 @@ SandboxVars = {
     -- 10 = 9
     -- 11 = 10
     -- 12 = 11
-    TimeSinceApo = 1,
+    TimeSinceApo = 12,
     -- Will influence how much water the plant will lose per day and their ability to avoid disease. Default=Normal
     -- 1 = Very High
     -- 2 = High
@@ -299,7 +299,7 @@ SandboxVars = {
     -- 1 = Never
     -- 2 = Once
     -- 3 = Sometimes
-    Helicopter = 2,
+    Helicopter = 1,
     -- How often zombie attracting metagame events like distant gunshots will occur. Default=Sometimes
     -- 1 = Never
     -- 2 = Sometimes
@@ -343,15 +343,15 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    AnnotatedMapChance = 4,
+    AnnotatedMapChance = 2,
     -- Adds free points during character creation. Minimum=-100 Maximum=100 Default=0
-    CharacterFreePoints = 0,
+    CharacterFreePoints = 3,
     -- Gives player-built constructions extra hit points so they are more resistant to zombie damage. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    ConstructionBonusPoints = 3,
+    ConstructionBonusPoints = 4,
     -- Governs the ambient lighting at night. Default=Normal
     -- 1 = Pitch Black
     -- 2 = Dark
@@ -381,7 +381,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    BloodLevel = 3,
+    BloodLevel = 2,
     -- Governs how quickly clothing degrades, becomes dirty, and bloodied. Default=Normal
     -- 1 = Disabled
     -- 2 = Slow
@@ -403,7 +403,7 @@ SandboxVars = {
     -- If disabled snow will not accumulate on ground but will still be visible on vegetation and rooftops.
     EnableSnowOnGround = true,
     -- When enabled certain melee weapons will be able to strike multiple zombies in one hit.
-    MultiHitZombies = false,
+    MultiHitZombies = true,
     -- Chance of being bitten when a zombie attacks from behind. Default=High
     -- 1 = Low
     -- 2 = Medium
@@ -429,7 +429,7 @@ SandboxVars = {
     -- 3 = Normal
     -- 4 = High
     -- 5 = Very High
-    InitialGas = 2,
+    InitialGas = 1,
     -- Governs how full gas tanks in fuel station will be, initially. Default=Normal
     -- 1 = Empty
     -- 2 = Super Low
@@ -439,7 +439,7 @@ SandboxVars = {
     -- 6 = High
     -- 7 = Very High
     -- 8 = Full
-    FuelStationGas = 5,
+    FuelStationGas = 4,
     -- How gas-hungry vehicles on the map are. Minimum=0.00 Maximum=100.00 Default=1.00
     CarGasConsumption = 1.0,
     -- Default=Rare
@@ -454,7 +454,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    CarGeneralCondition = 2,
+    CarGeneralCondition = 1,
     -- Governs the amount of damage dealt to vehicles that crash. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -466,7 +466,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    DamageToPlayerFromHitByACar = 1,
+    DamageToPlayerFromHitByACar = 2,
     -- Enable or disable traffic jams that spawn on the main roads of the map.
     TrafficJam = true,
     -- How frequently cars will be discovered with an alarm. Default=Extremely Rare
@@ -496,7 +496,7 @@ SandboxVars = {
     -- 2 = In bodies only
     MaggotSpawn = 1,
     -- The higher the value, the longer lightbulbs last before breaking. If 0, lightbulbs will never break. Does not affect vehicle headlights. Minimum=0.00 Maximum=1000.00 Default=1.00
-    LightBulbLifespan = 1.0,
+    LightBulbLifespan = 1.2,
     -- Vanilla Chance is 6% Minimum=0 Maximum=100 Default=6
     ChanceOfAttachedWeapon = 6,
     -- Katanas and machetes Minimum=0 Maximum=100 Default=1
@@ -557,7 +557,7 @@ SandboxVars = {
     -- Defined like the other loots.
     ItemsAddedToCustomOutfitListLoot = "",
     -- Minimum=1 Maximum=100 Default=20
-    CigarettesCount = 20,
+    CigarettesCount = 10,
     -- If the number of rolls on a loot table is higher than this value, it will be set to this value.
     -- Most loot tables have a rolls value of 4.
     --  1 = ~ 75% less items per container,
@@ -569,44 +569,44 @@ SandboxVars = {
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
     -- 4 = 4 (~ 99% items)
-    MaxRolls = 5,
+    MaxRolls = 3,
     -- Same as the option above, but only affects food containers. Default=4 (100% food)
     -- 1 = 1 (~25% food)
     -- 2 = 2 (~50% food)
     -- 3 = 3 (~75% food)
-    FoodTablesMaxRolls = 4,
+    FoodTablesMaxRolls = 3,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MeleeWeaponsAndToolsTablesMaxRolls = 4,
+    MeleeWeaponsAndToolsTablesMaxRolls = 3,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    GunsAndAmmoTablesMaxRolls = 4,
+    GunsAndAmmoTablesMaxRolls = 3,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    LitteratureTablesMaxRolls = 4,
+    LitteratureTablesMaxRolls = 3,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MediaTablesMaxRolls = 4,
+    MediaTablesMaxRolls = 3,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MechanicsTablesMaxRolls = 4,
+    MechanicsTablesMaxRolls = 3,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    OtherTablesMaxRolls = 4,
+    OtherTablesMaxRolls = 3,
     -- Fresh and non-perishable food. Minimum=0.00 Maximum=10.00 Default=1.00
-    FoodLootMultiplier = 1.0,
+    FoodLootMultiplier = 0.5,
     -- Nonranged weapons of all kinds, except pens, forks and spoons.
     -- Includes Sledgehammer. Also includes instruments and some cooking tools. Minimum=0.00 Maximum=10.00 Default=1.00
     WeaponLootMultiplier = 1.0,
@@ -620,7 +620,7 @@ SandboxVars = {
     -- Tools to work on vehicles, and vehicle parts. Minimum=0.00 Maximum=10.00 Default=1.00
     MechanicsLootMultiplier = 1.0,
     -- Medicine, bandages, splint, needles, first aid kits... Minimum=0.00 Maximum=10.00 Default=1.00
-    MedicalLootMultiplier = 1.0,
+    MedicalLootMultiplier = 0.7,
     -- Books and magazines Minimum=0.00 Maximum=10.00 Default=1.00
     LiteratureLootMultiplier = 1.0,
     -- VHS tapes, CDs and videogames Minimum=0.00 Maximum=10.00 Default=1.00
@@ -661,7 +661,7 @@ SandboxVars = {
     -- Ranges 0-100 in game. Can ONLY be subtracted ~ sorry no painful music. Minimum=0.00 Maximum=100.00 Default=5.00
     TrueMusicMoodImprovement_painMod = 5.0,
     Map = {
-        AllowMiniMap = false,
+        AllowMiniMap = true,
         AllowWorldMap = true,
         MapAllKnown = false,
     },
@@ -685,7 +685,7 @@ SandboxVars = {
         -- 1 = Blood + Saliva
         -- 2 = Saliva Only
         -- 3 = Everyone's Infected
-        Transmission = 1,
+        Transmission = 2,
         -- Controls how quickly the infection takes effect. Default=2-3 Days
         -- 1 = Instant
         -- 2 = 0-30 Seconds
@@ -719,7 +719,7 @@ SandboxVars = {
         -- 2 = Normal
         -- 3 = Short
         -- 4 = None
-        Memory = 2,
+        Memory = 3,
         -- Controls zombie vision radius. Default=Normal
         -- 1 = Eagle
         -- 2 = Normal
@@ -741,9 +741,9 @@ SandboxVars = {
         -- Allows zombies to trigger house alarms when breaking through windows and doors.
         TriggerHouseAlarm = false,
         -- When enabled if multiple zombies are attacking they can drag you down to feed. Dependent on zombie strength.
-        ZombiesDragDown = true,
+        ZombiesDragDown = false,
         -- When enabled zombies will have a chance to lunge after climbing over a fence if you're too close.
-        ZombiesFenceLunge = true,
+        ZombiesFenceLunge = false,
         -- Default=Some zombies in the world will pretend to be dead
         -- 1 = Some zombies in the world will pretend to be dead
         -- 2 = Some zombies in the world, as well as some you 'kill', can pretend to be dead
@@ -757,9 +757,9 @@ SandboxVars = {
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
         PopulationPeakMultiplier = 1.5,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
-        PopulationPeakDay = 28,
+        PopulationPeakDay = 1,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
-        RespawnHours = 72.0,
+        RespawnHours = 0.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
         RespawnUnseenHours = 16.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
@@ -812,9 +812,9 @@ SandboxVars = {
     },
     RestoreUtilities = {
         -- The minimum level of the electrical skill you need to make repairs. <LINE> Regardless of this setting you will still need generator knowledge or a consumable Insulated Wires fuse to make repairs. Minimum=0 Maximum=11 Default=2
-        MinSkillLvl = 2,
+        MinSkillLvl = 3,
         -- Multiplies the length of all successful repairs by this number, this modifier is the LAST thing to apply to the number of days a repair attempt will provide, meaning it also influences the effectiveness of any fuses that do the same. <LINE> <LINE> Set to a number below 1 to make your repairs last less time, and set to a higher number to make your repairs more effective. (I.E. setting this option to 2 will make all of your repairs 2x effective) Minimum=0.10 Maximum=10.00 Default=1.00
-        ScalingRepairModifier = 1.0,
+        ScalingRepairModifier = 0.8,
         -- How much electronic scrap you need per repair, this cost will be reduced by 25%/50% when using a T1/T2 Spare Parts fuse, respectively. Minimum=10 Maximum=1000 Default=40
         ScrapNeeded = 40,
         -- The chance of a failed repair. <LINE> This chance is reduced by 8% per level of electrical skill higher than the minimum. The chance is also reduced by half when using a Tier 1 Marked Components fuse, and fail chance is always set to 0% when using a Tier 2 Marked Components fuse. Minimum=0 Maximum=150 Default=80
@@ -831,7 +831,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        ScrapSpawnRateChest = 4,
+        ScrapSpawnRateChest = 3,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -840,7 +840,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        T1SpawnRateChest = 4,
+        T1SpawnRateChest = 2,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -849,7 +849,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        T2SpawnRateChest = 4,
+        T2SpawnRateChest = 2,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -999,7 +999,7 @@ SandboxVars = {
         -- The starting toughness of the zombies. Default=Normal
         -- 1 = Tough
         -- 2 = Normal
-        Toughness = 2,
+        Toughness = 1,
         -- Definitive Zombies will affect the zombie's toughness stat. Disable to improve compatibility between similar mods.
         CognitionEnable = true,
         -- The starting toughness of the zombies. Default=Basic Navigation
@@ -4231,9 +4231,9 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Entropy_Effect2_Hearing = 7,
         -- Enable randomisation for the Speed stat. Chances will be normalised at the end
-        Speed_Seed_Enable = false,
+        Speed_Seed_Enable = true,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Speed_Seed1 = 20.0,
+        Speed_Seed1 = 7.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4245,9 +4245,9 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Speed_Seed1_Effect = 6,
+        Speed_Seed1_Effect = 5,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Speed_Seed2 = 20.0,
+        Speed_Seed2 = 30.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4259,9 +4259,9 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Speed_Seed2_Effect = 6,
+        Speed_Seed2_Effect = 7,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Speed_Seed3 = 20.0,
+        Speed_Seed3 = 10.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4273,7 +4273,7 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Speed_Seed3_Effect = 6,
+        Speed_Seed3_Effect = 8,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
         Speed_Seed4 = 20.0,
         -- Default=Nothing
@@ -4797,7 +4797,7 @@ SandboxVars = {
         -- All map items added will have their loot chances multiplied by this value.
         -- Use this to tweak loot chances according to the number of maps you use.
         -- By default(=1) it is balanced for when most maps are enabled. Minimum=0.00 Maximum=4.00 Default=1.00
-        MapLootMultiplier = 1.0,
+        MapLootMultiplier = 0.03,
         -- Extremely rare - disabled by default
         KentuckyCompleteMap = false,
         -- Very rare
@@ -4811,25 +4811,25 @@ SandboxVars = {
         ValleyStationMallAreaMap = true,
         -- South of Valley Station's mall
         EasternSummerCampMap = true,
-        AbandonedFactoryMap = true,
+        AbandonedFactoryMap = false,
         -- Works with the New Ekron mod too.
         EkronMap = true,
         -- Rare, mainly found on military loot
         MilitaryMaps = true,
         -- Between Grapeseed and Ravencreek.
-        FortRedstoneMap = true,
+        FortRedstoneMap = false,
         -- North West of Muldraugh. Rare. Disabled if military maps are disabled
-        MilitaryAirportMap = true,
+        MilitaryAirportMap = false,
         -- South of Riverside's Country Club.
-        FortBenningMap = true,
+        FortBenningMap = false,
         -- East of Riverside's Country Club, North of Ekron.
-        FortRockRidgeMap = true,
+        FortRockRidgeMap = false,
         -- East of Muldraugh
-        MuldraughMilitaryBaseMap = true,
+        MuldraughMilitaryBaseMap = false,
         -- Between Rosewood and Muldraugh
-        FortWaterfrontMap = true,
+        FortWaterfrontMap = false,
         -- South of Bedford Falls, East of Eerie Country. Quitman Map, Fort Knox Map. Rare.
-        FortKnoxMaps = true,
+        FortKnoxMaps = false,
         -- Can also be found in golfer bags
         RiversideCountryClubMap = true,
         -- The one with the camping & military gear store
@@ -4848,19 +4848,19 @@ SandboxVars = {
         -- North of Rosewood
         BlackwoodMap = true,
         -- Between Rosewood and Muldraugh
-        PitstopMap = true,
+        PitstopMap = false,
         -- North of West Point, on the other side of the river
-        OverTheRiverMap = true,
+        OverTheRiverMap = false,
         -- West of Muldraugh
         LakeIvyMap = true,
         -- From the mod Save Our Station!
         WeatherStationLocations = true,
         -- West of Rosewood and Grapeseed. Very rare map item.
-        CompleteRavenCreekMap = true,
+        CompleteRavenCreekMap = false,
         -- 3 district maps
-        RavenCreekDistrictMaps = true,
+        RavenCreekDistrictMaps = false,
         -- North of Rosewood
-        RosewoodExpansionMap = true,
+        RosewoodExpansionMap = false,
         -- North West of March Ridge
         MarchRidgeExpansionMap = true,
         -- North West of March Ridge
@@ -4870,147 +4870,147 @@ SandboxVars = {
         -- Between Ekron and Pony Roam-O
         LittleTownshipMap = true,
         -- Between Dixie and crossroads
-        LindenMap = true,
+        LindenMap = false,
         -- South West of Riverside
-        RefordvilleMap = true,
+        RefordvilleMap = false,
         --        
-        ChernavilleMap = true,
+        ChernavilleMap = false,
         -- North of Muldraugh, West of Dixie
-        ChinatownMap = true,
+        ChinatownMap = false,
         -- West of Rosewood, after Grapeseed
-        BlueberryMap = true,
+        BlueberryMap = false,
         -- South of West Point
         WestPointSouthTrailerParkMap = true,
         -- An island in the Ohio river, in the North West corner of the map
-        KingsmouthMap = true,
+        KingsmouthMap = false,
         -- East of Dixie
         SurvivorWarehouseLocation = true,
         -- North West of West Point, East of Riverside's Country Club on the other side of the river
-        CoryerdonMap = true,
+        CoryerdonMap = false,
         -- South of Ed's Auto Salvage
-        OldParkTownMap = true,
-        WestPointExpansionMap = true,
-        GlenportMap = true,
+        OldParkTownMap = false,
+        WestPointExpansionMap = false,
+        GlenportMap = false,
         -- Very rare
-        CompleteEerieCountryMap = true,
+        CompleteEerieCountryMap = false,
         -- Centralia, Hidden swamps, Rural Zone, Eren City, Irvington, train station...
-        EerieCountryDifferentMaps = true,
+        EerieCountryDifferentMaps = false,
         -- Far South West. Silverton Map, Rosebery Map, New Denver Map.
-        SlocanLakeMaps = true,
+        SlocanLakeMaps = false,
         -- South of West Point
-        BillionaireSafehouseLocation = true,
+        BillionaireSafehouseLocation = false,
         -- West of Riverside's Country Club
-        WildberriesMap = true,
+        WildberriesMap = false,
         -- East of Muldraugh's Railyard
-        TugalandMap = true,
+        TugalandMap = false,
         -- East of Rosewood, West of Grapeseed
-        RemusMap = true,
+        RemusMap = false,
         -- West of Louisville
         TrimbleCountyMaps = true,
         -- East of West Point
-        EZPZCommunityCenterMap = true,
+        EZPZCommunityCenterMap = false,
         -- South of March Ridge
-        OldPineVillageMap = true,
+        OldPineVillageMap = false,
         -- An island in the river, North East of Louisville,
-        ChristmasVillageMap = true,
+        ChristmasVillageMap = false,
         -- North East of Muldraugh, West of Ekron
-        HyruleCountyMap = true,
+        HyruleCountyMap = false,
         -- North of Ekron
-        RiverwoodMap = true,
+        RiverwoodMap = false,
         -- North of East of Valley Station's Mall
-        HongKongYauMaTeiMap = true,
+        HongKongYauMaTeiMap = false,
         -- South West of Ekron
-        WesternMilitaryComplexMap = true,
+        WesternMilitaryComplexMap = false,
         -- South East of Muldraugh
-        MansionAdress = true,
+        MansionAdress = false,
         -- South East of Muldraugh
-        ConstructionFactoryMap = true,
-        WestwoodMap = true,
-        AnthemMap = true,
-        LaconiaMap = true,
-        AshenwoodMap = true,
-        ElysiumIslandMap = true,
+        ConstructionFactoryMap = false,
+        WestwoodMap = false,
+        AnthemMap = false,
+        LaconiaMap = false,
+        AshenwoodMap = false,
+        ElysiumIslandMap = false,
         HopewellMap = true,
-        WalnutRidgeMap = true,
-        HeavensHillMansionAdress = true,
-        ChestownMap = true,
-        NashvilleMap = true,
-        OverlookHotelMap = true,
-        PerfectShelterMap = true,
-        OConnorFarmAddress = true,
-        LincolnRegionalAirportMap = true,
-        MuldraughWesternShippingCompanyMap = true,
-        RosewoodMilitaryHospitalMap = true,
+        WalnutRidgeMap = false,
+        HeavensHillMansionAdress = false,
+        ChestownMap = false,
+        NashvilleMap = false,
+        OverlookHotelMap = false,
+        PerfectShelterMap = false,
+        OConnorFarmAddress = false,
+        LincolnRegionalAirportMap = false,
+        MuldraughWesternShippingCompanyMap = false,
+        RosewoodMilitaryHospitalMap = false,
         TheMuseumMap = true,
-        TheEyeLakeMap = true,
-        AddamsFamilyMansionMap = true,
-        JeffersonvilleMap = true,
-        CherokeeLakeMap = true,
-        RiversideMansionMap = true,
-        FinneganMentalAsylumMap = true,
-        PapavilleMap = true,
-        SouthTownMap = true,
-        ChinatownMapExpansionMap = true,
-        LouisvilleBunkerLocationMap = true,
-        OrchidwoodMap = true,
-        WinchesterMap = true,
-        BreakpointMap = true,
-        WilboreMap = true,
-        PetrovilleMap = true,
-        CedarHillMap = true,
-        CathayaValleyMap = true,
-        SpringwoodMap = true,
-        NaturesVengeanceTownshipMap = true,
+        TheEyeLakeMap = false,
+        AddamsFamilyMansionMap = false,
+        JeffersonvilleMap = false,
+        CherokeeLakeMap = false,
+        RiversideMansionMap = false,
+        FinneganMentalAsylumMap = false,
+        PapavilleMap = false,
+        SouthTownMap = false,
+        ChinatownMapExpansionMap = false,
+        LouisvilleBunkerLocationMap = false,
+        OrchidwoodMap = false,
+        WinchesterMap = false,
+        BreakpointMap = false,
+        WilboreMap = false,
+        PetrovilleMap = false,
+        CedarHillMap = false,
+        CathayaValleyMap = false,
+        SpringwoodMap = false,
+        NaturesVengeanceTownshipMap = false,
         BigBearLakeMaps = true,
-        SimsZomboidMap = true,
-        DirkerdamMaps = true,
+        SimsZomboidMap = false,
+        DirkerdamMaps = false,
         LakeCumberlandMaps = true,
-        PharmaceuticalFactoryMap = true,
+        PharmaceuticalFactoryMap = false,
         NettleTownshipMap = true,
-        StMooseHospitalMap = true,
-        ShortrestCountyMap = true,
-        LeavenburgMap = true,
-        BunkerDayOfTheDeadMap = true,
-        SuperGigaMartMap = true,
-        ZtardewValleyMap = true,
-        TheWalkingDeadPrisonMap = true,
-        TheWalkingDeadTerminusMap = true,
-        HuntersBaseMap = true,
-        PortCityMap = true,
-        SpringValleyMap = true,
-        OakshireMap = true,
-        RangersHomesteadMap = true,
+        StMooseHospitalMap = false,
+        ShortrestCountyMap = false,
+        LeavenburgMap = false,
+        BunkerDayOfTheDeadMap = false,
+        SuperGigaMartMap = false,
+        ZtardewValleyMap = false,
+        TheWalkingDeadPrisonMap = false,
+        TheWalkingDeadTerminusMap = false,
+        HuntersBaseMap = false,
+        PortCityMap = false,
+        SpringValleyMap = false,
+        OakshireMap = false,
+        RangersHomesteadMap = false,
         FrigateMap = true,
-        BunkerLastMinutePrepperMap = true,
-        LouisvilleQuarantineZoneMap = true,
+        BunkerLastMinutePrepperMap = false,
+        LouisvilleQuarantineZoneMap = false,
         LVInternationalAirport = true,
-        MuldraughCheckpointMap = true,
-        SpeckMap = true,
-        HomesteadWindyMap = true,
+        MuldraughCheckpointMap = false,
+        SpeckMap = false,
+        HomesteadWindyMap = false,
         MilitaryFuelDepotMap = true,
-        SpencerMansionMap = true,
-        UncleRedsBunkerMap = true,
+        SpencerMansionMap = false,
+        UncleRedsBunkerMap = false,
         HopefallsMap = true,
-        VineGroveMap = true,
-        LouisianaMap = true,
-        CaliforniaMaps = true,
-        WeyhausenMap = true,
-        DaisyCountyMap = true,
-        McCoysBunkerMap = true,
-        OtterCreekMap = true,
-        WellsburgLakeMap = true,
+        VineGroveMap = false,
+        LouisianaMap = false,
+        CaliforniaMaps = false,
+        WeyhausenMap = false,
+        DaisyCountyMap = false,
+        McCoysBunkerMap = false,
+        OtterCreekMap = false,
+        WellsburgLakeMap = false,
         FortBoonesboroughMap = true,
         CrowlakeMap = true,
         GustonMap = true,
-        JaspervilleMap = true,
+        JaspervilleMap = false,
         YakamaStateParkMap = true,
-        ValuTechAmusementParkMap = true,
+        ValuTechAmusementParkMap = false,
         CanvasbackStudiosMap = true,
-        PlefordSpringsMap = true,
-        FoxWoodMap = true,
-        BrazilMap = true,
-        FortLoidMap = true,
-        HavenRidgeMap = true,
+        PlefordSpringsMap = false,
+        FoxWoodMap = false,
+        BrazilMap = false,
+        FortLoidMap = false,
+        HavenRidgeMap = false,
     },
     CF8KSweeper = {
         AllowTiles = true,
@@ -5178,11 +5178,11 @@ SandboxVars = {
     SkillRecoveryJournal = {
         -- The amount of experience recovered from reading bound journals.
         -- This value is defaulted to if other options are set to -1. Minimum=1 Maximum=100 Default=100
-        RecoveryPercentage = 100,
+        RecoveryPercentage = 50,
         -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        TranscribeSpeed = 1.0,
+        TranscribeSpeed = 1.2,
         -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        ReadTimeSpeed = 1.0,
+        ReadTimeSpeed = 1.2,
         RecoverProfessionAndTraitsBonuses = false,
         -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
         TranscribeTVXP = false,
