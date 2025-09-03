@@ -50,7 +50,7 @@ SandboxVars = {
     -- 9 = September
     -- 10 = October
     -- 11 = November
-    StartMonth = 9,
+    StartMonth = 7,
     StartDay = 9,
     -- Default=9 AM
     -- 1 = 7 AM
@@ -61,7 +61,7 @@ SandboxVars = {
     -- 6 = 9 PM
     -- 7 = 12 AM
     -- 8 = 2 AM
-    StartTime = 1,
+    StartTime = 2,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -70,7 +70,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    WaterShut = 3,
+    WaterShut = 2,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -79,7 +79,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    ElecShut = 3,
+    ElecShut = 2,
     -- Minimum=-1 Maximum=2147483647 Default=14
     WaterShutModifier = 14,
     -- Minimum=-1 Maximum=2147483647 Default=14
@@ -91,7 +91,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    FoodLoot = 3,
+    FoodLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -99,7 +99,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    CannedFoodLoot = 3,
+    CannedFoodLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -107,7 +107,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    LiteratureLoot = 2,
+    LiteratureLoot = 4,
     -- Seeds, Nails, Saws, Fishing Rods, various tools, etc... Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -115,7 +115,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    SurvivalGearsLoot = 3,
+    SurvivalGearsLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -123,7 +123,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    MedicalLoot = 2,
+    MedicalLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -131,7 +131,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    WeaponLoot = 3,
+    WeaponLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -139,7 +139,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    RangedWeaponLoot = 2,
+    RangedWeaponLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -147,7 +147,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    AmmoLoot = 3,
+    AmmoLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -155,7 +155,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    MechanicsLoot = 3,
+    MechanicsLoot = 4,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -163,7 +163,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    OtherLoot = 3,
+    OtherLoot = 4,
     -- Controls the global temperature. Default=Normal
     -- 1 = Very Cold
     -- 2 = Cold
@@ -181,7 +181,7 @@ SandboxVars = {
     -- 2 = Fast (50 Days)
     -- 3 = Normal (100 Days)
     -- 4 = Slow (200 Days)
-    ErosionSpeed = 1,
+    ErosionSpeed = 3,
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
@@ -225,7 +225,7 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    Alarm = 1,
+    Alarm = 4,
     -- How frequently homes and buildings will be discovered locked Default=Very Often
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -248,7 +248,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    FridgeFactor = 4,
+    FridgeFactor = 3,
     -- Items will respawn in already-looted containers in towns and trailer parks. Items will not respawn in player-made containers. Default=None
     -- 1 = None
     -- 2 = Every Day
@@ -258,7 +258,7 @@ SandboxVars = {
     -- When > 0, loot will not respawn in zones that have been visited within this number of in-game hours. Minimum=0 Maximum=2147483647 Default=0
     SeenHoursPreventLootRespawn = 0,
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
-    WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots,Base.RippedSheets,Base.RippedSheetsDirty,Base.Battery,Base.WaterBottleEmpty,Base.PopBottleEmpty,Base.UnusableWood,Base.UnusableMetal,Base.LightBulb,Base.Twigs,Base.BandageDirty,Base.LeatherStripsDirty,Base.DenimStripsDirty,Base.BeerCanEmpty,Base.PopEmpty,Base.Pop2Empty,Base.Pop3Empty,Base.TinCanEmpty,",
+    WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.  Zero means items are not removed. Minimum=0.00 Maximum=2147483647.00 Default=24.00
     HoursForWorldItemRemoval = 24.0,
     -- If true, any items *not* in WorldItemRemovalList will be removed.
@@ -276,7 +276,7 @@ SandboxVars = {
     -- 10 = 9
     -- 11 = 10
     -- 12 = 11
-    TimeSinceApo = 13,
+    TimeSinceApo = 1,
     -- Will influence how much water the plant will lose per day and their ability to avoid disease. Default=Normal
     -- 1 = Very High
     -- 2 = High
@@ -299,7 +299,7 @@ SandboxVars = {
     -- 1 = Never
     -- 2 = Once
     -- 3 = Sometimes
-    Helicopter = 1,
+    Helicopter = 2,
     -- How often zombie attracting metagame events like distant gunshots will occur. Default=Sometimes
     -- 1 = Never
     -- 2 = Sometimes
@@ -313,16 +313,16 @@ SandboxVars = {
     -- 2 = Rare
     -- 3 = Sometimes
     -- 4 = Often
-    GeneratorSpawning = 2,
+    GeneratorSpawning = 3,
     -- How much fuel is consumed per in-game hour. Minimum=0.00 Maximum=100.00 Default=1.00
-    GeneratorFuelConsumption = 0.8,
+    GeneratorFuelConsumption = 1.0,
     -- Increase/decrease probability of discovering randomized safe houses on the map: either burnt out, containing loot stashes, dead survivor bodies etc. Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    SurvivorHouseChance = 2,
+    SurvivorHouseChance = 3,
     -- Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -343,7 +343,7 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    AnnotatedMapChance = 2,
+    AnnotatedMapChance = 4,
     -- Adds free points during character creation. Minimum=-100 Maximum=100 Default=0
     CharacterFreePoints = 0,
     -- Gives player-built constructions extra hit points so they are more resistant to zombie damage. Default=Normal
@@ -381,7 +381,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    BloodLevel = 2,
+    BloodLevel = 3,
     -- Governs how quickly clothing degrades, becomes dirty, and bloodied. Default=Normal
     -- 1 = Disabled
     -- 2 = Slow
@@ -403,7 +403,7 @@ SandboxVars = {
     -- If disabled snow will not accumulate on ground but will still be visible on vegetation and rooftops.
     EnableSnowOnGround = true,
     -- When enabled certain melee weapons will be able to strike multiple zombies in one hit.
-    MultiHitZombies = true,
+    MultiHitZombies = false,
     -- Chance of being bitten when a zombie attacks from behind. Default=High
     -- 1 = Low
     -- 2 = Medium
@@ -429,7 +429,7 @@ SandboxVars = {
     -- 3 = Normal
     -- 4 = High
     -- 5 = Very High
-    InitialGas = 1,
+    InitialGas = 2,
     -- Governs how full gas tanks in fuel station will be, initially. Default=Normal
     -- 1 = Empty
     -- 2 = Super Low
@@ -439,7 +439,7 @@ SandboxVars = {
     -- 6 = High
     -- 7 = Very High
     -- 8 = Full
-    FuelStationGas = 4,
+    FuelStationGas = 5,
     -- How gas-hungry vehicles on the map are. Minimum=0.00 Maximum=100.00 Default=1.00
     CarGasConsumption = 1.0,
     -- Default=Rare
@@ -448,13 +448,13 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    LockedCar = 4,
+    LockedCar = 3,
     -- General condition of vehicles discovered on the map Default=Low
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    CarGeneralCondition = 1,
+    CarGeneralCondition = 2,
     -- Governs the amount of damage dealt to vehicles that crash. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -466,7 +466,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    DamageToPlayerFromHitByACar = 3,
+    DamageToPlayerFromHitByACar = 1,
     -- Enable or disable traffic jams that spawn on the main roads of the map.
     TrafficJam = true,
     -- How frequently cars will be discovered with an alarm. Default=Extremely Rare
@@ -496,7 +496,7 @@ SandboxVars = {
     -- 2 = In bodies only
     MaggotSpawn = 1,
     -- The higher the value, the longer lightbulbs last before breaking. If 0, lightbulbs will never break. Does not affect vehicle headlights. Minimum=0.00 Maximum=1000.00 Default=1.00
-    LightBulbLifespan = 1.2,
+    LightBulbLifespan = 1.0,
     -- Vanilla Chance is 6% Minimum=0 Maximum=100 Default=6
     ChanceOfAttachedWeapon = 6,
     -- Katanas and machetes Minimum=0 Maximum=100 Default=1
@@ -510,7 +510,7 @@ SandboxVars = {
     -- Crowbar, metal pipe, metal bar, nightstick Minimum=0 Maximum=100 Default=3
     ChanceOfBlunts = 3,
     -- Only on outfits that can have guns. (police, bandits...) Minimum=0 Maximum=100 Default=50
-    ChanceOfGunsOnOutfits = 10,
+    ChanceOfGunsOnOutfits = 50,
     -- Example of standard days requirements:
     -- Katana - 60 days
     -- Spears - 30 days
@@ -526,14 +526,14 @@ SandboxVars = {
     -- Note: zombie loot is not affected by the other multipliers below. Minimum=0.00 Maximum=10.00 Default=1.00
     ZombieLootMultiplier = 1.0,
     -- A semicolon separated list of items and chances to add to the zombie loot.
-    ItemsAddedToZombieLoot = "Base.Money:0.05;Base.SheetPaper2:0.05;CopperCoin:0.25;SilverCoin:0.05;GoldCoin:0.005",
+    ItemsAddedToZombieLoot = "Base.Money:0.05;Base.SheetPaper2:0.05",
     ItemsAddedToMilitaryZedsLoot = "",
     ItemsAddedToPoliceZedsLoot = "",
     ItemsAddedToFiremenZedsLoot = "",
     -- Tourists, Golfers, Weddings, Classy...
     ItemsAddedToRichZedsLoot = "",
     -- Park rangers, survivalists, hunters, farmers, fishermen, campers...
-    ItemsAddedToRuralZedsLoot = "\"Base.SewingKit:0.02\"",
+    ItemsAddedToRuralZedsLoot = "",
     -- Raiders, Bandits, Militia, Thugs, Escaped inmates, survivors...
     ItemsAddedToRogueZedsLoot = "",
     -- Students, Teachers...
@@ -541,14 +541,14 @@ SandboxVars = {
     -- Fitness Instructors, Baseball Fans, Baseball players, Boxing players, Jockeys...
     ItemsAddedToSportsZedsLoot = "",
     -- Doctors, Nurses, Pharmacists, Ambulance Drivers...
-    ItemsAddedToMedicalZedsLoot = "\"Base.SewingKit:0.03;Base.SutureNeedle:0.10\"",
+    ItemsAddedToMedicalZedsLoot = "",
     -- Mechanics, Metalworkers, McCoys, Foremen, Construction workers, Woodcutters...
     ItemsAddedToIndustryZedsLoot = "",
     -- Fossoil, Gas2Go, Thundergas...
     ItemsAddedToGasStationZedsLoot = "",
     -- Waiters, Cooks, Chefs...
     ItemsAddedToRestaurantZedsLoot = "",
-    ItemsAddedToOfficeWorkersZedsLoot = "\"Base.SewingKit:0.01\"",
+    ItemsAddedToOfficeWorkersZedsLoot = "",
     -- A semicolon separated list of zombie outfits that will drop the Custom Zed Outfits Loot defined below.
     -- Example: 'Priest;Biker;Redneck;Swimmer;Bedroom;Bathrobe;Hobbo;Party;Party2'
     -- Example 2: 'Security;Postal;Cyclist;StripperNaked;Bowling;MallSecurity;Inmate'
@@ -557,7 +557,7 @@ SandboxVars = {
     -- Defined like the other loots.
     ItemsAddedToCustomOutfitListLoot = "",
     -- Minimum=1 Maximum=100 Default=20
-    CigarettesCount = 1,
+    CigarettesCount = 20,
     -- If the number of rolls on a loot table is higher than this value, it will be set to this value.
     -- Most loot tables have a rolls value of 4.
     --  1 = ~ 75% less items per container,
@@ -569,7 +569,7 @@ SandboxVars = {
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
     -- 4 = 4 (~ 99% items)
-    MaxRolls = 4,
+    MaxRolls = 5,
     -- Same as the option above, but only affects food containers. Default=4 (100% food)
     -- 1 = 1 (~25% food)
     -- 2 = 2 (~50% food)
@@ -589,50 +589,50 @@ SandboxVars = {
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    LitteratureTablesMaxRolls = 3,
+    LitteratureTablesMaxRolls = 4,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MediaTablesMaxRolls = 3,
+    MediaTablesMaxRolls = 4,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MechanicsTablesMaxRolls = 3,
+    MechanicsTablesMaxRolls = 4,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    OtherTablesMaxRolls = 3,
+    OtherTablesMaxRolls = 4,
     -- Fresh and non-perishable food. Minimum=0.00 Maximum=10.00 Default=1.00
-    FoodLootMultiplier = 0.7,
+    FoodLootMultiplier = 1.0,
     -- Nonranged weapons of all kinds, except pens, forks and spoons.
     -- Includes Sledgehammer. Also includes instruments and some cooking tools. Minimum=0.00 Maximum=10.00 Default=1.00
     WeaponLootMultiplier = 1.0,
     -- Ranged weapons. Includes weapon parts for guns. Minimum=0.00 Maximum=10.00 Default=1.00
-    GunLootMultiplier = 0.8,
+    GunLootMultiplier = 1.0,
     -- Ammunition and magazines Minimum=0.00 Maximum=10.00 Default=1.00
     AmmoLootMultiplier = 1.0,
     -- Saws, blowtorches, seeds, farming gear, fishing gear, camping gear, needles,
     -- crafting materials, repair materials, construction materials, gas cans, jars, maps. Minimum=0.00 Maximum=10.00 Default=1.00
     SurvivalGearLootMultiplier = 1.0,
     -- Tools to work on vehicles, and vehicle parts. Minimum=0.00 Maximum=10.00 Default=1.00
-    MechanicsLootMultiplier = 0.8,
+    MechanicsLootMultiplier = 1.0,
     -- Medicine, bandages, splint, needles, first aid kits... Minimum=0.00 Maximum=10.00 Default=1.00
     MedicalLootMultiplier = 1.0,
     -- Books and magazines Minimum=0.00 Maximum=10.00 Default=1.00
-    LiteratureLootMultiplier = 0.2,
+    LiteratureLootMultiplier = 1.0,
     -- VHS tapes, CDs and videogames Minimum=0.00 Maximum=10.00 Default=1.00
-    MediaLootMultiplier = 0.7,
+    MediaLootMultiplier = 1.0,
     -- Cleaning supplies, cooking tools, writing supplies, cutlery, extinguishers, can openers, razors, alarm clocks Minimum=0.00 Maximum=10.00 Default=1.00
     HouseholdSuppliesLootMultiplier = 1.0,
     -- All kinds of clothes, including gas masks and jewelry. Minimum=0.00 Maximum=10.00 Default=1.00
-    ClothingLootMultiplier = 0.6,
+    ClothingLootMultiplier = 1.0,
     -- Including Garbage Bags Minimum=0.00 Maximum=10.00 Default=1.00
-    ContainerLootMultiplier = 0.6,
+    ContainerLootMultiplier = 1.0,
     -- Includes lighters, matches, painting supplies, charcoal, propane tanks, antique ovens, junk items, and many more... Minimum=0.00 Maximum=10.00 Default=1.00
-    OtherLootMultiplier = 0.8,
+    OtherLootMultiplier = 1.0,
     -- A semicolon-separated list of items IDs that will NOT be affected by the multipliers above.
     -- Example: Base.Sledgehammer;Base.Saw
     -- Still affected by the multipliers list option below.
@@ -661,7 +661,7 @@ SandboxVars = {
     -- Ranges 0-100 in game. Can ONLY be subtracted ~ sorry no painful music. Minimum=0.00 Maximum=100.00 Default=5.00
     TrueMusicMoodImprovement_painMod = 5.0,
     Map = {
-        AllowMiniMap = true,
+        AllowMiniMap = false,
         AllowWorldMap = true,
         MapAllKnown = false,
     },
@@ -755,9 +755,9 @@ SandboxVars = {
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
         PopulationStartMultiplier = 1.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
-        PopulationPeakMultiplier = 1.6,
+        PopulationPeakMultiplier = 1.5,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
-        PopulationPeakDay = 31,
+        PopulationPeakDay = 28,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
         RespawnHours = 72.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
@@ -769,7 +769,7 @@ SandboxVars = {
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. Zero means zombies don't form groups. Groups don't form inside buildings or forest zones. Minimum=0 Maximum=1000 Default=20
-        RallyGroupSize = 10,
+        RallyGroupSize = 20,
         -- The distance real zombies travel to form groups when idle. Minimum=5 Maximum=50 Default=20
         RallyTravelDistance = 20,
         -- The distance between zombie groups. Minimum=5 Maximum=25 Default=15
@@ -794,7 +794,7 @@ SandboxVars = {
         -- 1 = 12x  |  Very Short (Recommended for Large Servers)
         -- 2 = 18x  |  Short
         -- 3 = 24x  |  Normal (Recommended for Singleplayer)
-        TimeDurationMultiplier = 2,
+        TimeDurationMultiplier = 3,
         -- Enabling this option will omit Fault Diagnostic Code from the fault diagnostic message. You will need to travel to the affected location first to find the cause of the fault and how to fix it.
         OmitDiagnosticCode = false,
         -- Enabling this option will omit the time until emergency shutdown/standby from the fault diagnostic message. You won't know when the system shuts down and enters emergency standby until it is too late.
@@ -812,9 +812,9 @@ SandboxVars = {
     },
     RestoreUtilities = {
         -- The minimum level of the electrical skill you need to make repairs. <LINE> Regardless of this setting you will still need generator knowledge or a consumable Insulated Wires fuse to make repairs. Minimum=0 Maximum=11 Default=2
-        MinSkillLvl = 3,
+        MinSkillLvl = 2,
         -- Multiplies the length of all successful repairs by this number, this modifier is the LAST thing to apply to the number of days a repair attempt will provide, meaning it also influences the effectiveness of any fuses that do the same. <LINE> <LINE> Set to a number below 1 to make your repairs last less time, and set to a higher number to make your repairs more effective. (I.E. setting this option to 2 will make all of your repairs 2x effective) Minimum=0.10 Maximum=10.00 Default=1.00
-        ScalingRepairModifier = 0.8,
+        ScalingRepairModifier = 1.0,
         -- How much electronic scrap you need per repair, this cost will be reduced by 25%/50% when using a T1/T2 Spare Parts fuse, respectively. Minimum=10 Maximum=1000 Default=40
         ScrapNeeded = 40,
         -- The chance of a failed repair. <LINE> This chance is reduced by 8% per level of electrical skill higher than the minimum. The chance is also reduced by half when using a Tier 1 Marked Components fuse, and fail chance is always set to 0% when using a Tier 2 Marked Components fuse. Minimum=0 Maximum=150 Default=80
@@ -831,7 +831,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        ScrapSpawnRateChest = 2,
+        ScrapSpawnRateChest = 4,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -840,7 +840,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        T1SpawnRateChest = 3,
+        T1SpawnRateChest = 4,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -849,7 +849,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        T2SpawnRateChest = 2,
+        T2SpawnRateChest = 4,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -858,7 +858,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        ScrapSpawnRateZombie = 2,
+        ScrapSpawnRateZombie = 4,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -867,7 +867,7 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        T1SpawnRateZombie = 3,
+        T1SpawnRateZombie = 4,
         -- Default=Normal (1x)
         -- 1 = None (0x)
         -- 2 = Very Rare (0.25x)
@@ -876,42 +876,42 @@ SandboxVars = {
         -- 5 = High (1.5x)
         -- 6 = Very High (2x)
         -- 7 = ULTRA RARE (0.05x)
-        T2SpawnRateZombie = 2,
+        T2SpawnRateZombie = 4,
     },
     WeaponModifiers = {
         -- Minimum=0 Maximum=1000 Default=1
         StartDay = 1,
         -- Minimum=1 Maximum=1000 Default=60
-        PeakDay = 1,
+        PeakDay = 60,
         -- Minimum=0.00 Maximum=100.00 Default=30.00
         OriginalModifierChance = 30.0,
         -- Minimum=0.00 Maximum=100.00 Default=70.00
-        MaxModifierChance = 30.0,
+        MaxModifierChance = 70.0,
         -- lower = higher chance of better modifiers and lower chance of bad modifiers
         -- higher = lower chance of better modifiers and higher chance of bad modifiers
         -- 
         -- WARNING: 0 = ALL modifiers are LEGENDARY rarity
         --  Minimum=0.00 Maximum=10.00 Default=1.10
-        StartRarityTweaker = 1.0,
+        StartRarityTweaker = 1.1,
         -- lower = higher chance of better modifiers and lower chance of bad modifiers
         -- higher = lower chance of better modifiers and higher chance of bad modifiers
         -- 
         -- WARNING: 0 = ALL modifiers are LEGENDARY rarity
         --  Minimum=0.00 Maximum=10.00 Default=0.90
-        PeakRarityTweaker = 1.0,
+        PeakRarityTweaker = 0.9,
         -- For weapons stuck / attached to zombies.
         -- 
         -- Higher = Bigger chance of applying a random modifier to weapons attached to zombies.
         -- Lower = lower chance of applying a random modifier to weapons ATTACHED to zombies.
         --  Minimum=0.00 Maximum=3.00 Default=0.50
-        AttachedWeaponsChanceMultiplier = 0.0,
+        AttachedWeaponsChanceMultiplier = 0.5,
         -- For ALL ranged weapons.
         -- 
         -- Does nothing if you're using the Realistic list.
         -- 
         -- Higher = Bigger chance of applying a random modifier to all RANGED weapons.
         -- Lower = lower chance of applying a random modifier to all RANGED weapons. Minimum=0.00 Maximum=3.00 Default=0.50
-        RangedWeaponsChanceMultiplier = 0.0,
+        RangedWeaponsChanceMultiplier = 0.5,
         -- For CRAFTED Ranged Weapons only.
         -- 
         -- Does nothing if you're using the Realistic list.
@@ -999,7 +999,7 @@ SandboxVars = {
         -- The starting toughness of the zombies. Default=Normal
         -- 1 = Tough
         -- 2 = Normal
-        Toughness = 1,
+        Toughness = 2,
         -- Definitive Zombies will affect the zombie's toughness stat. Disable to improve compatibility between similar mods.
         CognitionEnable = true,
         -- The starting toughness of the zombies. Default=Basic Navigation
@@ -1545,7 +1545,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Night_Effect2_Hearing = 5,
         -- Temperature will affect the zombie's stats.
-        TemperatureEnable = false,
+        TemperatureEnable = true,
         -- The required temperature needed to modify the zombie stats below. This should be the lowest value among the intervals. Do not modify unless you know what to do Minimum=-200.00 Maximum=200.00 Default=-200.00
         Temperature_Interval0 = -200.0,
         -- The zombie's speed will be modified by this amount if the climate interval above is achieved. Default=Decrease by 2 Stages
@@ -1633,7 +1633,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Temperature_Effect0_Hearing = 6,
         -- The required temperature needed to modify the zombie stats below. Value should be in-between Interval0 and Interval2 Minimum=-200.00 Maximum=200.00 Default=0.00
-        Temperature_Interval1 = -10.0,
+        Temperature_Interval1 = 0.0,
         -- The zombie's speed will be modified by this amount if the climate interval above is achieved. Default=Decrease by 1 Stage
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -1645,7 +1645,7 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Temperature_Effect1_Speed = 6,
+        Temperature_Effect1_Speed = 7,
         -- The zombie's strength will be modified by this amount if the climate interval above is achieved. Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -1719,7 +1719,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Temperature_Effect1_Hearing = 6,
         -- The required temperature needed to modify the zombie stats below. This should be the highest value among the intervals Minimum=-200.00 Maximum=200.00 Default=10.00
-        Temperature_Interval2 = 0.0,
+        Temperature_Interval2 = 10.0,
         -- The zombie's speed will be modified by this amount if the climate interval above is achieved. Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -3105,7 +3105,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         WindIntensity_Effect2_Hearing = 9,
         -- Enable to allow the phases of the moon to affect zombies stats
-        MoonPhaseEnable = false,
+        MoonPhaseEnable = true,
         -- How dark the world needs to be before the moon is able to affect zombies stats. Setting it to 0 will cause the stats to be active throughout the day Minimum=0.00 Maximum=1.00 Default=0.75
         MoonPhaseMoonThreshold = 0.75,
         -- Zombie stats under a new moon Minimum=0.00 Maximum=0.00 Default=0.00
@@ -3971,7 +3971,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Time_Effect1_Hearing = 6,
         -- Zombies react to the number of days the world has been active for.
-        EntropyEnable = false,
+        EntropyEnable = true,
         -- The number of in-game days which have elasped needed to modify the zombie stats below. This should be the lowest value among the intervals Minimum=1 Maximum=9999 Default=28
         Entropy_Interval0 = 28,
         -- The zombie's speed will be modified by this amount if the climate interval above is achieved. Default=Nothing
@@ -4231,9 +4231,9 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Entropy_Effect2_Hearing = 7,
         -- Enable randomisation for the Speed stat. Chances will be normalised at the end
-        Speed_Seed_Enable = true,
+        Speed_Seed_Enable = false,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Speed_Seed1 = 7.0,
+        Speed_Seed1 = 20.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4245,9 +4245,9 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Speed_Seed1_Effect = 5,
+        Speed_Seed1_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Speed_Seed2 = 30.0,
+        Speed_Seed2 = 20.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4259,9 +4259,9 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Speed_Seed2_Effect = 7,
+        Speed_Seed2_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Speed_Seed3 = 10.0,
+        Speed_Seed3 = 20.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4273,7 +4273,7 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Speed_Seed3_Effect = 8,
+        Speed_Seed3_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
         Speed_Seed4 = 20.0,
         -- Default=Nothing
@@ -4447,7 +4447,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Toughness_Seed5_Effect = 6,
         -- Enable randomisation for the Cognition stat. Chances will be normalised at the end
-        Cognition_Seed_Enable = true,
+        Cognition_Seed_Enable = false,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
         Cognition_Seed1 = 20.0,
         -- Default=Nothing
@@ -4461,7 +4461,7 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Cognition_Seed1_Effect = 4,
+        Cognition_Seed1_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
         Cognition_Seed2 = 20.0,
         -- Default=Nothing
@@ -4475,7 +4475,7 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Cognition_Seed2_Effect = 7,
+        Cognition_Seed2_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
         Cognition_Seed3 = 20.0,
         -- Default=Nothing
@@ -4738,22 +4738,22 @@ SandboxVars = {
     DAMN = {
         AllowVanillaVehicleDismantling = true,
         AllowVanillaWorldItemDismantling = true,
-        AllowPowerChadSpawns = false,
+        AllowPowerChadSpawns = true,
         AllowWreckyMcChevySpawns = true,
-        AllowManlyMANSpawns = false,
-        AllowGreatScottSpawns = false,
-        AlLAV300Spawns = false,
-        AllowfUNSpawns = false,
-        AllowMrBusSpawns = false,
-        AllowChonkerSpawns = false,
-        AllowCashcowSpawns = false,
-        AllowMcBoxySpawns = false,
-        AllowBushmasterSpawns = false,
+        AllowManlyMANSpawns = true,
+        AllowGreatScottSpawns = true,
+        AlLAV300Spawns = true,
+        AllowfUNSpawns = true,
+        AllowMrBusSpawns = true,
+        AllowChonkerSpawns = true,
+        AllowCashcowSpawns = true,
+        AllowMcBoxySpawns = true,
+        AllowBushmasterSpawns = true,
     },
     DaysGone = {
         -- Displays "Days Later" instead of "Days Gone".
         -- A reference to the 2002 movie. 
-        DaysLater = true,
+        DaysLater = false,
         -- Includes the Knox Evacuation, 3 days before the game starts, in the day counter. 
         IncludePreOutbreak = false,
         -- Write some custom text after the day count instead of 'Days Gone'.
@@ -4797,7 +4797,7 @@ SandboxVars = {
         -- All map items added will have their loot chances multiplied by this value.
         -- Use this to tweak loot chances according to the number of maps you use.
         -- By default(=1) it is balanced for when most maps are enabled. Minimum=0.00 Maximum=4.00 Default=1.00
-        MapLootMultiplier = 0.03,
+        MapLootMultiplier = 1.0,
         -- Extremely rare - disabled by default
         KentuckyCompleteMap = false,
         -- Very rare
@@ -4811,25 +4811,25 @@ SandboxVars = {
         ValleyStationMallAreaMap = true,
         -- South of Valley Station's mall
         EasternSummerCampMap = true,
-        AbandonedFactoryMap = false,
+        AbandonedFactoryMap = true,
         -- Works with the New Ekron mod too.
         EkronMap = true,
         -- Rare, mainly found on military loot
         MilitaryMaps = true,
         -- Between Grapeseed and Ravencreek.
-        FortRedstoneMap = false,
+        FortRedstoneMap = true,
         -- North West of Muldraugh. Rare. Disabled if military maps are disabled
-        MilitaryAirportMap = false,
+        MilitaryAirportMap = true,
         -- South of Riverside's Country Club.
-        FortBenningMap = false,
+        FortBenningMap = true,
         -- East of Riverside's Country Club, North of Ekron.
-        FortRockRidgeMap = false,
+        FortRockRidgeMap = true,
         -- East of Muldraugh
-        MuldraughMilitaryBaseMap = false,
+        MuldraughMilitaryBaseMap = true,
         -- Between Rosewood and Muldraugh
-        FortWaterfrontMap = false,
+        FortWaterfrontMap = true,
         -- South of Bedford Falls, East of Eerie Country. Quitman Map, Fort Knox Map. Rare.
-        FortKnoxMaps = false,
+        FortKnoxMaps = true,
         -- Can also be found in golfer bags
         RiversideCountryClubMap = true,
         -- The one with the camping & military gear store
@@ -4848,19 +4848,19 @@ SandboxVars = {
         -- North of Rosewood
         BlackwoodMap = true,
         -- Between Rosewood and Muldraugh
-        PitstopMap = false,
+        PitstopMap = true,
         -- North of West Point, on the other side of the river
-        OverTheRiverMap = false,
+        OverTheRiverMap = true,
         -- West of Muldraugh
         LakeIvyMap = true,
         -- From the mod Save Our Station!
         WeatherStationLocations = true,
         -- West of Rosewood and Grapeseed. Very rare map item.
-        CompleteRavenCreekMap = false,
+        CompleteRavenCreekMap = true,
         -- 3 district maps
-        RavenCreekDistrictMaps = false,
+        RavenCreekDistrictMaps = true,
         -- North of Rosewood
-        RosewoodExpansionMap = false,
+        RosewoodExpansionMap = true,
         -- North West of March Ridge
         MarchRidgeExpansionMap = true,
         -- North West of March Ridge
@@ -4870,147 +4870,147 @@ SandboxVars = {
         -- Between Ekron and Pony Roam-O
         LittleTownshipMap = true,
         -- Between Dixie and crossroads
-        LindenMap = false,
+        LindenMap = true,
         -- South West of Riverside
-        RefordvilleMap = false,
+        RefordvilleMap = true,
         --        
-        ChernavilleMap = false,
+        ChernavilleMap = true,
         -- North of Muldraugh, West of Dixie
-        ChinatownMap = false,
+        ChinatownMap = true,
         -- West of Rosewood, after Grapeseed
-        BlueberryMap = false,
+        BlueberryMap = true,
         -- South of West Point
         WestPointSouthTrailerParkMap = true,
         -- An island in the Ohio river, in the North West corner of the map
-        KingsmouthMap = false,
+        KingsmouthMap = true,
         -- East of Dixie
         SurvivorWarehouseLocation = true,
         -- North West of West Point, East of Riverside's Country Club on the other side of the river
-        CoryerdonMap = false,
+        CoryerdonMap = true,
         -- South of Ed's Auto Salvage
-        OldParkTownMap = false,
-        WestPointExpansionMap = false,
-        GlenportMap = false,
+        OldParkTownMap = true,
+        WestPointExpansionMap = true,
+        GlenportMap = true,
         -- Very rare
-        CompleteEerieCountryMap = false,
+        CompleteEerieCountryMap = true,
         -- Centralia, Hidden swamps, Rural Zone, Eren City, Irvington, train station...
-        EerieCountryDifferentMaps = false,
+        EerieCountryDifferentMaps = true,
         -- Far South West. Silverton Map, Rosebery Map, New Denver Map.
-        SlocanLakeMaps = false,
+        SlocanLakeMaps = true,
         -- South of West Point
-        BillionaireSafehouseLocation = false,
+        BillionaireSafehouseLocation = true,
         -- West of Riverside's Country Club
-        WildberriesMap = false,
+        WildberriesMap = true,
         -- East of Muldraugh's Railyard
-        TugalandMap = false,
+        TugalandMap = true,
         -- East of Rosewood, West of Grapeseed
-        RemusMap = false,
+        RemusMap = true,
         -- West of Louisville
         TrimbleCountyMaps = true,
         -- East of West Point
-        EZPZCommunityCenterMap = false,
+        EZPZCommunityCenterMap = true,
         -- South of March Ridge
-        OldPineVillageMap = false,
+        OldPineVillageMap = true,
         -- An island in the river, North East of Louisville,
-        ChristmasVillageMap = false,
+        ChristmasVillageMap = true,
         -- North East of Muldraugh, West of Ekron
-        HyruleCountyMap = false,
+        HyruleCountyMap = true,
         -- North of Ekron
-        RiverwoodMap = false,
+        RiverwoodMap = true,
         -- North of East of Valley Station's Mall
-        HongKongYauMaTeiMap = false,
+        HongKongYauMaTeiMap = true,
         -- South West of Ekron
-        WesternMilitaryComplexMap = false,
+        WesternMilitaryComplexMap = true,
         -- South East of Muldraugh
-        MansionAdress = false,
+        MansionAdress = true,
         -- South East of Muldraugh
-        ConstructionFactoryMap = false,
-        WestwoodMap = false,
-        AnthemMap = false,
-        LaconiaMap = false,
-        AshenwoodMap = false,
-        ElysiumIslandMap = false,
+        ConstructionFactoryMap = true,
+        WestwoodMap = true,
+        AnthemMap = true,
+        LaconiaMap = true,
+        AshenwoodMap = true,
+        ElysiumIslandMap = true,
         HopewellMap = true,
-        WalnutRidgeMap = false,
-        HeavensHillMansionAdress = false,
-        ChestownMap = false,
-        NashvilleMap = false,
-        OverlookHotelMap = false,
-        PerfectShelterMap = false,
-        OConnorFarmAddress = false,
-        LincolnRegionalAirportMap = false,
-        MuldraughWesternShippingCompanyMap = false,
-        RosewoodMilitaryHospitalMap = false,
+        WalnutRidgeMap = true,
+        HeavensHillMansionAdress = true,
+        ChestownMap = true,
+        NashvilleMap = true,
+        OverlookHotelMap = true,
+        PerfectShelterMap = true,
+        OConnorFarmAddress = true,
+        LincolnRegionalAirportMap = true,
+        MuldraughWesternShippingCompanyMap = true,
+        RosewoodMilitaryHospitalMap = true,
         TheMuseumMap = true,
-        TheEyeLakeMap = false,
-        AddamsFamilyMansionMap = false,
-        JeffersonvilleMap = false,
-        CherokeeLakeMap = false,
-        RiversideMansionMap = false,
-        FinneganMentalAsylumMap = false,
-        PapavilleMap = false,
-        SouthTownMap = false,
-        ChinatownMapExpansionMap = false,
-        LouisvilleBunkerLocationMap = false,
-        OrchidwoodMap = false,
-        WinchesterMap = false,
-        BreakpointMap = false,
-        WilboreMap = false,
-        PetrovilleMap = false,
-        CedarHillMap = false,
-        CathayaValleyMap = false,
-        SpringwoodMap = false,
-        NaturesVengeanceTownshipMap = false,
+        TheEyeLakeMap = true,
+        AddamsFamilyMansionMap = true,
+        JeffersonvilleMap = true,
+        CherokeeLakeMap = true,
+        RiversideMansionMap = true,
+        FinneganMentalAsylumMap = true,
+        PapavilleMap = true,
+        SouthTownMap = true,
+        ChinatownMapExpansionMap = true,
+        LouisvilleBunkerLocationMap = true,
+        OrchidwoodMap = true,
+        WinchesterMap = true,
+        BreakpointMap = true,
+        WilboreMap = true,
+        PetrovilleMap = true,
+        CedarHillMap = true,
+        CathayaValleyMap = true,
+        SpringwoodMap = true,
+        NaturesVengeanceTownshipMap = true,
         BigBearLakeMaps = true,
-        SimsZomboidMap = false,
-        DirkerdamMaps = false,
+        SimsZomboidMap = true,
+        DirkerdamMaps = true,
         LakeCumberlandMaps = true,
-        PharmaceuticalFactoryMap = false,
+        PharmaceuticalFactoryMap = true,
         NettleTownshipMap = true,
-        StMooseHospitalMap = false,
-        ShortrestCountyMap = false,
-        LeavenburgMap = false,
-        BunkerDayOfTheDeadMap = false,
-        SuperGigaMartMap = false,
-        ZtardewValleyMap = false,
-        TheWalkingDeadPrisonMap = false,
-        TheWalkingDeadTerminusMap = false,
-        HuntersBaseMap = false,
-        PortCityMap = false,
-        SpringValleyMap = false,
-        OakshireMap = false,
-        RangersHomesteadMap = false,
+        StMooseHospitalMap = true,
+        ShortrestCountyMap = true,
+        LeavenburgMap = true,
+        BunkerDayOfTheDeadMap = true,
+        SuperGigaMartMap = true,
+        ZtardewValleyMap = true,
+        TheWalkingDeadPrisonMap = true,
+        TheWalkingDeadTerminusMap = true,
+        HuntersBaseMap = true,
+        PortCityMap = true,
+        SpringValleyMap = true,
+        OakshireMap = true,
+        RangersHomesteadMap = true,
         FrigateMap = true,
-        BunkerLastMinutePrepperMap = false,
-        LouisvilleQuarantineZoneMap = false,
+        BunkerLastMinutePrepperMap = true,
+        LouisvilleQuarantineZoneMap = true,
         LVInternationalAirport = true,
-        MuldraughCheckpointMap = false,
-        SpeckMap = false,
-        HomesteadWindyMap = false,
+        MuldraughCheckpointMap = true,
+        SpeckMap = true,
+        HomesteadWindyMap = true,
         MilitaryFuelDepotMap = true,
-        SpencerMansionMap = false,
-        UncleRedsBunkerMap = false,
+        SpencerMansionMap = true,
+        UncleRedsBunkerMap = true,
         HopefallsMap = true,
-        VineGroveMap = false,
-        LouisianaMap = false,
-        CaliforniaMaps = false,
-        WeyhausenMap = false,
-        DaisyCountyMap = false,
-        McCoysBunkerMap = false,
-        OtterCreekMap = false,
-        WellsburgLakeMap = false,
+        VineGroveMap = true,
+        LouisianaMap = true,
+        CaliforniaMaps = true,
+        WeyhausenMap = true,
+        DaisyCountyMap = true,
+        McCoysBunkerMap = true,
+        OtterCreekMap = true,
+        WellsburgLakeMap = true,
         FortBoonesboroughMap = true,
         CrowlakeMap = true,
         GustonMap = true,
-        JaspervilleMap = false,
+        JaspervilleMap = true,
         YakamaStateParkMap = true,
-        ValuTechAmusementParkMap = false,
+        ValuTechAmusementParkMap = true,
         CanvasbackStudiosMap = true,
-        PlefordSpringsMap = false,
-        FoxWoodMap = false,
-        BrazilMap = false,
-        FortLoidMap = false,
-        HavenRidgeMap = false,
+        PlefordSpringsMap = true,
+        FoxWoodMap = true,
+        BrazilMap = true,
+        FortLoidMap = true,
+        HavenRidgeMap = true,
     },
     CF8KSweeper = {
         AllowTiles = true,
@@ -5027,23 +5027,23 @@ SandboxVars = {
         --  <INDENT:20>-Ordinary zombies range from 2000+;
         --  <INDENT:20>-For example, a zombie golfer (quite rare) has 2000 weight, and a park ranger 10000.
         --  Minimum=10 Maximum=30000 Default=200
-        SpecZombieSpawnChance = 2000,
+        SpecZombieSpawnChance = 200,
         -- A first-level vaccine that resets infection to 5%.
         --  <INDENT:20>-The option affects the chance of a drop in a SPECIAL ZOMBIE.
         --  Minimum=0 Maximum=100 Default=10
-        DefaultVaccineSpawnChance = 20,
+        DefaultVaccineSpawnChance = 10,
         -- The option affects the chance of a drop in a SPECIAL ZOMBIE.
         --  Minimum=0 Maximum=100 Default=30
-        ScalpelTweezersSpawnChance = 50,
+        ScalpelTweezersSpawnChance = 30,
         -- The option affects the chance of a drop in a SPECIAL ZOMBIES.
         --  Minimum=0 Maximum=100 Default=30
-        TubeOrSyringeOrFlaskSpawnChance = 75,
+        TubeOrSyringeOrFlaskSpawnChance = 30,
         -- The option affects the chance of a drop in a SPECIAL ZOMBIES.
         --  Minimum=0 Maximum=100 Default=30
         TongsSpawnChance = 30,
         -- Determines the chance to get a normal sample when autopsy a zombie.
         --  Minimum=20 Maximum=60 Default=30
-        chanceToNormal = 50,
+        chanceToNormal = 30,
         -- Determines the chance to get a rare sample when autopsy a zombie.
         --  Minimum=5 Maximum=30 Default=10
         chanceToRare = 10,
@@ -5069,7 +5069,7 @@ SandboxVars = {
         --  <INDENT:20>-If power = 12, then ~10% of infection;
         --  <INDENT:20>-If power = 24, then ~20% of infection is output per hour.
         --  Minimum=6 Maximum=24 Default=12
-        AntibodyPower2 = 10,
+        AntibodyPower2 = 12,
         -- Selecting the type of result to improve (research) new vaccine levels.
         --  <INDENT:20>-PROGRESSIVE CHANCE - in case of failure, the next chance of success will increase (summed up);
         --  <INDENT:20>-STATIC CHANCE - a fixed percentage of success (30,20,14% from the second to the fourth);
@@ -5077,7 +5077,7 @@ SandboxVars = {
         --  Default=Full Research
         -- 1 = Progressive Chance
         -- 2 = Static Chance
-        ResearchType = 1,
+        ResearchType = 3,
         -- Works only with the type of vaccine improvement study "PROGRESSIVE CHANCE" and "FULL RESEARCH"!
         --  <INDENT:20>-In case of an unsuccessful study, increases the result by a randomizer depending on this number (hereinafter referred to as X);
         --  <INDENT:26>-The formula works according to the type:
@@ -5087,7 +5087,7 @@ SandboxVars = {
         --  <INDENT:20>-Rounding occurs to a larger integer;
         --  <INDENT:20>-In simple terms: The randomizer is reduced for the research of a new vaccine by an average of ~ 30%.
         --  Minimum=4 Maximum=30 Default=10
-        ResearchRand = 15,
+        ResearchRand = 10,
         -- Minimum=6 Maximum=16 Default=8
         ResearchReduceHealth = 8,
         -- Affects at what level of health the character will notify about overcoming the critical health mark specified in this parameter!
@@ -5128,7 +5128,7 @@ SandboxVars = {
         -- 5 = Highest Difficulty. Minimum=0.00 Maximum=5.00 Default=1.00
         PryingChanceMultiplier = 1.0,
         -- Determines the chance of getting wounded if a Player fails to open a can with an improvised tool.  Minimum=0 Maximum=100 Default=10
-        CanWoundChance = 20,
+        CanWoundChance = 10,
         -- Multiplies the damage dealt to a Player when they fail to open a can with an improvised tool.
         -- Can be used to reduce or increase the damage to your liking. Minimum=0.00 Maximum=10.00 Default=1.00
         CanWoundIntensity = 1.0,
@@ -5178,11 +5178,11 @@ SandboxVars = {
     SkillRecoveryJournal = {
         -- The amount of experience recovered from reading bound journals.
         -- This value is defaulted to if other options are set to -1. Minimum=1 Maximum=100 Default=100
-        RecoveryPercentage = 75,
+        RecoveryPercentage = 100,
         -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        TranscribeSpeed = 0.8,
+        TranscribeSpeed = 1.0,
         -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        ReadTimeSpeed = 1.2,
+        ReadTimeSpeed = 1.0,
         RecoverProfessionAndTraitsBonuses = false,
         -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
         TranscribeTVXP = false,
@@ -5203,7 +5203,7 @@ SandboxVars = {
         RecoverSurvivalistSkills = -1,
         -- Recovery percentage for agility skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
-        RecoverAgilitySkills = 0,
+        RecoverAgilitySkills = -1,
         -- Toggle off to prevent journals from recovering/transcribing recipes.
         RecoverRecipes = true,
         -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
@@ -5221,9 +5221,9 @@ SandboxVars = {
     },
     CanRepairDoors = {
         -- Minimum=0 Maximum=10 Default=1
-        RepairSkillNeeded = 2,
+        RepairSkillNeeded = 1,
         -- Minimum=0 Maximum=10 Default=3
-        ReinforceSkillNeeded = 5,
+        ReinforceSkillNeeded = 3,
         -- Minimum=1 Maximum=1000 Default=6
         multiplyerMaxReinforcement = 6,
     },
@@ -5282,7 +5282,7 @@ SandboxVars = {
         TrashItemConfig = 1,
         -- Decreases the Fish Abundance whenever catching anything (Vanilla) or only when catching fish. Default=On any catch (Vanilla)
         -- 1 = On any catch (Vanilla)
-        DecreaseAbundance = 2,
+        DecreaseAbundance = 1,
         -- Include the size of the fish in its displayed name. NOTE: This feature will use english names for all fish caught by this mod.
         RenameFish = true,
     },
@@ -5323,17 +5323,17 @@ SandboxVars = {
         -- Magazine and inverter spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
         LRMMisc = 1.0,
         -- Base number of in-game minutes it takes to connect one panel Minimum=1 Maximum=1000 Default=120
-        ConnectPanelMin = 30,
+        ConnectPanelMin = 120,
         -- Allows to craft solar panels and inverters
-        enableExpandedRecipes = true,
+        enableExpandedRecipes = false,
     },
     GunStockAttackOption = {
         -- Minimum=0.00 Maximum=200.00 Default=5.00
         Damage = 5.0,
         -- Minimum=0.00 Maximum=100.00 Default=0.01
-        EnduranceLost = 0.04,
+        EnduranceLost = 0.005,
         -- Minimum=0 Maximum=100 Default=1
-        WeaponConditionLost = 2,
+        WeaponConditionLost = 1,
         -- Minimum=0.00 Maximum=10.00 Default=1.34
         RifleSpeed = 1.34,
         -- Minimum=0.00 Maximum=10.00 Default=1.24
@@ -5346,14 +5346,14 @@ SandboxVars = {
         -- 3 = Normal
         -- 4 = Common
         -- 5 = Abundant
-        BeerKegsChance = 2,
+        BeerKegsChance = 3,
         -- How full are the beer kegs that are spawned. Default=Medium
         -- 1 = Very Low
         -- 2 = Low
         -- 3 = Medium
         -- 4 = Nearly Full
         -- 5 = Always Full
-        BeerKegsFilledAmount = 6,
+        BeerKegsFilledAmount = 3,
         -- How often filled syrups and CO2 tanks spawn in fountain locations. Default=Normal
         -- 1 = Extremely Rare
         -- 2 = Rare
@@ -5367,7 +5367,7 @@ SandboxVars = {
         -- 3 = Medium
         -- 4 = Nearly Full
         -- 5 = Always Full
-        SyrupsFilledAmount = 6,
+        SyrupsFilledAmount = 3,
         -- How often popcorn and other Functional Appliances items spawn in the theatre counters. Default=Normal
         -- 1 = Extremely Rare
         -- 2 = Rare
@@ -5463,9 +5463,9 @@ SandboxVars = {
     },
     newcontainersnc = {
         -- Spawn multiplier for the .30 cal ammo can Minimum=0.00 Maximum=100.00 Default=1.00
-        ammocan30 = 0.0,
+        ammocan30 = 1.0,
         -- Spawn multiplier for the .50 cal ammo can Minimum=0.00 Maximum=100.00 Default=1.00
-        ammocan50 = 0.0,
+        ammocan50 = 1.0,
         -- Spawn multiplier for the basket Minimum=0.00 Maximum=100.00 Default=1.00
         basket = 1.0,
         -- Spawn multiplier for the foraging basket Minimum=0.00 Maximum=100.00 Default=1.00
@@ -5589,7 +5589,7 @@ SandboxVars = {
         -- 4 = Normal
         -- 5 = Common
         -- 6 = Abundant
-        NonPerishableChance = 2,
+        NonPerishableChance = 3,
         -- Default=Rare
         -- 1 = Insanely rare
         -- 2 = Extremely Rare
@@ -5597,7 +5597,7 @@ SandboxVars = {
         -- 4 = Normal
         -- 5 = Common
         -- 6 = Abundant
-        PerishableChance = 7,
+        PerishableChance = 3,
         -- Default=Rare
         -- 1 = Insanely rare
         -- 2 = Extremely Rare
@@ -5621,7 +5621,7 @@ SandboxVars = {
         -- 4 = Normal
         -- 5 = Common
         -- 6 = Abundant
-        MagazineChance = 1,
+        MagazineChance = 3,
         -- Default=Rare
         -- 1 = Insanely rare
         -- 2 = Extremely Rare
@@ -5629,7 +5629,7 @@ SandboxVars = {
         -- 4 = Normal
         -- 5 = Common
         -- 6 = Abundant
-        MREChance = 2,
+        MREChance = 3,
         -- Default=Rare
         -- 1 = Insanely rare
         -- 2 = Extremely Rare
@@ -5645,7 +5645,7 @@ SandboxVars = {
         -- 4 = Normal
         -- 5 = Common
         -- 6 = Abundant
-        AlcoholChance = 2,
+        AlcoholChance = 3,
         -- Default=Rare
         -- 1 = Insanely rare
         -- 2 = Extremely Rare
@@ -5653,7 +5653,7 @@ SandboxVars = {
         -- 4 = Normal
         -- 5 = Common
         -- 6 = Abundant
-        ZombieLootSpawn = 2,
+        ZombieLootSpawn = 3,
     },
     BLTAnnotations = {
         -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
@@ -5675,13 +5675,13 @@ SandboxVars = {
         -- 2 = 75%
         -- 3 = 50%
         -- 4 = 25%
-        WoodWeight = 4,
+        WoodWeight = 1,
         -- For example: selecting "75%" means that metal materials will weigh 25% less. Default=100%
         -- 1 = 100%
         -- 2 = 75%
         -- 3 = 50%
         -- 4 = 25%
-        MetalWeight = 3,
+        MetalWeight = 1,
     },
     NamedLiterature = {
         -- The amount of 10 minute intervals needed for a return of bonuses when reading. Minimum=0 Maximum=1000000 Default=26280
@@ -5716,7 +5716,7 @@ SandboxVars = {
         -- Minimum damage that needs to be done to zombie for it to react to projectile hit. Minimum=0.00 Maximum=2.00 Default=0.30
         minDamageToGetHitReaction = 0.3,
         -- Minimum=0.00 Maximum=1.50 Default=1.00
-        DebugGridMultiplier = 0.5,
+        DebugGridMultiplier = 1.0,
         -- Minimum=0.00 Maximum=100.00 Default=0.00
         DebugOffset = 0.0,
         -- Minimum=0.00 Maximum=100.00 Default=0.00
@@ -5735,15 +5735,15 @@ SandboxVars = {
         enablePlayerBulletPosCheck = false,
         toggleResetZLevel = false,
         -- Minimum=0.00 Maximum=300.00 Default=3.00
-        XPKillModifier = 2.0,
+        XPKillModifier = 3.0,
         -- Minimum=0.00 Maximum=300.00 Default=0.50
         XPHitModifier = 0.5,
         -- Minimum=0.00 Maximum=1.00 Default=0.50
-        MaxProjCone = 0.6,
+        MaxProjCone = 0.5,
         -- Value that limits how much bloom is added to crosshair. Higher means larger possible bloom. Minimum=0.00 Maximum=20.00 Default=7.00
         maxaimnum = 7.0,
         -- Value that affects crosshair's minimum bloom. Characters with low aiming level (0-2) will never be accurate (always has bloom). Set to 0 if you want to be OP or unlock focus mechanic at level 3. Minimum=0.00 Maximum=100.00 Default=7.00
-        minaimnumModifier = 8.0,
+        minaimnumModifier = 7.0,
         -- Aiming level in which player unlocks the focus mechanic. Minimum=0.00 Maximum=10.00 Default=3.00
         focusLevel = 3.0,
         -- Player loses accuracy when trying to shoot targets past their distance limit. Uncheck to disable.
@@ -5751,37 +5751,37 @@ SandboxVars = {
         -- Minimum=0.00 Maximum=1.00 Default=1.00
         distanceLimitScaling = 1.0,
         -- Affects when the penalty will be applied. The lower the value, the lesser the distance that the crosshair needs to be from the player to activate the penalty. Minimum=0.00 Maximum=10.00 Default=2.00
-        distanceFocusPenalty = 3.0,
+        distanceFocusPenalty = 2.0,
         -- Value affects how much bloom is added when reloading and racking firearm. Minimum=0.00 Maximum=10.00 Default=0.10
-        reloadEffectModifier = 0.15,
+        reloadEffectModifier = 0.1,
         -- Value that affects how fast your crosshair tightens. Higher means faster. Minimum=0.00 Maximum=100.00 Default=1.10
         reducespeed = 1.1,
         -- Driving part of the focus mechanic. Determines time it takes for the crosshair to begin its process of reducing aimnum to 0 (max accuracy). This is a flat value. Set to 0 to disable if you want to remove ability to gain max accuracy without waiting. Minimum=0.00 Maximum=10.00 Default=2.00
-        focusCounterSpeed = 4.0,
+        focusCounterSpeed = 2.0,
         -- Multiplier that determines how much focus counter/timer should be shorten based off of aiming level.  Minimum=0.00 Maximum=10.00 Default=7.00
         focusCounterSpeedScaleModifier = 7.0,
         -- Part of the focus mechanic. Determines speed of crosshair reducing aimnum to 0 once process has begun. Minimum=0.00 Maximum=1.00 Default=1.00
         maxFocusSpeed = 1.0,
         -- If enabled, player will have a chance of missing depending on bloom. Bullet will pass through zombies without damaging them.
-        enableHitOrMiss = false,
+        enableHitOrMiss = true,
         -- Max distance for point blank to register when projectile detects zombie in its proximity. Set to 0 to pretty much disable it. Minimum=0.00 Maximum=5.00 Default=2.00
         pointBlankMaxDistance = 2.0,
         -- Player will announce if their bullet hit or missed with bloom value comparisons.
         announceHitOrMiss = false,
         -- A flat value that gives a flat increase in chances of hitting zombies with a shotgun. Minimum=0.00 Maximum=200.00 Default=60.00
-        shotgunHitBuff = 0.0,
+        shotgunHitBuff = 60.0,
         -- Affects how much aiming level will decrease the chances of not missing. Higher means lower chance of missing per level. Minimum=0.00 Maximum=20.00 Default=2.00
-        hitLevelScaling = 3.0,
+        hitLevelScaling = 2.0,
         -- Must be less than max. Bullet misses if currentBloom > rand(minMiss + buff + aimLevel*hitScaling, maxMiss) Minimum=0.00 Maximum=300.00 Default=25.00
-        missMin = 15.0,
+        missMin = 25.0,
         -- Must be greater than min. Bullet misses if currentBloom > rand(minMiss + buff + aimLevel*hitScaling, maxMiss) Minimum=0.00 Maximum=300.00 Default=120.00
-        missMax = 100.0,
+        missMax = 120.0,
         -- Makes crosshair slightly transparent when bloom reaches "Min Miss" value so players know when they'll start having a chance of missing. Minimum=0.00 Maximum=1.00 Default=0.30
         missMinTransparency = 0.3,
         -- Linked to Focus Counter Speed. Part of the focus mechanic. Weapon's recoil delay affects how long it takes for character to recover from recoil and this is a multiplier of that. Set to 0 to ignore weapon's recoil delay stat. Minimum=0.00 Maximum=1.00 Default=0.01
         recoilDelayModifier = 0.01,
         -- Multiplier of gun's max dmg added as recoil to crosshair (adds bloom when shooting). Minimum=0.00 Maximum=30.00 Default=10.00
-        recoilModifier = 12.0,
+        recoilModifier = 10.0,
         -- Affects exponential growth of recoil (how much bloom is added depending on the previous bloom value the player shot at). Lower means less added bloom as you continue spraying. Minimum=0.00 Maximum=200.00 Default=80.00
         recoilScaleModifier = 80.0,
         -- Multiplier reduction to gun recoil. Minimum=0.00 Maximum=1.00 Default=0.70
@@ -5795,7 +5795,7 @@ SandboxVars = {
         -- Minimum=0.00 Maximum=2.00 Default=1.00
         bulletspeed = 1.0,
         -- Minimum=0.00 Maximum=10.00 Default=2.00
-        bulletdistance = 4.0,
+        bulletdistance = 2.0,
         -- When aiming moving and turnin. Minimum=0.00 Maximum=10.00 Default=10.00
         runNGunLv = 10.0,
         -- Multiplier that reduces penalty for moving and turning. 0.25 means 75% reduction to penalty. Minimum=0.00 Maximum=1.00 Default=0.50
@@ -5847,17 +5847,17 @@ SandboxVars = {
         -- Chance that a gunshot wound will not inflict a lodged bullet Minimum=0.00 Maximum=100.00 Default=25.00
         throughChance = 25.0,
         -- Shotgun has a max independent projectile cone. Minimum=0.00 Maximum=1.00 Default=0.10
-        maxShotgunProjCone = 0.4,
+        maxShotgunProjCone = 0.1,
         -- Multiplier on base stat (range) of shotgun. Default value is 0.75 which means 75% of vanilla's range. Minimum=0.00 Maximum=10.00 Default=0.50
-        shotgunDistanceModifier = 0.6,
+        shotgunDistanceModifier = 0.5,
         -- Amount of pellots shot Minimum=0 Maximum=100 Default=5
-        shotgunnum = 6,
+        shotgunnum = 5,
         -- Value affects shotgun spread. The lower the value, the more narrow the spread. Minimum=0.00 Maximum=1.00 Default=0.10
         shotgundivision = 0.1,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
         shotgunDamageMultiplier = 1.0,
         -- Shotguns crit chance is only affected by their stat and aiming level (not bloom). Default value is 10 meaning the game decides a random value from 1 to (100 - 10) and if value is <= crit stat, then crit. Minimum=0.00 Maximum=100.00 Default=10.00
-        critChanceModifierShotgunsOnly = 25.0,
+        critChanceModifierShotgunsOnly = 10.0,
         -- Minimum=0.00 Maximum=5.00 Default=0.00
         staminaCrouchScale = 0.001,
         -- Multiplier that scales off of heavy moodle level Minimum=0.00 Maximum=5.00 Default=0.50
@@ -5916,11 +5916,11 @@ SandboxVars = {
         -- Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairMaxTransparency = 1.0,
         -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.20
-        crosshairRed = 0.0,
+        crosshairRed = 0.2,
         -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairGreen = 1.0,
         -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.20
-        crosshairBlue = 0.98,
+        crosshairBlue = 0.2,
         -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairRedMain = 1.0,
         -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
@@ -5930,7 +5930,7 @@ SandboxVars = {
         -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairRedLimit = 1.0,
         -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairGreenLimit = 0.2,
+        crosshairGreenLimit = 1.0,
         -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.00
         crosshairBlueLimit = 0.0,
     },
@@ -5939,7 +5939,7 @@ SandboxVars = {
         --  Zero value disable spawn.
         --  Common zombies range from 2000+.
         --  For example, the golfer zombie (quite rare) has 2000 weight and the park ranger 10000. Minimum=0 Maximum=30000 Default=50
-        SpawnChanceSWAT = 2000,
+        SpawnChanceSWAT = 50,
     },
     IMNAL = {
         -- Minimum=0 Maximum=100 Default=30
@@ -5988,13 +5988,13 @@ SandboxVars = {
         -- If enabled, Players won't receive any items from picking up obvious stuff. 
         DisableLoot = false,
         -- Multiplies the amount of items received (If any) by Players when they pick up obvious stuff.  Minimum=0.00 Maximum=100.00 Default=1.00
-        LootMultiplier = 0.5,
+        LootMultiplier = 1.0,
     },
     ReadWalking = {
         -- The darkness of the reading fog. 0.0 means no darkness. 1.0 means full darkness. Minimum=0.00 Maximum=1.00 Default=1.00
         FogDarkness = 1.0,
         -- The mod: Read While Walking 1.0 means x1 vanilla defaults. 2.0 means speed x2, etc. Minimum=0.20 Maximum=100.00 Default=1.00
-        ReadSpeed = 1.2,
+        ReadSpeed = 1.0,
     },
     DiveThruWindows = {
         -- X out of (100 + player skill/trait factor) will cause a heavy injury. 
@@ -6013,7 +6013,7 @@ SandboxVars = {
         -- Whether the injury from smashing the window can scratch/wound the legs. (Note that the legs can always be scratched from diving thru the smashed window)
         CanInjureLegs = false,
         -- How many bonus injury rolls occur upon smashing a window with a dive? Minimum=0 Maximum=9 Default=0
-        ExtraInjuryRolls = 1,
+        ExtraInjuryRolls = 0,
     },
     MIR = {
         -- Will not add maintenance as a skill to repair recipes for these items. Uses item IDs, not their names. Separate them with ';' for example Axe; HandAxe
@@ -6045,7 +6045,7 @@ SandboxVars = {
         -- 6 = 2x
         -- 7 = 3x
         -- 8 = 5x
-        ReloadMult = 2,
+        ReloadMult = 4,
         -- When you reload, you only have a chance to gain XP. Default=Always
         -- 1 = Always
         -- 2 = Vanilla (50%)
@@ -6094,7 +6094,7 @@ SandboxVars = {
         -- 7 = 75 seconds
         SprintDelay = 3,
         -- Standardises all sources of passive XP, except from exercise.
-        WantSTPassive = false,
+        WantSTPassive = true,
         -- Increases the fitness XP you gain from all activities other than exercise. Default=Vanilla
         -- 1 = Vanilla
         -- 2 = 2x
@@ -6132,7 +6132,7 @@ SandboxVars = {
     },
     Plumbing = {
         -- The percentage of the water pump filter that is consumed every 10 game minutes. Minimum=0.00 Maximum=100.00 Default=0.01
-        PumpFilterUsage = 0.012,
+        PumpFilterUsage = 0.014,
         -- The percentage of the efficiency that a water pump loses every 10 game minutes. Minimum=0.00 Maximum=100.00 Default=0.00
         PumpEfficiencyLoss = 0.004,
         -- The amount of units of water that a 100% efficient pump delivers every 10 game minutes. Minimum=1 Maximum=100 Default=12
@@ -6144,11 +6144,11 @@ SandboxVars = {
         -- Minimum=0 Maximum=10 Default=3
         UnhotwireMechanics = 3,
         -- Minimum=0 Maximum=10 Default=1
-        KeyElectrical = 6,
+        KeyElectrical = 1,
         -- Minimum=0 Maximum=10 Default=2
-        KeyMechanics = 8,
+        KeyMechanics = 2,
         -- Minimum=0 Maximum=10 Default=3
-        KeyMetalworking = 10,
+        KeyMetalworking = 3,
     },
     TrueMusicRadio = {
         -- Enabling this will increase the possibility of zombies being attracted to True Music Radio music. (Does not affect vanilla radio attraction.)
@@ -6161,7 +6161,7 @@ SandboxVars = {
         -- 3 = Medium
         -- 4 = High
         -- 5 = Random
-        TMRMusicTerminalFilledAmount = 3,
+        TMRMusicTerminalFilledAmount = 5,
         -- Enabling this will exclude the vanilla theme songs from playing on the radio stations unless the media is added to the terminals.
         TMRExcludeThemeSongs = true,
         -- Enabling this will exclude the songs added by the TCCacheMP prerequisite mod from playing on the radio stations unless the media is added to the terminals.
@@ -6193,27 +6193,27 @@ SandboxVars = {
         -- The maximum number of cassettes that may spawn in a container is 1 + this number. Only applies to MFTEOTW tracks. Requires you to reload the world to take effect. Minimum=0 Maximum=10 Default=2
         maxCassettes = 2,
         -- The maximum number of vinyls that may spawn in a container is 1 + this number. Only applies to MFTEOTW tracks. Requires you to reload the world to take effect. Minimum=0 Maximum=10 Default=2
-        maxVinyls = 1,
+        maxVinyls = 2,
         -- Directly multiplies the chance that cassettes will spawn in a container. Requires you to reload the world to take effect. Minimum=0.00 Maximum=20.00 Default=1.00
-        cassetteChance = 0.12,
+        cassetteChance = 1.0,
         -- Directly multiplies the chance that vinyls will spawn in a container. Requires you to reload the world to take effect. Minimum=0.00 Maximum=20.00 Default=1.00
-        vinylChance = 0.1,
+        vinylChance = 1.0,
         -- Hoards are boxes that can be opened to get 50 random cassettes or vinyls. They spawn very rarely in a select few containers. Requires you to reload the world to take effect.
         cacheSpawn = true,
         -- Hoards will give this many of their respective music item, without duplicates. Requires you to reload the world to take effect. Minimum=5 Maximum=100 Default=50
-        cacheQuantity = 25,
+        cacheQuantity = 50,
         -- This value directly multiplies the spawn rate of Hoards. Requires you to reload the world to take effect. Minimum=0.00 Maximum=50.00 Default=1.00
-        cacheSpawnChance = 0.1,
+        cacheSpawnChance = 1.0,
         -- Boxes can be opened to get 25 random cassettes or vinyls. They spawn very rarely in a select few containers. Requires you to reload the world to take effect.
         boxSpawn = true,
         -- Boxes will give this many of their respective music item, without duplicates. Requires you to reload the world to take effect. Minimum=5 Maximum=50 Default=25
-        boxQuantity = 12,
+        boxQuantity = 25,
         -- This value directly multiplies the spawn rate of Boxes. Requires you to reload the world to take effect. Minimum=0.00 Maximum=50.00 Default=1.00
-        boxSpawnChance = 0.15,
+        boxSpawnChance = 1.0,
         -- Stacks are items that can be opened to get 10 random cassettes or vinyls. They can spawn in place of any music item at the same chance as any other music item. Requires you to reload the world to take effect. Recommended that you turn this off if you aren't using the Main and Extended packs as Stacks may become too common.
         stackSpawn = true,
         -- Stacks will give this many of their respective music item, without duplicates. Requires you to reload the world to take effect. Minimum=5 Maximum=25 Default=10
-        stackQuantity = 8,
+        stackQuantity = 10,
         -- Decides whether or not cassettes will spawn on Zombies. Requires you to reload the world to take effect.
         zedMusic = false,
         -- Directly multiplies the chance that zombies will drop cassettes upon death. Requires you to reload the world to take effect. Minimum=0.00 Maximum=100.00 Default=1.00
@@ -6229,7 +6229,7 @@ SandboxVars = {
     },
     zReAAS = {
         -- Enable to have the character mention armor element damage and absorption count before it starts to break.
-        zReAAS_InfoChecker = false,
+        zReAAS_InfoChecker = true,
         -- How much damage the light armor can absorb before it starts to break.
         --  -Light armor includes, for example:
         --   Civilian Vest; Police Vest. Minimum=2 Maximum=30 Default=2
@@ -6322,7 +6322,7 @@ SandboxVars = {
         -- Affect towing
         TowingToggle = true,
         -- Specify vehicles which aren't Heavy-Duty but should be great offroad. Use space as the delimiter, default: Base.63beetleBuggy Base.63Type2VanApocalypse Base.OffRoad
-        Offroad = "Base.63beetleBuggy Base.63Type2VanApocalypse Base.OffRoad",
+        Offroad = "",
         -- Specify vehicles which shouldn't be affected by the mod. Use space as the delimiter
         None = "",
         -- Heavy-Duty vehicles with less than specified HP will use Heavy-Duty Mass Multiplier, higher or Vans will use Standard Mass Multiplier. Set to 0 to disable Minimum=0 Maximum=1000 Default=600
@@ -6352,13 +6352,13 @@ SandboxVars = {
     },
     KYRRealWeatherMod = {
         -- Higher Number for More Variation in Summer Day Hours and Winter Night Hours! (38 is Base Game) Minimum=20 Maximum=65 Default=40
-        LatitudeVariation = 35,
+        LatitudeVariation = 40,
         -- Change to adjust the max temp of the World! (25 is Base Game / Still subject to Season Variation) Minimum=0 Maximum=50 Default=35
-        Maxtemp = 30,
+        Maxtemp = 35,
         -- Change to adjust the min temp of the World! (0 is Base Game / Still subject to Season Variation) Minimum=-170 Maximum=0 Default=-15
-        Mintemp = -4,
+        Mintemp = -15,
         -- Overall variation in Temp Ranges Between Seasons (7 is Base Game) Minimum=7 Maximum=40 Default=9
-        SeasonVariation = 8,
+        SeasonVariation = 9,
     },
     WhereAmI = {
         -- If enabled, the region indicator will not appear at all when a Player is outside any known regions. 
@@ -6376,9 +6376,9 @@ SandboxVars = {
         -- Minimum spawn amount per pile (foraging) Minimum=1 Maximum=10 Default=1
         BirdFeatherSpawnMin = 1,
         -- Maximum spawn amount per pile (foraging) Minimum=1 Maximum=10 Default=3
-        BirdFeatherSpawnMax = 4,
+        BirdFeatherSpawnMax = 3,
         -- Deactivates ammo maker charcoal recipes
-        DeactivateCharcoalRecipes = true,
+        DeactivateCharcoalRecipes = false,
         -- Activates ammo maker archery components
         ActivateArchery = true,
     },
@@ -6566,15 +6566,15 @@ SandboxVars = {
         -- Enable to add the Generator. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
         generatorSubCategory = false,
         -- Enable to add metal drums. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        metalDrums = true,
+        metalDrums = false,
         -- Enable to add water wells. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        waterWell = true,
+        waterWell = false,
         -- This is only a line separator, checking it has no effect.
         EmptyBox16 = false,
         -- This is only a line separator, checking it has no effect.
         AppliancesCategoryDivider = false,
         -- Enable to add Lighting Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        lightingAppliances = true,
+        lightingAppliances = false,
         -- Enable to add Sinks, Toilets and other bathroom-related objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
         bathroomAppliances = false,
         -- Enable to add Stoves, Ovens and other cooking-related objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
@@ -6606,7 +6606,7 @@ SandboxVars = {
         -- This is only a line separator, checking it has no effect.
         PertsPartyCategoryDivider = false,
         -- Enable to add ginger bread structures, christmas lighting. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        pertsPartyChristmas = false,
+        pertsPartyChristmas = true,
         -- Enable to add Halloween Decorations. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
         pertsPartyHalloween = true,
         -- This is only a line separator, checking it has no effect.
@@ -6692,7 +6692,7 @@ SandboxVars = {
         -- 10 = 60 Uses
         -- 11 = 80 Uses
         -- 12 = 100 Uses
-        blowTorchUses = 12,
+        blowTorchUses = 3,
         -- Uses per Bucket with Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
         -- 1 = 4 Uses
         -- 2 = 8 Uses
@@ -6724,7 +6724,7 @@ SandboxVars = {
         -- Sets wood needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
         bigWallWoodCount = 6,
         -- Sets nails needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
-        bigWallNailsCount = 8,
+        bigWallNailsCount = 6,
         -- Sets wood needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=3
         smallWallWoodCount = 3,
         -- Sets nails needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
@@ -6732,7 +6732,7 @@ SandboxVars = {
         -- Sets wood needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
         bigObjectsWoodCount = 6,
         -- Sets nails needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=8
-        bigObjectsNailsCount = 10,
+        bigObjectsNailsCount = 8,
         -- Sets wood needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
         smallObjectsWoodCount = 4,
         -- Sets nails needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
@@ -6744,9 +6744,9 @@ SandboxVars = {
         -- Sets screws needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
         screwsCount = 10,
         -- Sets scrap metal needed for fences. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
-        scrapMetalCountForFences = 20,
+        scrapMetalCountForFences = 10,
         -- Sets scrap metal needed for electrical things. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=5
-        scrapMetalCountForElectrical = 10,
+        scrapMetalCountForElectrical = 5,
         -- Sets sheet metal needed for WALLS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=5
         sheetMetalCountForWalls = 5,
         -- Sets sheet metal needed for DOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
@@ -6802,7 +6802,7 @@ SandboxVars = {
         -- Sets the maximum charge a handcrank can restore a battery to. Minimum=0.00 Maximum=1.00 Default=1.00
         MaximumCharge = 1.0,
         -- Lifetime multiplier applied to all electrical devices that use batteries. (Negative value results in unlimited charge, 0 results in instant charge loss.) Minimum=-1.00 Maximum=9999.00 Default=1.00
-        LifetimeMult = 1.2,
+        LifetimeMult = 1.0,
     },
     StairsAlert = {
         -- Automatically scans for nearby staircases at set intervals. If a staircase is detected, nearby zombies will be automatically alerted to the Player.
@@ -6821,11 +6821,11 @@ SandboxVars = {
     },
     MultiHitLimiter = {
         -- Require weapons to be two-handed to have multi hit.
-        TwoHandReq = true,
+        TwoHandReq = false,
         -- Require weapons to have a maximum range greater than or equal to a specified value to have multi hit.
         RangeBool = true,
         -- If enabled, weapons with a maximum range less than this value will have multi hit disabled. Minimum=0.00 Maximum=100.00 Default=1.21
-        RangeNum = 0.0,
+        RangeNum = 1.21,
         -- If strength is below this value, multi hit is disabled for equipped weapons. Minimum=0 Maximum=10 Default=0
         StrReq = 0,
         -- If fitness is below this value, multi hit is disabled for equipped weapons. Minimum=0 Maximum=10 Default=0
@@ -6845,7 +6845,7 @@ SandboxVars = {
         -- Allow multi hit for Short Blade weapons.
         SmallBlade = true,
         -- Allow multi hit for Spear weapons.
-        Spear = false,
+        Spear = true,
         -- Allow multi hit for Unarmed weapons.
         Unarmed = true,
         -- A semicolon-separated list of item types that won't have multi hit disabled, overriding the above settings.
@@ -6876,79 +6876,7 @@ SandboxVars = {
         -- Database may become inconsistent due to catastrophic failures
         RebuildDB = false,
     },
-
-Arsenal26_Sandbox.txt
-
-Add a CTAUpgrade
-Button visibility	
-Button type
-Button text
-Button link
-Button color
-Text color
-Button style
-Show my photo
-
-Add Lead Capture Form
-Appearance	
-Time
-Title
-- 55 Characters
-Description
-- 200 Characters
-Select Fields
-Mandatory
-Full Name
-Email Address
-Phone Number
-Button Text
-- 50 Characters
-Button color
-Text color
-Allow viewer to skip
-
-Choose ThumbnailUpgrade
-
-Static
-
-    Animation
-
-Trim your video using the handles and Split button. Merge with other videos by clicking the Add Clip button.
-View help article
-
-Edit Captions
-
-Engagement Insights
-
-    Video Views
-    0
-    Video Downloads
-    0
-    Call-to-Action Clicks
-    0
-    Average Completion Rate
-    0%
-
-viewers
-
-    Someone from Pakistan desktop
-    Apr 14, 2021
-    Someone from Pakistan desktop
-    Apr 14, 2021
-    Someone from Pakistan desktop
-    Apr 14, 2021
-
-Transcription
-
-Enable transcriptions to enhance audience accessibility
-
-Engagement Insights
-
-0 Comments
-Leave a comment
-Communicate better with Videos, GIFs, and Screenshots.
-
-A26 = {
+    A26 = {
         -- Displays
         --  - Debugging Messages from Mod
         --  - Based on option level chosen
@@ -6957,7 +6885,7 @@ A26 = {
         -- 1 = OFF
         -- 2 = Normal Info
         -- 3 = Debug Info
-        EnumDebugLevels = 1,
+        EnumDebugLevels = 2,
         -- Displays
         --  - Weapon Info when Equipped
         --  - For Debugging
@@ -6988,13 +6916,13 @@ A26 = {
         --  - Ammunition Count
         --  - Upper Left of Screen
         --  - Hash marks represent 1 round where (+) represents 10
-        BoolDisplayAmmoCounter = false,
+        BoolDisplayAmmoCounter = true,
         -- Displays
         --  - Movement Gauge
         --  - Widens & Narrows indicating
         --  - Movement penalty when Shooting
         --  - Recommend use with Dynamic Recoil / Reset Sight Picture
-        BoolDisplayMovementGauge = false,
+        BoolDisplayMovementGauge = true,
         -- Action
         --  - Reduce, Prevent, or Divert
         --  - Ejection of Empty Shell Casings on the Ground
@@ -7010,7 +6938,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumEjectSpentCasings = 4,
+        EnumEjectSpentCasings = 11,
         -- Emergency Reload
         --  - Select the Condition(s) to Drop magazine to the Ground
         --  - Instead of placing one magazine back to inventory before inserting the next
@@ -7087,7 +7015,7 @@ A26 = {
         --  - When Enabled, and using Thrown Weapons, the next Thrown weapon will automatically be equipped
         --  - By order of : Secondary Hand, R-Belt, L-Belt, Back, Inventory
         --  - When In-Game, [Auto-Equip Thrown Hot-Key] will toggle this option
-        BoolAutoThrown = true,
+        BoolAutoThrown = false,
         -- LightSabers are REAL (REMOVED)
         BoolLightSaberReal = false,
         -- Function
@@ -7118,7 +7046,7 @@ A26 = {
         --  - Calculated based on Firearm Recoil Characteristics per shot
         --  - To Simulate degrees of Recoil Force upon the shooter
         --  - Increasing difficulty in instances of Rapid Successive Shots or Automatic Fire
-        BoolDynamicRecoilSystem = false,
+        BoolDynamicRecoilSystem = true,
         -- Penalty
         --  - Applies Secondary Hit-Chance roll
         --  - Calculating distance to target
@@ -7134,7 +7062,7 @@ A26 = {
         --  - Calculated based on Firearm Aim-Time Characteristics
         --  - Applied when Aiming is stopped, reloading, etc
         --  - To Simulate having to Re-Aquire when Sight-Picture is lost
-        BoolResetSightPicture = false,
+        BoolResetSightPicture = true,
         -- Penalty
         --  - Applies Aim-Time Penalty for using Firearms in Vehicles
         --  - Calculated based on the Overall Length and Weight of the Firearm
@@ -7150,7 +7078,7 @@ A26 = {
         -- 2 = 75% - Less Often
         -- 3 = 50% - Rare
         -- 4 = 25% - Hardly Ever
-        EnumFirearmJam = 5,
+        EnumFirearmJam = 4,
         -- Function
         --  - Reduce or Prevent Firearm Attachments from Breaking
         --  - When weapon is used in Melee Mode
@@ -7309,7 +7237,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeBOW = 1,
+        EnumTypeBOW = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7325,7 +7253,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeFLAME = 1,
+        EnumTypeFLAME = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7341,7 +7269,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeGREN = 1,
+        EnumTypeGREN = 3,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7357,7 +7285,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeMINI = 1,
+        EnumTypeMINI = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7373,7 +7301,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeLMG = 1,
+        EnumTypeLMG = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7389,7 +7317,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeSEMI = 5,
+        EnumTypeSEMI = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7405,7 +7333,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeAUTO = 1,
+        EnumTypeAUTO = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7421,7 +7349,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeSMG = 4,
+        EnumTypeSMG = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7485,7 +7413,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeBOLT = 5,
+        EnumTypeBOLT = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7531,7 +7459,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginSOV = 5,
+        EnumOriginSOV = 11,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7546,7 +7474,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginKOR = 5,
+        EnumOriginKOR = 11,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7561,7 +7489,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginPAC = 5,
+        EnumOriginPAC = 11,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7576,7 +7504,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginCZE = 7,
+        EnumOriginCZE = 11,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7591,7 +7519,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginEUR = 9,
+        EnumOriginEUR = 11,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7606,7 +7534,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginISR = 7,
+        EnumOriginISR = 11,
         -- Type
         --  - Reduce or Remove Weapons based on Origin of Manufacture
         --  - This will affect associated Items and Ammo
@@ -7621,7 +7549,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumOriginREST = 7,
+        EnumOriginREST = 11,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7636,7 +7564,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber50BMG = 1,
+        EnumCaliber50BMG = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7651,7 +7579,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber4gShot = 3,
+        EnumCaliber4gShot = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7666,7 +7594,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber10gShot = 3,
+        EnumCaliber10gShot = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7681,7 +7609,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber12gShot = 5,
+        EnumCaliber12gShot = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7696,7 +7624,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber20gShot = 3,
+        EnumCaliber20gShot = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7726,7 +7654,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber308WIN = 2,
+        EnumCaliber308WIN = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7756,7 +7684,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber545x39mm = 2,
+        EnumCaliber545x39mm = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7771,7 +7699,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber762x39mm = 2,
+        EnumCaliber762x39mm = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7786,7 +7714,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber556x45mm = 2,
+        EnumCaliber556x45mm = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7921,7 +7849,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber380ACP = 3,
+        EnumCaliber380ACP = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7936,7 +7864,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber22LR = 5,
+        EnumCaliber22LR = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7952,7 +7880,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber177BB = 1,
+        EnumCaliber177BB = 6,
         -- Parts
         --  - Reduce or Remove Suppressor Attachments
         --  - This only affects Container Spawn (Not Pre-Attached parts on Zombie Weapons)
@@ -8064,7 +7992,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumStdMag = 7,
+        EnumStdMag = 4,
         -- Magazines
         --  - Reduce or Remove Extended Magazines Default=20%
         -- 1 = REMOVE
@@ -8077,7 +8005,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumExtMag = 5,
+        EnumExtMag = 3,
         -- Magazines
         --  - Reduce or Remove Drum / Box Magazines Default=10%
         -- 1 = REMOVE
@@ -8090,7 +8018,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumDrumMag = 1,
+        EnumDrumMag = 2,
         -- Melee
         --  - Reduce or Remove Large Knife Weapons
         --  - From Mod Only... No effect on Vanilla Items Default=20%
@@ -8160,7 +8088,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumMeleeBlunt = 1,
+        EnumMeleeBlunt = 4,
         -- Melee
         --  - Reduce or Remove Spear Weapons
         --  - From Mod Only... No effect on Vanilla Items Default=10%
@@ -8188,7 +8116,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumPowerTool = 1,
+        EnumPowerTool = 11,
         -- Loot
         --  - Reduce or Remove Ammunition Reloading related items
         --  - Reading the Lyman 49th Edition Reloading Manual is required to make Ammunition Default=30%
@@ -8202,7 +8130,7 @@ A26 = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumReloadingItems = 7,
+        EnumReloadingItems = 4,
         -- Default=10%
         -- 1 = REMOVE
         -- 2 = 10%
@@ -8293,7 +8221,7 @@ A26 = {
         -- 18 = 170%
         -- 19 = 180%
         -- 20 = 190%
-        EnumArmor = 1,
+        EnumArmor = 6,
         -- Loot
         --  - Reduce or Remove Weapons / Items produced after 1992
         --  - Be Advised... This option Removes A-L-O-T of weapons Default=ALLOW
@@ -8626,7 +8554,7 @@ A26 = {
         -- 18 = + 170%
         -- 19 = + 180%
         -- 20 = + 190%
-        EnumCIVx = 3,
+        EnumCIVx = 1,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Police Distribution areas
         --  - Generally Required to bring overall spawn result back up
@@ -8686,7 +8614,7 @@ A26 = {
         -- 28 = + 270%
         -- 29 = + 280%
         -- 30 = + 290%
-        EnumMILx = 3,
+        EnumMILx = 1,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Security Distribution areas
         --  - Generally Required to bring overall spawn result back up
@@ -8711,7 +8639,7 @@ A26 = {
         -- 18 = + 170%
         -- 19 = + 180%
         -- 20 = + 190%
-        EnumSECx = 3,
+        EnumSECx = 1,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Hunting Distribution areas
         --  - Generally Required to bring overall spawn result back up
@@ -8811,7 +8739,7 @@ A26 = {
         -- 2 = Say
         ChatNotificationChannel = 1,
         -- Kick the player when they are AFK, after the additional AFK kick timeout.
-        DoKick = false,
+        DoKick = true,
         -- Whether zombies will ignore AFK players.
         AFKZombiesNoAttack = true,
         -- Allow players to manually set themselves as AFK.
@@ -8958,7 +8886,7 @@ A26 = {
         -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Customize the chance for tracks of animals to spawn.
         Separation_ForageSpawn = false,
         -- Bird spottings will be more common than normal in cities due to nature taking over in populated areas. Small and big animals will also be present in cities thanks to this setting.
-        YearsLater = true,
+        YearsLater = false,
         -- Boost to spawns of bird tracks. Minimum=0 Maximum=500 Default=100
         BirdsForage = 100,
         -- Boost to spawns of tiny game tracks. Minimum=0 Maximum=500 Default=100
@@ -9066,7 +8994,7 @@ A26 = {
         -- Restricts renaming vehicles to admins in multiplayer. Leave unchanged for singleplayer.
         OnlyAdminCanRenameVehicles = false,
         -- Players will be able to rename vehicles only if they have the keys for it or if the keys are in ignition. Works only in multiplayer.
-        MustHaveKeys = true,
+        MustHaveKeys = false,
     },
     FirstAidOverhaul = {
         -- From this level onward, the Player will be able to treat fractures.  Minimum=0 Maximum=10 Default=1
@@ -9185,7 +9113,7 @@ A26 = {
         -- Minimum=0.00 Maximum=100.00 Default=0.04
         HeadhunterChance = 0.04,
         -- Minimum=0.00 Maximum=100.00 Default=0.08
-        AmazonaChance = 0.04,
+        AmazonaChance = 0.08,
     },
     JordanalSpawns = {
         -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.01
@@ -9216,9 +9144,9 @@ A26 = {
         Entry13 = "Cannibalism",
         Entry14 = "Mental Illness",
         Entry15 = "Religious",
-        Entry16 = "Animal Cruelty",
-        Entry17 = "",
-        Entry18 = "",
+        Entry16 = "Dismemberment",
+        Entry17 = "Animal Cruelty",
+        Entry18 = "Infidelity",
     },
     Text = {
         -- Enable/disable all mechanics related to Music (moodles, traits, interactions, ...).
@@ -9270,22 +9198,22 @@ A26 = {
         -- 1 = Low
         -- 2 = Normal
         -- 3 = High
-        StrengthMultiplier = 1,
+        StrengthMultiplier = 2,
         -- Controls the duration of all mindfulness states. Default=Normal
         -- 1 = Short
         -- 2 = Normal
-        MindfulnessDuration = 1,
+        MindfulnessDuration = 2,
         -- How much healing occurs during the Perfect Mindfulness state.
         -- The amount varies depending on your character overall health and game-time settings. Minimum=0.00 Maximum=10.00 Default=2.00
-        HealFactor = 0.01,
+        HealFactor = 2.0,
         -- Controls the effectiveness of the mindfulness states bonuses (stress, pain, panic, etc...). Default=Normal
         -- 1 = Weak
         -- 2 = Normal
-        EffectMultiplier = 1,
+        EffectMultiplier = 2,
     },
     LSMeditation = {
         -- Tick this box to disable levitation at higher levels.
-        RemoveLevitation = true,
+        RemoveLevitation = false,
     },
     Yoga = {
         -- Controls how powerful yoga is. Higher values increases the effectiveness of it's benefits. Default=Normal
@@ -9327,7 +9255,7 @@ A26 = {
         -- Values below 1.0 decrease the rate, set it to 0 stop the need from increasing. Minimum=0.00 Maximum=3.00 Default=1.00
         HygieneNeedMultiplier = 1.0,
         -- Values below 1.0 decrease the rate, set it to 0 stop the need from increasing. Minimum=0.00 Maximum=3.00 Default=1.00
-        BladderNeedMultiplier = 0.0,
+        BladderNeedMultiplier = 1.0,
         -- How many survived days it takes for a new survivor to care about hygiene. Default=4-12 days
         -- 1 = 1-3 days
         -- 2 = 4-12 days
@@ -9337,7 +9265,7 @@ A26 = {
         -- 1 = 1-3 days
         -- 2 = 4-12 days
         -- 3 = 2-4 weeks
-        CleaningExpectationTime = 3,
+        CleaningExpectationTime = 2,
         -- Chance for an unskilled character to generate waste during a skill-based activity (e.g. food scraps from cooking with low cooking skill). Default=Normal
         -- 1 = Very Low
         -- 2 = Low
@@ -9614,7 +9542,7 @@ A26 = {
         -- Markers will appear in place of the board indicating the existence of a board in this square.
         EnableSpawnMarkers = true,
         -- When enabled, the admin message on the message board will be slightly highlighted.
-        VisualMsgFromAdmin = true,
+        VisualMsgFromAdmin = false,
         -- The set value will determine the distance to the board position. If the distance exceeds this value, the UI will be hidden. Minimum=2 Maximum=900 Default=5
         MaxDistanceToBoard = 5,
         -- When this option is enabled and if there are dynamic textures on the board in the background, sheets of paper will be created in random positions.
@@ -9696,7 +9624,7 @@ A26 = {
         ZombieAmputationDamageChance = 25,
     },
     Tikitown = {
-        CollectionBaseball = false,
+        CollectionBaseball = true,
         -- Minimum=0.00 Maximum=30.00 Default=4.00
         CollectionBaseballCommon = 4.0,
         -- Minimum=0.00 Maximum=30.00 Default=1.00
@@ -9706,7 +9634,7 @@ A26 = {
         -- Minimum=0.00 Maximum=0.40 Default=0.03
         CollectionBaseballZombieRare = 0.025,
         -- Enable or Disable the spawn of the Tikitorch spear weapon
-        Tikitorch = false,
+        Tikitorch = true,
         -- Adjust spawn rate of the Tikitorch weapon Minimum=0.00 Maximum=50.00 Default=20.00
         TikitorchSpawnRate = 20.0,
         -- Enable or Disable Tikitown's custom historically clad zombies
@@ -9729,7 +9657,7 @@ A26 = {
         BubbleOpacity = 75,
         VoiceEnabled = true,
         VerbEnabled = false,
-        Capitalize = true,
+        Capitalize = false,
         HideCallout = true,
         MarkdownOneAsteriskColor = "#ADD4A0",
         MarkdownTwoAsterisksColor = "#C3A4CF",
@@ -9781,7 +9709,7 @@ A26 = {
     },
     UdderlySafeLogin = {
         -- Safe time in seconds, note that this begins when they hit Click To Start, not when they are able to move. Minimum=1.00 Maximum=120.00 Default=20.00
-        SafeTime = 30.0,
+        SafeTime = 20.0,
         -- Movement multiplier, this is what changes the amount of time you get once you move. Minimum=0.00 Maximum=1.00 Default=0.50
         MovementMultiplier = 0.5,
         -- Use invisibility instead of not allowing zombies to hit you. This prevents them from noticing or following you but could be exploited by users.
@@ -9804,7 +9732,7 @@ A26 = {
         -- 5 = Moderator+
         EventAdminAccess = 5,
         -- When enabled, players can register/unregister themselves from events. When disabled, only admins can add or remove players from events.
-        AllowPlayerRegistration = true,
+        AllowPlayerRegistration = false,
         -- How players can return from events: <LINE> 1. Original Only - Only to position before first event teleport <LINE> 2. Safehouse Only - Choose from player's safehouses <LINE> 3. Player Choice - Let players choose between original position and safehouse Default=Player Choice
         -- 1 = Original Position Only
         -- 2 = Safehouse Only
