@@ -5691,32 +5691,26 @@ SandboxVars = {
         -- If true, diminished bonus from reading stay at a capped amount. If false, the bonuses are 0.
         CanReadPassedMax = true,
     },
-    Advanced_trajectory = {
-        -- Show or hide crosshair.
+Advanced_trajectory = {
         aimpoint = true,
         showOutlines = false,
-        -- Check this if you don't want ot manually set which Z level you want to shoot at. Be aware that this will reduce FPS a lot when aiming.
         enableAutoAimZLevel = true,
         hideTracer = false,
         Enablerange = true,
         Enablethrow = true,
-        -- Nerfs shooting in cars. Player aim is limited to a cone.
         enableCarAimLimit = true,
-        -- If enabled, bullet will ignore car when shooting from a higher level.
         enableBulletIgnoreCarFromHighLevel = true,
-        -- For debugging, character says what body part was shot.
         callshot = false,
-        -- Need to check this if you want gun PVP with safety features OFF. UNCHECK IF YOU HAVE PVP OFF AND DO NOT WANT GUN PVP!
         IgnorePVPSafety = false,
         enableBulletPenFlesh = true,
-        -- Multiplies base damage of bullet. Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         ATY_damage = 1.0,
-        -- Ex: 0.1 means nerf bullet damage by 90% after penetrating through first zombie/player. Minimum=0.00 Maximum=1.00 Default=0.25
+        -- Minimum=0.00 Maximum=1.00 Default=0.25
         penDamageReductionMultiplier = 0.25,
-        -- Minimum damage that needs to be done to zombie for it to react to projectile hit. Minimum=0.00 Maximum=2.00 Default=0.30
+        -- Minimum=0.00 Maximum=2.00 Default=0.30
         minDamageToGetHitReaction = 0.3,
         -- Minimum=0.00 Maximum=1.50 Default=1.00
-        DebugGridMultiplier = 1.0,
+        DebugGridMultiplier = 0.5,
         -- Minimum=0.00 Maximum=100.00 Default=0.00
         DebugOffset = 0.0,
         -- Minimum=0.00 Maximum=100.00 Default=0.00
@@ -5735,74 +5729,71 @@ SandboxVars = {
         enablePlayerBulletPosCheck = false,
         toggleResetZLevel = false,
         -- Minimum=0.00 Maximum=300.00 Default=3.00
-        XPKillModifier = 3.0,
+        XPKillModifier = 2.0,
         -- Minimum=0.00 Maximum=300.00 Default=0.50
         XPHitModifier = 0.5,
         -- Minimum=0.00 Maximum=1.00 Default=0.50
         MaxProjCone = 0.5,
-        -- Value that limits how much bloom is added to crosshair. Higher means larger possible bloom. Minimum=0.00 Maximum=20.00 Default=7.00
+        -- Minimum=0.00 Maximum=20.00 Default=7.00
         maxaimnum = 7.0,
-        -- Value that affects crosshair's minimum bloom. Characters with low aiming level (0-2) will never be accurate (always has bloom). Set to 0 if you want to be OP or unlock focus mechanic at level 3. Minimum=0.00 Maximum=100.00 Default=7.00
+        -- Minimum=0.00 Maximum=100.00 Default=7.00
         minaimnumModifier = 7.0,
-        -- Aiming level in which player unlocks the focus mechanic. Minimum=0.00 Maximum=10.00 Default=3.00
+        -- Minimum=0.00 Maximum=10.00 Default=3.00
         focusLevel = 3.0,
-        -- Player loses accuracy when trying to shoot targets past their distance limit. Uncheck to disable.
         enableDistanceLimitPenalty = true,
         -- Minimum=0.00 Maximum=1.00 Default=1.00
         distanceLimitScaling = 1.0,
-        -- Affects when the penalty will be applied. The lower the value, the lesser the distance that the crosshair needs to be from the player to activate the penalty. Minimum=0.00 Maximum=10.00 Default=2.00
-        distanceFocusPenalty = 2.0,
-        -- Value affects how much bloom is added when reloading and racking firearm. Minimum=0.00 Maximum=10.00 Default=0.10
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
+        distanceFocusPenalty = 3.0,
+        -- Minimum=0.00 Maximum=10.00 Default=0.10
         reloadEffectModifier = 0.1,
-        -- Value that affects how fast your crosshair tightens. Higher means faster. Minimum=0.00 Maximum=100.00 Default=1.10
+        -- Minimum=0.00 Maximum=100.00 Default=1.10
         reducespeed = 1.1,
-        -- Driving part of the focus mechanic. Determines time it takes for the crosshair to begin its process of reducing aimnum to 0 (max accuracy). This is a flat value. Set to 0 to disable if you want to remove ability to gain max accuracy without waiting. Minimum=0.00 Maximum=10.00 Default=2.00
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
         focusCounterSpeed = 2.0,
-        -- Multiplier that determines how much focus counter/timer should be shorten based off of aiming level.  Minimum=0.00 Maximum=10.00 Default=7.00
+        -- Minimum=0.00 Maximum=10.00 Default=7.00
         focusCounterSpeedScaleModifier = 7.0,
-        -- Part of the focus mechanic. Determines speed of crosshair reducing aimnum to 0 once process has begun. Minimum=0.00 Maximum=1.00 Default=1.00
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
         maxFocusSpeed = 1.0,
-        -- If enabled, player will have a chance of missing depending on bloom. Bullet will pass through zombies without damaging them.
-        enableHitOrMiss = true,
-        -- Max distance for point blank to register when projectile detects zombie in its proximity. Set to 0 to pretty much disable it. Minimum=0.00 Maximum=5.00 Default=2.00
+        enableHitOrMiss = false,
+        -- Minimum=0.00 Maximum=5.00 Default=2.00
         pointBlankMaxDistance = 2.0,
-        -- Player will announce if their bullet hit or missed with bloom value comparisons.
         announceHitOrMiss = false,
-        -- A flat value that gives a flat increase in chances of hitting zombies with a shotgun. Minimum=0.00 Maximum=200.00 Default=60.00
-        shotgunHitBuff = 60.0,
-        -- Affects how much aiming level will decrease the chances of not missing. Higher means lower chance of missing per level. Minimum=0.00 Maximum=20.00 Default=2.00
+        -- Minimum=0.00 Maximum=200.00 Default=60.00
+        shotgunHitBuff = 0.0,
+        -- Minimum=0.00 Maximum=20.00 Default=2.00
         hitLevelScaling = 3.0,
-        -- Must be less than max. Bullet misses if currentBloom > rand(minMiss + buff + aimLevel*hitScaling, maxMiss) Minimum=0.00 Maximum=300.00 Default=25.00
-        missMin = 25.0,
-        -- Must be greater than min. Bullet misses if currentBloom > rand(minMiss + buff + aimLevel*hitScaling, maxMiss) Minimum=0.00 Maximum=300.00 Default=120.00
-        missMax = 120.0,
-        -- Makes crosshair slightly transparent when bloom reaches "Min Miss" value so players know when they'll start having a chance of missing. Minimum=0.00 Maximum=1.00 Default=0.30
+        -- Minimum=0.00 Maximum=300.00 Default=25.00
+        missMin = 15.0,
+        -- Minimum=0.00 Maximum=300.00 Default=120.00
+        missMax = 100.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.30
         missMinTransparency = 0.3,
-        -- Linked to Focus Counter Speed. Part of the focus mechanic. Weapon's recoil delay affects how long it takes for character to recover from recoil and this is a multiplier of that. Set to 0 to ignore weapon's recoil delay stat. Minimum=0.00 Maximum=1.00 Default=0.01
+        -- Minimum=0.00 Maximum=1.00 Default=0.01
         recoilDelayModifier = 0.01,
-        -- Multiplier of gun's max dmg added as recoil to crosshair (adds bloom when shooting). Minimum=0.00 Maximum=30.00 Default=10.00
+        -- Minimum=0.00 Maximum=30.00 Default=10.00
         recoilModifier = 10.0,
-        -- Affects exponential growth of recoil (how much bloom is added depending on the previous bloom value the player shot at). Lower means less added bloom as you continue spraying. Minimum=0.00 Maximum=200.00 Default=80.00
+        -- Minimum=0.00 Maximum=200.00 Default=80.00
         recoilScaleModifier = 80.0,
-        -- Multiplier reduction to gun recoil. Minimum=0.00 Maximum=1.00 Default=0.70
+        -- Minimum=0.00 Maximum=1.00 Default=0.70
         proneRecoilBuff = 0.7,
-        -- Multiplier that affects how much bloom is added depending on the previous bloom value the player shot at. Lower means less added bloom as you continue spraying. Minimum=0.00 Maximum=1.00 Default=0.50
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
         proneExpoRecoilBuff = 0.5,
-        -- Multiplier reduction to gun recoil. Minimum=0.00 Maximum=1.00 Default=0.80
+        -- Minimum=0.00 Maximum=1.00 Default=0.80
         crouchRecoilBuff = 0.8,
-        -- Multiplier that affects how much bloom is added depending on the previous bloom value the player shot at. Lower means less added bloom as you continue spraying. Minimum=0.00 Maximum=1.00 Default=0.75
+        -- Minimum=0.00 Maximum=1.00 Default=0.75
         crouchExpoRecoilBuff = 0.75,
         -- Minimum=0.00 Maximum=2.00 Default=1.00
         bulletspeed = 1.0,
         -- Minimum=0.00 Maximum=10.00 Default=2.00
         bulletdistance = 2.0,
-        -- When aiming moving and turnin. Minimum=0.00 Maximum=10.00 Default=10.00
+        -- Minimum=0.00 Maximum=10.00 Default=10.00
         runNGunLv = 10.0,
-        -- Multiplier that reduces penalty for moving and turning. 0.25 means 75% reduction to penalty. Minimum=0.00 Maximum=1.00 Default=0.50
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
         runNGunBuff = 0.5,
-        -- Value that adds bloom when moving. Minimum=0.00 Maximum=100.00 Default=1.30
+        -- Minimum=0.00 Maximum=100.00 Default=1.30
         moveeffect = 1.3,
-        -- Value that adds bloom when physically turning your feet, not hips. Minimum=0.00 Maximum=100.00 Default=0.70
+        -- Minimum=0.00 Maximum=100.00 Default=0.70
         turningeffect = 0.7,
         -- Minimum=0.00 Maximum=10.00 Default=8.00
         crouchCounterSpeed = 8.0,
@@ -5812,91 +5803,91 @@ SandboxVars = {
         crouchTurnEffect = 3.0,
         -- Minimum=0.00 Maximum=10.00 Default=5.00
         proneTurnEffect = 5.0,
-        -- Reduces minimum bloom limit by a percentage; lower means smaller crosshair Minimum=0.00 Maximum=1.00 Default=0.50
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
         crouchFocusLimitBuff = 0.5,
-        -- Reduces minimum bloom limit by a percentage; lower means smaller crosshair" Minimum=0.00 Maximum=1.00 Default=0.30
+        -- Minimum=0.00 Maximum=1.00 Default=0.30
         proneFocusLimitBuff = 0.3,
-        -- When proning, you gain max accuracy faster (applies when focus mechanic is unlocked). Minimum=0.00 Maximum=10.00 Default=1.50
+        -- Minimum=0.00 Maximum=10.00 Default=1.50
         proneFocusCounterSpeedBuff = 1.5,
-        -- When proning, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.40
+        -- Minimum=0.00 Maximum=2.00 Default=0.40
         proneReduceSpeedBuff = 0.4,
-        -- When crouching, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.20
+        -- Minimum=0.00 Maximum=2.00 Default=0.20
         crouchReduceSpeedBuff = 0.2,
-        -- ex. 0.9 means reduces incoming damage by 90% when armor is maxed; applies to armor Minimum=0.00 Maximum=1.00 Default=0.80
+        -- Minimum=0.00 Maximum=1.00 Default=0.80
         maxDefenseReduction = 0.8,
-        -- If dealt headshot, increase chance of wounding head. (ex. 20 means percentage of wounding head is 30% (20 + 10)) Minimum=0.00 Maximum=100.00 Default=20.00
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
         headShotIncChance = 20.0,
-        -- If dealt footshot, increase chance of wounding legs/groin. (ex. 10 means percentage of wounding foot is 20% (10 + 10)) Minimum=0.00 Maximum=100.00 Default=10.00
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
         footShotIncChance = 10.0,
-        -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=10.00
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
         headShotDmgZomMultiplier = 10.0,
-        -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
+        -- Minimum=0.00 Maximum=100.00 Default=5.00
         bodyShotDmgZomMultiplier = 5.0,
-        -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=1.00
-        footShotDmgZomMultiplier = 1.0,
-        -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=15.00
-        headShotDmgPlayerMultiplier = 15.0,
-        -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
-        bodyShotDmgPlayerMultiplier = 5.0,
-        -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=2.00
-        footShotDmgPlayerMultiplier = 2.0,
-        -- Bloom affects crit chance. This is a multiplier to that. Set to 0 for better chances of crit. Minimum=0.00 Maximum=100.00 Default=1.00
-        critChanceModifier = 1.0,
-        -- Chance that a gunshot wound will cause a fracture Minimum=0.00 Maximum=100.00 Default=10.00
-        fractureChance = 10.0,
-        -- Chance that a gunshot wound will not inflict a lodged bullet Minimum=0.00 Maximum=100.00 Default=25.00
-        throughChance = 25.0,
-        -- Shotgun has a max independent projectile cone. Minimum=0.00 Maximum=1.00 Default=0.10
-        maxShotgunProjCone = 0.15,
-        -- Multiplier on base stat (range) of shotgun. Default value is 0.75 which means 75% of vanilla's range. Minimum=0.00 Maximum=10.00 Default=0.50
-        shotgunDistanceModifier = 0.5,
-        -- Amount of pellots shot Minimum=0 Maximum=100 Default=5
-        shotgunnum = 5,
-        -- Value affects shotgun spread. The lower the value, the more narrow the spread. Minimum=0.00 Maximum=1.00 Default=0.10
-        shotgundivision = 0.15,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        shotgunDamageMultiplier = 1.05,
-        -- Shotguns crit chance is only affected by their stat and aiming level (not bloom). Default value is 10 meaning the game decides a random value from 1 to (100 - 10) and if value is <= crit stat, then crit. Minimum=0.00 Maximum=100.00 Default=10.00
-        critChanceModifierShotgunsOnly = 10.0,
+        footShotDmgZomMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=15.00
+        headShotDmgPlayerMultiplier = 15.0,
+        -- Minimum=0.00 Maximum=100.00 Default=5.00
+        bodyShotDmgPlayerMultiplier = 5.0,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        footShotDmgPlayerMultiplier = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        critChanceModifier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        fractureChance = 10.0,
+        -- Minimum=0.00 Maximum=100.00 Default=25.00
+        throughChance = 25.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
+        maxShotgunProjCone = 0.4,
+        -- Minimum=0.00 Maximum=10.00 Default=0.50
+        shotgunDistanceModifier = 0.6,
+        -- Minimum=0 Maximum=100 Default=5
+        shotgunnum = 6,
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
+        shotgundivision = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        shotgunDamageMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        critChanceModifierShotgunsOnly = 25.0,
         -- Minimum=0.00 Maximum=5.00 Default=0.00
         staminaCrouchScale = 0.001,
-        -- Multiplier that scales off of heavy moodle level Minimum=0.00 Maximum=5.00 Default=0.50
+        -- Minimum=0.00 Maximum=5.00 Default=0.50
         staminaHeavyCrouchScale = 0.5,
         -- Minimum=0.00 Maximum=5.00 Default=0.00
         staminaCrawlScale = 0.003,
-        -- Multiplier that scales off of heavy moodle level Minimum=0.00 Maximum=5.00 Default=0.50
+        -- Minimum=0.00 Maximum=5.00 Default=0.50
         staminaHeavyCrawlScale = 0.5,
-        -- This value adds more bloom when walking or turning (Heavy Moodle Scaling) Minimum=0.00 Maximum=5.00 Default=0.50
+        -- Minimum=0.00 Maximum=5.00 Default=0.50
         heavyTurnEffectModifier = 0.5,
-        -- This value amplifies move and turning effect, which means more bloom when performing those actions. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=0.50
+        -- Minimum=0.00 Maximum=100.00 Default=0.50
         drunkActionEffectModifier = 0.5,
-        -- Multiplier that increases your maxaimnum or max bloom. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=6.00
+        -- Minimum=0.00 Maximum=100.00 Default=6.00
         drunkMaxBloomModifier = 6.0,
-        -- This value increases max bloom limit dpeending on heavy moodle level. Minimum=0.00 Maximum=100.00 Default=6.00
+        -- Minimum=0.00 Maximum=100.00 Default=6.00
         heavyMaxBloomModifier = 6.0,
-        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.50 Maximum=2.00 Default=0.66
+        -- Minimum=0.50 Maximum=2.00 Default=0.66
         hyperHypoModifier = 0.66,
-        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.50 Maximum=2.00 Default=0.50
+        -- Minimum=0.50 Maximum=2.00 Default=0.50
         tiredModifier = 0.5,
-        -- This value must be very small as it affects how slow your crosshair reduces bloom. Minimum=0.00 Maximum=1.00 Default=0.10
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
         painModifier = 0.1,
-        -- Makes crosshair shaky. Minimum=0.00 Maximum=100.00 Default=2.00
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
         painVisualModifier = 2.0,
-        -- Multiplier that determines how much panic increases the penalty affect when aiming at farther targets. Minimum=0.00 Maximum=5.00 Default=3.00
+        -- Minimum=0.00 Maximum=5.00 Default=3.00
         panicPenaltyModifier = 3.0,
-        -- Makes crosshair shaky. Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         panicVisualModifier = 1.0,
-        -- Multiplier that affects how much is added to minaimnum or minimum bloom. Minimum=0.00 Maximum=100.00 Default=4.00
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
         stressBloomModifier = 4.0,
-        -- Affects how intense the crosshair shaking affect is. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=1.25
+        -- Minimum=0.00 Maximum=100.00 Default=1.25
         stressVisualModifier = 1.25,
-        -- Value affects how much bloom is added when coughing. Minimum=0.00 Maximum=100.00 Default=2.00
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
         coughModifier = 2.0,
-        -- Value affects the rate of bloom added when inhaling. Set to 0 to disable the whole endurance mechanic. Minimum=0.00 Maximum=100.00 Default=1.50
+        -- Minimum=0.00 Maximum=100.00 Default=1.50
         enduranceBreathModifier = 1.5,
-        -- Value determines how long the characters inhales (adds bloom). Links to exhaleModifier1. Higher value means shorter timer, lower means longer. Minimum=0.00 Maximum=100.00 Default=3.00
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
         inhaleModifier1 = 3.0,
-        -- Value determines how long the characters exhales (reduces bloom). Links to exhaleModifier1. Higher value means shorter timer, lower means longer. Minimum=0.00 Maximum=100.00 Default=2.00
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
         exhaleModifier1 = 2.0,
         -- Minimum=0.00 Maximum=100.00 Default=3.00
         inhaleModifier2 = 3.0,
@@ -5915,23 +5906,23 @@ SandboxVars = {
         aimLevelTextTrans = 0.5,
         -- Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairMaxTransparency = 1.0,
-        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.20
-        crosshairRed = 0.2,
-        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        crosshairRed = 0.0,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairGreen = 1.0,
-        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.20
-        crosshairBlue = 0.2,
-        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        crosshairBlue = 0.98,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairRedMain = 1.0,
-        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairGreenMain = 1.0,
-        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairBlueMain = 1.0,
-        -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
         crosshairRedLimit = 1.0,
-        -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairGreenLimit = 1.0,
-        -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.00
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreenLimit = 0.2,
+        -- Minimum=0.00 Maximum=1.00 Default=0.00
         crosshairBlueLimit = 0.0,
     },
     zReSA = {
