@@ -407,7 +407,7 @@ SandboxVars = {
     -- Chance of being bitten when a zombie attacks from behind. Default=High
     -- 1 = Low
     -- 2 = Medium
-    RearVulnerability = 3,
+    RearVulnerability = 1,
     -- Disable to walk unimpeded while melee attacking.
     AttackBlockMovements = true,
     AllClothesUnlocked = false,
@@ -999,7 +999,7 @@ SandboxVars = {
         -- The starting toughness of the zombies. Default=Normal
         -- 1 = Tough
         -- 2 = Normal
-        Toughness = 1,
+        Toughness = 2,
         -- Definitive Zombies will affect the zombie's toughness stat. Disable to improve compatibility between similar mods.
         CognitionEnable = true,
         -- The starting toughness of the zombies. Default=Basic Navigation
@@ -4377,7 +4377,7 @@ SandboxVars = {
         -- Enable randomisation for the Toughness stat. Chances will be normalised at the end
         Toughness_Seed_Enable = false,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Toughness_Seed1 = 20.0,
+        Toughness_Seed1 = 10.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4389,9 +4389,9 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Toughness_Seed1_Effect = 6,
+        Toughness_Seed1_Effect = 5,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Toughness_Seed2 = 20.0,
+        Toughness_Seed2 = 10.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4403,7 +4403,7 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Toughness_Seed2_Effect = 6,
+        Toughness_Seed2_Effect = 4,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
         Toughness_Seed3 = 20.0,
         -- Default=Nothing
@@ -4433,7 +4433,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Toughness_Seed4_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Toughness_Seed5 = 20.0,
+        Toughness_Seed5 = 40.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -8743,7 +8743,7 @@ Advanced_trajectory = {
     Bandits = {
         General_KillCounter = true,
         -- Minimum=1.00 Maximum=5.00 Default=2.40
-        General_StunlockHitSpeed = 3.0,
+        General_StunlockHitSpeed = 5.0,
         -- Minimum=0.25 Maximum=4.00 Default=1.00
         General_SpawnMultiplier = 0.5,
         -- Minimum=0.25 Maximum=4.00 Default=1.00
@@ -8776,7 +8776,7 @@ Advanced_trajectory = {
         -- 2 = Can't Hit the Broad Side of a Barn
         -- 3 = Occasional Marksman
         -- 4 = Sharpshooter on a Good Day
-        General_OverallAccuracy = 3,
+        General_OverallAccuracy = 1,
         -- Default=Normal (loot x 1.0)
         -- 1 = None (loot x 0)
         -- 2 = Insanely Rare (loot x 0.05)
@@ -9493,7 +9493,7 @@ Advanced_trajectory = {
     },
     JaxeRevival = {
         -- The percentage of health before a player will be incapacitated. A higher value lowers the chance of instant death but decreases the damage taken before incapacitation. Minimum=5 Maximum=80 Default=25
-        IncapacitatedHealth = 25,
+        IncapacitatedHealth = 35,
         -- The time in hours the player will stay incapacitated unless assisted by another player. Minimum is 1 hour for singleplayer. For multiplayer, set to 0 to disable any time limit. Minimum=0 Maximum=240 Default=6
         IncapacitatedTime = 6,
         -- How many ticks to complete an assisted recovery. First Aid skill will reduce the time by up to 50% at maximum level. Minimum=100 Maximum=3000 Default=1200
@@ -9501,17 +9501,17 @@ Advanced_trajectory = {
         -- If UNCHECKED and in multiplayer, the incapacitated player will die at the end of the timer.  If CHECKED or singleplayer, an incapacitated player will recover at the end of the timer without any assistance unless their Fitness or Strength is zero and the option below is enabled.
         UnassistedRecovery = false,
         -- If UNCHECKED, player recovery is unaffected by their Fitness or Strength.  If CHECKED, an incapacitated player with Fitness or Strength reduced to zero will die if not rescued in time. If a player is downed with zero Fitness or Strength, they will die immediately instead.
-        RecoveryRequiresPassive = true,
+        RecoveryRequiresPassive = false,
         -- The percentage of health a newly revived player will have. Minimum=5 Maximum=100 Default=50
         RecoveryHealth = 50,
         -- If UNCHECKED, injuries will remain, but any bleeding will have stopped.  If CHECKED, a newly revived player will have all injuries healed.
         RecoveryRemovesInjuries = false,
         -- The percentage Passive skill (Fitness and Strength) levels lost when incapacitated. Minimum=0 Maximum=100 Default=50
-        PassiveSkillLoss = 10,
+        PassiveSkillLoss = 0,
         -- The percentage of Agility skill levels lost when incapacitated. Minimum=0 Maximum=100 Default=25
-        AgilitySkillLoss = 10,
+        AgilitySkillLoss = 0,
         -- The percentage Weapon skill (Combat and Firearm) levels lost when incapacitated Minimum=0 Maximum=100 Default=10
-        WeaponSkillLoss = 10,
+        WeaponSkillLoss = 0,
         -- The percentage Other skill (Crafting and Survivalist) levels lost when incapacitated Minimum=0 Maximum=100 Default=0
         OtherSkillLoss = 0,
         -- The level of First Aid required for reviving another player. Minimum=0 Maximum=10 Default=0
