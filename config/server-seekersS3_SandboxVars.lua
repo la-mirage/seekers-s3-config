@@ -83,7 +83,7 @@ SandboxVars = {
     -- Minimum=-1 Maximum=2147483647 Default=14
     WaterShutModifier = 1,
     -- Minimum=-1 Maximum=2147483647 Default=14
-    ElecShutModifier = 1,
+    ElecShutModifier = 16,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -181,9 +181,9 @@ SandboxVars = {
     -- 2 = Fast (50 Days)
     -- 3 = Normal (100 Days)
     -- 4 = Slow (200 Days)
-    ErosionSpeed = 1,
+    ErosionSpeed = 4,
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
-    ErosionDays = 0,
+    ErosionDays = 1,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
     XpMultiplier = 1.0,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
@@ -407,7 +407,7 @@ SandboxVars = {
     -- Chance of being bitten when a zombie attacks from behind. Default=High
     -- 1 = Low
     -- 2 = Medium
-    RearVulnerability = 3,
+    RearVulnerability = 1,
     -- Disable to walk unimpeded while melee attacking.
     AttackBlockMovements = true,
     AllClothesUnlocked = false,
@@ -477,7 +477,7 @@ SandboxVars = {
     -- 5 = Often
     CarAlarm = 2,
     -- Enable or disable player getting damage from being in a car accident.
-    PlayerDamageFromCrash = true,
+    PlayerDamageFromCrash = false,
     -- How many in-game hours before a wailing siren shuts off. Minimum=0.00 Maximum=168.00 Default=0.00
     SirenShutoffHours = 0.0,
     --  Governs whether player can discover a car that has been maintained and cared for after the infection struck. Default=Low
@@ -524,31 +524,31 @@ SandboxVars = {
     DaySurvivedModifier = 4,
     -- Loot of all types found on generic zombies, zombie outfits, and bags.
     -- Note: zombie loot is not affected by the other multipliers below. Minimum=0.00 Maximum=10.00 Default=1.00
-    ZombieLootMultiplier = 1.0,
+    ZombieLootMultiplier = 1.5,
     -- A semicolon separated list of items and chances to add to the zombie loot.
     ItemsAddedToZombieLoot = "Base.Money:0.05;Base.SheetPaper2:0.05",
-    ItemsAddedToMilitaryZedsLoot = "",
-    ItemsAddedToPoliceZedsLoot = "",
-    ItemsAddedToFiremenZedsLoot = "",
+    ItemsAddedToMilitaryZedsLoot = "NCcanteenmilitaryempty:0.05;HAMilitaryMapPieces:0.02;WalkieTalkie5:0.05;Base.556Box:0.1;Bullets45Box:0.1",
+    ItemsAddedToPoliceZedsLoot = "Base.Torch:0.05;Base.WalkieTalkie4:0.05;Base.Battery:0.1;Bullets9mmBox:0.1",
+    ItemsAddedToFiremenZedsLoot = "Base.Axe:0.1",
     -- Tourists, Golfers, Weddings, Classy...
-    ItemsAddedToRichZedsLoot = "",
+    ItemsAddedToRichZedsLoot = "Base.Money:0.2",
     -- Park rangers, survivalists, hunters, farmers, fishermen, campers...
-    ItemsAddedToRuralZedsLoot = "",
+    ItemsAddedToRuralZedsLoot = "Base.Bandaid:0.1",
     -- Raiders, Bandits, Militia, Thugs, Escaped inmates, survivors...
-    ItemsAddedToRogueZedsLoot = "",
+    ItemsAddedToRogueZedsLoot = "Base.Battery:0.1",
     -- Students, Teachers...
-    ItemsAddedToSchoolZedsLoot = "",
+    ItemsAddedToSchoolZedsLoot = "Base.Battery:0.5;Base.SewingKit:0.1;Base.Earbuds:0.5",
     -- Fitness Instructors, Baseball Fans, Baseball players, Boxing players, Jockeys...
-    ItemsAddedToSportsZedsLoot = "",
+    ItemsAddedToSportsZedsLoot = "Base.Bandaid:0.1;Base.Earbuds:0.1",
     -- Doctors, Nurses, Pharmacists, Ambulance Drivers...
-    ItemsAddedToMedicalZedsLoot = "",
+    ItemsAddedToMedicalZedsLoot = "Base.SutureNeedle:0.2;Base.SutureNeedleHolder:0.1;Base.Pills:0.2;Base.Bandage:0.2;Base.Bandaid:0.2;Base.AlcoholBandage:0.1",
     -- Mechanics, Metalworkers, McCoys, Foremen, Construction workers, Woodcutters...
-    ItemsAddedToIndustryZedsLoot = "",
+    ItemsAddedToIndustryZedsLoot = "Base.Nails:0.25,Base.NailsBox:0.1",
     -- Fossoil, Gas2Go, Thundergas...
-    ItemsAddedToGasStationZedsLoot = "",
+    ItemsAddedToGasStationZedsLoot = "Base.CandyPackage:0.1;Base.MintCandy:0.1;Base.RockCandy:0.1;Base.Crisps:0.1",
     -- Waiters, Cooks, Chefs...
-    ItemsAddedToRestaurantZedsLoot = "",
-    ItemsAddedToOfficeWorkersZedsLoot = "",
+    ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.TomatoSachet:0.1;Base.Mustard:0.1;Base.MustardSachet:0.1;Base.MayonnaiseFull:0.05;Base.HotsaucePacket:0.2;Base.SugarPacket:0.1;Base.SaltPacket:0.2",
+    ItemsAddedToOfficeWorkersZedsLoot = "Base.SewingKit:0.1;Base.Money:0.05",
     -- A semicolon separated list of zombie outfits that will drop the Custom Zed Outfits Loot defined below.
     -- Example: 'Priest;Biker;Redneck;Swimmer;Bedroom;Bathrobe;Hobbo;Party;Party2'
     -- Example 2: 'Security;Postal;Cyclist;StripperNaked;Bowling;MallSecurity;Inmate'
@@ -606,7 +606,7 @@ SandboxVars = {
     -- 3 = 3 (~75% items)
     OtherTablesMaxRolls = 3,
     -- Fresh and non-perishable food. Minimum=0.00 Maximum=10.00 Default=1.00
-    FoodLootMultiplier = 0.5,
+    FoodLootMultiplier = 1.0,
     -- Nonranged weapons of all kinds, except pens, forks and spoons.
     -- Includes Sledgehammer. Also includes instruments and some cooking tools. Minimum=0.00 Maximum=10.00 Default=1.00
     WeaponLootMultiplier = 1.0,
@@ -620,7 +620,7 @@ SandboxVars = {
     -- Tools to work on vehicles, and vehicle parts. Minimum=0.00 Maximum=10.00 Default=1.00
     MechanicsLootMultiplier = 1.0,
     -- Medicine, bandages, splint, needles, first aid kits... Minimum=0.00 Maximum=10.00 Default=1.00
-    MedicalLootMultiplier = 0.7,
+    MedicalLootMultiplier = 0.8,
     -- Books and magazines Minimum=0.00 Maximum=10.00 Default=1.00
     LiteratureLootMultiplier = 0.8,
     -- VHS tapes, CDs and videogames Minimum=0.00 Maximum=10.00 Default=1.00
@@ -640,12 +640,6 @@ SandboxVars = {
     -- A semicolon-separated list of specific multipliers for specific items.Example: Base.Sledgehammer=5;Base.Sledgehammer2=5;Base.Saw=0.5;Base.GardenSaw=0.5;Base.Hammer=0.1;Base.NailsBox=2
     -- These individual multipliers are applied on top of all other multipliers, and even if the item is in the exceptions list
     SpecificItemsList = "Base.Cigarettes:1;Base.Sledgehammer:1;Base.Sledgehammer2:1",
-    AT_VehicleDamageenable = true,
-    ATY_safezone_protect = true,
-    ATY_nonpvp_protect = true,
-    ATY_damagedisplay = false,
-    -- Minimum=0 Maximum=100 Default=100
-    AT_Blood = 100,
     -- Ranges from 0-100 in game. Sets how much boredom is removed every 10 minutes. Minimum=-100.00 Maximum=100.00 Default=3.50
     TrueMusicMoodImprovement_boredomMod = 5.0,
     -- Ranges 0-100 in game. THIS IS MY FCKIN JAM Minimum=-100.00 Maximum=100.00 Default=2.00
@@ -660,6 +654,12 @@ SandboxVars = {
     TrueMusicMoodImprovement_fatigueMod = 0.0025,
     -- Ranges 0-100 in game. Can ONLY be subtracted ~ sorry no painful music. Minimum=0.00 Maximum=100.00 Default=5.00
     TrueMusicMoodImprovement_painMod = 5.0,
+    AT_VehicleDamageenable = true,
+    ATY_safezone_protect = true,
+    ATY_nonpvp_protect = true,
+    ATY_damagedisplay = false,
+    -- Minimum=0 Maximum=100 Default=100
+    AT_Blood = 100,
     Map = {
         AllowMiniMap = true,
         AllowWorldMap = true,
@@ -693,7 +693,7 @@ SandboxVars = {
         -- 4 = 0-12 Hours
         -- 5 = 2-3 Days
         -- 6 = 1-2 Weeks
-        Mortality = 5,
+        Mortality = 6,
         -- Controls how quickly corpses rise as zombies. Default=0-1 Minutes
         -- 1 = Instant
         -- 2 = 0-30 Seconds
@@ -878,6 +878,25 @@ SandboxVars = {
         -- 7 = ULTRA RARE (0.05x)
         T2SpawnRateZombie = 7,
     },
+    Tikitown = {
+        CollectionBaseball = false,
+        -- Minimum=0.00 Maximum=30.00 Default=4.00
+        CollectionBaseballCommon = 4.0,
+        -- Minimum=0.00 Maximum=30.00 Default=1.00
+        CollectionBaseballRare = 1.0,
+        -- Minimum=0.00 Maximum=0.40 Default=0.08
+        CollectionBaseballZombieCommon = 0.075,
+        -- Minimum=0.00 Maximum=0.40 Default=0.03
+        CollectionBaseballZombieRare = 0.025,
+        -- Enable or Disable the spawn of the Tikitorch spear weapon
+        Tikitorch = true,
+        -- Adjust spawn rate of the Tikitorch weapon Minimum=0.00 Maximum=50.00 Default=20.00
+        TikitorchSpawnRate = 20.0,
+        -- Enable or Disable Tikitown's custom historically clad zombies
+        HistoricalOutfits = true,
+        -- Enable or Disable Tikitown's post office package system
+        PostOfficeOverride = true,
+    },
     WeaponModifiers = {
         -- Minimum=0 Maximum=1000 Default=1
         StartDay = 1,
@@ -939,6 +958,17 @@ SandboxVars = {
         -- (pens, spoons, forks, fishing rods, cooking pans, as well as construction materials like planks, metal bars, metal pipes.)
         -- 
         IgnoreIrrelevantWeapons = true,
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
+        TinkeringSkillXpMultiplier = 1.0,
+        -- Don't enable this if you use the Realistic list.
+        RangedWeaponsTinkerable = false,
+        -- To acquire the trait, you'll need the sum of your maintenance and tinkering levels to be at least 8, and to have tinkered 15 modifiers of at least epic rarity.
+        DynamicTinkerer = false,
+        -- How many items / how much of a drainable item is consumed when tinkering. Default=2
+        -- 1 = 1
+        -- 2 = 2
+        -- 3 = 3
+        TinkerCost = 2,
     },
     MoreDecreasingLoot = {
         -- If not checked, all the settings below will be ignored and the Item Remover will never trigger.
@@ -999,7 +1029,7 @@ SandboxVars = {
         -- The starting toughness of the zombies. Default=Normal
         -- 1 = Tough
         -- 2 = Normal
-        Toughness = 1,
+        Toughness = 2,
         -- Definitive Zombies will affect the zombie's toughness stat. Disable to improve compatibility between similar mods.
         CognitionEnable = true,
         -- The starting toughness of the zombies. Default=Basic Navigation
@@ -4289,7 +4319,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Speed_Seed4_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Speed_Seed5 = 20.0,
+        Speed_Seed5 = 33.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4375,9 +4405,9 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Strength_Seed5_Effect = 6,
         -- Enable randomisation for the Toughness stat. Chances will be normalised at the end
-        Toughness_Seed_Enable = false,
+        Toughness_Seed_Enable = true,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Toughness_Seed1 = 20.0,
+        Toughness_Seed1 = 10.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4389,9 +4419,9 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Toughness_Seed1_Effect = 6,
+        Toughness_Seed1_Effect = 5,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Toughness_Seed2 = 20.0,
+        Toughness_Seed2 = 10.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -4403,7 +4433,7 @@ SandboxVars = {
         -- 8 = Decrease by 2 Stages
         -- 9 = Decrease by 3 Stages
         -- 10 = Decrease by 4 Stages
-        Toughness_Seed2_Effect = 6,
+        Toughness_Seed2_Effect = 4,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
         Toughness_Seed3 = 20.0,
         -- Default=Nothing
@@ -4433,7 +4463,7 @@ SandboxVars = {
         -- 10 = Decrease by 4 Stages
         Toughness_Seed4_Effect = 6,
         -- The chance that a zombie will have its stat modified Minimum=0.00 Maximum=100.00 Default=20.00
-        Toughness_Seed5 = 20.0,
+        Toughness_Seed5 = 40.0,
         -- Default=Nothing
         -- 1 = Increase by 99 Stages
         -- 2 = Increase by 4 Stages
@@ -5094,9 +5124,22 @@ SandboxVars = {
         --  Minimum=15 Maximum=50 Default=42
         ResearchMinHealthNotification = 42,
     },
+    TOC = {
+        -- Minimum=1 Maximum=10 Default=1
+        CicatrizationSpeed = 1,
+        -- Minimum=0 Maximum=5 Default=1
+        WoundDirtynessMultiplier = 1,
+        -- Minimum=1 Maximum=3 Default=2
+        SurgeonAbilityImportance = 2,
+        EnableZombieAmputations = false,
+        -- Minimum=0 Maximum=10 Default=4
+        ZombieAmputationDamageThreshold = 4,
+        -- Minimum=0 Maximum=100 Default=25
+        ZombieAmputationDamageChance = 25,
+    },
     CommonSense = {
         -- Toggles whether Players can pry open doors, windows, etc. using a Crowbar. 
-        PryingMechanic = true,
+        PryingMechanic = false,
         -- Toggles whether to display a Color representing the Condition of various Vehicle Parts in the Vehicle Dashboard. 
         PartsHighlighter = true,
         -- Toggles a custom User Interface that displays a gun's ammunition type, current ammo, state, etc.
@@ -5228,33 +5271,29 @@ SandboxVars = {
         multiplyerMaxReinforcement = 6,
     },
     FWOFitness = {
-        -- Take the inital perk bonus into account (75% 100% 125%)
         InitialPerkBonus = true,
-        -- Get a bonus for the current excercise depending on the regularity
         currentExerciseRegularityBonus = true,
-        -- The 0 point for the linear calculation Minimum=0 Maximum=100 Default=25
+        -- Minimum=0 Maximum=100 Default=25
         currentExerciseOffset = 25,
-        -- The steepness of the linear angle (higher number = higher multiplier)(and higher negatives with offset) Minimum=0.01 Maximum=100.00 Default=5.00
+        -- Minimum=0.01 Maximum=100.00 Default=5.00
         currentExerciseRate = 5.0,
-        -- Get a bonus depending on the average of all your excercises regularity Minimum=0.00 Maximum=100.00 Default=6.00
+        -- Minimum=0.00 Maximum=100.00 Default=6.00
         AverageExerciseRegularityBonus = 6.0,
-        -- How much multiplier you get per perk level Minimum=0.00 Maximum=100.00 Default=0.30
+        -- Minimum=0.00 Maximum=100.00 Default=0.30
         LevelBonus = 0.3,
-        -- Get an exp buff when you space out excercises (about 8hr or when muscle soreness sets in) independent for fitness and strength
         SpaceOutExercise = true,
         -- Minimum=0.00 Maximum=100.00 Default=0.90
         SpaceOutExerciseNegative = 0.9,
-        -- Get an exp debuff when you have muscle soreness, buff when 'rested' (no muscle soreness)
         RestedBonus = true,
         -- Minimum=0.00 Maximum=10.00 Default=0.90
         RestedBonusNegative = 0.9,
-        -- Global exp multiplier (makes you earn experience faster or slower, small increments recommanded) Minimum=0.01 Maximum=10.00 Default=1.00
+        -- Minimum=0.01 Maximum=10.00 Default=1.00
         XPMultiplier = 1.0,
-        -- Determens how much multiplier you get outside of doing exercises. EG. fighting,sprinting,...  (0 = OFF No passive exp multiplier) Minimum=0.00 Maximum=10.00 Default=1.00
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
         PassiveMultiplier = 1.0,
-        -- adjust Boredom reduction gained (0 = off) Minimum=0.00 Maximum=10.00 Default=1.00
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
         BoredomMultiplier = 1.0,
-        -- adjust Unhappyness reduction gained (0 = off) Minimum=0.00 Maximum=10.00 Default=1.00
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
         UnhappynessMultiplier = 1.0,
         DropBags = false,
         KeepBagsOn = false,
@@ -5581,6 +5620,390 @@ SandboxVars = {
         -- Spawn multiplier for the wood carrier Minimum=0.00 Maximum=100.00 Default=1.00
         woodcarrier = 1.0,
     },
+    BuildingMenu = {
+        -- Turn <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> to make structures built using the Building Menu immune to zombie damage.
+        isThumpable = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox1 = false,
+        -- This is only a line separator, checking it has no effect.
+        WallsCategoryDivider = false,
+        -- Enable to add wooden walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        woodWallsSubCategory = true,
+        -- Enable to add clapboard walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        clapboardWallsSubCategory = true,
+        -- Enable to add stone walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        stoneWallsSubCategory = true,
+        -- Enable to add brick walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        brickWallsSubCategory = true,
+        -- Enable to add cinderblock walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        cinderblockWallsSubCategory = true,
+        -- Enable to add painted walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        paintedWallsSubCategory = true,
+        -- Enable to add arched window walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        archedWindowWallsSubCategory = true,
+        -- Enable to add commercial walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        commercialWallsSubCategory = true,
+        -- Enable to add industrial walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        industrialWallsSubCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox2 = false,
+        -- This is only a line separator, checking it has no effect.
+        RoofsCategoryDivider = false,
+        -- Enable to add roof structures, such as shingles, shake shingles, glass. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        roofsCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox3 = false,
+        -- This is only a line separator, checking it has no effect.
+        DoorsCategoryDivider = false,
+        -- Enable to add Wooden, Low, Panel, Metal, Glass doors. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        doorsSubCategory = true,
+        -- Enable to add 3 and 4 Tile Garage Doors. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        garageDoorsSubCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox4 = false,
+        -- This is only a line separator, checking it has no effect.
+        ArchitecturePlusCategoryDivider = false,
+        -- Enable to add Door Trims, Crown Molding, Edge Detailing, Floor Molding and Wall Panels. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        architecturePlusCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox5 = false,
+        -- This is only a line separator, checking it has no effect.
+        WindowsCategoryDivider = false,
+        -- Enable to add Windows. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        windowsCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox6 = false,
+        -- This is only a line separator, checking it has no effect.
+        FencingCategoryDivider = false,
+        -- Enable to add High Fences. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        highFencesSubCategory = true,
+        -- Enable to add Low Fences and Railings. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        lowAndRailingFencesSubCategory = true,
+        -- Enable to add other Fences such as Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        otherFencesSubCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox7 = false,
+        -- This is only a line separator, checking it has no effect.
+        FloorsCategoryDivider = false,
+        -- Enable to add Low Fences and Railings. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        floorsCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox8 = false,
+        -- This is only a line separator, checking it has no effect.
+        StairsCategoryDivider = false,
+        -- Enable to add Stairs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        stairsCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox9 = false,
+        -- This is only a line separator, checking it has no effect.
+        RoadworkCategoryDivider = false,
+        -- Enable to add asphalt. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        roadworkAsphaltSubCategory = true,
+        -- Enable to add overlays such as Grime and Street Cracks. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        roadworkOverlaysSubCategory = false,
+        -- Enable to add Sidewalk Edge Overlays. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        roadworkSidewalkEdgeSubCategory = false,
+        -- Enable to add Dirt and Grass tiles. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        roadworkDirtandGrassSubCategory = false,
+        -- Enable to add Painted Road Markings. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        roadworkPaintedRoadMarkingsSubCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox10 = false,
+        -- This is only a line separator, checking it has no effect.
+        ContainersCategoryDivider = false,
+        -- Enable to add Kitchen Counters, Upper Counters. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        kitchenCountersSubCategory = true,
+        -- Enable to add Restaurant, Cafe, Bar, Diner Counters. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        commercialCountersSubCategory = true,
+        -- Enable to add simple Crates, Military Crates(100 capacity), Cardboard Boxes. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        cratesSubCategory = true,
+        -- Enable to add Metal Containers, Large Metal Shelves, Lockers. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        metalContainersSubCategory = true,
+        -- Enable to add Clothes Racks and Mannequins. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        clothesRacksSubCategory = true,
+        -- Enable to add trash cans. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        trashCansSubCategory = true,
+        -- Enable to add Other Containers Subcategory. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        containersOthersSubCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox11 = false,
+        -- This is only a line separator, checking it has no effect.
+        RecreationalCategoryDivider = false,
+        -- Enable to add jukeboxes, pianos and such. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        musicSubCategory = false,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox12 = false,
+        -- This is only a line separator, checking it has no effect.
+        FurnitureCategoryDivider = false,
+        -- Enable to add Small and Large Tables. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        tablesSubCategory = true,
+        -- Enable to add Simple and Large Beds. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        bedsSubCategory = false,
+        -- Enable to add Benches, Couches, Chairs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        seatingFurnitureSubCategory = true,
+        -- Enable to add Bookshelves. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        bookshelvesSubCategory = true,
+        -- Enable to add Dressers, Drawers and Wardrobes. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        dressersAndWardrobesSubCategory = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox13 = false,
+        -- This is only a line separator, checking it has no effect.
+        DecorationsCategoryDivider = false,
+        -- Enable to add Rugs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        rugsSubCategory = true,
+        -- Enable to add Curtains. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        curtainsSubCategory = false,
+        -- Enable to add Posters and Signs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        postersAndSignsSubCategory = false,
+        -- Enable to add Graffiti. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        graffitiSubCategory = false,
+        -- Enable to add Other Decorations, such as road blocks, mailbox, barrier post, road cones, mail box. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        otherDecorationsSubCategory = false,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox14 = false,
+        -- This is only a line separator, checking it has no effect.
+        VegetationCategoryDivider = false,
+        -- Enable to add Flower Beds in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        flowerBedsSubCategory = true,
+        -- Enable to add Indoor Plants, such as Flower Pots in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        indoorPlantsSubCategory = true,
+        -- Enable to add Outdoor Plants, such as outdoor Flower Containers in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        outdoorPlantsSubCategory = true,
+        -- Enable to add Landscaping Vegetation, such as Grass, Hedges, Wall Vines in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        landscapingSubCategory = false,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox15 = false,
+        -- This is only a line separator, checking it has no effect.
+        SurvivalCategoryDivider = false,
+        -- Enable to add Fireplace and Jambs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        fireplaceSubCategory = true,
+        -- Enable to add the Generator. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        generatorSubCategory = false,
+        -- Enable to add metal drums. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        metalDrums = true,
+        -- Enable to add water wells. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        waterWell = true,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox16 = false,
+        -- This is only a line separator, checking it has no effect.
+        AppliancesCategoryDivider = false,
+        -- Enable to add Lighting Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        lightingAppliances = true,
+        -- Enable to add Sinks, Toilets and other bathroom-related objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        bathroomAppliances = false,
+        -- Enable to add Stoves, Ovens and other cooking-related objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        cookingAppliances = false,
+        -- Enable to add Fridges and Freezers. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        fridgeAppliances = false,
+        -- Enable to add Washers and Dryers. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        laundryAppliances = false,
+        -- This is only a line separator, checking it has no effect.
+        DaddyDirkieCategoryDivider = false,
+        -- Enable to add Daddy Dirkie furniture. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        daddyDirkieFurniture = true,
+        -- Enable to add dirt, sand and asphalt ramps. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        daddyDirkieRoadworkRamps = false,
+        -- Enable to add secret entrances. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        daddyDirkieSecretEntrances = true,
+        -- Enable to add forest survival structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        daddyDirkieForestSurvival = true,
+        -- This is only a line separator, checking it has no effect.
+        DylanCategoryDivider = false,
+        -- Enable to add barricades. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        dylanBarricades = true,
+        -- This is only a line separator, checking it has no effect.
+        MelosTilesCategoryDivider = false,
+        -- Enable to add Castle structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        melosTilesCastleWalls = true,
+        -- Enable to add Castle structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        melosTilesBathroomWalls = true,
+        -- This is only a line separator, checking it has no effect.
+        PertsPartyCategoryDivider = false,
+        -- Enable to add ginger bread structures, christmas lighting. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        pertsPartyChristmas = true,
+        -- Enable to add Halloween Decorations. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        pertsPartyHalloween = true,
+        -- This is only a line separator, checking it has no effect.
+        SimonMDCategoryDivider = false,
+        -- Enable to add secret entrances. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        simonMDSecretEntrances = true,
+        -- This is only a line separator, checking it has no effect.
+        ExtraNoiseFlagCategoryDivider = false,
+        -- Enable to add Local USA flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagLocalUSA = true,
+        -- Enable to add Local Mixed flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagLocalMixed = true,
+        -- Enable to add Misc Random flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagMiscRandom = true,
+        -- Enable to add Misc Org flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagMiscOrg = true,
+        -- Enable to add Misc Pride flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagMiscPride = true,
+        -- Enable to add Misc Reddit flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagMiscReddit = true,
+        -- Enable to add Misc Fictional flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagMiscFictional = true,
+        -- Enable to add Misc Protest flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagMiscProtest = true,
+        -- Enable to add Misc Colors flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagMiscColors = true,
+        -- Enable to add National Mideast flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalMideast = true,
+        -- Enable to add National Africa flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalAfrica = true,
+        -- Enable to add National Native flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalNative = true,
+        -- Enable to add National Oceania flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalOceania = true,
+        -- Enable to add National Asia flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalAsia = true,
+        -- Enable to add National Historical flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalHistorical = true,
+        -- Enable to add National Mixed flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalMixed = true,
+        -- Enable to add National Movements flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalMovements = true,
+        -- Enable to add National Europe flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalEurope = true,
+        -- Enable to add National Americas flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagNationalAmericas = true,
+        -- Enable to add Regional USA flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagRegionalUSA = true,
+        -- Enable to add Regional Canada flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagRegionalCanada = true,
+        -- Enable to add Regional Europe flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
+        extraNoiseFlagRegionalEurope = true,
+    },
+    BuildingMenuRecipes = {
+        -- This is only a line separator, checking it has no effect.
+        MaterialsDivider = false,
+        -- Disable to remove paint from recipes, those with paint as the only ingredient will remain. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1><LINE>
+        usePaint = true,
+        -- Uses per paint can. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
+        -- 1 = 4 Uses
+        -- 2 = 8 Uses
+        -- 3 = 10 Uses
+        -- 4 = 14 Uses
+        -- 5 = 18 Uses
+        -- 6 = 22 Uses
+        -- 7 = 26 Uses
+        -- 8 = 28 Uses
+        -- 9 = 45 Uses
+        -- 10 = 60 Uses
+        -- 11 = 80 Uses
+        -- 12 = 100 Uses
+        paintUses = 7,
+        -- Uses per blow torch. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
+        -- 1 = 4 Uses
+        -- 2 = 8 Uses
+        -- 3 = 10 Uses
+        -- 4 = 14 Uses
+        -- 5 = 18 Uses
+        -- 6 = 22 Uses
+        -- 7 = 26 Uses
+        -- 8 = 28 Uses
+        -- 9 = 45 Uses
+        -- 10 = 60 Uses
+        -- 11 = 80 Uses
+        -- 12 = 100 Uses
+        blowTorchUses = 12,
+        -- Uses per Bucket with Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
+        -- 1 = 4 Uses
+        -- 2 = 8 Uses
+        -- 3 = 10 Uses
+        -- 4 = 14 Uses
+        -- 5 = 18 Uses
+        -- 6 = 22 Uses
+        -- 7 = 26 Uses
+        -- 8 = 28 Uses
+        -- 9 = 45 Uses
+        -- 10 = 60 Uses
+        -- 11 = 80 Uses
+        -- 12 = 100 Uses
+        bucketAsphaltMixtureUses = 6,
+        -- Uses per Bucket with Concrete. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
+        -- 1 = 4 Uses
+        -- 2 = 8 Uses
+        -- 3 = 10 Uses
+        -- 4 = 14 Uses
+        -- 5 = 18 Uses
+        -- 6 = 22 Uses
+        -- 7 = 26 Uses
+        -- 8 = 28 Uses
+        -- 9 = 45 Uses
+        -- 10 = 60 Uses
+        -- 11 = 80 Uses
+        -- 12 = 100 Uses
+        bucketConcreteUses = 6,
+        -- Sets wood needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
+        bigWallWoodCount = 6,
+        -- Sets nails needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
+        bigWallNailsCount = 6,
+        -- Sets wood needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=3
+        smallWallWoodCount = 3,
+        -- Sets nails needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
+        smallWallNailsCount = 4,
+        -- Sets wood needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
+        bigObjectsWoodCount = 6,
+        -- Sets nails needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=8
+        bigObjectsNailsCount = 8,
+        -- Sets wood needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
+        smallObjectsWoodCount = 4,
+        -- Sets nails needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
+        smallObjectsNailsCount = 6,
+        -- Sets glass panes needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=2
+        glassPaneCount = 2,
+        -- Sets metal bars needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
+        metalBarsCount = 4,
+        -- Sets screws needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
+        screwsCount = 10,
+        -- Sets scrap metal needed for fences. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
+        scrapMetalCountForFences = 10,
+        -- Sets scrap metal needed for electrical things. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=5
+        scrapMetalCountForElectrical = 5,
+        -- Sets sheet metal needed for WALLS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=5
+        sheetMetalCountForWalls = 5,
+        -- Sets sheet metal needed for DOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
+        sheetMetalCountForDoors = 4,
+        -- Sets sheet metal needed for CONTAINERS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
+        sheetMetalCountForContainers = 4,
+        -- Sets sheet metal needed for FIXTURES and APPLIANCES. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
+        sheetMetalCountForFixturesAndAppliances = 4,
+        -- Sets sheet metal needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=1
+        sheetMetalCountForRoofingAndFloors = 1,
+        -- Sets small metal sheet needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=2
+        smallSheetMetalCountForRoofingAndFloors = 2,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox1 = false,
+        -- This is only a line separator, checking it has no effect.
+        SkillsDivider = false,
+        -- Sets carpentry level needed for BIG Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=10 Default=5
+        bigObjectsCarpentrySkill = 5,
+        -- Sets carpentry level needed for SMALL Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=10 Default=4
+        smallObjectsCarpentrySkill = 4,
+        -- XP gain per carpentry level when building objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=0.05 Maximum=100.00 Default=2.50
+        carpentryXpPerLevel = 2.5,
+        -- XP gain per metalworking level when building objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=0.05 Maximum=100.00 Default=3.50
+        metalweldingXpPerLevel = 3.5,
+        -- XP gain per electrical level when building objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=0.05 Maximum=100.00 Default=5.00
+        electricalXpPerLevel = 5.0,
+        -- This is only a line separator, checking it has no effect.
+        EmptyBox2 = false,
+        -- This is only a line separator, checking it has no effect.
+        SpecialObjectsRecipesDivider = false,
+        -- How much water a Well hold. Minimum=1 Maximum=9998 Default=1500
+        maxWaterWellStorageAmount = 1500,
+        -- Multiplier for the amount of water added to the well during rain. Minimum=0.10 Maximum=10.00 Default=1.00
+        waterWellRainIntensityMul = 1.0,
+        -- Range of water amount added to the well every hour. For example '1;5' will generate a random number between 1 and 5, '5' will always generate 5 units of water. Default=1;5
+        waterWellHourlyRefillRateInterval = "1;5",
+        -- Sets planks required for Military Crates. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=15
+        plankCountForMilitaryCrate = 15,
+        -- Sets nails required for Military Crates. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
+        nailsCountForMilitaryCrate = 10,
+        -- Sets carpentry level needed for Military Crates. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=10 Default=9
+        militaryCrateCarpentrySkill = 9,
+    },
     SapphCooking = {
         -- Default=Rare
         -- 1 = Insanely rare
@@ -5655,6 +6078,142 @@ SandboxVars = {
         -- 6 = Abundant
         ZombieLootSpawn = 2,
     },
+    HuntingMod = {
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
+        Separation_EmptyBox0 = false,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Customize the chance for tracks of animals to spawn.
+        Separation_ForageSpawn = false,
+        -- Bird spottings will be more common than normal in cities due to nature taking over in populated areas. Small and big animals will also be present in cities thanks to this setting.
+        YearsLater = true,
+        -- Boost to spawns of bird tracks. Minimum=0 Maximum=500 Default=100
+        BirdsForage = 100,
+        -- Boost to spawns of tiny game tracks. Minimum=0 Maximum=500 Default=100
+        TinyGameForage = 100,
+        -- Boost to spawns of small game tracks. Minimum=0 Maximum=500 Default=100
+        SmallGameForage = 100,
+        -- Boost to spawns of big games tracks. Minimum=0 Maximum=500 Default=100
+        BigGameForage = 100,
+        -- Boost to spawns of tracks in nature areas such as forests and deep forests. Minimum=0 Maximum=500 Default=100
+        NatureAreasForage = 100,
+        -- Boost to spawns of tracks in areas with human activity such as cities, farms and roads. Minimum=0 Maximum=500 Default=100
+        HumanAreasForage = 100,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
+        Separation_EmptyBox1 = false,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the general options.
+        Separation_General = false,
+        -- Chance to hunt a spotting will be shown in the tooltip.
+        ShowProbabilities = true,
+        -- Preys will have their minimum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=80
+        MinimumBonusSize = 80,
+        -- Preys will have their maximum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=150
+        MaximumBonusSize = 150,
+        -- When shred due to a gun too powerful, preys will have their minimum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=10
+        MinimumBonusSizeShred = 10,
+        -- When shred due to a gun too powerful, preys will have their maximum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=20
+        MaximumBonusSizeShred = 20,
+        -- Hunting gives XP in the category of the weapon used (aiming for guns, and for melee weapons their respective skills). This value is not exact and depends on your experience boost in the skill category of the weapon. It also gives XP in foraging. Minimum=0 Maximum=200 Default=30
+        XPGainHunting = 30,
+        -- Discarding a hunt gives XP in foraging. Minimum=0 Maximum=200 Default=30
+        XPGainDiscard = 30,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
+        Separation_EmptyBox2 = false,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of aiming on hunting. Some guns are more adapted for certain types of targets, such as shotguns for birds and rifles or small or big game.
+        Separation_AimingImpact = false,
+        -- The user aiming skill will impact hunting conditions. 
+        AimingImpact = true,
+        -- Minimum=0 Maximum=10 Default=0
+        MinimumAimingLevelToHunt = 0,
+        -- The minimum level in aiming required for a character to be able to hunt with a gun. Minimum=0 Maximum=10 Default=10
+        MaximumAimingLevelToHunt = 10,
+        -- If your aiming is the minimum level required to be able to hunt, the impact due to aiming on the hunting chance will be this value. Minimum=0 Maximum=500 Default=50
+        MinimumAimingImpact = 50,
+        -- If your aiming is the maximum level (or more), the impact due to aiming on the hunting chance will be this value. Minimum=0 Maximum=500 Default=150
+        MaximumAimingImpact = 150,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
+        Separation_EmptyBox3 = false,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of melee on hunting. Depends on the category of the weapon (blunt, spear, long blade...)
+        Separation_MeleeImpact = false,
+        -- Minimum=0 Maximum=10 Default=0
+        MinimumMeleeLevelToHunt = 0,
+        -- The minimum level in melee skills required for a character to be able to hunt with a melee weapon. Minimum=0 Maximum=10 Default=10
+        MaximumMeleeLevelToHunt = 10,
+        -- If your melee is the minimum level required to be able to hunt, the impact due to melee on the hunting chance will be this value. Minimum=0 Maximum=500 Default=50
+        MinimumMeleeImpact = 50,
+        -- If your melee is the maximum level (or more), the impact due to melee on the hunting chance will be this value. Minimum=0 Maximum=500 Default=150
+        MaximumMeleeImpact = 150,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
+        Separation_EmptyBox4 = false,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of strength on hunting, only impacts melee.
+        Separation_StrengthImpact = false,
+        -- The user strength skill will impact hunting conditions. 
+        StrengthImpact = true,
+        -- Minimum=0 Maximum=10 Default=1
+        MinimumStrengthLevelToHunt = 1,
+        -- The minimum level in strength required for a character to be able to hunt with a melee weapon. Minimum=0 Maximum=10 Default=10
+        MaximumStrengthLevelToHunt = 10,
+        -- If your strength is the minimum level required to be able to hunt, the impact due to strength on the hunting chance will be this value. Minimum=0 Maximum=500 Default=50
+        MinimumStrengthImpact = 50,
+        -- If your strength is the maximum level (or more), the impact due to strength on the hunting chance will be this value. Minimum=0 Maximum=500 Default=150
+        MaximumStrengthImpact = 150,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
+        Separation_EmptyBox5 = false,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of stealth on hunting. Sneaking and lightfoot count towards your stealth skills (mean between sneaking and lightfoot).
+        Separation_StealthImpact = false,
+        -- The user stealth skills will impact hunting conditions. 
+        StealthImpact = true,
+        -- The impact due to stealth on the hunting chance will be this value when at stealth of 0 (mean between sneaking and lightfoot). Minimum=0 Maximum=500 Default=70
+        MinimumStealthImpact = 70,
+        -- The impact due to stealth on the hunting chance will be this value when at stealth of 10 (mean between sneaking and lightfoot). Minimum=0 Maximum=500 Default=150
+        MaximumStealthImpact = 150,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
+        Separation_EmptyBox6 = false,
+        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of other conditions on hunting.
+        Separation_OtherImpact = false,
+        -- When having a scope on the gun used to hunt, it will boost the hunting chance by this amount. Minimum=0 Maximum=200 Default=30
+        ScopeBonus = 30,
+        -- The weapon and the user aiming skill will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
+        WeaponImpact = 100,
+        -- Lightness of the day will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
+        LightImpact = 100,
+        -- Fog will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
+        FogImpact = 100,
+        -- Wind will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
+        WindImpact = 100,
+        -- Traits will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
+        TraitImpact = 100,
+        -- Moodles will impact hunting conditions: cold, hypothermia. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
+        MoodleImpact = 100,
+        -- Final chance of hunting a target will be boosted by this multiplier. 100% won't boost the hunting chance while a lower value will reduce overall chance of hunting and a higher value will increase the chance of hunting the target. Minimum=0 Maximum=500 Default=100
+        BoostToHuntingChance = 100,
+    },
+    FirstAidOverhaul = {
+        -- From this level onward, the Player will be able to treat fractures.  Minimum=0 Maximum=10 Default=1
+        FractureTreatmentLevel = 1,
+        -- From this level onward, the Player will be able to stitch wounds.  Minimum=0 Maximum=10 Default=2
+        StitchingTreatmentLevel = 2,
+        -- From this level onward, the Player won't have a chance to fail wound treatments.  Minimum=0 Maximum=10 Default=4
+        FailureLevelThreshold = 4,
+        -- The chance of failure when treating wounds.  Minimum=0 Maximum=100 Default=30
+        FailureChance = 30,
+        -- How much disease percentage you can get from a single infected wound.  Minimum=0 Maximum=100 Default=26
+        MaxDiseasePerWound = 26,
+        -- How much disease percentage you can get from all infected wounds combined.  Minimum=0 Maximum=100 Default=100
+        InfectionDiseaseLimit = 100,
+        -- How many in-game minutes before you can practice first aid on corpses again.  Minimum=1 Maximum=1440 Default=60
+        PracticeCooldown = 60,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=10
+        BandagePracticeXP = 10,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=25
+        SuturePracticeXP = 25,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=50
+        StudyPracticeXP = 50,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=75
+        ScalpelPracticeXP = 75,
+        -- Makes wound treatment faster or slower.  Minimum=0.10 Maximum=5.00 Default=1.00
+        SpeedMultiplier = 1.0,
+        -- Display cheaty info of wounds when at Level 8 or higher. 
+        ShowDebugInfo = true,
+    },
     BLTAnnotations = {
         -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
         DropMapOnDeath = false,
@@ -5683,6 +6242,24 @@ SandboxVars = {
         -- 4 = 25%
         MetalWeight = 4,
     },
+    JordanalSpawns = {
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        Neon_Vandals_UnitChance = 0.01,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        Neon_Vandals_UnitChance_General = 0.02,
+    },
+    UndeadSurvivor = {
+        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.04
+        StalkerChance = 0.04,
+        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.04
+        NomadChance = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        PrepperChance = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        HeadhunterChance = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.08
+        AmazonaChance = 0.08,
+    },
     NamedLiterature = {
         -- The amount of 10 minute intervals needed for a return of bonuses when reading. Minimum=0 Maximum=1000000 Default=26280
         TimeToForget = 26280,
@@ -5690,240 +6267,6 @@ SandboxVars = {
         MaxTimesReadable = 3,
         -- If true, diminished bonus from reading stay at a capped amount. If false, the bonuses are 0.
         CanReadPassedMax = true,
-    },
-Advanced_trajectory = {
-        aimpoint = true,
-        showOutlines = false,
-        enableAutoAimZLevel = true,
-        hideTracer = false,
-        Enablerange = true,
-        Enablethrow = true,
-        enableCarAimLimit = true,
-        enableBulletIgnoreCarFromHighLevel = true,
-        callshot = false,
-        IgnorePVPSafety = false,
-        enableBulletPenFlesh = true,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        ATY_damage = 1.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.25
-        penDamageReductionMultiplier = 0.25,
-        -- Minimum=0.00 Maximum=2.00 Default=0.30
-        minDamageToGetHitReaction = 0.3,
-        -- Minimum=0.00 Maximum=1.50 Default=1.00
-        DebugGridMultiplier = 0.5,
-        -- Minimum=0.00 Maximum=100.00 Default=0.00
-        DebugOffset = 0.0,
-        -- Minimum=0.00 Maximum=100.00 Default=0.00
-        DebugSpawnOffset = 0.0,
-        DebugEnableBow = true,
-        DebugEnableVoodoo = false,
-        DebugSayShotPart = false,
-        -- Minimum=1.00 Maximum=100.00 Default=30.00
-        bowBreakChance = 30.0,
-        -- Minimum=-10.00 Maximum=10.00 Default=0.10
-        hitRegThreshold = 0.1,
-        -- Minimum=-1.00 Maximum=1.00 Default=0.70
-        carDotProdLimit = 0.7,
-        -- Minimum=0.00 Maximum=90.00 Default=40.00
-        angleBoundCar = 40.0,
-        enablePlayerBulletPosCheck = false,
-        toggleResetZLevel = false,
-        -- Minimum=0.00 Maximum=300.00 Default=3.00
-        XPKillModifier = 2.0,
-        -- Minimum=0.00 Maximum=300.00 Default=0.50
-        XPHitModifier = 0.5,
-        -- Minimum=0.00 Maximum=1.00 Default=0.50
-        MaxProjCone = 0.5,
-        -- Minimum=0.00 Maximum=20.00 Default=7.00
-        maxaimnum = 7.0,
-        -- Minimum=0.00 Maximum=100.00 Default=7.00
-        minaimnumModifier = 7.0,
-        -- Minimum=0.00 Maximum=10.00 Default=3.00
-        focusLevel = 3.0,
-        enableDistanceLimitPenalty = true,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        distanceLimitScaling = 1.0,
-        -- Minimum=0.00 Maximum=10.00 Default=2.00
-        distanceFocusPenalty = 3.0,
-        -- Minimum=0.00 Maximum=10.00 Default=0.10
-        reloadEffectModifier = 0.1,
-        -- Minimum=0.00 Maximum=100.00 Default=1.10
-        reducespeed = 1.1,
-        -- Minimum=0.00 Maximum=10.00 Default=2.00
-        focusCounterSpeed = 2.0,
-        -- Minimum=0.00 Maximum=10.00 Default=7.00
-        focusCounterSpeedScaleModifier = 7.0,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        maxFocusSpeed = 1.0,
-        enableHitOrMiss = false,
-        -- Minimum=0.00 Maximum=5.00 Default=2.00
-        pointBlankMaxDistance = 2.0,
-        announceHitOrMiss = false,
-        -- Minimum=0.00 Maximum=200.00 Default=60.00
-        shotgunHitBuff = 0.0,
-        -- Minimum=0.00 Maximum=20.00 Default=2.00
-        hitLevelScaling = 3.0,
-        -- Minimum=0.00 Maximum=300.00 Default=25.00
-        missMin = 15.0,
-        -- Minimum=0.00 Maximum=300.00 Default=120.00
-        missMax = 100.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.30
-        missMinTransparency = 0.3,
-        -- Minimum=0.00 Maximum=1.00 Default=0.01
-        recoilDelayModifier = 0.01,
-        -- Minimum=0.00 Maximum=30.00 Default=10.00
-        recoilModifier = 10.0,
-        -- Minimum=0.00 Maximum=200.00 Default=80.00
-        recoilScaleModifier = 80.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.70
-        proneRecoilBuff = 0.7,
-        -- Minimum=0.00 Maximum=1.00 Default=0.50
-        proneExpoRecoilBuff = 0.5,
-        -- Minimum=0.00 Maximum=1.00 Default=0.80
-        crouchRecoilBuff = 0.8,
-        -- Minimum=0.00 Maximum=1.00 Default=0.75
-        crouchExpoRecoilBuff = 0.75,
-        -- Minimum=0.00 Maximum=2.00 Default=1.00
-        bulletspeed = 1.0,
-        -- Minimum=0.00 Maximum=10.00 Default=2.00
-        bulletdistance = 2.0,
-        -- Minimum=0.00 Maximum=10.00 Default=10.00
-        runNGunLv = 10.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.50
-        runNGunBuff = 0.5,
-        -- Minimum=0.00 Maximum=100.00 Default=1.30
-        moveeffect = 1.3,
-        -- Minimum=0.00 Maximum=100.00 Default=0.70
-        turningeffect = 0.7,
-        -- Minimum=0.00 Maximum=10.00 Default=8.00
-        crouchCounterSpeed = 8.0,
-        -- Minimum=0.00 Maximum=10.00 Default=2.00
-        crouchPenaltyModifier = 2.0,
-        -- Minimum=0.00 Maximum=10.00 Default=3.00
-        crouchTurnEffect = 3.0,
-        -- Minimum=0.00 Maximum=10.00 Default=5.00
-        proneTurnEffect = 5.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.50
-        crouchFocusLimitBuff = 0.5,
-        -- Minimum=0.00 Maximum=1.00 Default=0.30
-        proneFocusLimitBuff = 0.3,
-        -- Minimum=0.00 Maximum=10.00 Default=1.50
-        proneFocusCounterSpeedBuff = 1.5,
-        -- Minimum=0.00 Maximum=2.00 Default=0.40
-        proneReduceSpeedBuff = 0.4,
-        -- Minimum=0.00 Maximum=2.00 Default=0.20
-        crouchReduceSpeedBuff = 0.2,
-        -- Minimum=0.00 Maximum=1.00 Default=0.80
-        maxDefenseReduction = 0.8,
-        -- Minimum=0.00 Maximum=100.00 Default=20.00
-        headShotIncChance = 20.0,
-        -- Minimum=0.00 Maximum=100.00 Default=10.00
-        footShotIncChance = 10.0,
-        -- Minimum=0.00 Maximum=100.00 Default=10.00
-        headShotDmgZomMultiplier = 10.0,
-        -- Minimum=0.00 Maximum=100.00 Default=5.00
-        bodyShotDmgZomMultiplier = 5.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        footShotDmgZomMultiplier = 1.0,
-        -- Minimum=0.00 Maximum=100.00 Default=15.00
-        headShotDmgPlayerMultiplier = 15.0,
-        -- Minimum=0.00 Maximum=100.00 Default=5.00
-        bodyShotDmgPlayerMultiplier = 5.0,
-        -- Minimum=0.00 Maximum=100.00 Default=2.00
-        footShotDmgPlayerMultiplier = 2.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        critChanceModifier = 1.0,
-        -- Minimum=0.00 Maximum=100.00 Default=10.00
-        fractureChance = 10.0,
-        -- Minimum=0.00 Maximum=100.00 Default=25.00
-        throughChance = 25.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.10
-        maxShotgunProjCone = 0.4,
-        -- Minimum=0.00 Maximum=10.00 Default=0.50
-        shotgunDistanceModifier = 0.6,
-        -- Minimum=0 Maximum=100 Default=5
-        shotgunnum = 6,
-        -- Minimum=0.00 Maximum=1.00 Default=0.10
-        shotgundivision = 0.1,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        shotgunDamageMultiplier = 1.0,
-        -- Minimum=0.00 Maximum=100.00 Default=10.00
-        critChanceModifierShotgunsOnly = 25.0,
-        -- Minimum=0.00 Maximum=5.00 Default=0.00
-        staminaCrouchScale = 0.001,
-        -- Minimum=0.00 Maximum=5.00 Default=0.50
-        staminaHeavyCrouchScale = 0.5,
-        -- Minimum=0.00 Maximum=5.00 Default=0.00
-        staminaCrawlScale = 0.003,
-        -- Minimum=0.00 Maximum=5.00 Default=0.50
-        staminaHeavyCrawlScale = 0.5,
-        -- Minimum=0.00 Maximum=5.00 Default=0.50
-        heavyTurnEffectModifier = 0.5,
-        -- Minimum=0.00 Maximum=100.00 Default=0.50
-        drunkActionEffectModifier = 0.5,
-        -- Minimum=0.00 Maximum=100.00 Default=6.00
-        drunkMaxBloomModifier = 6.0,
-        -- Minimum=0.00 Maximum=100.00 Default=6.00
-        heavyMaxBloomModifier = 6.0,
-        -- Minimum=0.50 Maximum=2.00 Default=0.66
-        hyperHypoModifier = 0.66,
-        -- Minimum=0.50 Maximum=2.00 Default=0.50
-        tiredModifier = 0.5,
-        -- Minimum=0.00 Maximum=1.00 Default=0.10
-        painModifier = 0.1,
-        -- Minimum=0.00 Maximum=100.00 Default=2.00
-        painVisualModifier = 2.0,
-        -- Minimum=0.00 Maximum=5.00 Default=3.00
-        panicPenaltyModifier = 3.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        panicVisualModifier = 1.0,
-        -- Minimum=0.00 Maximum=100.00 Default=4.00
-        stressBloomModifier = 4.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.25
-        stressVisualModifier = 1.25,
-        -- Minimum=0.00 Maximum=100.00 Default=2.00
-        coughModifier = 2.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.50
-        enduranceBreathModifier = 1.5,
-        -- Minimum=0.00 Maximum=100.00 Default=3.00
-        inhaleModifier1 = 3.0,
-        -- Minimum=0.00 Maximum=100.00 Default=2.00
-        exhaleModifier1 = 2.0,
-        -- Minimum=0.00 Maximum=100.00 Default=3.00
-        inhaleModifier2 = 3.0,
-        -- Minimum=0.00 Maximum=100.00 Default=3.66
-        exhaleModifier2 = 3.66,
-        -- Minimum=0.00 Maximum=100.00 Default=3.00
-        inhaleModifier3 = 3.0,
-        -- Minimum=0.00 Maximum=100.00 Default=4.00
-        exhaleModifier3 = 4.0,
-        -- Minimum=0.00 Maximum=100.00 Default=4.00
-        inhaleModifier4 = 4.0,
-        -- Minimum=0.00 Maximum=100.00 Default=7.00
-        exhaleModifier4 = 7.0,
-        enableOgCrosshair = false,
-        -- Minimum=0.00 Maximum=1.00 Default=0.50
-        aimLevelTextTrans = 0.5,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairMaxTransparency = 1.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.20
-        crosshairRed = 0.0,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairGreen = 1.0,
-        -- Minimum=0.00 Maximum=1.00 Default=0.20
-        crosshairBlue = 0.98,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairRedMain = 1.0,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairGreenMain = 1.0,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairBlueMain = 1.0,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairRedLimit = 1.0,
-        -- Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairGreenLimit = 0.2,
-        -- Minimum=0.00 Maximum=1.00 Default=0.00
-        crosshairBlueLimit = 0.0,
     },
     zReSA = {
         -- The recommended number is no lower than the default value.
@@ -6397,393 +6740,15 @@ Advanced_trajectory = {
         -- Level of Mechanics required to make a gate motors. (needs restart) Minimum=1 Maximum=10 Default=4
         LevelRequirementsMakeComponentsMechanics = 4,
     },
-    BuildingMenu = {
-        -- Turn <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> to make structures built using the Building Menu immune to zombie damage.
-        isThumpable = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox1 = false,
-        -- This is only a line separator, checking it has no effect.
-        WallsCategoryDivider = false,
-        -- Enable to add wooden walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        woodWallsSubCategory = true,
-        -- Enable to add clapboard walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        clapboardWallsSubCategory = true,
-        -- Enable to add stone walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        stoneWallsSubCategory = true,
-        -- Enable to add brick walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        brickWallsSubCategory = true,
-        -- Enable to add cinderblock walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        cinderblockWallsSubCategory = true,
-        -- Enable to add painted walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        paintedWallsSubCategory = true,
-        -- Enable to add arched window walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        archedWindowWallsSubCategory = true,
-        -- Enable to add commercial walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        commercialWallsSubCategory = true,
-        -- Enable to add industrial walls structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        industrialWallsSubCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox2 = false,
-        -- This is only a line separator, checking it has no effect.
-        RoofsCategoryDivider = false,
-        -- Enable to add roof structures, such as shingles, shake shingles, glass. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        roofsCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox3 = false,
-        -- This is only a line separator, checking it has no effect.
-        DoorsCategoryDivider = false,
-        -- Enable to add Wooden, Low, Panel, Metal, Glass doors. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        doorsSubCategory = true,
-        -- Enable to add 3 and 4 Tile Garage Doors. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        garageDoorsSubCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox4 = false,
-        -- This is only a line separator, checking it has no effect.
-        ArchitecturePlusCategoryDivider = false,
-        -- Enable to add Door Trims, Crown Molding, Edge Detailing, Floor Molding and Wall Panels. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        architecturePlusCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox5 = false,
-        -- This is only a line separator, checking it has no effect.
-        WindowsCategoryDivider = false,
-        -- Enable to add Windows. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        windowsCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox6 = false,
-        -- This is only a line separator, checking it has no effect.
-        FencingCategoryDivider = false,
-        -- Enable to add High Fences. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        highFencesSubCategory = true,
-        -- Enable to add Low Fences and Railings. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        lowAndRailingFencesSubCategory = true,
-        -- Enable to add other Fences such as Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        otherFencesSubCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox7 = false,
-        -- This is only a line separator, checking it has no effect.
-        FloorsCategoryDivider = false,
-        -- Enable to add Low Fences and Railings. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        floorsCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox8 = false,
-        -- This is only a line separator, checking it has no effect.
-        StairsCategoryDivider = false,
-        -- Enable to add Stairs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        stairsCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox9 = false,
-        -- This is only a line separator, checking it has no effect.
-        RoadworkCategoryDivider = false,
-        -- Enable to add asphalt. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        roadworkAsphaltSubCategory = true,
-        -- Enable to add overlays such as Grime and Street Cracks. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        roadworkOverlaysSubCategory = false,
-        -- Enable to add Sidewalk Edge Overlays. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        roadworkSidewalkEdgeSubCategory = false,
-        -- Enable to add Dirt and Grass tiles. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        roadworkDirtandGrassSubCategory = false,
-        -- Enable to add Painted Road Markings. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        roadworkPaintedRoadMarkingsSubCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox10 = false,
-        -- This is only a line separator, checking it has no effect.
-        ContainersCategoryDivider = false,
-        -- Enable to add Kitchen Counters, Upper Counters. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        kitchenCountersSubCategory = true,
-        -- Enable to add Restaurant, Cafe, Bar, Diner Counters. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        commercialCountersSubCategory = true,
-        -- Enable to add simple Crates, Military Crates(100 capacity), Cardboard Boxes. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        cratesSubCategory = true,
-        -- Enable to add Metal Containers, Large Metal Shelves, Lockers. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        metalContainersSubCategory = true,
-        -- Enable to add Clothes Racks and Mannequins. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        clothesRacksSubCategory = true,
-        -- Enable to add trash cans. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        trashCansSubCategory = true,
-        -- Enable to add Other Containers Subcategory. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        containersOthersSubCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox11 = false,
-        -- This is only a line separator, checking it has no effect.
-        RecreationalCategoryDivider = false,
-        -- Enable to add jukeboxes, pianos and such. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        musicSubCategory = false,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox12 = false,
-        -- This is only a line separator, checking it has no effect.
-        FurnitureCategoryDivider = false,
-        -- Enable to add Small and Large Tables. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        tablesSubCategory = true,
-        -- Enable to add Simple and Large Beds. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        bedsSubCategory = false,
-        -- Enable to add Benches, Couches, Chairs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        seatingFurnitureSubCategory = true,
-        -- Enable to add Bookshelves. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        bookshelvesSubCategory = true,
-        -- Enable to add Dressers, Drawers and Wardrobes. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        dressersAndWardrobesSubCategory = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox13 = false,
-        -- This is only a line separator, checking it has no effect.
-        DecorationsCategoryDivider = false,
-        -- Enable to add Rugs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        rugsSubCategory = true,
-        -- Enable to add Curtains. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        curtainsSubCategory = false,
-        -- Enable to add Posters and Signs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        postersAndSignsSubCategory = false,
-        -- Enable to add Graffiti. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        graffitiSubCategory = false,
-        -- Enable to add Other Decorations, such as road blocks, mailbox, barrier post, road cones, mail box. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        otherDecorationsSubCategory = false,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox14 = false,
-        -- This is only a line separator, checking it has no effect.
-        VegetationCategoryDivider = false,
-        -- Enable to add Flower Beds in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        flowerBedsSubCategory = true,
-        -- Enable to add Indoor Plants, such as Flower Pots in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        indoorPlantsSubCategory = true,
-        -- Enable to add Outdoor Plants, such as outdoor Flower Containers in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        outdoorPlantsSubCategory = true,
-        -- Enable to add Landscaping Vegetation, such as Grass, Hedges, Wall Vines in Vegetation Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        landscapingSubCategory = false,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox15 = false,
-        -- This is only a line separator, checking it has no effect.
-        SurvivalCategoryDivider = false,
-        -- Enable to add Fireplace and Jambs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        fireplaceSubCategory = true,
-        -- Enable to add the Generator. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        generatorSubCategory = false,
-        -- Enable to add metal drums. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        metalDrums = true,
-        -- Enable to add water wells. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        waterWell = true,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox16 = false,
-        -- This is only a line separator, checking it has no effect.
-        AppliancesCategoryDivider = false,
-        -- Enable to add Lighting Category. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        lightingAppliances = true,
-        -- Enable to add Sinks, Toilets and other bathroom-related objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        bathroomAppliances = false,
-        -- Enable to add Stoves, Ovens and other cooking-related objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        cookingAppliances = false,
-        -- Enable to add Fridges and Freezers. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        fridgeAppliances = false,
-        -- Enable to add Washers and Dryers. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        laundryAppliances = false,
-        -- This is only a line separator, checking it has no effect.
-        DaddyDirkieCategoryDivider = false,
-        -- Enable to add Daddy Dirkie furniture. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        daddyDirkieFurniture = true,
-        -- Enable to add dirt, sand and asphalt ramps. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        daddyDirkieRoadworkRamps = false,
-        -- Enable to add secret entrances. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        daddyDirkieSecretEntrances = true,
-        -- Enable to add forest survival structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        daddyDirkieForestSurvival = true,
-        -- This is only a line separator, checking it has no effect.
-        DylanCategoryDivider = false,
-        -- Enable to add barricades. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        dylanBarricades = true,
-        -- This is only a line separator, checking it has no effect.
-        MelosTilesCategoryDivider = false,
-        -- Enable to add Castle structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        melosTilesCastleWalls = true,
-        -- Enable to add Castle structures. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        melosTilesBathroomWalls = true,
-        -- This is only a line separator, checking it has no effect.
-        PertsPartyCategoryDivider = false,
-        -- Enable to add ginger bread structures, christmas lighting. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        pertsPartyChristmas = true,
-        -- Enable to add Halloween Decorations. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        pertsPartyHalloween = true,
-        -- This is only a line separator, checking it has no effect.
-        SimonMDCategoryDivider = false,
-        -- Enable to add secret entrances. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        simonMDSecretEntrances = true,
-        -- This is only a line separator, checking it has no effect.
-        ExtraNoiseFlagCategoryDivider = false,
-        -- Enable to add Local USA flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagLocalUSA = true,
-        -- Enable to add Local Mixed flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagLocalMixed = true,
-        -- Enable to add Misc Random flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagMiscRandom = true,
-        -- Enable to add Misc Org flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagMiscOrg = true,
-        -- Enable to add Misc Pride flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagMiscPride = true,
-        -- Enable to add Misc Reddit flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagMiscReddit = true,
-        -- Enable to add Misc Fictional flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagMiscFictional = true,
-        -- Enable to add Misc Protest flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagMiscProtest = true,
-        -- Enable to add Misc Colors flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagMiscColors = true,
-        -- Enable to add National Mideast flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalMideast = true,
-        -- Enable to add National Africa flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalAfrica = true,
-        -- Enable to add National Native flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalNative = true,
-        -- Enable to add National Oceania flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalOceania = true,
-        -- Enable to add National Asia flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalAsia = true,
-        -- Enable to add National Historical flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalHistorical = true,
-        -- Enable to add National Mixed flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalMixed = true,
-        -- Enable to add National Movements flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalMovements = true,
-        -- Enable to add National Europe flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalEurope = true,
-        -- Enable to add National Americas flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagNationalAmericas = true,
-        -- Enable to add Regional USA flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagRegionalUSA = true,
-        -- Enable to add Regional Canada flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagRegionalCanada = true,
-        -- Enable to add Regional Europe flags. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!
-        extraNoiseFlagRegionalEurope = true,
-    },
-    BuildingMenuRecipes = {
-        -- This is only a line separator, checking it has no effect.
-        MaterialsDivider = false,
-        -- Disable to remove paint from recipes, those with paint as the only ingredient will remain. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1><LINE>
-        usePaint = true,
-        -- Uses per paint can. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
-        -- 1 = 4 Uses
-        -- 2 = 8 Uses
-        -- 3 = 10 Uses
-        -- 4 = 14 Uses
-        -- 5 = 18 Uses
-        -- 6 = 22 Uses
-        -- 7 = 26 Uses
-        -- 8 = 28 Uses
-        -- 9 = 45 Uses
-        -- 10 = 60 Uses
-        -- 11 = 80 Uses
-        -- 12 = 100 Uses
-        paintUses = 7,
-        -- Uses per blow torch. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
-        -- 1 = 4 Uses
-        -- 2 = 8 Uses
-        -- 3 = 10 Uses
-        -- 4 = 14 Uses
-        -- 5 = 18 Uses
-        -- 6 = 22 Uses
-        -- 7 = 26 Uses
-        -- 8 = 28 Uses
-        -- 9 = 45 Uses
-        -- 10 = 60 Uses
-        -- 11 = 80 Uses
-        -- 12 = 100 Uses
-        blowTorchUses = 12,
-        -- Uses per Bucket with Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
-        -- 1 = 4 Uses
-        -- 2 = 8 Uses
-        -- 3 = 10 Uses
-        -- 4 = 14 Uses
-        -- 5 = 18 Uses
-        -- 6 = 22 Uses
-        -- 7 = 26 Uses
-        -- 8 = 28 Uses
-        -- 9 = 45 Uses
-        -- 10 = 60 Uses
-        -- 11 = 80 Uses
-        -- 12 = 100 Uses
-        bucketAsphaltMixtureUses = 6,
-        -- Uses per Bucket with Concrete. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Default=10 Uses
-        -- 1 = 4 Uses
-        -- 2 = 8 Uses
-        -- 3 = 10 Uses
-        -- 4 = 14 Uses
-        -- 5 = 18 Uses
-        -- 6 = 22 Uses
-        -- 7 = 26 Uses
-        -- 8 = 28 Uses
-        -- 9 = 45 Uses
-        -- 10 = 60 Uses
-        -- 11 = 80 Uses
-        -- 12 = 100 Uses
-        bucketConcreteUses = 6,
-        -- Sets wood needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
-        bigWallWoodCount = 6,
-        -- Sets nails needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
-        bigWallNailsCount = 6,
-        -- Sets wood needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=3
-        smallWallWoodCount = 3,
-        -- Sets nails needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
-        smallWallNailsCount = 4,
-        -- Sets wood needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
-        bigObjectsWoodCount = 6,
-        -- Sets nails needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=8
-        bigObjectsNailsCount = 8,
-        -- Sets wood needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
-        smallObjectsWoodCount = 4,
-        -- Sets nails needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=6
-        smallObjectsNailsCount = 6,
-        -- Sets glass panes needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=2
-        glassPaneCount = 2,
-        -- Sets metal bars needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
-        metalBarsCount = 4,
-        -- Sets screws needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
-        screwsCount = 10,
-        -- Sets scrap metal needed for fences. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
-        scrapMetalCountForFences = 10,
-        -- Sets scrap metal needed for electrical things. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=5
-        scrapMetalCountForElectrical = 5,
-        -- Sets sheet metal needed for WALLS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=5
-        sheetMetalCountForWalls = 5,
-        -- Sets sheet metal needed for DOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
-        sheetMetalCountForDoors = 4,
-        -- Sets sheet metal needed for CONTAINERS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
-        sheetMetalCountForContainers = 4,
-        -- Sets sheet metal needed for FIXTURES and APPLIANCES. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=4
-        sheetMetalCountForFixturesAndAppliances = 4,
-        -- Sets sheet metal needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=1
-        sheetMetalCountForRoofingAndFloors = 1,
-        -- Sets small metal sheet needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=2
-        smallSheetMetalCountForRoofingAndFloors = 2,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox1 = false,
-        -- This is only a line separator, checking it has no effect.
-        SkillsDivider = false,
-        -- Sets carpentry level needed for BIG Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=10 Default=5
-        bigObjectsCarpentrySkill = 5,
-        -- Sets carpentry level needed for SMALL Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=10 Default=4
-        smallObjectsCarpentrySkill = 4,
-        -- XP gain per carpentry level when building objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=0.05 Maximum=100.00 Default=2.50
-        carpentryXpPerLevel = 2.5,
-        -- XP gain per metalworking level when building objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=0.05 Maximum=100.00 Default=3.50
-        metalweldingXpPerLevel = 3.5,
-        -- XP gain per electrical level when building objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=0.05 Maximum=100.00 Default=5.00
-        electricalXpPerLevel = 5.0,
-        -- This is only a line separator, checking it has no effect.
-        EmptyBox2 = false,
-        -- This is only a line separator, checking it has no effect.
-        SpecialObjectsRecipesDivider = false,
-        -- How much water a Well hold. Minimum=1 Maximum=9998 Default=1500
-        maxWaterWellStorageAmount = 1500,
-        -- Multiplier for the amount of water added to the well during rain. Minimum=0.10 Maximum=10.00 Default=1.00
-        waterWellRainIntensityMul = 1.0,
-        -- Range of water amount added to the well every hour. For example '1;5' will generate a random number between 1 and 5, '5' will always generate 5 units of water. Default=1;5
-        waterWellHourlyRefillRateInterval = "1;5",
-        -- Sets planks required for Military Crates. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=15
-        plankCountForMilitaryCrate = 15,
-        -- Sets nails required for Military Crates. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=100 Default=10
-        nailsCountForMilitaryCrate = 10,
-        -- Sets carpentry level needed for Military Crates. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1> Minimum=1 Maximum=10 Default=9
-        militaryCrateCarpentrySkill = 9,
+    KatanaSheath = {
+        -- Choose a starter pack for your character Default=Nothing
+        -- 1 = Nothing
+        -- 2 = Sheath
+        starterPack = 1,
     },
     BetterBatteries = {
         -- Amount of in-game minutes it takes to charge a battery from empty to full without penalties / buffs in place. Minimum=0.00 Maximum=1440.00 Default=60.00
-        CrankTime = 60.0,
+        CrankTime = 30.0,
         -- Determines whether or not higher strength levels will apply a time buff.
         StrengthBuff = true,
         -- Determines whether or not low endurance will apply a time penalty. (Regardless of this setting, you won't be permitted to use the Hand Crank at extremely low endurance.)
@@ -6794,6 +6759,24 @@ Advanced_trajectory = {
         MaximumCharge = 1.0,
         -- Lifetime multiplier applied to all electrical devices that use batteries. (Negative value results in unlimited charge, 0 results in instant charge loss.) Minimum=-1.00 Maximum=9999.00 Default=1.00
         LifetimeMult = 1.0,
+    },
+    HIC = {
+        -- Enable or disable the mod.
+        Active = true,
+        -- Enable or disable moodle.
+        MoodleActive = true,
+        -- Minimum condition percentage required for vehicle parts to enable hiding. Minimum=0 Maximum=100 Default=15
+        MinimalCondition = 15,
+        -- Radius in which zombies can detect player in the car. Minimum=1 Maximum=10 Default=2
+        Radius = 2,
+        -- Radius within which zombies can detect a player sleeping in a car. Minimum=1 Maximum=10 Default=1
+        SleepRadius = 1,
+        -- If enabled, checks for the Conspicuous and Inconspicuous traits.
+        CheckForTraits = true,
+        -- Adjusts radius based on a trait coefficient representing a 0-100 percent value. Minimum=0 Maximum=100 Default=60
+        TraitCoefficient = 60,
+        -- If enabled, the player cannot hide while being chased by a zombie, even if not visible. If disabled, the player can hide when not seen by a zombie.
+        ZombieMemory = false,
     },
     StairsAlert = {
         -- Automatically scans for nearby staircases at set intervals. If a staircase is detected, nearby zombies will be automatically alerted to the Player.
@@ -6809,63 +6792,6 @@ Advanced_trajectory = {
         -- Setting this to higher amounts allows the Player to see zombies from further away.
         -- You still need to be in a Staircase! Minimum=1 Maximum=30 Default=3
         VisionRadius = 3,
-    },
-    MultiHitLimiter = {
-        -- Require weapons to be two-handed to have multi hit.
-        TwoHandReq = true,
-        -- Require weapons to have a maximum range greater than or equal to a specified value to have multi hit.
-        RangeBool = true,
-        -- If enabled, weapons with a maximum range less than this value will have multi hit disabled. Minimum=0.00 Maximum=100.00 Default=1.21
-        RangeNum = 1.21,
-        -- If strength is below this value, multi hit is disabled for equipped weapons. Minimum=0 Maximum=10 Default=0
-        StrReq = 5,
-        -- If fitness is below this value, multi hit is disabled for equipped weapons. Minimum=0 Maximum=10 Default=0
-        FitReq = 0,
-        -- If an equipped weapon's skill level is below this value, multi hit is disabled for it. Minimum=0 Maximum=10 Default=0
-        SkillReq = 0,
-        -- If any number other than 0, multi hit weapons with a max hit count above this value will be reduced to it. Minimum=0 Maximum=5 Default=0
-        MaxHitCap = 0,
-        -- Allow multi hit for Axe weapons.
-        Axe = true,
-        -- Allow multi hit for Long Blunt weapons.
-        LongBlunt = true,
-        -- Allow multi hit for Short Blunt weapons.
-        SmallBlunt = true,
-        -- Allow multi hit for Long Blade weapons.
-        LongBlade = true,
-        -- Allow multi hit for Short Blade weapons.
-        SmallBlade = true,
-        -- Allow multi hit for Spear weapons.
-        Spear = true,
-        -- Allow multi hit for Unarmed weapons.
-        Unarmed = true,
-        -- A semicolon-separated list of item types that won't have multi hit disabled, overriding the above settings.
-        Whitelist = "Base.BareHands",
-        -- A semicolon-separated list of item types that will have multi hit disabled, overriding the above settings.
-        Blacklist = "Base.Nightstick",
-    },
-    AVCS = {
-        -- Allow members of the same faction to do things to the vehicle
-        AllowFaction = true,
-        -- Allow members of the same safehouse to do things to the vehicle
-        AllowSafehouse = true,
-        -- Maximum amount of vehicle one can claim Minimum=1 Maximum=999 Default=5
-        MaxVehicle = 5,
-        -- Require Claim Ticket to Claim
-        RequireTicket = false,
-        -- Claim ticket can be one-time use or can be returned on unclaim
-        ReturnTicket = false,
-        -- Spawn a random car in the world through Udderly Respawn Mod
-        UdderlyRespawn = false,
-        ServerSideChecking = false,
-        -- How long in hours from players last logon time before vehicle unclaim Minimum=1 Maximum=999 Default=240
-        ClaimTimeout = 240,
-        -- Old method to store unique identifiers. Now it is deprecated, to support existing servers still using this method
-        MuleParts = "",
-        -- Vehicle container that has a cover which store cargo, append to add containers of unsupported mod vehicles
-        TrunkParts = "TrunkDoor;DoorRear",
-        -- Database may become inconsistent due to catastrophic failures
-        RebuildDB = false,
     },
     A26 = {
         -- Displays
@@ -8133,7 +8059,7 @@ Advanced_trajectory = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumRandomCases = 2,
+        EnumRandomCases = 4,
         -- Zombie Concealed Carry Firearms
         --  - Increase or Remove Firearms on Civilian Zombies
         --  - Zombies will have Firearms in Fanny Packs or Purses designated as (CCW)
@@ -8159,7 +8085,7 @@ Advanced_trajectory = {
         -- 18 = 170%
         -- 19 = 180%
         -- 20 = 190%
-        EnumZombieCCW = 2,
+        EnumZombieCCW = 7,
         -- Military / Police Vehicle
         --  - Adjust the overall spawn result in Military / Police Vehicles
         --  - If Military Distribution settings are severely reduced
@@ -8694,104 +8620,318 @@ Advanced_trajectory = {
         -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Surplus Location containers
         BoolSURammo = true,
     },
-    AshenMPRanking = {
-        mainUiTitle = "Ranking",
-        -- Minimum=7 Maximum=365 Default=15
-        inactivityPurgeTime = 365,
-        -- Minimum=1 Maximum=60 Default=20
-        writeOnFilePeriod = 20,
-        -- Minimum=1 Maximum=4 Default=2
-        periodicTick = 2,
-        summaryLB = true,
-        killsPerDay = true,
-        sKills = false,
-        perkScores = true,
-        otherPerks = false,
-        otherPerksList = "",
-        moreDeaths = true,
-        lessDeaths = true,
-        rankStaff = false,
-        -- Minimum=20 Maximum=40 Default=20
-        passivMaxScore = 20,
+    Advanced_trajectory = {
+        -- Show or hide crosshair.
+        aimpoint = true,
+        showOutlines = false,
+        -- Check this if you don't want ot manually set which Z level you want to shoot at. Be aware that this will reduce FPS a lot when aiming.
+        enableAutoAimZLevel = true,
+        hideTracer = false,
+        Enablerange = true,
+        Enablethrow = true,
+        -- Nerfs shooting in cars. Player aim is limited to a cone.
+        enableCarAimLimit = true,
+        -- If enabled, bullet will ignore car when shooting from a higher level.
+        enableBulletIgnoreCarFromHighLevel = true,
+        -- For debugging, character says what body part was shot.
+        callshot = false,
+        -- Need to check this if you want gun PVP with safety features OFF. UNCHECK IF YOU HAVE PVP OFF AND DO NOT WANT GUN PVP!
+        IgnorePVPSafety = false,
+        enableBulletPenFlesh = true,
+        -- Multiplies base damage of bullet. Minimum=0.00 Maximum=100.00 Default=1.00
+        ATY_damage = 1.0,
+        -- Ex: 0.1 means nerf bullet damage by 90% after penetrating through first zombie/player. Minimum=0.00 Maximum=1.00 Default=0.25
+        penDamageReductionMultiplier = 0.25,
+        -- Minimum damage that needs to be done to zombie for it to react to projectile hit. Minimum=0.00 Maximum=2.00 Default=0.30
+        minDamageToGetHitReaction = 0.3,
+        -- Minimum=0.00 Maximum=1.50 Default=1.00
+        DebugGridMultiplier = 0.5,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        DebugOffset = 0.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        DebugSpawnOffset = 0.0,
+        DebugEnableBow = true,
+        DebugEnableVoodoo = false,
+        DebugSayShotPart = false,
+        -- Minimum=1.00 Maximum=100.00 Default=30.00
+        bowBreakChance = 30.0,
+        -- Minimum=-10.00 Maximum=10.00 Default=0.10
+        hitRegThreshold = 0.1,
+        -- Minimum=-1.00 Maximum=1.00 Default=0.70
+        carDotProdLimit = 0.7,
+        -- Minimum=0.00 Maximum=90.00 Default=40.00
+        angleBoundCar = 40.0,
+        enablePlayerBulletPosCheck = false,
+        toggleResetZLevel = false,
+        -- Minimum=0.00 Maximum=300.00 Default=3.00
+        XPKillModifier = 2.0,
+        -- Minimum=0.00 Maximum=300.00 Default=0.50
+        XPHitModifier = 0.5,
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
+        MaxProjCone = 0.5,
+        -- Value that limits how much bloom is added to crosshair. Higher means larger possible bloom. Minimum=0.00 Maximum=20.00 Default=7.00
+        maxaimnum = 7.0,
+        -- Value that affects crosshair's minimum bloom. Characters with low aiming level (0-2) will never be accurate (always has bloom). Set to 0 if you want to be OP or unlock focus mechanic at level 3. Minimum=0.00 Maximum=100.00 Default=7.00
+        minaimnumModifier = 7.0,
+        -- Aiming level in which player unlocks the focus mechanic. Minimum=0.00 Maximum=10.00 Default=3.00
+        focusLevel = 3.0,
+        -- Player loses accuracy when trying to shoot targets past their distance limit. Uncheck to disable.
+        enableDistanceLimitPenalty = true,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        distanceLimitScaling = 1.0,
+        -- Affects when the penalty will be applied. The lower the value, the lesser the distance that the crosshair needs to be from the player to activate the penalty. Minimum=0.00 Maximum=10.00 Default=2.00
+        distanceFocusPenalty = 3.0,
+        -- Value affects how much bloom is added when reloading and racking firearm. Minimum=0.00 Maximum=10.00 Default=0.10
+        reloadEffectModifier = 0.1,
+        -- Value that affects how fast your crosshair tightens. Higher means faster. Minimum=0.00 Maximum=100.00 Default=1.10
+        reducespeed = 1.1,
+        -- Driving part of the focus mechanic. Determines time it takes for the crosshair to begin its process of reducing aimnum to 0 (max accuracy). This is a flat value. Set to 0 to disable if you want to remove ability to gain max accuracy without waiting. Minimum=0.00 Maximum=10.00 Default=2.00
+        focusCounterSpeed = 2.0,
+        -- Multiplier that determines how much focus counter/timer should be shorten based off of aiming level.  Minimum=0.00 Maximum=10.00 Default=7.00
+        focusCounterSpeedScaleModifier = 7.0,
+        -- Part of the focus mechanic. Determines speed of crosshair reducing aimnum to 0 once process has begun. Minimum=0.00 Maximum=1.00 Default=1.00
+        maxFocusSpeed = 1.0,
+        -- If enabled, player will have a chance of missing depending on bloom. Bullet will pass through zombies without damaging them.
+        enableHitOrMiss = false,
+        -- Max distance for point blank to register when projectile detects zombie in its proximity. Set to 0 to pretty much disable it. Minimum=0.00 Maximum=5.00 Default=2.00
+        pointBlankMaxDistance = 2.0,
+        -- Player will announce if their bullet hit or missed with bloom value comparisons.
+        announceHitOrMiss = false,
+        -- A flat value that gives a flat increase in chances of hitting zombies with a shotgun. Minimum=0.00 Maximum=200.00 Default=60.00
+        shotgunHitBuff = 0.0,
+        -- Affects how much aiming level will decrease the chances of not missing. Higher means lower chance of missing per level. Minimum=0.00 Maximum=20.00 Default=2.00
+        hitLevelScaling = 3.0,
+        -- Must be less than max. Bullet misses if currentBloom > rand(minMiss + buff + aimLevel*hitScaling, maxMiss) Minimum=0.00 Maximum=300.00 Default=25.00
+        missMin = 15.0,
+        -- Must be greater than min. Bullet misses if currentBloom > rand(minMiss + buff + aimLevel*hitScaling, maxMiss) Minimum=0.00 Maximum=300.00 Default=120.00
+        missMax = 100.0,
+        -- Makes crosshair slightly transparent when bloom reaches "Min Miss" value so players know when they'll start having a chance of missing. Minimum=0.00 Maximum=1.00 Default=0.30
+        missMinTransparency = 0.3,
+        -- Linked to Focus Counter Speed. Part of the focus mechanic. Weapon's recoil delay affects how long it takes for character to recover from recoil and this is a multiplier of that. Set to 0 to ignore weapon's recoil delay stat. Minimum=0.00 Maximum=1.00 Default=0.01
+        recoilDelayModifier = 0.01,
+        -- Multiplier of gun's max dmg added as recoil to crosshair (adds bloom when shooting). Minimum=0.00 Maximum=30.00 Default=10.00
+        recoilModifier = 10.0,
+        -- Affects exponential growth of recoil (how much bloom is added depending on the previous bloom value the player shot at). Lower means less added bloom as you continue spraying. Minimum=0.00 Maximum=200.00 Default=80.00
+        recoilScaleModifier = 80.0,
+        -- Multiplier reduction to gun recoil. Minimum=0.00 Maximum=1.00 Default=0.70
+        proneRecoilBuff = 0.7,
+        -- Multiplier that affects how much bloom is added depending on the previous bloom value the player shot at. Lower means less added bloom as you continue spraying. Minimum=0.00 Maximum=1.00 Default=0.50
+        proneExpoRecoilBuff = 0.5,
+        -- Multiplier reduction to gun recoil. Minimum=0.00 Maximum=1.00 Default=0.80
+        crouchRecoilBuff = 0.8,
+        -- Multiplier that affects how much bloom is added depending on the previous bloom value the player shot at. Lower means less added bloom as you continue spraying. Minimum=0.00 Maximum=1.00 Default=0.75
+        crouchExpoRecoilBuff = 0.75,
+        -- Minimum=0.00 Maximum=2.00 Default=1.00
+        bulletspeed = 1.0,
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
+        bulletdistance = 2.0,
+        -- When aiming moving and turnin. Minimum=0.00 Maximum=10.00 Default=10.00
+        runNGunLv = 10.0,
+        -- Multiplier that reduces penalty for moving and turning. 0.25 means 75% reduction to penalty. Minimum=0.00 Maximum=1.00 Default=0.50
+        runNGunBuff = 0.5,
+        -- Value that adds bloom when moving. Minimum=0.00 Maximum=100.00 Default=1.30
+        moveeffect = 1.3,
+        -- Value that adds bloom when physically turning your feet, not hips. Minimum=0.00 Maximum=100.00 Default=0.70
+        turningeffect = 0.7,
+        -- Minimum=0.00 Maximum=10.00 Default=8.00
+        crouchCounterSpeed = 8.0,
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
+        crouchPenaltyModifier = 2.0,
+        -- Minimum=0.00 Maximum=10.00 Default=3.00
+        crouchTurnEffect = 3.0,
+        -- Minimum=0.00 Maximum=10.00 Default=5.00
+        proneTurnEffect = 5.0,
+        -- Reduces minimum bloom limit by a percentage; lower means smaller crosshair Minimum=0.00 Maximum=1.00 Default=0.50
+        crouchFocusLimitBuff = 0.5,
+        -- Reduces minimum bloom limit by a percentage; lower means smaller crosshair" Minimum=0.00 Maximum=1.00 Default=0.30
+        proneFocusLimitBuff = 0.3,
+        -- When proning, you gain max accuracy faster (applies when focus mechanic is unlocked). Minimum=0.00 Maximum=10.00 Default=1.50
+        proneFocusCounterSpeedBuff = 1.5,
+        -- When proning, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.40
+        proneReduceSpeedBuff = 0.4,
+        -- When crouching, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.20
+        crouchReduceSpeedBuff = 0.2,
+        -- ex. 0.9 means reduces incoming damage by 90% when armor is maxed; applies to armor Minimum=0.00 Maximum=1.00 Default=0.80
+        maxDefenseReduction = 0.8,
+        -- If dealt headshot, increase chance of wounding head. (ex. 20 means percentage of wounding head is 30% (20 + 10)) Minimum=0.00 Maximum=100.00 Default=20.00
+        headShotIncChance = 20.0,
+        -- If dealt footshot, increase chance of wounding legs/groin. (ex. 10 means percentage of wounding foot is 20% (10 + 10)) Minimum=0.00 Maximum=100.00 Default=10.00
+        footShotIncChance = 10.0,
+        -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=10.00
+        headShotDmgZomMultiplier = 10.0,
+        -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
+        bodyShotDmgZomMultiplier = 5.0,
+        -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=1.00
+        footShotDmgZomMultiplier = 1.0,
+        -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=15.00
+        headShotDmgPlayerMultiplier = 15.0,
+        -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
+        bodyShotDmgPlayerMultiplier = 5.0,
+        -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=2.00
+        footShotDmgPlayerMultiplier = 2.0,
+        -- Bloom affects crit chance. This is a multiplier to that. Set to 0 for better chances of crit. Minimum=0.00 Maximum=100.00 Default=1.00
+        critChanceModifier = 1.0,
+        -- Chance that a gunshot wound will cause a fracture Minimum=0.00 Maximum=100.00 Default=10.00
+        fractureChance = 10.0,
+        -- Chance that a gunshot wound will not inflict a lodged bullet Minimum=0.00 Maximum=100.00 Default=25.00
+        throughChance = 25.0,
+        -- Shotgun has a max independent projectile cone. Minimum=0.00 Maximum=1.00 Default=0.10
+        maxShotgunProjCone = 0.4,
+        -- Multiplier on base stat (range) of shotgun. Default value is 0.75 which means 75% of vanilla's range. Minimum=0.00 Maximum=10.00 Default=0.50
+        shotgunDistanceModifier = 0.6,
+        -- Amount of pellots shot Minimum=0 Maximum=100 Default=5
+        shotgunnum = 6,
+        -- Value affects shotgun spread. The lower the value, the more narrow the spread. Minimum=0.00 Maximum=1.00 Default=0.10
+        shotgundivision = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        shotgunDamageMultiplier = 1.0,
+        -- Shotguns crit chance is only affected by their stat and aiming level (not bloom). Default value is 10 meaning the game decides a random value from 1 to (100 - 10) and if value is <= crit stat, then crit. Minimum=0.00 Maximum=100.00 Default=10.00
+        critChanceModifierShotgunsOnly = 25.0,
+        -- Minimum=0.00 Maximum=5.00 Default=0.00
+        staminaCrouchScale = 0.001,
+        -- Multiplier that scales off of heavy moodle level Minimum=0.00 Maximum=5.00 Default=0.50
+        staminaHeavyCrouchScale = 0.5,
+        -- Minimum=0.00 Maximum=5.00 Default=0.00
+        staminaCrawlScale = 0.003,
+        -- Multiplier that scales off of heavy moodle level Minimum=0.00 Maximum=5.00 Default=0.50
+        staminaHeavyCrawlScale = 0.5,
+        -- This value adds more bloom when walking or turning (Heavy Moodle Scaling) Minimum=0.00 Maximum=5.00 Default=0.50
+        heavyTurnEffectModifier = 0.5,
+        -- This value amplifies move and turning effect, which means more bloom when performing those actions. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=0.50
+        drunkActionEffectModifier = 0.5,
+        -- Multiplier that increases your maxaimnum or max bloom. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=6.00
+        drunkMaxBloomModifier = 6.0,
+        -- This value increases max bloom limit dpeending on heavy moodle level. Minimum=0.00 Maximum=100.00 Default=6.00
+        heavyMaxBloomModifier = 6.0,
+        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.50 Maximum=2.00 Default=0.66
+        hyperHypoModifier = 0.66,
+        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.50 Maximum=2.00 Default=0.50
+        tiredModifier = 0.5,
+        -- This value must be very small as it affects how slow your crosshair reduces bloom. Minimum=0.00 Maximum=1.00 Default=0.10
+        painModifier = 0.1,
+        -- Makes crosshair shaky. Minimum=0.00 Maximum=100.00 Default=2.00
+        painVisualModifier = 2.0,
+        -- Multiplier that determines how much panic increases the penalty affect when aiming at farther targets. Minimum=0.00 Maximum=5.00 Default=3.00
+        panicPenaltyModifier = 3.0,
+        -- Makes crosshair shaky. Minimum=0.00 Maximum=100.00 Default=1.00
+        panicVisualModifier = 1.0,
+        -- Multiplier that affects how much is added to minaimnum or minimum bloom. Minimum=0.00 Maximum=100.00 Default=4.00
+        stressBloomModifier = 4.0,
+        -- Affects how intense the crosshair shaking affect is. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=1.25
+        stressVisualModifier = 1.25,
+        -- Value affects how much bloom is added when coughing. Minimum=0.00 Maximum=100.00 Default=2.00
+        coughModifier = 2.0,
+        -- Value affects the rate of bloom added when inhaling. Set to 0 to disable the whole endurance mechanic. Minimum=0.00 Maximum=100.00 Default=1.50
+        enduranceBreathModifier = 1.5,
+        -- Value determines how long the characters inhales (adds bloom). Links to exhaleModifier1. Higher value means shorter timer, lower means longer. Minimum=0.00 Maximum=100.00 Default=3.00
+        inhaleModifier1 = 3.0,
+        -- Value determines how long the characters exhales (reduces bloom). Links to exhaleModifier1. Higher value means shorter timer, lower means longer. Minimum=0.00 Maximum=100.00 Default=2.00
+        exhaleModifier1 = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
+        inhaleModifier2 = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=3.66
+        exhaleModifier2 = 3.66,
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
+        inhaleModifier3 = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        exhaleModifier3 = 4.0,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        inhaleModifier4 = 4.0,
+        -- Minimum=0.00 Maximum=100.00 Default=7.00
+        exhaleModifier4 = 7.0,
+        enableOgCrosshair = false,
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
+        aimLevelTextTrans = 0.5,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairMaxTransparency = 1.0,
+        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.20
+        crosshairRed = 0.0,
+        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreen = 1.0,
+        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.20
+        crosshairBlue = 0.98,
+        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairRedMain = 1.0,
+        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreenMain = 1.0,
+        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairBlueMain = 1.0,
+        -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairRedLimit = 1.0,
+        -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreenLimit = 0.2,
+        -- Linked to color when crosshair is out of range. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.00
+        crosshairBlueLimit = 0.0,
     },
-    AwayFromZomboid = {
-        -- The amount of time before a player is considered AFK. Minimum=0 Maximum=86400 Default=300
-        AFKTimeout = 300,
-        -- The amount of time before an AFK player is kicked. (cumulative with AFK Timeout!) Minimum=0 Maximum=86400 Default=600
-        AFKKickTimeout = 1000,
-        -- The message that will be displayed when a player is considered AFK.
-        AFKOnPopupMessage = "You are now AFK.",
-        -- The message that will be displayed when a player is no longer considered AFK.
-        AFKOffPopupMessage = "You are no longer AFK.",
-        -- Display a popup when a player is (or is no longer) AFK.
-        DoPopup = true,
-        -- The channel to send chat notifications to, if any. Default=None
-        -- 1 = None
-        -- 2 = Say
-        ChatNotificationChannel = 1,
-        -- Kick the player when they are AFK, after the additional AFK kick timeout.
-        DoKick = true,
-        -- Whether zombies will ignore AFK players.
-        AFKZombiesNoAttack = true,
-        -- Allow players to manually set themselves as AFK.
-        AllowManualAFK = true,
-        -- The amount of time before a player is considered AFK when they manually set themselves as AFK (to prevent abuse). Minimum=0 Maximum=86400 Default=60
-        ManualAFKDelay = 60,
-        -- Whether staff accounts are ignored by the AFK system.
-        DoIgnoreStaff = true,
+    MultiHitLimiter = {
+        -- Require weapons to be two-handed to have multi hit.
+        TwoHandReq = true,
+        -- Require weapons to have a maximum range greater than or equal to a specified value to have multi hit.
+        RangeBool = true,
+        -- If enabled, weapons with a maximum range less than this value will have multi hit disabled. Minimum=0.00 Maximum=100.00 Default=1.21
+        RangeNum = 1.21,
+        -- If strength is below this value, multi hit is disabled for equipped weapons. Minimum=0 Maximum=10 Default=0
+        StrReq = 5,
+        -- If fitness is below this value, multi hit is disabled for equipped weapons. Minimum=0 Maximum=10 Default=0
+        FitReq = 0,
+        -- If an equipped weapon's skill level is below this value, multi hit is disabled for it. Minimum=0 Maximum=10 Default=0
+        SkillReq = 0,
+        -- If any number other than 0, multi hit weapons with a max hit count above this value will be reduced to it. Minimum=0 Maximum=5 Default=0
+        MaxHitCap = 0,
+        -- Allow multi hit for Axe weapons.
+        Axe = true,
+        -- Allow multi hit for Long Blunt weapons.
+        LongBlunt = true,
+        -- Allow multi hit for Short Blunt weapons.
+        SmallBlunt = true,
+        -- Allow multi hit for Long Blade weapons.
+        LongBlade = true,
+        -- Allow multi hit for Short Blade weapons.
+        SmallBlade = true,
+        -- Allow multi hit for Spear weapons.
+        Spear = true,
+        -- Allow multi hit for Unarmed weapons.
+        Unarmed = true,
+        -- A semicolon-separated list of item types that won't have multi hit disabled, overriding the above settings.
+        Whitelist = "Base.BareHands",
+        -- A semicolon-separated list of item types that will have multi hit disabled, overriding the above settings.
+        Blacklist = "Base.Nightstick",
     },
-    Bandits = {
-        General_KillCounter = true,
-        -- Minimum=1.00 Maximum=5.00 Default=2.40
-        General_StunlockHitSpeed = 3.0,
-        -- Minimum=0.25 Maximum=4.00 Default=1.00
-        General_SpawnMultiplier = 0.5,
-        -- Minimum=0.25 Maximum=4.00 Default=1.00
-        General_SizeMultiplier = 0.75,
-        General_DensityScore = true,
-        General_OriginalBandits = true,
-        General_Surrender = true,
-        General_BleedOut = true,
-        General_Infection = true,
-        General_LimitedEndurance = true,
-        General_RunAway = true,
-        General_DestroyDoor = true,
-        General_SmashWindow = true,
-        General_RemoveBarricade = true,
-        General_DestroyThumpable = false,
-        General_SabotageVehicles = true,
-        General_Theft = true,
-        General_SabotageCrops = false,
-        General_EnterVehicles = false,
-        General_GeneratorCutoff = true,
-        General_BuildBridge = false,
-        General_BuildRoadblock = true,
-        General_Speak = true,
-        General_Captions = true,
-        General_SneakAtNight = true,
-        General_CarryTorches = true,
-        General_ArrivalIcon = true,
-        -- Bandit global weapon accuracy Default=Occasional Marksman
-        -- 1 = Stormtrooper Mode
-        -- 2 = Can't Hit the Broad Side of a Barn
-        -- 3 = Occasional Marksman
-        -- 4 = Sharpshooter on a Good Day
-        General_OverallAccuracy = 3,
-        -- Default=Normal (loot x 1.0)
-        -- 1 = None (loot x 0)
-        -- 2 = Insanely Rare (loot x 0.05)
-        -- 3 = Extremely Rare (loot x 0.2)
-        -- 4 = Rare (loot x 0.6)
-        -- 5 = Normal (loot x 1.0)
-        -- 6 = Common (loot x 2.0)
-        General_DefenderLootAmount = 5,
+    RespawnInCarMod = {
+        -- If TRUE, during a new game, after the creation of a new character, if a position affiliated with the name of the character is known, even if the character is new, he will be forced to join his position , of course, this option is not valid after a death, this option is present for the Avatar mod, this offers administrators the possibility of placing avatars with the name of a player who has never joined the server part / Game, and thus force the new player to join the recorded position via the Avatar.
+        ForceToRespawnInCarEvenIfNewPlayer = false,
+        -- If TRUE, then complete and optimal protection will be applied to players during their respawns, only when the RIC mod forces the respawn, to be prioritized on coop servers (invisible and no clip player), if FALSE, then just dont attack by zombies.
+        FullProtectDuringRespawn = false,
+    },
+    AVCS = {
+        -- Allow members of the same faction to do things to the vehicle
+        AllowFaction = true,
+        -- Allow members of the same safehouse to do things to the vehicle
+        AllowSafehouse = true,
+        -- Maximum amount of vehicle one can claim Minimum=1 Maximum=999 Default=5
+        MaxVehicle = 5,
+        -- Require Claim Ticket to Claim
+        RequireTicket = false,
+        -- Claim ticket can be one-time use or can be returned on unclaim
+        ReturnTicket = false,
+        -- Spawn a random car in the world through Udderly Respawn Mod
+        UdderlyRespawn = false,
+        ServerSideChecking = false,
+        -- How long in hours from players last logon time before vehicle unclaim Minimum=1 Maximum=999 Default=240
+        ClaimTimeout = 240,
+        -- Old method to store unique identifiers. Now it is deprecated, to support existing servers still using this method
+        MuleParts = "",
+        -- Vehicle container that has a cover which store cargo, append to add containers of unsupported mod vehicles
+        TrunkParts = "TrunkDoor;DoorRear",
+        -- Database may become inconsistent due to catastrophic failures
+        RebuildDB = false,
     },
     BusRideTiles = {
         -- Use BusRide.BusCoin or BusRide.BusCoin2 or change it to whatever you want
         Currency = "BusRide.BusCoin",
         -- Minimum=0 Maximum=100 Default=1
         Cost = 1,
-        AllowTravelToCenter = false,
+        AllowTravelToCenter = true,
         LocCenter = "Community Center",
         -- Minimum=0 Maximum=999999999 Default=11634
         XCenter = 11634,
@@ -8807,9 +8947,9 @@ Advanced_trajectory = {
         AllowTravelToAll = true,
         Loc1 = "Location1",
         -- Minimum=0 Maximum=999999999 Default=0
-        X1 = 0,
+        X1 = 4128,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y1 = 0,
+        Y1 = 9647,
         -- Minimum=0 Maximum=7 Default=0
         Z1 = 0,
         Loc2 = "Location2",
@@ -8862,6 +9002,56 @@ Advanced_trajectory = {
         -- Minimum=0 Maximum=7 Default=0
         Z8 = 0,
     },
+    CarWanna = {
+        -- Enabling this feature will add pinkslips to container loot tables.
+        EnableFoundLoot = true,
+        -- Chance that a pinkslip might be found in a container. Minimum=0.00 Maximum=100.00 Default=1.00
+        FoundLootChance = 1.0,
+        -- Enabling this feature will allow pinkslips to be found on mechanic zombies.
+        EnableZedLoot = true,
+        -- Chance that a pinkslip will be found on a mechanic zombie. Minimum=0.00 Maximum=100.00 Default=0.01
+        ZedLootChance = 0.01,
+        -- List of PinkSlips that should never spawn.   Example: PinkSlip.Van;PinkSlip.SUV
+        LootBlackList = "",
+        -- Enabling this feature will allow players to turn cars into pinkslips.
+        EnableRegistration = true,
+        -- list of vehicle id's that can not be register and turned into pinkslips.   Example: Base.Van;Base.CarLights
+        VehicleBlacklist = "",
+        -- Keys are not required for registration of trailers.
+        Trailerlist = "Base.UnimogTrailer;Base.TrailerTSMega;Base.TrailerFirst;Base.TrailerGenerator;Base.TrailerHome;Base.TrailerKbac;Base.TrailerSecond;Base.isoContainer2;Base.isoContainer3tanker;Base.isoContainer4;Base.isoContainer5;Base.TrailerKbacRSWater;Rotators.TrailerWaterSmall;Base.M870A1",
+        -- Requires a TC 96-182: Vehicle Registration form to turn a vehicle into a pinkslip.
+        NeedForm = true,
+        -- Add TC 96-182 registration form to loot tables.
+        FormLoot = true,
+        -- Chance that this form will be found in the game world. Minimum=0.01 Maximum=100.00 Default=1.00
+        FormChance = 1.0,
+        -- Requires a player to have the vehicle key in order convert it into a pinkslip.
+        MustHaveKey = true,
+        -- Allows players to convert hotwired vehicles into pinkslips. <LINE> NOTE: These vehicles will hotwired when claimed.
+        AllowHotwire = false,
+        -- Vehicle can not be missing any parts, this might prevent some modded vehicles from being converted.   Whitelisted parts are excluded.
+        MustHaveAllParts = true,
+        -- Enabling this will allow you to register a vehicle without clearing its inventory first.   Whitelisted parts are excluded.   CarWanna does NOT save items in vehicles!
+        MustClearInventory = true,
+        -- These parts do not have to be repaired or installed.   Example: GasTank;Heater;GloveBox
+        PartWhiteList = "",
+        -- Minimum condition that all existing parts must be in order to be accepted. Minimum=0 Maximum=100 Default=100
+        MinmumCondition = 100,
+        -- Show condition of parts that exist on vehicle.   NOTE: This show a lot of information for modded vehicles.
+        ShowAllParts = false,
+        -- Allows players with admin to register a vehicle when normally blocked for players.
+        AdminOverride = false,
+        -- Respawn vehicles when they are registered using UdderlyVehicleRespawn
+        UdderlyRespawn = false,
+        -- This feature forces vanilla cars to spawn with the correct colors in multiplayer.   Only enable if your vanilla cars aren't the correct color when they spawn in multiplayer.
+        ExperimentalColor = false,
+        -- This feature enables support for Tsarlib vehicle modifications.
+        ExperimentalTsarModSupport = false,
+        -- Ignore Parts we can't see on the vehicle menu and can't repair, this is NOT needed for Tsarlib, However this can cause other issues.
+        IgnoreNodisplay = true,
+        -- Set any parts that are not displayed to 100% condition.   This will fix issues with vehicles spawning in at less than 100% overall condition.   But has potential to cause some unintended side effects.
+        FixNodisplay = false,
+    },
     ChangeSandboxOptions = {
         -- The action after sandbox options window has been opened. Default=Auto pause
         -- 1 = No effect
@@ -8871,156 +9061,12 @@ Advanced_trajectory = {
         -- Instead of rotting, the game will check for diseases every X amount of hours Minimum=6.00 Maximum=999999.00 Default=48.00
         DiseaseCheckTime = 48.0,
     },
-    HuntingMod = {
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
-        Separation_EmptyBox0 = false,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Customize the chance for tracks of animals to spawn.
-        Separation_ForageSpawn = false,
-        -- Bird spottings will be more common than normal in cities due to nature taking over in populated areas. Small and big animals will also be present in cities thanks to this setting.
-        YearsLater = true,
-        -- Boost to spawns of bird tracks. Minimum=0 Maximum=500 Default=100
-        BirdsForage = 100,
-        -- Boost to spawns of tiny game tracks. Minimum=0 Maximum=500 Default=100
-        TinyGameForage = 100,
-        -- Boost to spawns of small game tracks. Minimum=0 Maximum=500 Default=100
-        SmallGameForage = 100,
-        -- Boost to spawns of big games tracks. Minimum=0 Maximum=500 Default=100
-        BigGameForage = 100,
-        -- Boost to spawns of tracks in nature areas such as forests and deep forests. Minimum=0 Maximum=500 Default=100
-        NatureAreasForage = 100,
-        -- Boost to spawns of tracks in areas with human activity such as cities, farms and roads. Minimum=0 Maximum=500 Default=100
-        HumanAreasForage = 100,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
-        Separation_EmptyBox1 = false,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the general options.
-        Separation_General = false,
-        -- Chance to hunt a spotting will be shown in the tooltip.
-        ShowProbabilities = true,
-        -- Preys will have their minimum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=80
-        MinimumBonusSize = 80,
-        -- Preys will have their maximum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=150
-        MaximumBonusSize = 150,
-        -- When shred due to a gun too powerful, preys will have their minimum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=10
-        MinimumBonusSizeShred = 10,
-        -- When shred due to a gun too powerful, preys will have their maximum food value be this percentage of their default food value. Minimum=0 Maximum=500 Default=20
-        MaximumBonusSizeShred = 20,
-        -- Hunting gives XP in the category of the weapon used (aiming for guns, and for melee weapons their respective skills). This value is not exact and depends on your experience boost in the skill category of the weapon. It also gives XP in foraging. Minimum=0 Maximum=200 Default=30
-        XPGainHunting = 30,
-        -- Discarding a hunt gives XP in foraging. Minimum=0 Maximum=200 Default=30
-        XPGainDiscard = 30,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
-        Separation_EmptyBox2 = false,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of aiming on hunting. Some guns are more adapted for certain types of targets, such as shotguns for birds and rifles or small or big game.
-        Separation_AimingImpact = false,
-        -- The user aiming skill will impact hunting conditions. 
-        AimingImpact = true,
-        -- Minimum=0 Maximum=10 Default=0
-        MinimumAimingLevelToHunt = 0,
-        -- The minimum level in aiming required for a character to be able to hunt with a gun. Minimum=0 Maximum=10 Default=10
-        MaximumAimingLevelToHunt = 10,
-        -- If your aiming is the minimum level required to be able to hunt, the impact due to aiming on the hunting chance will be this value. Minimum=0 Maximum=500 Default=50
-        MinimumAimingImpact = 50,
-        -- If your aiming is the maximum level (or more), the impact due to aiming on the hunting chance will be this value. Minimum=0 Maximum=500 Default=150
-        MaximumAimingImpact = 150,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
-        Separation_EmptyBox3 = false,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of melee on hunting. Depends on the category of the weapon (blunt, spear, long blade...)
-        Separation_MeleeImpact = false,
-        -- Minimum=0 Maximum=10 Default=0
-        MinimumMeleeLevelToHunt = 0,
-        -- The minimum level in melee skills required for a character to be able to hunt with a melee weapon. Minimum=0 Maximum=10 Default=10
-        MaximumMeleeLevelToHunt = 10,
-        -- If your melee is the minimum level required to be able to hunt, the impact due to melee on the hunting chance will be this value. Minimum=0 Maximum=500 Default=50
-        MinimumMeleeImpact = 50,
-        -- If your melee is the maximum level (or more), the impact due to melee on the hunting chance will be this value. Minimum=0 Maximum=500 Default=150
-        MaximumMeleeImpact = 150,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
-        Separation_EmptyBox4 = false,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of strength on hunting, only impacts melee.
-        Separation_StrengthImpact = false,
-        -- The user strength skill will impact hunting conditions. 
-        StrengthImpact = true,
-        -- Minimum=0 Maximum=10 Default=1
-        MinimumStrengthLevelToHunt = 1,
-        -- The minimum level in strength required for a character to be able to hunt with a melee weapon. Minimum=0 Maximum=10 Default=10
-        MaximumStrengthLevelToHunt = 10,
-        -- If your strength is the minimum level required to be able to hunt, the impact due to strength on the hunting chance will be this value. Minimum=0 Maximum=500 Default=50
-        MinimumStrengthImpact = 50,
-        -- If your strength is the maximum level (or more), the impact due to strength on the hunting chance will be this value. Minimum=0 Maximum=500 Default=150
-        MaximumStrengthImpact = 150,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
-        Separation_EmptyBox5 = false,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of stealth on hunting. Sneaking and lightfoot count towards your stealth skills (mean between sneaking and lightfoot).
-        Separation_StealthImpact = false,
-        -- The user stealth skills will impact hunting conditions. 
-        StealthImpact = true,
-        -- The impact due to stealth on the hunting chance will be this value when at stealth of 0 (mean between sneaking and lightfoot). Minimum=0 Maximum=500 Default=70
-        MinimumStealthImpact = 70,
-        -- The impact due to stealth on the hunting chance will be this value when at stealth of 10 (mean between sneaking and lightfoot). Minimum=0 Maximum=500 Default=150
-        MaximumStealthImpact = 150,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]
-        Separation_EmptyBox6 = false,
-        -- <RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING] <BR> <LEFT> <RGB:1,1,1> Set the impact of other conditions on hunting.
-        Separation_OtherImpact = false,
-        -- When having a scope on the gun used to hunt, it will boost the hunting chance by this amount. Minimum=0 Maximum=200 Default=30
-        ScopeBonus = 30,
-        -- The weapon and the user aiming skill will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
-        WeaponImpact = 100,
-        -- Lightness of the day will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
-        LightImpact = 100,
-        -- Fog will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
-        FogImpact = 100,
-        -- Wind will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
-        WindImpact = 100,
-        -- Traits will impact hunting conditions. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
-        TraitImpact = 100,
-        -- Moodles will impact hunting conditions: cold, hypothermia. This can boost the hunting chance or decrease it. Minimum=0 Maximum=500 Default=100
-        MoodleImpact = 100,
-        -- Final chance of hunting a target will be boosted by this multiplier. 100% won't boost the hunting chance while a lower value will reduce overall chance of hunting and a higher value will increase the chance of hunting the target. Minimum=0 Maximum=500 Default=100
-        BoostToHuntingChance = 100,
-    },
-    EverythingHasAName = {
-        -- Restricts renaming items to admins in multiplayer. Leave unchanged for singleplayer.
-        OnlyAdminCanRenameItems = false,
-        -- Restricts renaming vehicles to admins in multiplayer. Leave unchanged for singleplayer.
-        OnlyAdminCanRenameVehicles = false,
-        -- Players will be able to rename vehicles only if they have the keys for it or if the keys are in ignition. Works only in multiplayer.
-        MustHaveKeys = true,
-    },
-    FirstAidOverhaul = {
-        -- From this level onward, the Player will be able to treat fractures.  Minimum=0 Maximum=10 Default=1
-        FractureTreatmentLevel = 1,
-        -- From this level onward, the Player will be able to stitch wounds.  Minimum=0 Maximum=10 Default=2
-        StitchingTreatmentLevel = 2,
-        -- From this level onward, the Player won't have a chance to fail wound treatments.  Minimum=0 Maximum=10 Default=4
-        FailureLevelThreshold = 4,
-        -- The chance of failure when treating wounds.  Minimum=0 Maximum=100 Default=30
-        FailureChance = 30,
-        -- How much disease percentage you can get from a single infected wound.  Minimum=0 Maximum=100 Default=26
-        MaxDiseasePerWound = 26,
-        -- How much disease percentage you can get from all infected wounds combined.  Minimum=0 Maximum=100 Default=100
-        InfectionDiseaseLimit = 100,
-        -- How many in-game minutes before you can practice first aid on corpses again.  Minimum=1 Maximum=1440 Default=60
-        PracticeCooldown = 60,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=10
-        BandagePracticeXP = 10,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=25
-        SuturePracticeXP = 25,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=50
-        StudyPracticeXP = 50,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=75
-        ScalpelPracticeXP = 75,
-        -- Makes wound treatment faster or slower.  Minimum=0.10 Maximum=5.00 Default=1.00
-        SpeedMultiplier = 1.0,
-        -- Display cheaty info of wounds when at Level 8 or higher. 
-        ShowDebugInfo = true,
-    },
     HZ = {
         -- If this option is enabled blood sample tests has a chance to fail
         BloodTestsCanFail = true,
         UsePresetsIfNoZones = false,
         -- If this option is enabled, the exact location and size of the defined zones can be learned by anyone using the military map. The map has to be crafted and the components are insanely rare.
-        MilitaryMapShowZones = false,
+        MilitaryMapShowZones = true,
         -- Allows different detection devices (e.g. Geiger counter) to give false positive alarms depending on their quality
         DetectorFalsePositiveAlarms = false,
         -- Disable it if you don't want zombies to hear your sensor beeps.
@@ -9060,63 +9106,94 @@ Advanced_trajectory = {
         -- This value determines how much the hazmat suit adds to the protection value against biological hazards. You need to reload the game for the setting to take effect. Minimum=0.10 Maximum=1.00 Default=0.90
         HazmatSuitBiologicalProtectionValue = 0.9,
     },
-    HIC = {
-        -- Enable or disable the mod.
-        Active = true,
-        -- Enable or disable moodle.
-        MoodleActive = true,
-        -- Minimum condition percentage required for vehicle parts to enable hiding. Minimum=0 Maximum=100 Default=15
-        MinimalCondition = 15,
-        -- Radius in which zombies can detect player in the car. Minimum=1 Maximum=10 Default=2
-        Radius = 2,
-        -- Radius within which zombies can detect a player sleeping in a car. Minimum=1 Maximum=10 Default=1
-        SleepRadius = 1,
-        -- If enabled, checks for the Conspicuous and Inconspicuous traits.
-        CheckForTraits = true,
-        -- Adjusts radius based on a trait coefficient representing a 0-100 percent value. Minimum=0 Maximum=100 Default=60
-        TraitCoefficient = 60,
-        -- If enabled, the player cannot hide while being chased by a zombie, even if not visible. If disabled, the player can hide when not seen by a zombie.
-        ZombieMemory = false,
+    Hepha = {
+        DisableStartingItems = false,
+        -- This is only a line separator, checking it has no effect!
+        BraveSeparator = false,
+        -- Minimum=1 Maximum=1000 Default=10
+        DaysToGainBraveMin = 10,
+        -- Minimum=1 Maximum=1000 Default=18
+        DaysToGainBraveMax = 18,
+        -- Minimum=1 Maximum=100000 Default=1000
+        KillsToGainBraveMin = 1000,
+        -- Minimum=1 Maximum=100000 Default=1800
+        KillsToGainBraveMax = 1800,
+        -- Minimum=1 Maximum=1000 Default=12
+        DaysToGainBraveWithCowardMin = 12,
+        -- Minimum=1 Maximum=1000 Default=22
+        DaysToGainBraveWithCowardMax = 22,
+        -- Minimum=1 Maximum=100000 Default=1250
+        KillsToGainBraveWithCowardMin = 1250,
+        -- Minimum=1 Maximum=100000 Default=2000
+        KillsToGainBraveWithCowardMax = 2000,
+        -- Minimum=1 Maximum=1000 Default=14
+        DaysToGainBraveWithPacifistMin = 14,
+        -- Minimum=1 Maximum=1000 Default=22
+        DaysToGainBraveWithPacifistMax = 22,
+        -- Minimum=1 Maximum=100000 Default=1250
+        KillsToGainBraveWithPacifistMin = 1250,
+        -- Minimum=1 Maximum=100000 Default=2000
+        KillsToGainBraveWithPacifistMax = 2000,
+        -- Minimum=1 Maximum=1000 Default=18
+        DaysToGainBraveWithCowardAndPacifistMin = 18,
+        -- Minimum=1 Maximum=1000 Default=26
+        DaysToGainBraveWithCowardAndPacifistMax = 26,
+        -- Minimum=1 Maximum=100000 Default=1750
+        KillsToGainBraveWithCowardAndPacifistMin = 1750,
+        -- Minimum=1 Maximum=100000 Default=2500
+        KillsToGainBraveWithCowardAndPacifistMax = 2500,
+        -- This is only a line separator, checking it has no effect!
+        DesensitizedSeparator = false,
+        -- Minimum=1 Maximum=1000 Default=35
+        DaysToGainDesensMin = 35,
+        -- Minimum=1 Maximum=1000 Default=50
+        DaysToGainDesensMax = 50,
+        -- Minimum=1 Maximum=100000 Default=5000
+        KillsToGainDesensMin = 5000,
+        -- Minimum=1 Maximum=100000 Default=8000
+        KillsToGainDesensMax = 8000,
+        -- Minimum=1 Maximum=1000 Default=27
+        DaysToGainDesensWithPsychoMin = 27,
+        -- Minimum=1 Maximum=1000 Default=37
+        DaysToGainDesensWithPsychoMax = 37,
+        -- Minimum=1 Maximum=100000 Default=3750
+        KillsToGainDesensWithPsychoMin = 3750,
+        -- Minimum=1 Maximum=100000 Default=6000
+        KillsToGainDesensWithPsychoMax = 6000,
+        -- This is only a line separator, checking it has no effect!
+        SmokerSeparator = false,
+        -- Minimum=1 Maximum=1000 Default=26
+        DaysToLoseSmokerMin = 26,
+        -- Minimum=1 Maximum=1000 Default=34
+        DaysToLoseSmokerMax = 34,
+        -- Minimum=1 Maximum=1000 Default=8
+        AmountOfCigsToGetSmokerMin = 8,
+        -- Minimum=1 Maximum=1000 Default=16
+        AmountOfCigsToGetSmokerMax = 16,
+        -- Minimum=0 Maximum=100 Default=10
+        ChanceToIncreaseEnduranceSmallBlunt = 10,
+        -- Minimum=0 Maximum=100 Default=8
+        ChanceToIncreaseEnduranceSmallBlade = 8,
+        -- Minimum=0 Maximum=100 Default=18
+        ChanceToIncreaseEnduranceTwoHanded = 18,
     },
-    DecayVehicle = {
-        -- How often in hours is decay calculated and applied, Changing this will make decay happen slower or faster, Default: 435 is approx. 5 in game years for a car to fully decay Minimum=1.00 Maximum=1000.00 Default=435.00
-        DecayIntervalHours = 435.0,
-        -- During Spring in game all decay to vehicle decay will be multiplied by this Minimum=0.01 Maximum=20.00 Default=1.25
-        DecaySpringMulti = 1.25,
-        -- During Summer in game all decay to vehicle decay will be multiplied by this Minimum=0.01 Maximum=20.00 Default=0.75
-        DecaySummerMulti = 0.75,
-        -- During Autumn in game all decay to vehicle decay will be multiplied by this Minimum=0.01 Maximum=20.00 Default=1.00
-        DecayAutumnMulti = 1.0,
-        -- During Winter in game all decay to vehicle decay will be multiplied by this Minimum=0.01 Maximum=20.00 Default=1.50
-        DecayWinterMulti = 1.5,
-        -- When turned on, interior components will decay faster when they are exposed to the elements, this happens when a window or door is missing from the car
-        DecayExposedMulti = false,
-        -- When cars spawn they will have retroactive decay added to them, this is designed to keep the world consistent so that all cars decay a the same rate
-        DecayRetroactive = true,
-    },
-    UndeadSurvivor = {
-        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.04
-        StalkerChance = 0.04,
-        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.04
-        NomadChance = 0.04,
-        -- Minimum=0.00 Maximum=100.00 Default=0.04
-        PrepperChance = 0.04,
-        -- Minimum=0.00 Maximum=100.00 Default=0.04
-        HeadhunterChance = 0.04,
-        -- Minimum=0.00 Maximum=100.00 Default=0.08
-        AmazonaChance = 0.08,
-    },
-    JordanalSpawns = {
-        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.01
-        Neon_Vandals_UnitChance = 0.01,
-        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.02
-        Neon_Vandals_UnitChance_General = 0.02,
-    },
-    KatanaSheath = {
-        -- Choose a starter pack for your character Default=Nothing
-        -- 1 = Nothing
-        -- 2 = Sheath
-        starterPack = 1,
+    StoryItemSpawner = {
+        -- Minimum=0 Maximum=1000 Default=5
+        StartDay = 0,
+        -- Minimum=0 Maximum=1000 Default=100
+        PeakDay = 100,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        ChanceOnFloorMultiplierStartDay = 0.7,
+        -- Minimum=0.00 Maximum=100.00 Default=0.20
+        ChanceOnFloorMultiplierPeakDay = 0.7,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        ChanceOnFurnitureMultiplierStartDay = 0.7,
+        -- Minimum=0.00 Maximum=100.00 Default=0.20
+        ChanceOnFurnitureMultiplierPeakDay = 0.7,
+        -- Minimum=0 Maximum=1000 Default=3
+        RoomLootBaseChanceOnFloor = 3,
+        -- Minimum=0 Maximum=1000 Default=25
+        RoomLootBaseChanceOnFurniture = 25,
     },
     KeksCharacterDescription = {
         consentList = true,
@@ -9327,6 +9404,34 @@ Advanced_trajectory = {
         -- Enabling this will make animation names appear above some of the new animations
         DanceAnim = false,
     },
+    JaxeRevival = {
+        -- The percentage of health before a player will be incapacitated. A higher value lowers the chance of instant death but decreases the damage taken before incapacitation. Minimum=5 Maximum=80 Default=25
+        IncapacitatedHealth = 35,
+        -- The time in hours the player will stay incapacitated unless assisted by another player. Minimum is 1 hour for singleplayer. For multiplayer, set to 0 to disable any time limit. Minimum=0 Maximum=240 Default=6
+        IncapacitatedTime = 6,
+        -- How many ticks to complete an assisted recovery. First Aid skill will reduce the time by up to 50% at maximum level. Minimum=100 Maximum=3000 Default=1200
+        AssistedRecoveryTicks = 1200,
+        -- If UNCHECKED and in multiplayer, the incapacitated player will die at the end of the timer.  If CHECKED or singleplayer, an incapacitated player will recover at the end of the timer without any assistance unless their Fitness or Strength is zero and the option below is enabled.
+        UnassistedRecovery = false,
+        -- If UNCHECKED, player recovery is unaffected by their Fitness or Strength.  If CHECKED, an incapacitated player with Fitness or Strength reduced to zero will die if not rescued in time. If a player is downed with zero Fitness or Strength, they will die immediately instead.
+        RecoveryRequiresPassive = false,
+        -- The percentage of health a newly revived player will have. Minimum=5 Maximum=100 Default=50
+        RecoveryHealth = 50,
+        -- If UNCHECKED, injuries will remain, but any bleeding will have stopped.  If CHECKED, a newly revived player will have all injuries healed.
+        RecoveryRemovesInjuries = false,
+        -- The percentage Passive skill (Fitness and Strength) levels lost when incapacitated. Minimum=0 Maximum=100 Default=50
+        PassiveSkillLoss = 0,
+        -- The percentage of Agility skill levels lost when incapacitated. Minimum=0 Maximum=100 Default=25
+        AgilitySkillLoss = 0,
+        -- The percentage Weapon skill (Combat and Firearm) levels lost when incapacitated Minimum=0 Maximum=100 Default=10
+        WeaponSkillLoss = 0,
+        -- The percentage Other skill (Crafting and Survivalist) levels lost when incapacitated Minimum=0 Maximum=100 Default=0
+        OtherSkillLoss = 0,
+        -- The level of First Aid required for reviving another player. Minimum=0 Maximum=10 Default=0
+        FirstAidRequired = 2,
+        -- Allows vanilla's zombie drag down instant death mechanic if that option is also enabled.
+        DragDownAllowed = false,
+    },
     ProperVehicleInjuries = {
         -- The number of ticks that must pass before PVI will check for another collision. Minimum=0 Maximum=100 Default=20
         interval = 20,
@@ -9491,34 +9596,6 @@ Advanced_trajectory = {
         -- The chance that the player will be knocked out on impact. NOTE: REQUIRES REAL KNOCKOUTS TO BE INSTALLED, PVI overrides Real Knockouts 'knockout chance' setting for car crashes only. Minimum=0 Maximum=100 Default=30
         fatalknockoutChance = 30,
     },
-    JaxeRevival = {
-        -- The percentage of health before a player will be incapacitated. A higher value lowers the chance of instant death but decreases the damage taken before incapacitation. Minimum=5 Maximum=80 Default=25
-        IncapacitatedHealth = 25,
-        -- The time in hours the player will stay incapacitated unless assisted by another player. Minimum is 1 hour for singleplayer. For multiplayer, set to 0 to disable any time limit. Minimum=0 Maximum=240 Default=6
-        IncapacitatedTime = 6,
-        -- How many ticks to complete an assisted recovery. First Aid skill will reduce the time by up to 50% at maximum level. Minimum=100 Maximum=3000 Default=1200
-        AssistedRecoveryTicks = 1200,
-        -- If UNCHECKED and in multiplayer, the incapacitated player will die at the end of the timer.  If CHECKED or singleplayer, an incapacitated player will recover at the end of the timer without any assistance unless their Fitness or Strength is zero and the option below is enabled.
-        UnassistedRecovery = false,
-        -- If UNCHECKED, player recovery is unaffected by their Fitness or Strength.  If CHECKED, an incapacitated player with Fitness or Strength reduced to zero will die if not rescued in time. If a player is downed with zero Fitness or Strength, they will die immediately instead.
-        RecoveryRequiresPassive = true,
-        -- The percentage of health a newly revived player will have. Minimum=5 Maximum=100 Default=50
-        RecoveryHealth = 50,
-        -- If UNCHECKED, injuries will remain, but any bleeding will have stopped.  If CHECKED, a newly revived player will have all injuries healed.
-        RecoveryRemovesInjuries = false,
-        -- The percentage Passive skill (Fitness and Strength) levels lost when incapacitated. Minimum=0 Maximum=100 Default=50
-        PassiveSkillLoss = 10,
-        -- The percentage of Agility skill levels lost when incapacitated. Minimum=0 Maximum=100 Default=25
-        AgilitySkillLoss = 10,
-        -- The percentage Weapon skill (Combat and Firearm) levels lost when incapacitated Minimum=0 Maximum=100 Default=10
-        WeaponSkillLoss = 10,
-        -- The percentage Other skill (Crafting and Survivalist) levels lost when incapacitated Minimum=0 Maximum=100 Default=0
-        OtherSkillLoss = 0,
-        -- The level of First Aid required for reviving another player. Minimum=0 Maximum=10 Default=0
-        FirstAidRequired = 2,
-        -- Allows vanilla's zombie drag down instant death mechanic if that option is also enabled.
-        DragDownAllowed = false,
-    },
     RadioFrequencyManager = {
         -- All players start with these channels in their RFM already defined
         EnablePredefinedChannels = false,
@@ -9550,10 +9627,6 @@ Advanced_trajectory = {
         -- A list of other item types to include when searching players, separated by semicolons (e.g. Base.Battery;Base.Bleach).
         OtherContrabandItems = "",
     },
-    ServerMessages = {
-        EnableAnnounceJoinServer = true,
-        EnableAnnounceLeaveServer = true,
-    },
     SkillLimiter = {
         -- The bonus to the skill cap for agility skills. (0 - 3) Minimum=0 Maximum=3 Default=2
         AgilityBonus = 2,
@@ -9579,59 +9652,22 @@ Advanced_trajectory = {
         PerkBonuses = "metalwelding:0;mechanics:0;plantscavenging:0",
     },
     SPNCharCustom = {
-        -- Admins or players holding an Appearance Changer ignore this Default=Disabled
-        -- 1 = Face and Details
-        -- 2 = Face only
-        -- 3 = Details only
         AllowCustomisationChange = 4,
-        -- Customisation categories that are hidden to normal players. Comma separated, eg: joke,halloween,special
         AdminLockedCustomisation = "",
-        -- Set to 0 to disable growth Minimum=0 Maximum=20 Default=10
+        -- Minimum=0 Maximum=20 Default=10
         BodyHairGrowth = 10,
-        -- Set to 0 to disable growth Minimum=0 Maximum=20 Default=6
+        -- Minimum=0 Maximum=20 Default=6
         StubbleHeadGrowth = 6,
-        -- Set to 0 to disable growth Minimum=0 Maximum=20 Default=3
+        -- Minimum=0 Maximum=20 Default=3
         StubbleBeardGrowth = 3,
-        -- Body hair and stubble grows in-game Default=Enabled for everyone
-        -- 1 = Enabled for everyone
-        -- 2 = Disabled for everyone
         BodyHairGrowthEnabled = 1,
-        -- Display visible muscles on character depending on strength level Default=Enabled for everyone
-        -- 1 = Enabled for everyone
-        -- 2 = Disabled for everyone
         MuscleVisuals = 1,
     },
-    TOC = {
-        -- Minimum=1 Maximum=10 Default=1
-        CicatrizationSpeed = 1,
-        -- Minimum=0 Maximum=5 Default=1
-        WoundDirtynessMultiplier = 1,
-        -- Minimum=1 Maximum=3 Default=2
-        SurgeonAbilityImportance = 2,
-        EnableZombieAmputations = false,
-        -- Minimum=0 Maximum=10 Default=4
-        ZombieAmputationDamageThreshold = 4,
-        -- Minimum=0 Maximum=100 Default=25
-        ZombieAmputationDamageChance = 25,
-    },
-    Tikitown = {
-        CollectionBaseball = false,
-        -- Minimum=0.00 Maximum=30.00 Default=4.00
-        CollectionBaseballCommon = 4.0,
-        -- Minimum=0.00 Maximum=30.00 Default=1.00
-        CollectionBaseballRare = 1.0,
-        -- Minimum=0.00 Maximum=0.40 Default=0.08
-        CollectionBaseballZombieCommon = 0.075,
-        -- Minimum=0.00 Maximum=0.40 Default=0.03
-        CollectionBaseballZombieRare = 0.025,
-        -- Enable or Disable the spawn of the Tikitorch spear weapon
-        Tikitorch = true,
-        -- Adjust spawn rate of the Tikitorch weapon Minimum=0.00 Maximum=50.00 Default=20.00
-        TikitorchSpawnRate = 20.0,
-        -- Enable or Disable Tikitown's custom historically clad zombies
-        HistoricalOutfits = true,
-        -- Enable or Disable Tikitown's post office package system
-        PostOfficeOverride = true,
+    TTRPPoses = {
+        -- Toggles Ghost Mode for player collisions during poses. When checked, Ghost Mode activates during posing, disabling the player hitbox to make paired posing easier.
+        ToggleGhosting = false,
+        -- If Toggle Ghosting is true, sets the zombie proximity range for auto disabling Ghost mode. Distance is in tiles. Minimum=1 Maximum=512 Default=30
+        GhostToggleRange = 30,
     },
     TICS = {
         ShowCharacterName = true,
@@ -9698,22 +9734,6 @@ Advanced_trajectory = {
         OutOfCharacterMessageRange = 120,
         OutOfCharacterMessageColor = "#92FF94",
     },
-    UdderlySafeLogin = {
-        -- Safe time in seconds, note that this begins when they hit Click To Start, not when they are able to move. Minimum=1.00 Maximum=120.00 Default=20.00
-        SafeTime = 30.0,
-        -- Movement multiplier, this is what changes the amount of time you get once you move. Minimum=0.00 Maximum=1.00 Default=0.50
-        MovementMultiplier = 0.5,
-        -- Use invisibility instead of not allowing zombies to hit you. This prevents them from noticing or following you but could be exploited by users.
-        UseInvisbiility = false,
-    },
-    UdderlyUpToDate = {
-        -- The amount of time the server will give users as a warning before quitting, in minutes. Set to 0 if you want it to only check/restart when the server is empty. Minimum=0.00 Maximum=60.00 Default=5.00
-        RestartDelayMinutes = 5.0,
-        -- The amount of time the server will wait between checking for workshop updates, in minutes. Minimum=1.00 Maximum=1440.00 Default=15.00
-        WorkshopPollingIntervalMinutes = 15.0,
-        -- Seconds after saving that it waits before quitting the server as a buffer to prevent data loss. Minimum=15.00 Maximum=270.00 Default=15.00
-        QuitDelaySeconds = 15.0,
-    },
     EventTeleportManager = {
         -- Minimum access level required to create, edit, or delete events. Players below this level can only view and participate in events. Default=Moderator+
         -- 1 = None (Everyone)
@@ -9737,10 +9757,232 @@ Advanced_trajectory = {
         -- Prevent accidentally overwriting saved return positions when teleporting between multiple events
         TeleportPositionProtection = true,
     },
-    RespawnInCarMod = {
-        -- If TRUE, during a new game, after the creation of a new character, if a position affiliated with the name of the character is known, even if the character is new, he will be forced to join his position , of course, this option is not valid after a death, this option is present for the Avatar mod, this offers administrators the possibility of placing avatars with the name of a player who has never joined the server part / Game, and thus force the new player to join the recorded position via the Avatar.
-        ForceToRespawnInCarEvenIfNewPlayer = false,
-        -- If TRUE, then complete and optimal protection will be applied to players during their respawns, only when the RIC mod forces the respawn, to be prioritized on coop servers (invisible and no clip player), if FALSE, then just dont attack by zombies.
-        FullProtectDuringRespawn = false,
+    AshenMPRanking = {
+        mainUiTitle = "Ranking",
+        -- Minimum=7 Maximum=365 Default=15
+        inactivityPurgeTime = 365,
+        -- Minimum=1 Maximum=60 Default=20
+        writeOnFilePeriod = 20,
+        -- Minimum=1 Maximum=4 Default=2
+        periodicTick = 2,
+        summaryLB = true,
+        killsPerDay = true,
+        sKills = false,
+        perkScores = true,
+        otherPerks = false,
+        otherPerksList = "",
+        moreDeaths = true,
+        lessDeaths = true,
+        rankStaff = false,
+        -- Minimum=20 Maximum=40 Default=20
+        passivMaxScore = 20,
+    },
+    AwayFromZomboid = {
+        -- The amount of time before a player is considered AFK. Minimum=0 Maximum=86400 Default=300
+        AFKTimeout = 300,
+        -- The amount of time before an AFK player is kicked. (cumulative with AFK Timeout!) Minimum=0 Maximum=86400 Default=600
+        AFKKickTimeout = 1000,
+        -- The message that will be displayed when a player is considered AFK.
+        AFKOnPopupMessage = "You are now AFK.",
+        -- The message that will be displayed when a player is no longer considered AFK.
+        AFKOffPopupMessage = "You are no longer AFK.",
+        -- Display a popup when a player is (or is no longer) AFK.
+        DoPopup = true,
+        -- The channel to send chat notifications to, if any. Default=None
+        -- 1 = None
+        -- 2 = Say
+        ChatNotificationChannel = 1,
+        -- Kick the player when they are AFK, after the additional AFK kick timeout.
+        DoKick = true,
+        -- Whether zombies will ignore AFK players.
+        AFKZombiesNoAttack = true,
+        -- Allow players to manually set themselves as AFK.
+        AllowManualAFK = true,
+        -- The amount of time before a player is considered AFK when they manually set themselves as AFK (to prevent abuse). Minimum=0 Maximum=86400 Default=60
+        ManualAFKDelay = 60,
+        -- Whether staff accounts are ignored by the AFK system.
+        DoIgnoreStaff = true,
+    },
+    Cannibalism = {
+        -- The amount of meat that a player can get from chopping up a zombie corpse Minimum=0 Maximum=999999 Default=3
+        ZombieMeatProduce = 3,
+        -- Whether or not zombie meat can be poisonous. Requires a restart.
+        PoisonousZombieMeat = true,
+        -- The poison power of zombie meat. Takes effect only if the option above is enabled. For reference, bleach has a poison power of 120. Requires a restart. Minimum=0 Maximum=999999 Default=5
+        ZombieMeatPoisonPower = 5,
+        -- The amount of meat that a player can get from chopping up a none-infected human corpse Minimum=0 Maximum=999999 Default=3
+        HumanMeatProduce = 3,
+        -- The amount of insanity points that a player loses per day if he doesn't eat zombie meat or human meat for the whole day Minimum=0 Maximum=999999 Default=1
+        PointsDecrementDays = 1,
+        -- The amount of insanity points that a player loses after eating a candy Minimum=0 Maximum=999999 Default=5
+        PointsDecrementCandy = 5,
+        -- What items count as a candy, separated by semicolons
+        CandyItems = "Base.Candycane;Base.CandyCorn;Base.MintCandy;Base.RockCandy;Base.CandyFruitSlices;Base.HardCandies",
+        -- A setting preset for insanity sounds. If enabled, this will turn off the whole insanity system and related sounds. This takes precedence over advanced settings for sounds and insanity points, and over other presets if any are enabled
+        SoundPresetOff = false,
+        -- A low setting preset for insanity sounds. If enabled, the insanity progression will be slow and sounds will be unfrequent. This takes precendece over advanced settings for sounds and insanity points. If multiple presets are enabled, the first enabled one will take precedence.
+        SoundPresetLow = false,
+        -- A medium setting preset for insanity sounds. If enabled, the insanity progression will be moderate with occasional sounds. This takes precedence over advanced settings for sounds and insanity points. If multiple presets are enabled, the first enabled one will take precedence.
+        SoundPresetMed = false,
+        -- A high setting preset for insanity sounds. If enabled, the insanity progression will be fast and sounds will be frequent. This takes precedence over advanced settings for sounds and insanity points. If multiple presets are enabled, the first enabled one will take precedence.
+        SoundPresetHigh = false,
+        -- The amount of insanity points that a player will gain when eating Raw Zombie Meat. Minimum=0 Maximum=999999 Default=3
+        RawZombieMeatInsanityPointsGain = 3,
+        -- The amount of insanity points that a player will gain when eating Cooked Zombie Meat. Minimum=0 Maximum=999999 Default=1
+        CookedZombieMeatInsanityPointsGain = 1,
+        -- The amount of insanity points that a player will gain when eating Raw Human Meat. Minimum=0 Maximum=999999 Default=3
+        RawHumanMeatInsanityPointsGain = 3,
+        -- The amount of insanity points that a player will gain when eating Cooked Human Meat. Minimum=0 Maximum=999999 Default=1
+        CookedHumanMeatInsanityPointsGain = 1,
+        -- Multiplier of insanity points of the meat is used in an evolved recipe (for example, a sandwich or a stew) Minimum=0.00 Maximum=10.00 Default=0.30
+        EvolvedRecipeInsanityPointsMultiplier = 0.3,
+        -- The amount of points required to trigger a stage one insanity Minimum=0 Maximum=999999 Default=1
+        StageOneInsanityPoints = 1,
+        -- The amount of points required to trigger a stage two insanity Minimum=0 Maximum=999999 Default=10
+        StageTwoInsanityPoints = 10,
+        -- The amount of points required to trigger a stage three insanity Minimum=0 Maximum=999999 Default=30
+        StageThreeInsanityPoints = 30,
+        -- The sounds that a player may hear at stage one insanity, separated by semicolons
+        StageOneSounds = "insane3;insane4",
+        -- The sounds that a player may hear at stage two insanity, separated by semicolons
+        StageTwoSounds = "insane1;insane3;insane4",
+        -- The sounds that a player may hear at stage three insanity, separated by semicolons
+        StageThreeSounds = "insane1;insane2;insane3;insane4;insanityambient",
+        -- How often will a player hear a sound at stage one insanity. Measured in real-life minutes Minimum=0 Maximum=999999 Default=1
+        StageOneSoundFrequency = 1,
+        -- How often will a player hear a sound at stage two insanity. Measured in real-life minutes Minimum=0 Maximum=999999 Default=1
+        StageTwoSoundFrequency = 1,
+        -- How often will a player hear a sound at stage three insanity. Measured in real-life minutes Minimum=0 Maximum=999999 Default=1
+        StageThreeSoundFrequency = 1,
+        -- The chance to hear a sound at stage one insanity at the proper frequency. The check is made every 1 in-game minute Minimum=0 Maximum=100 Default=70
+        StageOneSoundChance = 70,
+        -- The chance to hear a sound at stage two insanity at the proper frequency. The check is made every 1 in-game minute Minimum=0 Maximum=100 Default=70
+        StageTwoSoundChance = 70,
+        -- The chance to hear a sound at stage three insanity at the proper frequency. The check is made every 1 in-game minute Minimum=0 Maximum=100 Default=70
+        StageThreeSoundChance = 70,
+    },
+    Bandits = {
+        General_KillCounter = true,
+        -- Minimum=1.00 Maximum=5.00 Default=2.40
+        General_StunlockHitSpeed = 5.0,
+        -- Minimum=0.25 Maximum=4.00 Default=1.00
+        General_SpawnMultiplier = 0.5,
+        -- Minimum=0.25 Maximum=4.00 Default=1.00
+        General_SizeMultiplier = 0.75,
+        General_DensityScore = true,
+        General_OriginalBandits = true,
+        General_Surrender = true,
+        General_BleedOut = true,
+        General_Infection = true,
+        General_LimitedEndurance = true,
+        General_RunAway = true,
+        General_DestroyDoor = true,
+        General_SmashWindow = true,
+        General_RemoveBarricade = true,
+        General_DestroyThumpable = false,
+        General_SabotageVehicles = true,
+        General_Theft = true,
+        General_SabotageCrops = false,
+        General_EnterVehicles = false,
+        General_GeneratorCutoff = true,
+        General_BuildBridge = false,
+        General_BuildRoadblock = true,
+        General_Speak = true,
+        General_Captions = true,
+        General_SneakAtNight = true,
+        General_CarryTorches = true,
+        General_ArrivalIcon = true,
+        -- Bandit global weapon accuracy Default=Occasional Marksman
+        -- 1 = Stormtrooper Mode
+        -- 2 = Can't Hit the Broad Side of a Barn
+        -- 3 = Occasional Marksman
+        -- 4 = Sharpshooter on a Good Day
+        General_OverallAccuracy = 1,
+        -- Default=Normal (loot x 1.0)
+        -- 1 = None (loot x 0)
+        -- 2 = Insanely Rare (loot x 0.05)
+        -- 3 = Extremely Rare (loot x 0.2)
+        -- 4 = Rare (loot x 0.6)
+        -- 5 = Normal (loot x 1.0)
+        -- 6 = Common (loot x 2.0)
+        General_DefenderLootAmount = 5,
+    },
+    ShopsAndTraders = {
+        -- This percentage will be how much money is dropped when a player dies. If player wallets are disabled ALL the money will be dropped. WARNING: Death results in the remainder of the wallet being destroyed. Minimum=0 Maximum=100 Default=50
+        PercentageDropOnDeath = 50,
+        -- When the player dies their current wallet is deleted, after the drop percentage is deducted.
+        PlayerWalletsLostOnDeath = false,
+        -- Disabling this would force players to always carry their cash.
+        PlayerWallets = true,
+        -- If players can withdraw money-items from their wallets. Requires "Players Wallets" to be 'True' to have an impact.
+        CanWithdraw = true,
+        -- Change: Shops will return the difference of a transaction as cash. Credit: Shop will store a credit-line owed to you if the transaction is not even. Neither: Shops will not return anything for transactions in their favor. Default=Shops Give Change
+        -- 1 = Shops Give Change
+        -- 2 = Shops Use Credit
+        ShopsUseCash = 1,
+        -- How much money players start with. Minimum=0.00 Maximum=1000000.00 Default=25.00
+        StartingWallet = 25.0,
+        -- How much each 'unit' of currency weighs. Minimum=0.00 Maximum=1000.00 Default=0.00
+        MoneyWeight = 0.001,
+        -- The minimum value money items can spawn with. Minimum=0.01 Maximum=1000000.00 Default=1.50
+        MoneySpawnMin = 1.5,
+        -- The maximum value money items can spawn with. Minimum=0.01 Maximum=1000000.00 Default=25.00
+        MoneySpawnMax = 25.0,
+        -- This setting changes the default setting when creating listings. If toggled on traders will stock items sold to them.
+        TradersResellItems = true,
+        -- When traders restock any items being resold (originally sold by players) will be cleared out.
+        TradersResetStock = false,
+        -- Syntax is as follows: Each item is separated by '|'. Unique for money values: '$n' for n amount of currency. Including 'destroy n' where n is an item type will consume that item. Including 'keep n' where n is an item type will save that item. Using 'n = 5' will require 5 of that item. Using 'n;5' will require 5 'units' from that item in the case of drainable ingredients. Using [function] will utilize the recipe functions for special cases.  All of these are a part of the vanilla recipe syntax. Anything not listed here will also work as it would with a recipe script.
+        PlayerOwnedShopDeeds = "$1000|SheetPaper2",
+        -- Set to 0 to disable. Minimum=0 Maximum=10 Default=0
+        MaxUsers = 0,
+        -- Set to 0 to disable. Timer is counted in seconds. Minimum=0 Maximum=3600 Default=0
+        ActivityTimeOut = 0,
+        -- The maximum price a shop item can assume. Default to 0.00 shop items will not have a limit on their price, Minimum=0.00 Maximum=999999999.00 Default=0.00
+        ShopItemPriceLimit = 0.0,
+        -- A comma separated list of the container names that can be used as shops (e.g. Crate,Military Crate). By default if left blank, all containers can be used as shops.
+        ShopContainers = "",
+        ShopsRequirePower = false,
+        ShopsLocationTracking = false,
+    },
+    FactionBanking = {
+        -- The smallest amount needed to start earning interest. Minimum=0.00 Maximum=999999999.00 Default=1000.00
+        MinimumBalanceForInterest = 1000.0,
+        -- How much of a percentage of one's bank account is gained over time. Minimum=0.01 Maximum=999999999.00 Default=5.00
+        InterestRates = 5.0,
+        -- How many in-game hours between when interest is earned. Minimum=1 Maximum=366 Default=7
+        InterestEarnDuration = 24,
+        -- Can faction owners set banks, not false only admins can.
+        OwnersCanSetBanks = true,
+        -- Minimum=1 Maximum=10 Default=1
+        MaxNumberOfBanksPerFaction = 1,
+    },
+    ServerMessages = {
+        EnableAnnounceJoinServer = true,
+        EnableAnnounceLeaveServer = true,
+    },
+    UdderlySafeLogin = {
+        -- Safe time in seconds, note that this begins when they hit Click To Start, not when they are able to move. Minimum=1.00 Maximum=120.00 Default=20.00
+        SafeTime = 30.0,
+        -- Movement multiplier, this is what changes the amount of time you get once you move. Minimum=0.00 Maximum=1.00 Default=0.50
+        MovementMultiplier = 0.5,
+        -- Use invisibility instead of not allowing zombies to hit you. This prevents them from noticing or following you but could be exploited by users.
+        UseInvisbiility = false,
+    },
+    UdderlyUpToDate = {
+        -- Minimum=0.00 Maximum=60.00 Default=5.00
+        RestartDelayMinutes = 5.0,
+        -- Minimum=1.00 Maximum=1440.00 Default=15.00
+        WorkshopPollingIntervalMinutes = 15.0,
+        -- Minimum=15.00 Maximum=270.00 Default=15.00
+        QuitDelaySeconds = 15.0,
+    },
+    EverythingHasAName = {
+        -- Restricts renaming items to admins in multiplayer. Leave unchanged for singleplayer.
+        OnlyAdminCanRenameItems = false,
+        -- Restricts renaming vehicles to admins in multiplayer. Leave unchanged for singleplayer.
+        OnlyAdminCanRenameVehicles = false,
+        -- Players will be able to rename vehicles only if they have the keys for it or if the keys are in ignition. Works only in multiplayer.
+        MustHaveKeys = true,
     },
 }
