@@ -70,5 +70,18 @@ SoulFilchersForagingTime: not used, buggy
 
 90sBalancePackBritaArmor: doesn't fit vision
 
-
 FactionMap: buggy
+
+# Mod Adjustments 9/7/25
+
+(IN) Cordyceps Spore Zones
+
+(IN) Susceptible Trait
+
+(IN) Susceptible (Overhaul)
+
+(IN) Cordyceps Spore Zones - Overhaul: this and above added to test an alternative way to create dangerous zones on the map
+
+(OUT) Hazardous Zones: may return but don't like how the zones are completely invisible, also apparently has some broken features
+
+(OUT) Where am I?: did not work with many of the map mods and threw warnings in the log
