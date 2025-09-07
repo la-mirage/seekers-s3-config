@@ -139,7 +139,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    RangedWeaponLoot = 2,
+    RangedWeaponLoot = 3,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -147,7 +147,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    AmmoLoot = 3,
+    AmmoLoot = 4,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -663,7 +663,7 @@ SandboxVars = {
     Map = {
         AllowMiniMap = true,
         AllowWorldMap = true,
-        MapAllKnown = false,
+        MapAllKnown = true,
     },
     ZombieLore = {
         -- Controls the zombie movement rate. Default=Fast Shamblers
@@ -7282,7 +7282,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeLEVER = 3,
+        EnumTypeLEVER = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7314,7 +7314,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypePUMP = 5,
+        EnumTypePUMP = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7330,7 +7330,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeBOLT = 5,
+        EnumTypeBOLT = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7526,7 +7526,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber12gShot = 5,
+        EnumCaliber12gShot = 7,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7556,7 +7556,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber3006SPG = 4,
+        EnumCaliber3006SPG = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7646,7 +7646,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber223REM = 4,
+        EnumCaliber223REM = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7706,7 +7706,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber45ACP = 6,
+        EnumCaliber45ACP = 7,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7736,7 +7736,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber9mm = 6,
+        EnumCaliber9mm = 7,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7869,7 +7869,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumAmmoCan = 2,
+        EnumAmmoCan = 3,
         -- Ammunition
         --  - Reduce or Remove Ammunition Boxes
         --  - Also the base chance for (Rocket / Grenade / Landmine) munitions Default=50%
@@ -7883,7 +7883,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumAmmoBox = 6,
+        EnumAmmoBox = 9,
         -- Magazines
         --  - Reduce or Remove Polymer Canisters containing Magazines Default=10%
         -- 1 = REMOVE
@@ -7896,7 +7896,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumPolyCan = 2,
+        EnumPolyCan = 1,
         -- Magazines
         --  - Reduce or Remove Standard Magazines Default=30%
         -- 1 = REMOVE
@@ -7909,7 +7909,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumStdMag = 7,
+        EnumStdMag = 9,
         -- Magazines
         --  - Reduce or Remove Extended Magazines Default=20%
         -- 1 = REMOVE
@@ -7922,7 +7922,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumExtMag = 5,
+        EnumExtMag = 9,
         -- Magazines
         --  - Reduce or Remove Drum / Box Magazines Default=10%
         -- 1 = REMOVE
@@ -8168,7 +8168,7 @@ SandboxVars = {
         -- 2 = 25%
         -- 3 = 50%
         -- 4 = 75%
-        EnumCIVxLEO = 1,
+        EnumCIVxLEO = 2,
         -- Exclusion
         --  - Reduce or Remove Military Items from Civilain Locations
         --  - Military items not generally suited for Civilian Purposes
@@ -8187,7 +8187,7 @@ SandboxVars = {
         -- 2 = 25%
         -- 3 = 50%
         -- 4 = 75%
-        EnumLEOxCIV = 1,
+        EnumLEOxCIV = 2,
         -- Exclusion
         --  - Reduce or Remove Military Items from Police Locations
         --  - Military items not generally suited for Law Enforcement Purposes
@@ -8206,7 +8206,7 @@ SandboxVars = {
         -- 2 = 25%
         -- 3 = 50%
         -- 4 = 75%
-        EnumMILxNON = 1,
+        EnumMILxNON = 2,
         -- Exclusion
         --  - Reduce or Remove Non-Security Items from Security Locations
         --  - Small, Odd, or Large caliber items not generally suited for Security Purposes
@@ -8314,7 +8314,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumMILRollGUN = 2,
+        EnumMILRollGUN = 1,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -8323,7 +8323,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumMILRollAMMO = 2,
+        EnumMILRollAMMO = 1,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -8531,7 +8531,7 @@ SandboxVars = {
         -- 28 = + 270%
         -- 29 = + 280%
         -- 30 = + 290%
-        EnumMILx = 3,
+        EnumMILx = 1,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Security Distribution areas
         --  - Generally Required to bring overall spawn result back up
@@ -8754,9 +8754,9 @@ SandboxVars = {
         -- ex. 0.9 means reduces incoming damage by 90% when armor is maxed; applies to armor Minimum=0.00 Maximum=1.00 Default=0.80
         maxDefenseReduction = 0.8,
         -- If dealt headshot, increase chance of wounding head. (ex. 20 means percentage of wounding head is 30% (20 + 10)) Minimum=0.00 Maximum=100.00 Default=20.00
-        headShotIncChance = 20.0,
+        headShotIncChance = 0.0,
         -- If dealt footshot, increase chance of wounding legs/groin. (ex. 10 means percentage of wounding foot is 20% (10 + 10)) Minimum=0.00 Maximum=100.00 Default=10.00
-        footShotIncChance = 10.0,
+        footShotIncChance = 0.0,
         -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=10.00
         headShotDmgZomMultiplier = 10.0,
         -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
@@ -8764,17 +8764,17 @@ SandboxVars = {
         -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=1.00
         footShotDmgZomMultiplier = 1.0,
         -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=15.00
-        headShotDmgPlayerMultiplier = 15.0,
+        headShotDmgPlayerMultiplier = 10.0,
         -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
         bodyShotDmgPlayerMultiplier = 5.0,
         -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=2.00
-        footShotDmgPlayerMultiplier = 2.0,
+        footShotDmgPlayerMultiplier = 1.0,
         -- Bloom affects crit chance. This is a multiplier to that. Set to 0 for better chances of crit. Minimum=0.00 Maximum=100.00 Default=1.00
         critChanceModifier = 1.0,
         -- Chance that a gunshot wound will cause a fracture Minimum=0.00 Maximum=100.00 Default=10.00
         fractureChance = 10.0,
         -- Chance that a gunshot wound will not inflict a lodged bullet Minimum=0.00 Maximum=100.00 Default=25.00
-        throughChance = 25.0,
+        throughChance = 75.0,
         -- Shotgun has a max independent projectile cone. Minimum=0.00 Maximum=1.00 Default=0.10
         maxShotgunProjCone = 0.4,
         -- Multiplier on base stat (range) of shotgun. Default value is 0.75 which means 75% of vanilla's range. Minimum=0.00 Maximum=10.00 Default=0.50
@@ -8930,75 +8930,75 @@ SandboxVars = {
         -- Use BusRide.BusCoin or BusRide.BusCoin2 or change it to whatever you want
         Currency = "BusRide.BusCoin",
         -- Minimum=0 Maximum=100 Default=1
-        Cost = 1,
+        Cost = 0,
         AllowTravelToCenter = true,
-        LocCenter = "Community Center",
+        LocCenter = "Pineville",
         -- Minimum=0 Maximum=999999999 Default=11634
-        XCenter = 11634,
+        XCenter = 4152,
         -- Minimum=0 Maximum=999999999 Default=8342
-        YCenter = 8342,
+        YCenter = 9686,
         -- Minimum=0 Maximum=7 Default=0
         ZCenter = 0,
         -- Bus Fare Are All The Same Anywhere
         UniversalFare = false,
         -- Minimum=0 Maximum=1000 Default=10
-        CostCenter = 10,
+        CostCenter = 0,
         --  "All Bus Points Are Available via Context Menu,
         AllowTravelToAll = true,
-        Loc1 = "Location1",
+        Loc1 = "Tiki Town",
         -- Minimum=0 Maximum=999999999 Default=0
-        X1 = 4128,
+        X1 = 7210,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y1 = 9647,
+        Y1 = 7357,
         -- Minimum=0 Maximum=7 Default=0
         Z1 = 0,
-        Loc2 = "Location2",
+        Loc2 = "Buffalo Hill",
         -- Minimum=0 Maximum=999999999 Default=0
-        X2 = 0,
+        X2 = 9971,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y2 = 0,
+        Y2 = 6670,
         -- Minimum=0 Maximum=7 Default=0
         Z2 = 0,
-        Loc3 = "Location3",
+        Loc3 = "Rosewood",
         -- Minimum=0 Maximum=999999999 Default=0
-        X3 = 0,
+        X3 = 8125,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y3 = 0,
+        Y3 = 11540,
         -- Minimum=0 Maximum=7 Default=0
         Z3 = 0,
         Loc4 = "Location4",
         -- Minimum=0 Maximum=999999999 Default=0
-        X4 = 0,
+        X4 = 7210,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y4 = 0,
+        Y4 = 7357,
         -- Minimum=0 Maximum=7 Default=0
         Z4 = 0,
         Loc5 = "Location5",
         -- Minimum=0 Maximum=999999999 Default=0
-        X5 = 0,
+        X5 = 7210,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y5 = 0,
+        Y5 = 7357,
         -- Minimum=0 Maximum=7 Default=0
         Z5 = 0,
         Loc6 = "Location6",
         -- Minimum=0 Maximum=999999999 Default=0
-        X6 = 0,
+        X6 = 7210,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y6 = 0,
+        Y6 = 7357,
         -- Minimum=0 Maximum=7 Default=0
         Z6 = 0,
         Loc7 = "Location7",
         -- Minimum=0 Maximum=999999999 Default=0
-        X7 = 0,
+        X7 = 7210,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y7 = 0,
+        Y7 = 7357,
         -- Minimum=0 Maximum=7 Default=0
         Z7 = 0,
         Loc8 = "Location8",
         -- Minimum=0 Maximum=999999999 Default=0
-        X8 = 0,
+        X8 = 7210,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y8 = 0,
+        Y8 = 7357,
         -- Minimum=0 Maximum=7 Default=0
         Z8 = 0,
     },
@@ -9410,9 +9410,9 @@ SandboxVars = {
         -- The time in hours the player will stay incapacitated unless assisted by another player. Minimum is 1 hour for singleplayer. For multiplayer, set to 0 to disable any time limit. Minimum=0 Maximum=240 Default=6
         IncapacitatedTime = 6,
         -- How many ticks to complete an assisted recovery. First Aid skill will reduce the time by up to 50% at maximum level. Minimum=100 Maximum=3000 Default=1200
-        AssistedRecoveryTicks = 1200,
+        AssistedRecoveryTicks = 600,
         -- If UNCHECKED and in multiplayer, the incapacitated player will die at the end of the timer.  If CHECKED or singleplayer, an incapacitated player will recover at the end of the timer without any assistance unless their Fitness or Strength is zero and the option below is enabled.
-        UnassistedRecovery = false,
+        UnassistedRecovery = true,
         -- If UNCHECKED, player recovery is unaffected by their Fitness or Strength.  If CHECKED, an incapacitated player with Fitness or Strength reduced to zero will die if not rescued in time. If a player is downed with zero Fitness or Strength, they will die immediately instead.
         RecoveryRequiresPassive = false,
         -- The percentage of health a newly revived player will have. Minimum=5 Maximum=100 Default=50
