@@ -36,7 +36,7 @@ SandboxVars = {
     -- 23 = 21 Hours
     -- 24 = 22 Hours
     -- 25 = 23 Hours
-    DayLength = 3,
+    DayLength = 4,
     StartYear = 1,
     -- Default=July
     -- 1 = January
@@ -139,7 +139,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    RangedWeaponLoot = 3,
+    RangedWeaponLoot = 2,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -147,7 +147,7 @@ SandboxVars = {
     -- 4 = Rare (loot x 0.6)
     -- 5 = Normal (loot x 1.0)
     -- 6 = Common (loot x 2.0)
-    AmmoLoot = 4,
+    AmmoLoot = 3,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -498,7 +498,7 @@ SandboxVars = {
     -- The higher the value, the longer lightbulbs last before breaking. If 0, lightbulbs will never break. Does not affect vehicle headlights. Minimum=0.00 Maximum=1000.00 Default=1.00
     LightBulbLifespan = 1.2,
     -- Vanilla Chance is 6% Minimum=0 Maximum=100 Default=6
-    ChanceOfAttachedWeapon = 6,
+    ChanceOfAttachedWeapon = 5,
     -- Katanas and machetes Minimum=0 Maximum=100 Default=1
     ChanceOfLongBlade = 1,
     -- Minimum=0 Maximum=100 Default=5
@@ -526,9 +526,9 @@ SandboxVars = {
     -- Note: zombie loot is not affected by the other multipliers below. Minimum=0.00 Maximum=10.00 Default=1.00
     ZombieLootMultiplier = 1.5,
     -- A semicolon separated list of items and chances to add to the zombie loot.
-    ItemsAddedToZombieLoot = "Base.Money:0.05;Base.SheetPaper2:0.05",
-    ItemsAddedToMilitaryZedsLoot = "NCcanteenmilitaryempty:0.05;HAMilitaryMapPieces:0.02;WalkieTalkie5:0.05;Base.556Box:0.1;Bullets45Box:0.1",
-    ItemsAddedToPoliceZedsLoot = "Base.Torch:0.05;Base.WalkieTalkie4:0.05;Base.Battery:0.1;Bullets9mmBox:0.1",
+    ItemsAddedToZombieLoot = "Base.Money:0.1;Base.SheetPaper2:0.05;Base.BeefJerky:0.05;Base.Crisps:0.1;Base.Chocolate:0.05;Base.GranolaBar:0.1",
+    ItemsAddedToMilitaryZedsLoot = "",
+    ItemsAddedToPoliceZedsLoot = "Base.Torch:0.05;Base.WalkieTalkie4:0.05;Base.Battery:0.1",
     ItemsAddedToFiremenZedsLoot = "Base.Axe:0.1",
     -- Tourists, Golfers, Weddings, Classy...
     ItemsAddedToRichZedsLoot = "Base.Money:0.2",
@@ -547,7 +547,7 @@ SandboxVars = {
     -- Fossoil, Gas2Go, Thundergas...
     ItemsAddedToGasStationZedsLoot = "Base.CandyPackage:0.1;Base.MintCandy:0.1;Base.RockCandy:0.1;Base.Crisps:0.1",
     -- Waiters, Cooks, Chefs...
-    ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.TomatoSachet:0.1;Base.Mustard:0.1;Base.MustardSachet:0.1;Base.MayonnaiseFull:0.05;Base.HotsaucePacket:0.2;Base.SugarPacket:0.1;Base.SaltPacket:0.2",
+    ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.Mustard:0.1;Base.MayonnaiseFull:0.05;SapphCooking.HotsaucePacket:0.2",
     ItemsAddedToOfficeWorkersZedsLoot = "Base.SewingKit:0.1;Base.Money:0.05",
     -- A semicolon separated list of zombie outfits that will drop the Custom Zed Outfits Loot defined below.
     -- Example: 'Priest;Biker;Redneck;Swimmer;Bedroom;Bathrobe;Hobbo;Party;Party2'
@@ -574,7 +574,7 @@ SandboxVars = {
     -- 1 = 1 (~25% food)
     -- 2 = 2 (~50% food)
     -- 3 = 3 (~75% food)
-    FoodTablesMaxRolls = 3,
+    FoodTablesMaxRolls = 4,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
@@ -589,12 +589,12 @@ SandboxVars = {
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    LitteratureTablesMaxRolls = 3,
+    LitteratureTablesMaxRolls = 2,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MediaTablesMaxRolls = 3,
+    MediaTablesMaxRolls = 2,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
@@ -606,14 +606,14 @@ SandboxVars = {
     -- 3 = 3 (~75% items)
     OtherTablesMaxRolls = 3,
     -- Fresh and non-perishable food. Minimum=0.00 Maximum=10.00 Default=1.00
-    FoodLootMultiplier = 1.0,
+    FoodLootMultiplier = 1.3,
     -- Nonranged weapons of all kinds, except pens, forks and spoons.
     -- Includes Sledgehammer. Also includes instruments and some cooking tools. Minimum=0.00 Maximum=10.00 Default=1.00
     WeaponLootMultiplier = 1.0,
     -- Ranged weapons. Includes weapon parts for guns. Minimum=0.00 Maximum=10.00 Default=1.00
-    GunLootMultiplier = 1.0,
+    GunLootMultiplier = 0.5,
     -- Ammunition and magazines Minimum=0.00 Maximum=10.00 Default=1.00
-    AmmoLootMultiplier = 1.0,
+    AmmoLootMultiplier = 1.5,
     -- Saws, blowtorches, seeds, farming gear, fishing gear, camping gear, needles,
     -- crafting materials, repair materials, construction materials, gas cans, jars, maps. Minimum=0.00 Maximum=10.00 Default=1.00
     SurvivalGearLootMultiplier = 0.8,
@@ -622,21 +622,21 @@ SandboxVars = {
     -- Medicine, bandages, splint, needles, first aid kits... Minimum=0.00 Maximum=10.00 Default=1.00
     MedicalLootMultiplier = 0.8,
     -- Books and magazines Minimum=0.00 Maximum=10.00 Default=1.00
-    LiteratureLootMultiplier = 0.8,
+    LiteratureLootMultiplier = 0.4,
     -- VHS tapes, CDs and videogames Minimum=0.00 Maximum=10.00 Default=1.00
-    MediaLootMultiplier = 1.0,
+    MediaLootMultiplier = 0.8,
     -- Cleaning supplies, cooking tools, writing supplies, cutlery, extinguishers, can openers, razors, alarm clocks Minimum=0.00 Maximum=10.00 Default=1.00
     HouseholdSuppliesLootMultiplier = 1.0,
     -- All kinds of clothes, including gas masks and jewelry. Minimum=0.00 Maximum=10.00 Default=1.00
-    ClothingLootMultiplier = 1.0,
+    ClothingLootMultiplier = 1.2,
     -- Including Garbage Bags Minimum=0.00 Maximum=10.00 Default=1.00
     ContainerLootMultiplier = 1.0,
     -- Includes lighters, matches, painting supplies, charcoal, propane tanks, antique ovens, junk items, and many more... Minimum=0.00 Maximum=10.00 Default=1.00
-    OtherLootMultiplier = 0.8,
+    OtherLootMultiplier = 0.7,
     -- A semicolon-separated list of items IDs that will NOT be affected by the multipliers above.
     -- Example: Base.Sledgehammer;Base.Saw
     -- Still affected by the multipliers list option below.
-    ExceptionsList = "Base.Sledgehammer;Base.Sledgehammer2",
+    ExceptionsList = "Base.NailsBox",
     -- A semicolon-separated list of specific multipliers for specific items.Example: Base.Sledgehammer=5;Base.Sledgehammer2=5;Base.Saw=0.5;Base.GardenSaw=0.5;Base.Hammer=0.1;Base.NailsBox=2
     -- These individual multipliers are applied on top of all other multipliers, and even if the item is in the exceptions list
     SpecificItemsList = "Base.Cigarettes:1;Base.Sledgehammer:1;Base.Sledgehammer2:1",
@@ -663,7 +663,7 @@ SandboxVars = {
     Map = {
         AllowMiniMap = true,
         AllowWorldMap = true,
-        MapAllKnown = true,
+        MapAllKnown = false,
     },
     ZombieLore = {
         -- Controls the zombie movement rate. Default=Fast Shamblers
@@ -751,11 +751,11 @@ SandboxVars = {
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationMultiplier = 1.0,
+        PopulationMultiplier = 0.8,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationStartMultiplier = 0.8,
+        PopulationStartMultiplier = 1.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
-        PopulationPeakMultiplier = 0.8,
+        PopulationPeakMultiplier = 1.0,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
         PopulationPeakDay = 1,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
@@ -5825,9 +5825,9 @@ SandboxVars = {
         -- ex. 0.9 means reduces incoming damage by 90% when armor is maxed; applies to armor Minimum=0.00 Maximum=1.00 Default=0.80
         maxDefenseReduction = 0.8,
         -- If dealt headshot, increase chance of wounding head. (ex. 20 means percentage of wounding head is 30% (20 + 10)) Minimum=0.00 Maximum=100.00 Default=20.00
-        headShotIncChance = 0.0,
+        headShotIncChance = 20.0,
         -- If dealt footshot, increase chance of wounding legs/groin. (ex. 10 means percentage of wounding foot is 20% (10 + 10)) Minimum=0.00 Maximum=100.00 Default=10.00
-        footShotIncChance = 0.0,
+        footShotIncChance = 10.0,
         -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=10.00
         headShotDmgZomMultiplier = 10.0,
         -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
@@ -5835,17 +5835,17 @@ SandboxVars = {
         -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=1.00
         footShotDmgZomMultiplier = 1.0,
         -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=15.00
-        headShotDmgPlayerMultiplier = 10.0,
+        headShotDmgPlayerMultiplier = 15.0,
         -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
         bodyShotDmgPlayerMultiplier = 5.0,
         -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=2.00
-        footShotDmgPlayerMultiplier = 1.0,
+        footShotDmgPlayerMultiplier = 2.0,
         -- Bloom affects crit chance. This is a multiplier to that. Set to 0 for better chances of crit. Minimum=0.00 Maximum=100.00 Default=1.00
         critChanceModifier = 1.0,
         -- Chance that a gunshot wound will cause a fracture Minimum=0.00 Maximum=100.00 Default=10.00
         fractureChance = 10.0,
         -- Chance that a gunshot wound will not inflict a lodged bullet Minimum=0.00 Maximum=100.00 Default=25.00
-        throughChance = 75.0,
+        throughChance = 25.0,
         -- Shotgun has a max independent projectile cone. Minimum=0.00 Maximum=1.00 Default=0.10
         maxShotgunProjCone = 0.4,
         -- Multiplier on base stat (range) of shotgun. Default value is 0.75 which means 75% of vanilla's range. Minimum=0.00 Maximum=10.00 Default=0.50
@@ -7365,7 +7365,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeLEVER = 4,
+        EnumTypeLEVER = 3,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7397,7 +7397,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypePUMP = 6,
+        EnumTypePUMP = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7413,7 +7413,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeBOLT = 6,
+        EnumTypeBOLT = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7609,7 +7609,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber12gShot = 7,
+        EnumCaliber12gShot = 5,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7639,7 +7639,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber3006SPG = 5,
+        EnumCaliber3006SPG = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7729,7 +7729,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber223REM = 5,
+        EnumCaliber223REM = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7789,7 +7789,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber45ACP = 7,
+        EnumCaliber45ACP = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7819,7 +7819,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber9mm = 7,
+        EnumCaliber9mm = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -7952,7 +7952,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumAmmoCan = 3,
+        EnumAmmoCan = 2,
         -- Ammunition
         --  - Reduce or Remove Ammunition Boxes
         --  - Also the base chance for (Rocket / Grenade / Landmine) munitions Default=50%
@@ -7966,7 +7966,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumAmmoBox = 9,
+        EnumAmmoBox = 6,
         -- Magazines
         --  - Reduce or Remove Polymer Canisters containing Magazines Default=10%
         -- 1 = REMOVE
@@ -7979,7 +7979,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumPolyCan = 1,
+        EnumPolyCan = 2,
         -- Magazines
         --  - Reduce or Remove Standard Magazines Default=30%
         -- 1 = REMOVE
@@ -7992,7 +7992,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumStdMag = 9,
+        EnumStdMag = 7,
         -- Magazines
         --  - Reduce or Remove Extended Magazines Default=20%
         -- 1 = REMOVE
@@ -8005,7 +8005,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumExtMag = 9,
+        EnumExtMag = 5,
         -- Magazines
         --  - Reduce or Remove Drum / Box Magazines Default=10%
         -- 1 = REMOVE
@@ -8251,7 +8251,7 @@ SandboxVars = {
         -- 2 = 25%
         -- 3 = 50%
         -- 4 = 75%
-        EnumCIVxLEO = 2,
+        EnumCIVxLEO = 1,
         -- Exclusion
         --  - Reduce or Remove Military Items from Civilain Locations
         --  - Military items not generally suited for Civilian Purposes
@@ -8270,7 +8270,7 @@ SandboxVars = {
         -- 2 = 25%
         -- 3 = 50%
         -- 4 = 75%
-        EnumLEOxCIV = 2,
+        EnumLEOxCIV = 1,
         -- Exclusion
         --  - Reduce or Remove Military Items from Police Locations
         --  - Military items not generally suited for Law Enforcement Purposes
@@ -8289,7 +8289,7 @@ SandboxVars = {
         -- 2 = 25%
         -- 3 = 50%
         -- 4 = 75%
-        EnumMILxNON = 2,
+        EnumMILxNON = 1,
         -- Exclusion
         --  - Reduce or Remove Non-Security Items from Security Locations
         --  - Small, Odd, or Large caliber items not generally suited for Security Purposes
@@ -8397,7 +8397,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumMILRollGUN = 1,
+        EnumMILRollGUN = 2,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -8406,7 +8406,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumMILRollAMMO = 1,
+        EnumMILRollAMMO = 2,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -8614,7 +8614,7 @@ SandboxVars = {
         -- 28 = + 270%
         -- 29 = + 280%
         -- 30 = + 290%
-        EnumMILx = 1,
+        EnumMILx = 3,
         -- Trim
         --  - Increase Spawn-Chance Value for every remaining item in Security Distribution areas
         --  - Generally Required to bring overall spawn result back up
@@ -8828,11 +8828,11 @@ SandboxVars = {
         Y2 = 6670,
         -- Minimum=0 Maximum=7 Default=0
         Z2 = 0,
-        Loc3 = "Rosewood",
+        Loc3 = "Location3",
         -- Minimum=0 Maximum=999999999 Default=0
-        X3 = 8125,
+        X3 = 7210,
         -- Minimum=0 Maximum=999999999 Default=0
-        Y3 = 11540,
+        Y3 = 7357,
         -- Minimum=0 Maximum=7 Default=0
         Z3 = 0,
         Loc4 = "Location4",
@@ -9029,13 +9029,13 @@ SandboxVars = {
         BloodTestsCanFail = true,
         UsePresetsIfNoZones = false,
         -- If this option is enabled, the exact location and size of the defined zones can be learned by anyone using the military map. The map has to be crafted and the components are insanely rare.
-        MilitaryMapShowZones = true,
+        MilitaryMapShowZones = false,
         -- Allows different detection devices (e.g. Geiger counter) to give false positive alarms depending on their quality
-        DetectorFalsePositiveAlarms = false,
+        DetectorFalsePositiveAlarms = true,
         -- Disable it if you don't want zombies to hear your sensor beeps.
-        ZombiesReactToDetectors = false,
+        ZombiesReactToDetectors = true,
         -- Zones are generated at random intervals (days)
-        RandomZones = false,
+        RandomZones = true,
         -- Default=Random
         -- 1 = Random
         -- 2 = Nuclear Radiation
@@ -9146,7 +9146,7 @@ SandboxVars = {
         Entry15 = "Religious",
         Entry16 = "Dismemberment",
         Entry17 = "Animal Cruelty",
-        Entry18 = "Infidelity",
+        Entry18 = "",
     },
     Text = {
         -- Enable/disable all mechanics related to Music (moodles, traits, interactions, ...).
@@ -9506,9 +9506,9 @@ SandboxVars = {
         -- The time in hours the player will stay incapacitated unless assisted by another player. Minimum is 1 hour for singleplayer. For multiplayer, set to 0 to disable any time limit. Minimum=0 Maximum=240 Default=6
         IncapacitatedTime = 6,
         -- How many ticks to complete an assisted recovery. First Aid skill will reduce the time by up to 50% at maximum level. Minimum=100 Maximum=3000 Default=1200
-        AssistedRecoveryTicks = 600,
+        AssistedRecoveryTicks = 1200,
         -- If UNCHECKED and in multiplayer, the incapacitated player will die at the end of the timer.  If CHECKED or singleplayer, an incapacitated player will recover at the end of the timer without any assistance unless their Fitness or Strength is zero and the option below is enabled.
-        UnassistedRecovery = true,
+        UnassistedRecovery = false,
         -- If UNCHECKED, player recovery is unaffected by their Fitness or Strength.  If CHECKED, an incapacitated player with Fitness or Strength reduced to zero will die if not rescued in time. If a player is downed with zero Fitness or Strength, they will die immediately instead.
         RecoveryRequiresPassive = false,
         -- The percentage of health a newly revived player will have. Minimum=5 Maximum=100 Default=50
@@ -9657,7 +9657,7 @@ SandboxVars = {
         BubbleOpacity = 75,
         VoiceEnabled = true,
         VerbEnabled = false,
-        Capitalize = false,
+        Capitalize = true,
         HideCallout = true,
         MarkdownOneAsteriskColor = "#ADD4A0",
         MarkdownTwoAsterisksColor = "#C3A4CF",
@@ -9694,11 +9694,11 @@ SandboxVars = {
         YellColor = "#E69696",
         PrivateMessageEnabled = true,
         PrivateMessageColor = "#FFB8DA",
-        FactionMessageEnabled = true,
+        FactionMessageEnabled = false,
         FactionMessageColor = "#AAFFAA",
-        SafeHouseMessageEnabled = true,
+        SafeHouseMessageEnabled = false,
         SafeHouseMessageColor = "#FFFF60",
-        GeneralMessageEnabled = true,
+        GeneralMessageEnabled = false,
         GeneralMessageColor = "#BEBEFF",
         AdminMessageEnabled = true,
         AdminMessageColor = "#FFAAAA",
