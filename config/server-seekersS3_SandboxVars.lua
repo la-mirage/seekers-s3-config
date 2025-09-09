@@ -9374,9 +9374,9 @@ SandboxVars = {
         -- The percentage of health before a player will be incapacitated. A higher value lowers the chance of instant death but decreases the damage taken before incapacitation. Minimum=5 Maximum=80 Default=25
         IncapacitatedHealth = 35,
         -- The time in hours the player will stay incapacitated unless assisted by another player. Minimum is 1 hour for singleplayer. For multiplayer, set to 0 to disable any time limit. Minimum=0 Maximum=240 Default=6
-        IncapacitatedTime = 6,
+        IncapacitatedTime = 1,
         -- How many ticks to complete an assisted recovery. First Aid skill will reduce the time by up to 50% at maximum level. Minimum=100 Maximum=3000 Default=1200
-        AssistedRecoveryTicks = 600,
+        AssistedRecoveryTicks = 1200,
         -- If UNCHECKED and in multiplayer, the incapacitated player will die at the end of the timer.  If CHECKED or singleplayer, an incapacitated player will recover at the end of the timer without any assistance unless their Fitness or Strength is zero and the option below is enabled.
         UnassistedRecovery = true,
         -- If UNCHECKED, player recovery is unaffected by their Fitness or Strength.  If CHECKED, an incapacitated player with Fitness or Strength reduced to zero will die if not rescued in time. If a player is downed with zero Fitness or Strength, they will die immediately instead.
