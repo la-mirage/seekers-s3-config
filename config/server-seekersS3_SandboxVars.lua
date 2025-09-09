@@ -526,7 +526,7 @@ SandboxVars = {
     -- Note: zombie loot is not affected by the other multipliers below. Minimum=0.00 Maximum=10.00 Default=1.00
     ZombieLootMultiplier = 1.5,
     -- A semicolon separated list of items and chances to add to the zombie loot.
-    ItemsAddedToZombieLoot = "Base.Money:0.05;Base.SheetPaper2:0.05",
+    ItemsAddedToZombieLoot = "Base.Money:0.1;Base.SheetPaper2:0.05;Base.BeefJerky:0.05;Base.Crisps:0.1;Base.Chocolate:0.05;Base.GranolaBar:0.1",
     ItemsAddedToMilitaryZedsLoot = "WalkieTalkie5:0.05",
     ItemsAddedToPoliceZedsLoot = "Base.Torch:0.05;Base.WalkieTalkie4:0.05;Base.Battery:0.1",
     ItemsAddedToFiremenZedsLoot = "Base.Axe:0.1",
@@ -547,7 +547,7 @@ SandboxVars = {
     -- Fossoil, Gas2Go, Thundergas...
     ItemsAddedToGasStationZedsLoot = "Base.CandyPackage:0.1;Base.MintCandy:0.1;Base.RockCandy:0.1;Base.Crisps:0.1",
     -- Waiters, Cooks, Chefs...
-    ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.Mustard:0.1",
+    ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.Mustard:0.1;Base.MayonnaiseFull:0.05;SapphCooking.HotsaucePacket:0.2",
     ItemsAddedToOfficeWorkersZedsLoot = "Base.SewingKit:0.1;Base.Money:0.05",
     -- A semicolon separated list of zombie outfits that will drop the Custom Zed Outfits Loot defined below.
     -- Example: 'Priest;Biker;Redneck;Swimmer;Bedroom;Bathrobe;Hobbo;Party;Party2'
@@ -7364,7 +7364,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeLEVER = 3,
+        EnumTypeLEVER = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7396,7 +7396,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypePUMP = 5,
+        EnumTypePUMP = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7412,7 +7412,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumTypeBOLT = 5,
+        EnumTypeBOLT = 6,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Action
         --  - This will affect associated Items and Ammo
@@ -7803,7 +7803,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber38SPC = 5,
+        EnumCaliber38SPC = 4,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -8004,7 +8004,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumExtMag = 5,
+        EnumExtMag = 6,
         -- Magazines
         --  - Reduce or Remove Drum / Box Magazines Default=10%
         -- 1 = REMOVE
@@ -8220,7 +8220,7 @@ SandboxVars = {
         -- 18 = 170%
         -- 19 = 180%
         -- 20 = 190%
-        EnumArmor = 1,
+        EnumArmor = 6,
         -- Loot
         --  - Reduce or Remove Weapons / Items produced after 1992
         --  - Be Advised... This option Removes A-L-O-T of weapons Default=ALLOW
@@ -8288,7 +8288,7 @@ SandboxVars = {
         -- 2 = 25%
         -- 3 = 50%
         -- 4 = 75%
-        EnumMILxNON = 5,
+        EnumMILxNON = 4,
         -- Exclusion
         --  - Reduce or Remove Non-Security Items from Security Locations
         --  - Small, Odd, or Large caliber items not generally suited for Security Purposes
