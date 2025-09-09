@@ -36,7 +36,7 @@ SandboxVars = {
     -- 23 = 21 Hours
     -- 24 = 22 Hours
     -- 25 = 23 Hours
-    DayLength = 3,
+    DayLength = 6,
     StartYear = 1,
     -- Default=July
     -- 1 = January
@@ -362,7 +362,7 @@ SandboxVars = {
     -- 2 = Long
     -- 3 = Normal
     -- 4 = Short
-    NightLength = 3,
+    NightLength = 4,
     -- Increase and decrease the impact injuries have on your body, and their healing time. Default=Normal
     -- 1 = Low
     -- 2 = Normal
@@ -389,7 +389,7 @@ SandboxVars = {
     ClothingDegradation = 3,
     FireSpread = true,
     -- Number of in-game days before rotten food is removed from the map. -1 means rotten food is never removed. Minimum=-1 Maximum=2147483647 Default=-1
-    DaysForRottenFoodRemoval = -1,
+    DaysForRottenFoodRemoval = 14,
     -- If enabled, generators will work on exterior tiles, allowing for example to power gas pump.
     AllowExteriorGenerator = true,
     -- Controls the maximum intensity of fog. Default=Normal
@@ -547,7 +547,7 @@ SandboxVars = {
     -- Fossoil, Gas2Go, Thundergas...
     ItemsAddedToGasStationZedsLoot = "Base.CandyPackage:0.1;Base.MintCandy:0.1;Base.RockCandy:0.1;Base.Crisps:0.1",
     -- Waiters, Cooks, Chefs...
-    ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.Mustard:0.1;Base.MayonnaiseFull:0.05;SapphCooking.HotsaucePacket:0.2",
+    ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.Mustard:0.1;SapphCooking.HotsaucePacket:0.2",
     ItemsAddedToOfficeWorkersZedsLoot = "Base.SewingKit:0.1;Base.Money:0.05",
     -- A semicolon separated list of zombie outfits that will drop the Custom Zed Outfits Loot defined below.
     -- Example: 'Priest;Biker;Redneck;Swimmer;Bedroom;Bathrobe;Hobbo;Party;Party2'
@@ -770,9 +770,9 @@ SandboxVars = {
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
         PopulationStartMultiplier = 0.8,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
-        PopulationPeakMultiplier = 0.8,
+        PopulationPeakMultiplier = 1.2,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
-        PopulationPeakDay = 1,
+        PopulationPeakDay = 60,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
         RespawnHours = 0.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
@@ -5307,7 +5307,7 @@ SandboxVars = {
     SkillRecoveryJournal = {
         -- The amount of experience recovered from reading bound journals.
         -- This value is defaulted to if other options are set to -1. Minimum=1 Maximum=100 Default=100
-        RecoveryPercentage = 50,
+        RecoveryPercentage = 75,
         -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
         TranscribeSpeed = 1.2,
         -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
@@ -5317,7 +5317,7 @@ SandboxVars = {
         TranscribeTVXP = false,
         -- Recovery percentage for passive skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=0
-        RecoverPassiveSkills = 0,
+        RecoverPassiveSkills = -1,
         -- Recovery percentage for combat skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
         RecoverCombatSkills = -1,
@@ -6098,7 +6098,7 @@ SandboxVars = {
         -- 4 = Normal
         -- 5 = Common
         -- 6 = Abundant
-        NonPerishableChance = 2,
+        NonPerishableChance = 3,
         -- Default=Rare
         -- 1 = Insanely rare
         -- 2 = Extremely Rare
@@ -9868,11 +9868,11 @@ SandboxVars = {
     },
     ProgressiveCharacterMod = {
         -- How often you get the specified number of trait points. Minimum=1 Maximum=999 Default=2
-        IntervalOfDaysPassed = 7,
+        IntervalOfDaysPassed = 15,
         -- How many trait points you get each time it accumulates. Minimum=1 Maximum=999 Default=1
         NumberOfPointsToAdd = 1,
         -- How many days needed to survive to get the free point bonus. Minimum=0 Maximum=999 Default=0
-        MinDaysSurvived = 7,
+        MinDaysSurvived = 15,
         -- This Will Determine If After Initial Character Creation Your Point Total Resets.
         DeathResets = true,
     },
