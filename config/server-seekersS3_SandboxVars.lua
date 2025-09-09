@@ -185,7 +185,7 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 1,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 1.0,
+    XpMultiplier = 0.65,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
     XpMultiplierAffectsPassive = false,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
@@ -5317,7 +5317,7 @@ SandboxVars = {
         TranscribeTVXP = false,
         -- Recovery percentage for passive skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=0
-        RecoverPassiveSkills = -1,
+        RecoverPassiveSkills = 100,
         -- Recovery percentage for combat skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
         RecoverCombatSkills = -1,
@@ -5326,13 +5326,13 @@ SandboxVars = {
         RecoverFirearmSkills = -1,
         -- Recovery percentage for crafting skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
-        RecoverCraftingSkills = -1,
+        RecoverCraftingSkills = 100,
         -- Recovery percentage for survivalist skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
         RecoverSurvivalistSkills = -1,
         -- Recovery percentage for agility skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
-        RecoverAgilitySkills = -1,
+        RecoverAgilitySkills = 100,
         -- Toggle off to prevent journals from recovering/transcribing recipes.
         RecoverRecipes = true,
         -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
@@ -6208,7 +6208,7 @@ SandboxVars = {
         -- The user aiming skill will impact hunting conditions. 
         AimingImpact = true,
         -- Minimum=0 Maximum=10 Default=0
-        MinimumAimingLevelToHunt = 0,
+        MinimumAimingLevelToHunt = 2,
         -- The minimum level in aiming required for a character to be able to hunt with a gun. Minimum=0 Maximum=10 Default=10
         MaximumAimingLevelToHunt = 10,
         -- If your aiming is the minimum level required to be able to hunt, the impact due to aiming on the hunting chance will be this value. Minimum=0 Maximum=500 Default=50
@@ -6288,13 +6288,13 @@ SandboxVars = {
         -- How many in-game minutes before you can practice first aid on corpses again.  Minimum=1 Maximum=1440 Default=60
         PracticeCooldown = 60,
         -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=10
-        BandagePracticeXP = 10,
+        BandagePracticeXP = 7,
         -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=25
-        SuturePracticeXP = 25,
+        SuturePracticeXP = 20,
         -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=50
-        StudyPracticeXP = 50,
+        StudyPracticeXP = 35,
         -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=75
-        ScalpelPracticeXP = 75,
+        ScalpelPracticeXP = 50,
         -- Makes wound treatment faster or slower.  Minimum=0.10 Maximum=5.00 Default=1.00
         SpeedMultiplier = 1.0,
         -- Display cheaty info of wounds when at Level 8 or higher. 
@@ -9595,7 +9595,7 @@ SandboxVars = {
     },
     SkillLimiter = {
         -- The bonus to the skill cap for agility skills. (0 - 3) Minimum=0 Maximum=3 Default=2
-        AgilityBonus = 2,
+        AgilityBonus = 3,
         -- The bonus to the skill cap for combat skills. (0 - 3) Minimum=0 Maximum=3 Default=1
         CombatBonus = 1,
         -- The bonus to the skill cap for crafting skills. (0 - 3) Minimum=0 Maximum=3 Default=0
@@ -9603,15 +9603,15 @@ SandboxVars = {
         -- The bonus to the skill cap for firearms skills. (0 - 3) Minimum=0 Maximum=3 Default=1
         FirearmBonus = 1,
         -- The bonus to the skill cap for survivalist skills. (0 - 3) Minimum=0 Maximum=3 Default=0
-        SurvivalistBonus = 0,
+        SurvivalistBonus = 1,
         -- The bonus to the skill cap for passive skills. (0 - 3) Minimum=0 Maximum=3 Default=3
         PassivesBonus = 3,
         -- The maximum level for perks where a user has no points in the skill. (0 - 10, default 5) Minimum=0 Maximum=10 Default=5
-        PerkLvl0Cap = 5,
+        PerkLvl0Cap = 4,
         -- The maximum level for perks where a user has 1 point in the skill. (0 - 10, default 7) Minimum=0 Maximum=10 Default=7
-        PerkLvl1Cap = 7,
+        PerkLvl1Cap = 6,
         -- The maximum level for perks where a user has 2 points in the skill. (0 - 10, default 9) Minimum=0 Maximum=10 Default=9
-        PerkLvl2Cap = 9,
+        PerkLvl2Cap = 8,
         -- The maximum level for perks where a user has 3 points in the skill. (0 - 10, default 10) Minimum=0 Maximum=10 Default=10
         PerkLvl3Cap = 10,
         -- Semicolon separated list of bonuses to add to perks. (e.g. Perk1:1;Perk2:3;Perk3:1)
