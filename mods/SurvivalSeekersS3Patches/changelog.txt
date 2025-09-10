@@ -1,0 +1,16 @@
+Changelog:
+
+v1.0
+Added drops for items from The Engineer
+Turned off occupation from The Engineer
+Edited zRE Vaccine 2.0's VHS tape to be lore-accurate
+Edited zRE Vaccine items to reference "CairnsVax"
+Tweaked some occupation point totals in the Hephas_Occupations mod to account for skill caps
+First round of mixtape edits (Henry, Taylor, Rachel)
+
+v1.1
+Major occupation rework
+Costs for traits tweaked
+Added script to hide Organized/Disorganized from character creation
+
+

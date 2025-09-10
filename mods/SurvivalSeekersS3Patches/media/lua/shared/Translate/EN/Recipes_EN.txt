@@ -1,0 +1,117 @@
+Recipe_EN = {
+
+/* VACCINE RESEARCH */
+	Recipe_LabResearchNotebookRead1 = "Study the CairnsVax lab notes",
+	Recipe_LabResearchNotebookRead2 = "Study the CairnsVax lab notes",
+	Recipe_LabResearchNotebookRead3 = "Study the CairnsVax lab notes",
+	Recipe_LabResearchNotebookRead4 = "Study the CairnsVax lab notes",
+
+	Recipe_LabResearchNotebookVaccineStart = "1. Write a CairnsVax development diary",
+	Recipe_LabResearchToVaccineTo2lvl = "3. Improve the CairnsVax to lvl 2",
+	Recipe_LabResearchToVaccineTo3lvl = "3. Improve the CairnsVax to lvl 3",
+	Recipe_LabResearchToVaccineTo4lvl = "3. Improve the CairnsVax to lvl 4",
+
+/* EQUIPMENT */
+	Recipe_LabAssembleComputer = "Assemble Computer",
+	Recipe_LabAssembleMicroscope = "Assemble Microscope",
+	Recipe_LabAssembleChromatograph = "Assemble Chromatograph",
+	Recipe_LabAssembleSpectrometer = "Assemble Spectrometer",
+	Recipe_LabAssembleChemistrySet = "Assemble Chemistry Set",
+	Recipe_LabAssembleCentrifuge = "Assemble Centrifuge",
+	Recipe_LabAssembleMuffleFurnace = "Assemble Muffle Furnace",
+	Recipe_LabAssembleWorkbench = "Assemble Workbench",
+	Recipe_LabAssembleEasel = "Assemble Easel",
+
+/* DECORATIONS */
+	Recipe_DecAssembleWhiteboard = "Assemble Whiteboard",
+	Recipe_DecPaintPeriodicTablePoster = "Paint Periodic Table Poster",
+	Recipe_DecPaintWashYourHandsPoster = "Paint Wash Your Hands Poster",
+	Recipe_DecPaintBiohazardPoster = "Paint Biohazard Poster",
+	Recipe_DecPaintHumanBrainPoster = "Paint Human Brain Poster",
+
+/* CHEMISTRY */
+	Recipe_ChmDoBloodTest = "1. Do an infection test",
+	Recipe_ChmTakeBloodForNextWork = "2.1. Take blood for further work",
+	Recipe_ChmDoBloodAnalysis = "2.2. Make a detailed blood test",
+
+	Recipe_ChmDivideBloodIntoComponents = "2.3. Divide Blood into Components",
+	Recipe_ChmExtractLeukocytesFromBloodCells = "4.2. Extract Leukocytes from Blood Cells",
+	Recipe_ChmExtractAntibodiesFromLeukocytes = "4.3. Extract Antibodies from Leukocytes",
+
+/* VACCINE SYNT */
+	Recipe_ChmSynthesizePlainVaccine = "2. Synthesize CairnsVax (lvl 1)"
+	Recipe_ChmSynthesizeQualityVaccine = "2. Synthesize CairnsVax (lvl 2)",
+	Recipe_ChmSynthesizeCure = "2. Synthesize CairnsVax (lvl 3)",
+	Recipe_ChmSynthesizeSerum = "2. Synthesize CairnsVax (lvl 4)",
+
+/* INJECTION */
+	Recipe_ChmGetAnInjection = "Get an Injection (self)",
+
+/* CHEMISTRY - AGAIN */
+	Recipe_ChmMixFlaskOfSodiumHypochlorite = "3. Mix Flask of Sodium Hypochlorite",
+	Recipe_ChmMixFlaskOfAmmoniumSulfate = "3. Mix Flask of Ammonium Sulfate",
+	Recipe_ChmMixFlaskOfHydrogenPeroxide = "3. Mix Flask of Hydrogen Peroxide",
+	Recipe_ChmMixItemChAmmonia = "3. Make Ammonia",
+
+	Recipe_ChmMakeAlbumin = "5. Make Albumin",
+	Recipe_ChmMakeBottleOfBleach = "5. Make Bottle of Bleach"
+	Recipe_ChmMakeBottleOfDisinfectant = "5. Make Bottle of Disinfectant"
+	Recipe_ChmMakeChlorineTablets = "5. Make Chlorine Tablets",
+	Recipe_ChmMakeMildewCure = "5. Make Mildew Cure",
+
+/* STERELYZE */
+	Recipe_ChmPourTestTubeOut = "Pour out the contents of the test tube",
+	Recipe_ChmPourFlaskOut = "Pour out the contents of the flask",
+	Recipe_ChmPourSyringeReusableOut = "Pour out the contents of a reusable syringe",
+
+	Recipe_ChmSterilizeTestTube = "Sterilize the test tube (hot water)",
+	Recipe_ChmSterilizeTestTube5 = "Sterilize 5 test tubes (hot water)",
+	Recipe_ChmSterilizeTestTube10 = "Sterilize 10 test tubes (hot water)",
+	Recipe_ChmSterilizeTestTube2 = "Sterilize the tube (disinfectant)",
+
+	Recipe_ChmSterilizeFlask = "Sterilize the flask (hot water)",
+	Recipe_ChmSterilizeFlask5 = "Sterilize 5 flasks (hot water)",
+	Recipe_ChmSterilizeFlask10 = "Sterilize 10 pcs flasks (hot water)",
+	Recipe_ChmSterilizeFlask2 = "Sterilize the flask (disinfectant)",
+
+	Recipe_ChmSterilizeLabSyringeReusable = "Sterilize the syringe (hot water)",
+	Recipe_ChmSterilizeLabSyringeReusable5 = "Sterilize 5 syringes (hot water)",
+	Recipe_ChmSterilizeLabSyringeReusable10 = "Sterilize 10 syringes (hot water)",
+	Recipe_ChmSterilizeLabSyringeReusable2 = "Sterilize the syringe (disinfectant)",
+
+/* OTHER */
+	Recipe_CreateNotebookLab = "Create Notebook",
+	Recipe_OthCreateCork = "Make corks",
+	
+	Recipe_OthUnpackSyringes = "Unpack Syringes",
+	Recipe_OthPackSyringes = "Pack Syringes",
+	
+	Recipe_UnpackTestTubes = "Unpack Test Tubes",
+	Recipe_PackTestTubes = "Pack Test Tubes",
+	
+	Recipe_OthUnpackFlasks = "Unpack the box with flasks",
+	Recipe_OthPackFlasks = "Put the flasks in the box",
+
+	Recipe_OthClearWithChlorineTablets = "Clear with Chlorine Tablets",
+
+/* MELTING */
+	Recipe_FrnMakeFormaForTestTube = "Make a Test Tube Form",
+	Recipe_FrnMakeFormaForFlask = "Make a Flask Form",
+	Recipe_FrnMakeFormaForSyringeReusable = "Make a Syringe Form",
+	Recipe_FrnMakeFormaForJar = "Make a Jar Form",
+	Recipe_FrnMakeFormaForJarLid = "Make a Jar Lid Form",
+	Recipe_FrnMakeFormaForNeedle = "Make a Needle Form",
+	Recipe_FrnMakeFormaForSmallMetallList = "Make a Small MetalList Form",
+
+	Recipe_FrnMakeTestTube = "Make Test Tubes",
+	Recipe_FrnMakeFlask = "Make Flask",
+	Recipe_FrnMakeSyringeReusable = "Make a Reusable Syringe",
+	Recipe_FrnMakeJar = "Make Jar",
+	Recipe_FrnMakeJarLid = "Make Jar Lid",
+	Recipe_FrnMakeNeedle = "Make Needles",
+	Recipe_FrnMakeSmallSheetMetal = "Make a Small Sheet of Metal",
+
+/* MEDICAL */
+	Recipe_LabMedImprovisedCottonBalls = "Make Improvised Cotton Balls",
+
+}

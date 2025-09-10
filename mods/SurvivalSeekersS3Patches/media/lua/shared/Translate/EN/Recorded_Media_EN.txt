@@ -1,0 +1,104 @@
+/* zRe VAC2 */
+RM_6b3f4dd8-8388-4d1c-99c2-410d1decff32 = "VHS: CairnsVax Announcement",
+RM_4b210911-d17c-4bbb-a84b-9784acd94ab1 = "CairnsVax Announcement",
+RM_d81ba340-10bb-46d8-b1e2-4d0c5663c064 = "A VHS tape with a sticker on it that claims it is 'Property of the United States Military'",
+
+/* Ambient */
+RM_2b02575f-4c05-4b5a-923d-e7f7673f96ad = "*The screen fuzzes to life, depicting two women standing in a lab. Bright florescent light streams from above.*",
+
+/* kERHUS */
+RM_8e3d1cf2-b5ee-43e6-9276-75d761cf9c8e = "*The woman standing in the center has blonde hair and visible bags under her eyes.* We're live?  Okay...",
+RM_47ca426b-0bc9-4724-add0-b5890d9dd5cf = "So if you've found this tape, congratulations on making it this far, survivor.",
+RM_698345b8-0b38-49ac-bccd-5649b98d4a7d = "I am Dr. Taylor Cairns. It is late 1994, over a year after the outbreak that changed our world. Shattered it.",
+RM_42f3393e-37c5-497f-8577-9cedd26c0a01 = "I am telling you this so to be absolutely sure you understand that this is not a tape from the before-times.",
+RM_56ac2d51-67a0-457d-b09c-e2c7151c3b9b = "We are filming this in Annapolis, in 1994, amongst a small group of surviving US military.",
+RM_3b6d7b8c-516c-4fc5-9c4e-512add1386dd = "Do not come try to find us. I repeat, do not. The road here is far too dangerous...",
+RM_fb89b3e9-0db0-4c1e-96f3-a057175f4f96 = "I am going to give you what you need to know to save yourselves instead.",
+RM_1ffbee3f-088c-4edf-ab34-7983e2cc2cf1 = "Enclosed in the package this tape should have come with are some doses of my vaccine, as well as a copy of a lab notebook...",
+RM_ce56dbde-ff27-41d5-b008-6e26bd107fbb = "That's right, I said 'vaccine'. Several months ago my team and I in Blackwood, Kentucky created what is now called the CairnsVax.",
+RM_32d79ee9-d01a-4ae6-8274-8254c787da96 = "The vaccine can be delivered in several different strengths, so you need to pay close attention now.",
+RM_ae314847-d604-44cd-baec-ed746bed778b = "First, know the virus is transmitted through the air for a majority of people, but not everyone.",
+RM_1e4a3feb-d729-4b46-98ef-d0aee14b1306 = "Some of you - probably most who are still alive now, you have immunity to that airborne strain.",
+RM_b7fa6791-2d68-4fcb-93bf-d593a29657cb = "You just have to worry about the zeds biting you, as the saliva is what transmits it.",
+RM_d209a832-df13-43f3-87d4-cdcda25e1e7b = "Hunker down, and know that the CairnsVax can help you in case you do get exposed.",
+RM_49a4079d-f1f2-4104-9d8b-08b44dd98f5c = "If you do get bitten, follow the following procedures...",
+
+/* Aurora */
+RM_634026c4-45a9-4dde-b455-b8ada5ed85e7 = "*The second woman has red hair, and speaks up now as she holds up a syringe.* This is the Level 1 CairnsVax.",
+
+/* kERHUS */
+RM_a50720d6-db05-456d-8899-d05658a6f842 = "Thank you, Lacy. It's denoted by the red '1' on the side. Use it if you think you might have been bit but aren't sure.",
+
+/* Aurora */
+RM_2e368bc5-8762-4c3c-9016-459c05fe96c2 = "*She holds up a second syringe.* And this one is the Level 2 CairnsVax.",
+
+/* kERHUS */
+RM_84a939a2-51c7-45e9-8f30-9dfae5fa7168 = "This one will keep you alive for weeks if needed, especially if you take some albumin to extend it.",
+
+/* Ambient */
+RM_63dbb874-f03b-4f35-8dba-17451352d0b2 = "*The camera cuts to a sped-up feed from a containment cell, showing a man who's in advanced stages of the infection.",
+
+/* Zombie */
+RM_f76853ef-326e-4c37-9733-aaba6e5c4edf = "Grhh... Ahhh...",
+
+/* kERHUS */
+RM_ca679184-e844-4546-82e9-71a53d413b6e = "Watch how fast it reverses the advanced stages of the infection.",
+
+/* Ассистент-Заражён */
+RM_c9f1f238-5486-474b-ba68-1dea89b17b99 = "*The feed zooms forward, showing the man quickly become much more normal over a few hours.*",
+
+/* kERHUS */
+RM_a9eeebb7-0956-4e4b-94bc-51d9c98031a4 = "The level 3 CairnsVax will completely reverse an infection, but it requires a lot of materials to synthesize.",
+
+/* Ассистент-Заражён */
+RM_66fd41fd-19ff-4a6f-b3a2-e53a54aafd98 = "*The man is checked by doctors in hazmat suits, and one draws a blood sample from his arm before the scene cuts back to the lab.*",
+
+/* Aurora */
+RM_2ff2e74f-b56e-4857-a0e4-d66228d42fa9 = "We've also included a handy rapid test in your kit! *Lacy holds up an empty syringe*",
+RM_2d2799c3-9cf3-4e07-aafb-387db872a6d8 = "Carefully draw a sample from the subject, and then dip a test strip. *She demonstrates.* Black means negative, red means positive.",
+RM_fee75b91-d79d-481e-8b0b-0d9616d604fc = "If positive, wait until symptoms get close to terminal, and then administer the CairnsVax to ensure maximum effectiveness!",
+
+/* Ambient */
+RM_43c4d5e2-d1b4-4e5d-95ed-5834183b6880 = "*Lacy demonstrates how to administer the vaccine with a syringe.*",
+
+/* Aurora */
+RM_6ec420ec-bcf1-4975-a966-2fea46127a83 = "Make sure to always give the full dose, or it may not be effective. And we don't want the virus developing resistance...",
+
+/* kERHUS */
+RM_63c8605f-650d-44ea-8168-618a3cc1775f = "That's right, Lacy. We wish we had more doses to distrubute, but we're working on it. How many are we up to today?",
+
+/* Ассистент-Заражён */
+RM_bc3daa1b-8470-45e2-a0f1-a255ec55922d = "*From off-screen, a male voice.* Two thousand, four hundred, and seventeen doses, ma'am!",
+
+/* Ambient */
+RM_33236a40-233b-4077-a6e9-84bb77262e64 = "*Dr. Taylor nods gravely, looking at the camera.*",
+
+/* kERHUS */
+RM_dc474326-cf01-49c2-a76b-1cb21417cae4 = "Keep in mind, the CairnsVax is useless in late terminal stages - over 85% infection...",
+RM_61a092ff-ffd6-4230-96ee-695851119b1a = "Full zombification will remain irreversible... it is impossible for a vaccination to reverse it beyond that point.",
+RM_e4700f77-d3f6-4890-bb7e-9a2f80a861df = "After injection of the CairnsVax 1 or 2, the infection will weaken back to 5%, and albumin will further prolong it.",
+RM_26d1061f-fef4-48d9-8c4f-31f525a2d495 = "Once your infection reaches near-terminal stages again, take albumin.",
+RM_e10102b9-a44d-4ba1-9897-3b7667cb2b5b = "It will help you to fight the early symptoms and prolongs the vaccine's effect.",
+RM_752ae987-38d1-45df-951e-b6d3feb15170 = "But its effectiveness will fade after about 7 doses.",
+RM_4b27c74a-1c33-44fb-ad58-12522a42f899 = "From that point, you will need to take another dose of the vaccine and begin the process again.",
+RM_68da2188-3e15-4ba9-9522-a6e072063d02 = "In the meantime keep fighting, and look for help or resources to follow our guides for synthesizing the CairnsVax yourself.",
+
+/* Aurora */
+RM_c9e8c910-6e77-4ef0-b602-5444474184ed = "We can't yet make enough to go around, so we have included instructions in this package for making your own doses.",
+RM_36907018-214d-4218-b8da-afd8b593c2a9 = "You will need to find or build lab equipment, and gather reagents such as Hydrochloric Acid and Ammonia.",
+RM_7b29341d-544a-4960-9577-5eae7ad4875f = "Search hospitals and warehouses. We were able to find what we needed over time, and I know you can too!",
+RM_526bbad4-205c-42ef-af0b-997367be30ce = "You will also need tissue samples from recently-deceased zeds. Take these using tweezers and keep them sealed.",
+RM_727cf331-9413-41b7-a15f-39bfce7bfb3b = "And don't get rid of those blood samples you take for testing, you'll need them too!",
+
+/* kERHUS */
+RM_9795fb28-f9d7-43f4-9838-ff993c17c6de = "That's right, Lacy. When you are infected, your blood contains some of the virus cells that we need for the CairnsVax.",
+RM_c64fb280-3d80-4b21-ba62-8896e3e9b05c = "We have provided you a formulation with all the exact measurements and ratios used in the CairnsVax.",
+RM_42fb5ab8-bd2e-44ec-84b3-af86054eef53 = "The instructions are as simple as we could make them, but it would certainly help to find some relevant textbooks out there...",
+
+/* Aurora */
+RM_582d3088-b576-423a-8a51-b7c86132c0df = "That's all we have time for, Dr. Taylor. I know it may seem overwhelming, but you just need to take it step by step. You can do this.",
+
+/* Ambient */
+RM_d242977e-8294-42ca-b529-e2cf22bd378d = "*The scene abruptly vanishes.*",
+RM_cddfc677-3305-4cf4-b5ea-4b028bc53f51 = "*A blue title card appears, with the seal of the United States and a message that reads: 'PROPERTY OF THE US GOVERNMENT.'",
+RM_b04b3a3a-63d4-48cb-9478-699b427f7e90 = "'DESTRUCTION OR MODIFICATION OF THIS MATERIAL, OR ANY DISRUPTION OF ITS DISTRIBUTION IS PUNISHABLE BY DEATH.",

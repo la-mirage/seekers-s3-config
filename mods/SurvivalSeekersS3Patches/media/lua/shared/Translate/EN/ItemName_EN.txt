@@ -1,0 +1,125 @@
+ItemName_EN = {
+
+/* clothes */
+	ItemName_Base.zReV2_1ECO_fullhelmet1 = "ECO-13.1 Gas Mask (Helmet)",
+	ItemName_Base.zReV2_1ECO_fullhelmet2 = "ECO-13.2 Gas Mask (Helmet)",
+	ItemName_Base.zReV2_1ECO_fullhelmet1 = "ECO-13.1 Gas Mask",
+	ItemName_Base.zReV2_1ECO_fullhelmet2 = "ECO-13.2 Gas Mask",
+	ItemName_Base.zReV2_2ECO_jacket = "ECO-13 HAZ Protective Jacket",
+	ItemName_Base.zReV2_3ECO_pants = "ECO-13 HAZ Protective Pants",
+	ItemName_Base.zReV2_4ECO_armor = "ECO-13 Bulletproof Vest",
+	ItemName_Base.zReV2_5ECO_chestrig1 = "ECO-13.1 Tactical Pouches",
+	ItemName_Base.zReV2_5ECO_chestrig2 = "ECO-13.2 Tactical Pouches",
+	ItemName_Base.zReV2_6ECO_gloves = "ECO-13 HAZ Protective Gloves",
+	ItemName_Base.zReV2_8ECO_backpack = "ECO-13 Backpack",
+	ItemName_Base.zReV2_9ECO_legslower = "ECO-13 Knee Pads",
+	ItemName_Base.zReV2_10ECO_bagback = "ECO-13 Sample Bag",
+	ItemName_Base.zReV2_11ECO_upperarms = "ECO-13 UpperArm Armor",
+
+/* items 1_1 */
+	ItemName_LabItems.LabSyringe = "Syringe",
+	ItemName_LabItems.LabSyringeReusable = "Reusable Syringe",
+	ItemName_LabItems.LabSyringeUsed = "Used Syringe",
+	ItemName_LabItems.LabSyringeReusableUsed = "Dirty Reusable Syringe",
+	ItemName_LabItems.LabSyringePack = "Syringe Pack",
+
+	ItemName_LabItems.LabTestTube = "Test Tube",
+	ItemName_LabItems.LabTestTubeDirty = "Dirty Test Tube",
+	ItemName_LabItems.LabTestTubePack = "Test Tubes Pack",
+
+	ItemName_LabItems.LabFlask = "Flask",
+	ItemName_LabItems.LabFlaskWater = "Flask with Water",
+	ItemName_LabItems.LabFlaskDirty = "Dirty Flask",
+	ItemName_LabItems.LabFlaskPack = "Flasks Pack",
+	
+	ItemName_LabItems.LabCorks = "Corks",
+	ItemName_LabItems.LabImprovisedCottonBalls = "Improvised Cotton Balls",
+
+	ItemName_LabItems.LabTestResultNegative = "Test Result: Negative",
+	ItemName_LabItems.LabTestResultPositive = "Test Result: Positive",
+
+/* basematerials 1_2 */
+	ItemName_LabItems.MatPlagueSamplesNormal = "Blood Plague Sample",
+	ItemName_LabItems.MatPlagueSamplesRare = "Blood Plague Sample (rare)",
+
+	ItemName_LabItems.ChHydrochloricAcidCan = "Can of Hydrochloric Acid",
+	ItemName_LabItems.ChSodiumHydroxideBag = "Bag of Sodium Hydroxide",
+	ItemName_LabItems.ChAmmonia = "Ammonia",
+	ItemName_LabItems.ChSulfuricAcidCan = "Can of Sulfuric Acid",
+	ItemName_LabItems.ChAmmoniumChlorideBag = "Bag of Ammonium Chloride",
+
+/* bloodcompounds 1_3 */
+	ItemName_LabItems.CmpSyringeWithBlood = "Syringe with Blood",
+	ItemName_LabItems.CmpSyringeWithTaintedBlood = "Syringe with Tainted Blood",
+	ItemName_LabItems.CmpSyringeReusableWithBlood = "Reusable Syringe with Blood",
+	ItemName_LabItems.CmpSyringeReusableWithTaintedBlood = "Reusable Syringe with Tainted Blood",
+
+	ItemName_LabItems.CmpTestTubeWithInfectedBlood1 = "Test Tube with Blood",
+	ItemName_LabItems.CmpTestTubeWithTaintedBlood = "Test Tube with Tainted Blood",
+
+	ItemName_LabItems.CmpFlaskWithBloodCells = "Flask with Blood Cells",
+	ItemName_LabItems.CmpFlaskWithBloodPlasma = "Flask with Blood Plasma",
+	ItemName_LabItems.CmpFlaskWithBloodCellsOrBloodPlasmaDummy = "Flask with Blood Plasma or Cells",
+	ItemName_LabItems.CmpFlaskWithLeukocytes = "Flask with Leukocytes",
+	ItemName_LabItems.CmpTestTubeWithAntibodies = "Test Tube with Antibodies",
+
+/* chems 1_4 */
+	ItemName_LabItems.CmpFlaskWithSodiumHypochlorite = "Flask with Sodium Hypochlorite",
+	ItemName_LabItems.CmpFlaskWithAmmoniumSulfate = "Flask with Ammonium Sulfate",
+	ItemName_LabItems.CmpFlaskWithHydrogenPeroxide = "Flask with Hydrogen Peroxide",
+
+	ItemName_LabItems.CmpAlbuminPills = "Albumin",
+	ItemName_LabItems.CmpChlorineTablets = "Chlorine Tablets",
+
+/* Vaccines 1_5 */
+	ItemName_LabItems.CmpSyringeWithPlainVaccine = "Syringe with CairnsVax (lvl 1)",
+	ItemName_LabItems.CmpSyringeReusableWithPlainVaccine = "Syringe with CairnsVax (lvl 1)",
+	ItemName_LabItems.CmpSyringeWithQualityVaccine = "Syringe with CairnsVax (lvl 2)",
+	ItemName_LabItems.CmpSyringeReusableWithQualityVaccine = "Syringe with CairnsVax (lvl 2)",
+	ItemName_LabItems.CmpSyringeWithCure = "Syringe with CairnsVax (lvl 3)",
+	ItemName_LabItems.CmpSyringeReusableWithCure = "Syringe with CairnsVax (lvl 3)",
+	ItemName_LabItems.CmpSyringeWithSerum = "Syringe with CairnsVax (lvl 4)",
+	ItemName_LabItems.CmpSyringeReusableWithSerum = "Syringe with CairnsVax (lvl 4)",
+
+/* melting 1_6 */
+	ItemName_LabItems.FormaForTestTube = "Tube Form",
+	ItemName_LabItems.FormaForFlask = "Flask Form",
+	ItemName_LabItems.FormaForSyringeReusable = "Syringe Form",
+	ItemName_LabItems.FormaForJar = "Jar Form",
+	ItemName_LabItems.FormaForJarLid = "Jar Lid Form",
+	ItemName_LabItems.FormaForNeedle = "Needle Form",
+	ItemName_LabItems.FormaForSmallMetallList = "Small Sheet Form",
+
+/* books 2_1 */
+	ItemName_LabBooks.BkLaboratoryEquipment1 = "Laboratory Vol.1 - Equipment",
+	ItemName_LabBooks.BkLaboratoryEquipment2 = "Laboratory Vol.2 - Decorations",
+	ItemName_LabBooks.BkLaboratoryEquipment3 = "Laboratory Vol.3 - Smelting",
+
+	ItemName_LabBooks.BkChemistryCourse = "Laboratory Vol.4 - Chemistry Brief",
+
+	ItemName_LabBooks.BkVirologyCourses1 = "Laboratory Vol.5 - Virology Part 1",
+	ItemName_LabBooks.BkVirologyCourses2 = "Laboratory Vol.6 - Virology Part 2",
+
+	ItemName_LabBooks.bkNotebookVaccineStart = "CairnsVax Lab Notes - Volume 1",
+	ItemName_LabBooks.bkNotebookVaccine2 = "CairnsVax Lab Notes - Volume 2",
+	ItemName_LabBooks.bkNotebookVaccine3 = "CairnsVax Lab Notes - Volume 3",
+	ItemName_LabBooks.bkNotebookVaccine4 = "CairnsVax Lab Notes - Volume 4",
+	ItemName_LabBooks.bkNotebookVaccineDummy = "Vaccine Development Diary",
+
+/* moveables 2_3 */
+	ItemName_LabItems.LabMicroscope = "Microscope",
+	ItemName_LabItems.LabChromatograph = "Chromatograph",
+	ItemName_LabItems.LabSpectrometer = "Spectrometer",
+	ItemName_LabItems.LabChemistrySet = "Chemistry Set",
+	ItemName_LabItems.LabCentrifuge = "Centrifuge",
+	ItemName_LabItems.LabMuffleFurnace = "Muffle Furnace",
+	ItemName_LabItems.LabWorkbench = "Workbench",
+	ItemName_LabItems.LabEasel = "Easel",
+	
+	ItemName_LabItems.LabDecorWhiteboard = "Whiteboard",
+	ItemName_LabItems.LabPosterPeriodicTable = "Periodic Table Poster",
+	ItemName_LabItems.LabPosterWashHands = "Wash Your Hands Poster",
+	ItemName_LabItems.LabPosterBiohazard = "Biohazard Poster",
+	ItemName_LabItems.LabPosterHumanBrain = "Human Brain Poster",
+
+}

@@ -526,29 +526,29 @@ SandboxVars = {
     -- Note: zombie loot is not affected by the other multipliers below. Minimum=0.00 Maximum=10.00 Default=1.00
     ZombieLootMultiplier = 1.5,
     -- A semicolon separated list of items and chances to add to the zombie loot.
-    ItemsAddedToZombieLoot = "Base.Money:0.1;Base.SheetPaper2:0.05;Base.BeefJerky:0.05;Base.Crisps:0.1;Base.Chocolate:0.05;Base.GranolaBar:0.1",
-    ItemsAddedToMilitaryZedsLoot = "WalkieTalkie5:0.05",
-    ItemsAddedToPoliceZedsLoot = "Base.Torch:0.05;Base.WalkieTalkie4:0.05;Base.Battery:0.1",
-    ItemsAddedToFiremenZedsLoot = "Base.Axe:0.1",
+    ItemsAddedToZombieLoot = "Base.Money:0.1;Base.SheetPaper2:0.05;Base.BeefJerky:0.05;Base.Crisps:0.1;Base.Chocolate:0.05;Base.GranolaBar:0.1;Base.Lighter:0.05;Base.WaterBottleFull:0.05;Base.Pen:0.02",
+    ItemsAddedToMilitaryZedsLoot = "Base.WalkieTalkie5:0.05",
+    ItemsAddedToPoliceZedsLoot = "Base.HandTorch:0.05;Base.WalkieTalkie4:0.05;Base.Battery:0.1;Base.Handcuffs:0.03",
+    ItemsAddedToFiremenZedsLoot = "Base.Axe:0.1;Base.WaterBottleFull:0.05",
     -- Tourists, Golfers, Weddings, Classy...
-    ItemsAddedToRichZedsLoot = "Base.Money:0.2",
+    ItemsAddedToRichZedsLoot = "Base.Money:0.3",
     -- Park rangers, survivalists, hunters, farmers, fishermen, campers...
-    ItemsAddedToRuralZedsLoot = "Base.Bandaid:0.1",
+    ItemsAddedToRuralZedsLoot = "Base.Bandaid:0.1;Base.SeedsBag:0.05",
     -- Raiders, Bandits, Militia, Thugs, Escaped inmates, survivors...
     ItemsAddedToRogueZedsLoot = "Base.Battery:0.1",
     -- Students, Teachers...
-    ItemsAddedToSchoolZedsLoot = "Base.Battery:0.5;Base.SewingKit:0.1;Base.Earbuds:0.5",
+    ItemsAddedToSchoolZedsLoot = "Base.Battery:0.1;Base.SewingKit:0.1;Base.Earbuds:0.1;Base.Notebook:0.1;Base.ComicBook:0.05;Base.CrayonBlue:0.07",
     -- Fitness Instructors, Baseball Fans, Baseball players, Boxing players, Jockeys...
-    ItemsAddedToSportsZedsLoot = "Base.Bandaid:0.1;Base.Earbuds:0.1",
+    ItemsAddedToSportsZedsLoot = "Base.Bandaid:0.1;Base.Earbuds:0.1;Base.WaterBottleFull:0.05",
     -- Doctors, Nurses, Pharmacists, Ambulance Drivers...
-    ItemsAddedToMedicalZedsLoot = "Base.SutureNeedle:0.2;Base.SutureNeedleHolder:0.1;Base.Pills:0.2;Base.Bandage:0.2;Base.Bandaid:0.2",
+    ItemsAddedToMedicalZedsLoot = "Base.SutureNeedle:0.2;Base.SutureNeedleHolder:0.1;Base.Pills:0.2;Base.Bandage:0.2;Base.Bandaid:0.2;Base.AlcoholWipes:0.05",
     -- Mechanics, Metalworkers, McCoys, Foremen, Construction workers, Woodcutters...
-    ItemsAddedToIndustryZedsLoot = "Base.Nails:0.25,Base.NailsBox:0.1",
+    ItemsAddedToIndustryZedsLoot = "Base.Nails:0.25;Base.NailsBox:0.1;Base.Hammer:0.05;Base.Saw:0.03;Base.Wrench:0.05;Base.Wire:0.1;Base.Screwdriver:0.05",
     -- Fossoil, Gas2Go, Thundergas...
-    ItemsAddedToGasStationZedsLoot = "Base.CandyPackage:0.1;Base.MintCandy:0.1;Base.RockCandy:0.1;Base.Crisps:0.1",
+    ItemsAddedToGasStationZedsLoot = "Base.CandyPackage:0.1;Base.MintCandy:0.1;Base.RockCandy:0.1;Base.Crisps:0.1;Base.PopBottle:0.05",
     -- Waiters, Cooks, Chefs...
     ItemsAddedToRestaurantZedsLoot = "Base.Ketchup:0.1;Base.Mustard:0.1;SapphCooking.HotsaucePacket:0.2",
-    ItemsAddedToOfficeWorkersZedsLoot = "Base.SewingKit:0.1;Base.Money:0.05",
+    ItemsAddedToOfficeWorkersZedsLoot = "Base.SewingKit:0.1;Base.Money:0.05;Base.Magazine:0.05;Base.Stapler:0.05",
     -- A semicolon separated list of zombie outfits that will drop the Custom Zed Outfits Loot defined below.
     -- Example: 'Priest;Biker;Redneck;Swimmer;Bedroom;Bathrobe;Hobbo;Party;Party2'
     -- Example 2: 'Security;Postal;Cyclist;StripperNaked;Bowling;MallSecurity;Inmate'

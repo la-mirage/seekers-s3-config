@@ -1,0 +1,8 @@
+name=Mirage's Patches for Survival Seekers S3
+id=SurvivalSeekersS3Patches
+authors=La_Mirage
+description=Small tweaks and adjustments for Survival Seekers S3 Server.
+poster=poster.png
+tags=Build 41
+require=TheEngineer,HephasOccupationsAndTraits,zReModVaccin20byk,truemusic_mixtape_megapack
+versionMin=41.0
