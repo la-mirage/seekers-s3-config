@@ -9149,17 +9149,17 @@ SandboxVars = {
         -- Minimum=0 Maximum=1000 Default=100
         PeakDay = 100,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        ChanceOnFloorMultiplierStartDay = 0.7,
+        ChanceOnFloorMultiplierStartDay = 0.5,
         -- Minimum=0.00 Maximum=100.00 Default=0.20
-        ChanceOnFloorMultiplierPeakDay = 0.7,
+        ChanceOnFloorMultiplierPeakDay = 0.5,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        ChanceOnFurnitureMultiplierStartDay = 0.7,
+        ChanceOnFurnitureMultiplierStartDay = 0.5,
         -- Minimum=0.00 Maximum=100.00 Default=0.20
-        ChanceOnFurnitureMultiplierPeakDay = 0.7,
+        ChanceOnFurnitureMultiplierPeakDay = 0.5,
         -- Minimum=0 Maximum=1000 Default=3
         RoomLootBaseChanceOnFloor = 3,
         -- Minimum=0 Maximum=1000 Default=25
-        RoomLootBaseChanceOnFurniture = 25,
+        RoomLootBaseChanceOnFurniture = 20,
     },
     KeksCharacterDescription = {
         consentList = true,

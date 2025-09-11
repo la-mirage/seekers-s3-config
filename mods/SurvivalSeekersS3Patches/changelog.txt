@@ -13,4 +13,58 @@ Major occupation rework
 Costs for traits tweaked
 Added script to hide Organized/Disorganized from character creation
 
+v1.11
+Hotfix
 
+v1.12
+Hotfix 2
+
+v1.2
+Added script to ensure Tinkering compatability with profession changes
+Added script to ensure Skill Limiter compatability with pack
+Added script to error-check items listed in zombie loot inside SandboxVars
+
+v1.21
+Script Hotfix
+
+v1.22
+Script Hotfix
+
+v1.23 
+Script Hotfix
+
+v1.24
+Script Hotfix
+
+v1.25
+Script Replacement
+
+v1.26
+Script Addition
+
+v1.27
+Trait mini-script
+
+v1.3
+Rolled back 1.27's mini-script.  Added patch for zRE lockpicking to disable their occupation.
+
+v1.31
+Yet another Script Addition
+
+v1.4
+Nuked other Org/Disorg scripts, now setting to 99 pts
+
+v1.41
+Slowly losing my mind
+
+v1.5
+Big revert. One last script to try for Org/Disorg
+
+v1.51
+Scripts to fix BBFAO and Tinkering related errors
+
+v1.52
+Overriding for above errors instead
+
+v1.6
+Further trait rebalance

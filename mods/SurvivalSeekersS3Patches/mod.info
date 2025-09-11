@@ -4,5 +4,5 @@ authors=La_Mirage
 description=Small tweaks and adjustments for Survival Seekers S3 Server.
 poster=poster.png
 tags=Build 41
-require=TheEngineer,HephasOccupationsAndTraits,zReModVaccin20byk,truemusic_mixtape_megapack
+require=TheEngineer,HephasOccupationsAndTraits,zReModVaccin20byk,truemusic_mixtape_megapack,WeaponModifiersReforge,BB_FirstAidOverhaul_Alt,zReBetterLockpicking
 versionMin=41.0

@@ -46,12 +46,12 @@ addProfession('unemployed', {
 addProfession('scout', {
     name = "UI_prof_scout",
     icon = "prof_scout",
-    cost = -7,
+    cost = -6,
     xp = {
         [Perks.Nimble] = 2,
         [Perks.Lightfoot] = 2,
         [Perks.Sneak] = 2,
-		[Perks.Doctor] = 1,
+		[Perks.Lockpicking] = 2,
     },
     traits = { "NightVision2", "Inconspicuous2"}, 
     recipes = { "Generator"},
@@ -68,7 +68,7 @@ addProfession('scout', {
 addProfession('tinkerer', {
     name = "UI_prof_tinkerer",
     icon = "prof_tinkerer",
-    cost = -9,
+    cost = -8,
     xp = {
         [Perks.Electricity] = 3,
 		[Perks.Tinkering] = 3,
@@ -92,11 +92,10 @@ if  getActivatedMods():contains("BB_FirstAidOverhaul") == false and
     addProfession('fieldmedic', {
         name = "UI_prof_fieldmedic",
         icon = "prof_fieldmedic",
-        cost = -8,
+        cost = -5,
         xp = {
             [Perks.Doctor] = 3,
             [Perks.PlantScavenging ] = 1,
-            [Perks.SmallBlade] = 1,
 			[Perks.Tailoring] = 1,
         },
         recipes = { "Herbalist2" },
@@ -113,11 +112,10 @@ else
     addProfession('fieldmedic', {
         name = "UI_prof_fieldmedic",
         icon = "prof_fieldmedic",
-        cost = -8,
+        cost = -5,
         xp = {
             [Perks.Doctor] = 3,
             [Perks.PlantScavenging ] = 1,
-            [Perks.SmallBlade] = 1,
 			[Perks.Tailoring] = 1,
         },
         recipes = { "Herbalist2" },
@@ -136,7 +134,7 @@ end
 addProfession('agriculturist', {
     name = "UI_prof_agriculturist",
     icon = "prof_agriculturist",
-    cost = -8,
+    cost = -7,
     xp = {
         [Perks.Farming] = 3,
         [Perks.Strength] = 2,
@@ -157,11 +155,11 @@ addProfession('agriculturist', {
 addProfession('gearhead', {
     name = "UI_prof_gearhead",
     icon = "prof_gearhead",
-    cost = -12,
+    cost = -9,
     xp = {
         [Perks.Mechanics] = 3,
         [Perks.MetalWelding ] = 1,
-        [Perks.SmallBlunt] = 1,
+		[Perks.Strength] = 1,
 		[Perks.Electricity] = 1,
     },
     recipes = {  "Basic Mechanics", "Intermediate Mechanics", "Advanced Mechanics", "Generator", "Tool Mode", "Weapon Mode" },
@@ -184,7 +182,7 @@ if  getActivatedMods():contains("SimpleOverhaulTraitsAndOccupations") == false a
     addProfession('trademaster', {
         name = "UI_prof_trademaster",
         icon = "prof_trademaster",
-        cost = -8,
+        cost = -7,
         xp = {
             [Perks.Maintenance] = 2,
             [Perks.PlantScavenging ] = 1,
@@ -208,7 +206,7 @@ else
     addProfession('trademaster', {
         name = "UI_prof_trademaster",
         icon = "prof_trademaster",
-        cost = -8,
+        cost = -7,
         xp = {
             [Perks.Maintenance] = 2,
             [Perks.PlantScavenging ] = 1,
@@ -227,7 +225,7 @@ end
 addProfession('tracker', {
     name = "UI_prof_tracker",
     icon = "prof_tracker",
-    cost = -10,
+    cost = -8,
     xp = {
         [Perks.PlantScavenging ] = 3,
         [Perks.Trapping] = 3,
@@ -248,11 +246,10 @@ addProfession('tracker', {
 addProfession('commsspecialist', {
     name = "UI_prof_commsspecialist",
     icon = "prof_commsspecialist",
-    cost = -10,
+    cost = -6,
     xp = {
         [Perks.Electricity] = 2,
         [Perks.Mechanics] = 2,
-        [Perks.SmallBlade] = 1,
 		[Perks.Maintenance] = 1,
     },
     recipes = { "Generator", "Build Makeshift Radio", "Build Makeshift HAM Radio", "Build Makeshift Walkie Talkie", 
@@ -272,7 +269,7 @@ addProfession('commsspecialist', {
 addProfession('contractgun', {
     name = "UI_prof_contractgun",
     icon = "prof_contractgun",
-    cost = -13,
+    cost = -11,
     xp = {
         [Perks.Aiming] = 3,
         [Perks.Reloading ] = 2,
@@ -295,11 +292,10 @@ addProfession('contractgun', {
 addProfession('watchmen', {
     name = "UI_prof_watchmen",
     icon = "prof_watchmen",
-    cost = -7,
+    cost = -4,
     xp = {
-        [Perks.Nimble ] = 1,
+        [Perks.Nimble ] = 2,
         [Perks.Sprinting] = 2,
-        [Perks.Spear] = 2,
 		[Perks.Cooking] = 1,
     },
     traits = { "Brave2", "Guardsmen" }, 
@@ -314,10 +310,9 @@ addProfession('watchmen', {
 addProfession('blacksmith', {
     name = "UI_prof_blacksmith",
     icon = "prof_blacksmith",
-    cost = -8,
+    cost = -6,
     xp = {
         [Perks.MetalWelding] = 3,
-        [Perks.SmallBlunt] = 1,
 		[Perks.Tinkering] = 2,
 		[Perks.Strength] = 1,
     },
@@ -334,10 +329,9 @@ addProfession('blacksmith', {
 addProfession('threadsmith', {
     name = "UI_prof_threadsmith",
     icon = "prof_threadsmith",
-    cost = -8,
+    cost = -5,
     xp = {
         [Perks.Tailoring] = 3,
-        [Perks.SmallBlade ] = 2,
 		[Perks.Tinkering] = 1,
 		[Perks.Nimble] = 2,
     },
@@ -353,10 +347,9 @@ addProfession('threadsmith', {
 addProfession('firepitchef', {
     name = "UI_prof_firepitchef",
     icon = "prof_firepitchef",
-    cost = -7,
+    cost = -4,
     xp = {
         [Perks.Cooking] = 3,
-        [Perks.SmallBlade ] = 2,
 		[Perks.Farming] = 1,
 		[Perks.PlantScavenging] = 1,
     },
@@ -374,7 +367,7 @@ addProfession('firepitchef', {
 addProfession('woodcutter', {
     name = "UI_prof_woodcutter",
     icon = "prof_woodcutter",
-    cost = -10,
+    cost = -8,
     xp = {
         [Perks.Axe] = 2,
         [Perks.Strength ] = 1,
@@ -393,12 +386,12 @@ addProfession('woodcutter', {
 addProfession('shelterbuilder', {
     name = "UI_prof_shelterbuilder",
     icon = "prof_shelterbuilder",
-    cost = -8,
+    cost = -5,
     xp = {
         [Perks.Woodwork ] = 3,
-        [Perks.Blunt] = 2,
         [Perks.Fitness] = 1,
 		[Perks.MetalWelding] = 1,
+		[Perks.Trapping] = 1,		
     },
     recipes = { "Generator" },
     traits = { "Handy2", "ShelterBuilder" }, 
@@ -430,10 +423,11 @@ else
     addProfession('outcast', {
         name = "UI_prof_outcast",
         icon = "prof_outcast",
-        cost = 15,
+        cost = 14,
         xp = {
             [Perks.Tailoring] = 1,
 			[Perks.Cooking] = 1,
+			[Perks.Lockpicking] = 1,
 		},
         traits = { "Illiterate2", "Shunned" }, 
         clothing = {
@@ -448,10 +442,10 @@ end
 addProfession('scrapangler', {
     name = "UI_prof_scrapangler",
     icon = "prof_scrapangler",
-    cost = -9,
+    cost = -8,
     xp = {
         [Perks.Fishing] = 3,
-        [Perks.MetalWelding] = 2,
+        [Perks.MetalWelding] = 1,
         [Perks.PlantScavenging] = 2,
 		[Perks.Cooking] = 1,
     },
