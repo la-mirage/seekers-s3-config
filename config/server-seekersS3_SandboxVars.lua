@@ -589,7 +589,7 @@ SandboxVars = {
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    LitteratureTablesMaxRolls = 2,
+    LiteratureTablesMaxRolls = 2,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
@@ -639,7 +639,7 @@ SandboxVars = {
     ExceptionsList = "Base.Nails;Base.NailsBox;Base.GarbageBag;Base.Glue;Base.DuctTape",
     -- A semicolon-separated list of specific multipliers for specific items.Example: Base.Sledgehammer=5;Base.Sledgehammer2=5;Base.Saw=0.5;Base.GardenSaw=0.5;Base.Hammer=0.1;Base.NailsBox=2
     -- These individual multipliers are applied on top of all other multipliers, and even if the item is in the exceptions list
-    SpecificItemsList = "Base.Cigarettes:1;Base.Sledgehammer:1;Base.Sledgehammer2:1Base.GarbageBag:1.5;",
+	SpecificItemsList = "Base.Cigarettes=1;Base.Sledgehammer=1;Base.Sledgehammer2=1;Base.GarbageBag=1.5;";
     -- Ranges from 0-100 in game. Sets how much boredom is removed every 10 minutes. Minimum=-100.00 Maximum=100.00 Default=3.50
     TrueMusicMoodImprovement_boredomMod = 5.0,
     -- Ranges 0-100 in game. THIS IS MY FCKIN JAM Minimum=-100.00 Maximum=100.00 Default=2.00
@@ -5143,7 +5143,7 @@ SandboxVars = {
         --  <INDENT:20>-Ordinary zombies range from 2000+;
         --  <INDENT:20>-For example, a zombie golfer (quite rare) has 2000 weight, and a park ranger 10000.
         --  Minimum=10 Maximum=30000 Default=200
-        SpecZombieSpawnChance = 5000,
+        SpecZombieSpawnChance = 50,
         -- A first-level vaccine that resets infection to 5%.
         --  <INDENT:20>-The option affects the chance of a drop in a SPECIAL ZOMBIE.
         --  Minimum=0 Maximum=100 Default=10
@@ -6359,7 +6359,7 @@ SandboxVars = {
         --  Zero value disable spawn.
         --  Common zombies range from 2000+.
         --  For example, the golfer zombie (quite rare) has 2000 weight and the park ranger 10000. Minimum=0 Maximum=30000 Default=50
-        SpawnChanceSWAT = 1000,
+        SpawnChanceSWAT = 35,
     },
     IMNAL = {
         -- Minimum=0 Maximum=100 Default=30
