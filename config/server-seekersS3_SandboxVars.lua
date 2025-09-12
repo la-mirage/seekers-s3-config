@@ -579,7 +579,7 @@ SandboxVars = {
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MeleeWeaponsAndToolsTablesMaxRolls = 3,
+    MeleeWeaponsAndToolsTablesMaxRolls = 2,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
@@ -594,7 +594,7 @@ SandboxVars = {
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MediaTablesMaxRolls = 3,
+    MediaTablesMaxRolls = 2,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
@@ -611,9 +611,9 @@ SandboxVars = {
     -- Includes Sledgehammer. Also includes instruments and some cooking tools. Minimum=0.00 Maximum=10.00 Default=1.00
     WeaponLootMultiplier = 0.8,
     -- Ranged weapons. Includes weapon parts for guns. Minimum=0.00 Maximum=10.00 Default=1.00
-    GunLootMultiplier = 0.5,
+    GunLootMultiplier = 0.4,
     -- Ammunition and magazines Minimum=0.00 Maximum=10.00 Default=1.00
-    AmmoLootMultiplier = 1.5,
+    AmmoLootMultiplier = 3.0,
     -- Saws, blowtorches, seeds, farming gear, fishing gear, camping gear, needles,
     -- crafting materials, repair materials, construction materials, gas cans, jars, maps. Minimum=0.00 Maximum=10.00 Default=1.00
     SurvivalGearLootMultiplier = 0.8,
@@ -639,7 +639,7 @@ SandboxVars = {
     ExceptionsList = "Base.Nails;Base.NailsBox;Base.GarbageBag;Base.Glue;Base.DuctTape",
     -- A semicolon-separated list of specific multipliers for specific items.Example: Base.Sledgehammer=5;Base.Sledgehammer2=5;Base.Saw=0.5;Base.GardenSaw=0.5;Base.Hammer=0.1;Base.NailsBox=2
     -- These individual multipliers are applied on top of all other multipliers, and even if the item is in the exceptions list
-    SpecificItemsList = "Base.Cigarettes:1;Base.Sledgehammer:1;Base.Sledgehammer2:1",
+    SpecificItemsList = "Base.Cigarettes:1;Base.Sledgehammer:1;Base.Sledgehammer2:1Base.GarbageBag:1.5;",
     -- Ranges from 0-100 in game. Sets how much boredom is removed every 10 minutes. Minimum=-100.00 Maximum=100.00 Default=3.50
     TrueMusicMoodImprovement_boredomMod = 5.0,
     -- Ranges 0-100 in game. THIS IS MY FCKIN JAM Minimum=-100.00 Maximum=100.00 Default=2.00
@@ -5143,7 +5143,7 @@ SandboxVars = {
         --  <INDENT:20>-Ordinary zombies range from 2000+;
         --  <INDENT:20>-For example, a zombie golfer (quite rare) has 2000 weight, and a park ranger 10000.
         --  Minimum=10 Maximum=30000 Default=200
-        SpecZombieSpawnChance = 1500,
+        SpecZombieSpawnChance = 5000,
         -- A first-level vaccine that resets infection to 5%.
         --  <INDENT:20>-The option affects the chance of a drop in a SPECIAL ZOMBIE.
         --  Minimum=0 Maximum=100 Default=10
@@ -9753,7 +9753,7 @@ SandboxVars = {
         EveryoneIsSusceptible = false,
         InstantDeath = false,
         -- Minimum=0.00 Maximum=0.05 Default=0.00
-        BaseInfectionChance = 0.0034,
+        BaseInfectionChance = 0.0024,
         -- Minimum=0 Maximum=100 Default=6
         MaskDamageRate = 3,
         -- Minimum=1 Maximum=100 Default=10
@@ -9836,7 +9836,7 @@ SandboxVars = {
         otherPerksList = "",
         moreDeaths = true,
         lessDeaths = true,
-        rankStaff = false,
+        rankStaff = true,
         -- Minimum=20 Maximum=40 Default=20
         passivMaxScore = 20,
     },
