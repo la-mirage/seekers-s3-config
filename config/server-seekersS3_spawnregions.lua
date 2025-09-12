@@ -1,6 +1,6 @@
 function SpawnRegions()
 	return {
-		{ name = "LCV2", file = "media/maps/LCV2/spawnpoints.lua" },
+		{ name = "Lake Cumberland", file = "media/maps/LCV2/spawnpoints.lua" },
 		{ name = "Riverside, KY", file = "media/maps/Riverside, KY/spawnpoints.lua" },
 		{ name = "Rosewood, KY", file = "media/maps/Rosewood, KY/spawnpoints.lua" },
 --		{ name = "West Point, KY", file = "media/maps/West Point, KY/spawnpoints.lua" },

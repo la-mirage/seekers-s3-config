@@ -526,7 +526,7 @@ SandboxVars = {
     -- Note: zombie loot is not affected by the other multipliers below. Minimum=0.00 Maximum=10.00 Default=1.00
     ZombieLootMultiplier = 2.0,
     -- A semicolon separated list of items and chances to add to the zombie loot.
-    ItemsAddedToZombieLoot = "Base.Money:0.1;Base.SheetPaper2:0.05;Base.BeefJerky:0.05;Base.Crisps:0.1;Base.Chocolate:0.05;Base.GranolaBar:0.1;Base.Lighter:0.05;Base.WaterBottleFull:0.05;Base.Pen:0.02",
+    ItemsAddedToZombieLoot = "Base.Money:0.1;Base.SheetPaper2:0.05;Base.BeefJerky:0.1;Base.Crisps:0.1;Base.Chocolate:0.05;Base.GranolaBar:0.2;Base.Lighter:0.05;Base.WaterBottleFull:0.05;Base.Pen:0.02",
     ItemsAddedToMilitaryZedsLoot = "Base.WalkieTalkie5:0.05",
     ItemsAddedToPoliceZedsLoot = "Base.HandTorch:0.05;Base.WalkieTalkie4:0.05;Base.Battery:0.1;Base.Handcuffs:0.03",
     ItemsAddedToFiremenZedsLoot = "Base.Axe:0.1;Base.WaterBottleFull:0.05",
@@ -569,7 +569,7 @@ SandboxVars = {
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
     -- 4 = 4 (~ 99% items)
-    MaxRolls = 2,
+    MaxRolls = 3,
     -- Same as the option above, but only affects food containers. Default=4 (100% food)
     -- 1 = 1 (~25% food)
     -- 2 = 2 (~50% food)
@@ -616,13 +616,13 @@ SandboxVars = {
     AmmoLootMultiplier = 3.0,
     -- Saws, blowtorches, seeds, farming gear, fishing gear, camping gear, needles,
     -- crafting materials, repair materials, construction materials, gas cans, jars, maps. Minimum=0.00 Maximum=10.00 Default=1.00
-    SurvivalGearLootMultiplier = 0.8,
+    SurvivalGearLootMultiplier = 0.9,
     -- Tools to work on vehicles, and vehicle parts. Minimum=0.00 Maximum=10.00 Default=1.00
     MechanicsLootMultiplier = 1.0,
     -- Medicine, bandages, splint, needles, first aid kits... Minimum=0.00 Maximum=10.00 Default=1.00
-    MedicalLootMultiplier = 0.8,
+    MedicalLootMultiplier = 1.3,
     -- Books and magazines Minimum=0.00 Maximum=10.00 Default=1.00
-    LiteratureLootMultiplier = 0.3,
+    LiteratureLootMultiplier = 0.25,
     -- VHS tapes, CDs and videogames Minimum=0.00 Maximum=10.00 Default=1.00
     MediaLootMultiplier = 0.8,
     -- Cleaning supplies, cooking tools, writing supplies, cutlery, extinguishers, can openers, razors, alarm clocks Minimum=0.00 Maximum=10.00 Default=1.00
@@ -632,7 +632,7 @@ SandboxVars = {
     -- Including Garbage Bags Minimum=0.00 Maximum=10.00 Default=1.00
     ContainerLootMultiplier = 0.7,
     -- Includes lighters, matches, painting supplies, charcoal, propane tanks, antique ovens, junk items, and many more... Minimum=0.00 Maximum=10.00 Default=1.00
-    OtherLootMultiplier = 0.8,
+    OtherLootMultiplier = 1.0,
     -- A semicolon-separated list of items IDs that will NOT be affected by the multipliers above.
     -- Example: Base.Sledgehammer;Base.Saw
     -- Still affected by the multipliers list option below.
