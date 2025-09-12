@@ -524,7 +524,7 @@ SandboxVars = {
     DaySurvivedModifier = 4,
     -- Loot of all types found on generic zombies, zombie outfits, and bags.
     -- Note: zombie loot is not affected by the other multipliers below. Minimum=0.00 Maximum=10.00 Default=1.00
-    ZombieLootMultiplier = 5.0,
+    ZombieLootMultiplier = 2.0,
     -- A semicolon separated list of items and chances to add to the zombie loot.
     ItemsAddedToZombieLoot = "Base.Money:0.1;Base.SheetPaper2:0.05;Base.BeefJerky:0.05;Base.Crisps:0.1;Base.Chocolate:0.05;Base.GranolaBar:0.1;Base.Lighter:0.05;Base.WaterBottleFull:0.05;Base.Pen:0.02",
     ItemsAddedToMilitaryZedsLoot = "Base.WalkieTalkie5:0.05",
@@ -569,7 +569,7 @@ SandboxVars = {
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
     -- 4 = 4 (~ 99% items)
-    MaxRolls = 3,
+    MaxRolls = 2,
     -- Same as the option above, but only affects food containers. Default=4 (100% food)
     -- 1 = 1 (~25% food)
     -- 2 = 2 (~50% food)
@@ -589,12 +589,12 @@ SandboxVars = {
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    LiteratureTablesMaxRolls = 2,
+    LitteratureTablesMaxRolls = 1,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    MediaTablesMaxRolls = 2,
+    MediaTablesMaxRolls = 1,
     -- Default=4 (100% items)
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
@@ -604,9 +604,9 @@ SandboxVars = {
     -- 1 = 1 (~25% items)
     -- 2 = 2 (~50% items)
     -- 3 = 3 (~75% items)
-    OtherTablesMaxRolls = 3,
+    OtherTablesMaxRolls = 2,
     -- Fresh and non-perishable food. Minimum=0.00 Maximum=10.00 Default=1.00
-    FoodLootMultiplier = 1.5,
+    FoodLootMultiplier = 1.8,
     -- Nonranged weapons of all kinds, except pens, forks and spoons.
     -- Includes Sledgehammer. Also includes instruments and some cooking tools. Minimum=0.00 Maximum=10.00 Default=1.00
     WeaponLootMultiplier = 0.8,
@@ -622,13 +622,13 @@ SandboxVars = {
     -- Medicine, bandages, splint, needles, first aid kits... Minimum=0.00 Maximum=10.00 Default=1.00
     MedicalLootMultiplier = 0.8,
     -- Books and magazines Minimum=0.00 Maximum=10.00 Default=1.00
-    LiteratureLootMultiplier = 0.6,
+    LiteratureLootMultiplier = 0.3,
     -- VHS tapes, CDs and videogames Minimum=0.00 Maximum=10.00 Default=1.00
     MediaLootMultiplier = 0.8,
     -- Cleaning supplies, cooking tools, writing supplies, cutlery, extinguishers, can openers, razors, alarm clocks Minimum=0.00 Maximum=10.00 Default=1.00
-    HouseholdSuppliesLootMultiplier = 1.0,
+    HouseholdSuppliesLootMultiplier = 0.8,
     -- All kinds of clothes, including gas masks and jewelry. Minimum=0.00 Maximum=10.00 Default=1.00
-    ClothingLootMultiplier = 1.0,
+    ClothingLootMultiplier = 0.5,
     -- Including Garbage Bags Minimum=0.00 Maximum=10.00 Default=1.00
     ContainerLootMultiplier = 0.7,
     -- Includes lighters, matches, painting supplies, charcoal, propane tanks, antique ovens, junk items, and many more... Minimum=0.00 Maximum=10.00 Default=1.00
@@ -639,7 +639,7 @@ SandboxVars = {
     ExceptionsList = "Base.Nails;Base.NailsBox;Base.GarbageBag;Base.Glue;Base.DuctTape",
     -- A semicolon-separated list of specific multipliers for specific items.Example: Base.Sledgehammer=5;Base.Sledgehammer2=5;Base.Saw=0.5;Base.GardenSaw=0.5;Base.Hammer=0.1;Base.NailsBox=2
     -- These individual multipliers are applied on top of all other multipliers, and even if the item is in the exceptions list
-	SpecificItemsList = "Base.Cigarettes=1;Base.Sledgehammer=1;Base.Sledgehammer2=1;Base.GarbageBag=1.5;";
+	SpecificItemsList = "Base.Cigarettes=1;Base.Sledgehammer=1;Base.Sledgehammer2=1;Base.GarbageBag=1.5;VhsTraining1=0;VhsTraining2=0;VhsTraining3=0;VhsTraining4=0;VhsTraining5=0;VhsTraining6=0;VhsTraining7=0;";
     -- Ranges from 0-100 in game. Sets how much boredom is removed every 10 minutes. Minimum=-100.00 Maximum=100.00 Default=3.50
     TrueMusicMoodImprovement_boredomMod = 5.0,
     -- Ranges 0-100 in game. THIS IS MY FCKIN JAM Minimum=-100.00 Maximum=100.00 Default=2.00
@@ -5326,10 +5326,10 @@ SandboxVars = {
         RecoverFirearmSkills = -1,
         -- Recovery percentage for crafting skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
-        RecoverCraftingSkills = 100,
+        RecoverCraftingSkills = 85,
         -- Recovery percentage for survivalist skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
-        RecoverSurvivalistSkills = -1,
+        RecoverSurvivalistSkills = 85,
         -- Recovery percentage for agility skills.
         -- Set this to -1 to use the General Skill Recovery Percentage. Minimum=-1 Maximum=100 Default=-1
         RecoverAgilitySkills = 100,
