@@ -36,7 +36,7 @@ SandboxVars = {
     -- 23 = 21 Hours
     -- 24 = 22 Hours
     -- 25 = 23 Hours
-    DayLength = 6,
+    DayLength = 26,
     StartYear = 1,
     -- Default=July
     -- 1 = January
@@ -639,7 +639,7 @@ SandboxVars = {
     ExceptionsList = "Base.Nails;Base.NailsBox;Base.GarbageBag;Base.Glue;Base.DuctTape",
     -- A semicolon-separated list of specific multipliers for specific items.Example: Base.Sledgehammer=5;Base.Sledgehammer2=5;Base.Saw=0.5;Base.GardenSaw=0.5;Base.Hammer=0.1;Base.NailsBox=2
     -- These individual multipliers are applied on top of all other multipliers, and even if the item is in the exceptions list
-	SpecificItemsList = "Base.Cigarettes=1;Base.Sledgehammer=1;Base.Sledgehammer2=1;Base.GarbageBag=1.5;VhsTraining1=0;VhsTraining2=0;VhsTraining3=0;VhsTraining4=0;VhsTraining5=0;VhsTraining6=0;VhsTraining7=0;";
+    SpecificItemsList = "Base.Cigarettes=1;Base.Sledgehammer=1;Base.Sledgehammer2=1;Base.GarbageBag=1.5;VhsTraining1=0;VhsTraining2=0;VhsTraining3=0;VhsTraining4=0;VhsTraining5=0;VhsTraining6=0;VhsTraining7=0;",
     -- Ranges from 0-100 in game. Sets how much boredom is removed every 10 minutes. Minimum=-100.00 Maximum=100.00 Default=3.50
     TrueMusicMoodImprovement_boredomMod = 5.0,
     -- Ranges 0-100 in game. THIS IS MY FCKIN JAM Minimum=-100.00 Maximum=100.00 Default=2.00
@@ -5167,7 +5167,7 @@ SandboxVars = {
         --  <INDENT:20>-Setting to 0 disables the spawn of books in the world;
         --  <INDENT:20>-Does not affect the drop of books in special zombies.
         --  Minimum=0.00 Maximum=2.00 Default=1.00
-        BookInWorldSpawnChance = 0.10,
+        BookInWorldSpawnChance = 0.1,
         -- Affects at which stage of infection resistant antibodies are activated.
         --  <INDENT:20>-This perk is acquired by administering a level 4 vaccine;
         --  <INDENT:20>-TERMINAL - with infection of more than 80%, health leaks, high probability of death;
@@ -8846,7 +8846,7 @@ SandboxVars = {
         -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=1.00
         footShotDmgZomMultiplier = 1.0,
         -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=15.00
-        headShotDmgPlayerMultiplier = 10.0,
+        headShotDmgPlayerMultiplier = 8.0,
         -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
         bodyShotDmgPlayerMultiplier = 5.0,
         -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=2.00
@@ -9934,6 +9934,53 @@ SandboxVars = {
         -- The chance to hear a sound at stage three insanity at the proper frequency. The check is made every 1 in-game minute Minimum=0 Maximum=100 Default=70
         StageThreeSoundChance = 70,
     },
+    Apprenticeship = {
+        -- Minimum=0 Maximum=100 Default=5
+        maxDistance = 5,
+        -- Minimum=1 Maximum=100 Default=5
+        defaultTeachingAmount = 5,
+        -- Minimum=1 Maximum=100 Default=3
+        savantTraitGain = 3,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        studentBoredomReduction = 10.0,
+        -- Minimum=1 Maximum=100 Default=3
+        professorTraitGain = 3,
+        -- Minimum=1 Maximum=100 Default=8
+        badTeacherTraitGain = 8,
+        hideTeacherHaloText = false,
+        hideStudentHaloText = false,
+        disableAllPassiveTeaching = true,
+        disableTeachingFitness = false,
+        disableTeachingStrength = false,
+        disableAllAgilityTeaching = false,
+        disableTeachingSprinting = false,
+        disableTeachingLightfoot = false,
+        disableTeachingNimble = false,
+        disableTeachingSneak = false,
+        disableAllCombatTeaching = false,
+        disableTeachingAxe = false,
+        disableTeachingLongBlade = false,
+        disableTeachingSmallBlunt = false,
+        disableTeachingSmallBlade = false,
+        disableTeachingSpear = false,
+        disableTeachingMaintenance = false,
+        disableAllCraftingTeaching = false,
+        disableTeachingWoodwork = false,
+        disableTeachingCooking = false,
+        disableTeachingFarming = false,
+        disableTeachingDoctor = false,
+        disableTeachingElectricity = false,
+        disableTeachingMetalWelding = false,
+        disableTeachingMechanics = false,
+        disableTeachingTailoring = false,
+        disableAllFirearmTeaching = true,
+        disableTeachingAiming = false,
+        disableTeachingReloading = false,
+        disableAllSurvivalistTeaching = false,
+        disableTeachingFishing = false,
+        disableTeachingTrapping = false,
+        disableTeachingPlantScavenging = false,
+    },
     Bandits = {
         General_KillCounter = true,
         -- Minimum=1.00 Maximum=5.00 Default=2.40
@@ -9949,12 +9996,12 @@ SandboxVars = {
         General_Infection = true,
         General_LimitedEndurance = true,
         General_RunAway = true,
-        General_DestroyDoor = true,
-        General_SmashWindow = true,
+        General_DestroyDoor = false,
+        General_SmashWindow = false,
         General_RemoveBarricade = true,
         General_DestroyThumpable = false,
         General_SabotageVehicles = true,
-        General_Theft = true,
+        General_Theft = false,
         General_SabotageCrops = false,
         General_EnterVehicles = false,
         General_GeneratorCutoff = true,
